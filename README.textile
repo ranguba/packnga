@@ -1,0 +1,32 @@
+h1. README
+
+h2. Name
+
+packnga
+
+h2. Description
+
+An utility library to package i18n-ed library.
+
+packnga is an library to translate to many languages by YARD.
+
+h2. Authors
+
+* yoshihara haruka <yoshihara@clear-code.com>
+
+h2. License
+
+LGPL 2.1. See license/LGPL for details.
+
+(Kouhei Sutou has a right to change the license including
+contributed patches.)
+
+h2. Dependencies
+
+h2. Install
+
+h2. Documents
+
+h2. Mailing list
+
+h2. Thanks
