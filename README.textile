@@ -2,13 +2,13 @@ h1. README
 
 h2. Name
 
-packnga
+Packnga
 
 h2. Description
 
 An utility library to package i18n-ed library.
 
-packnga is an library to translate to many languages by YARD.
+Packnga is an library to translate to many languages by YARD.
 
 h2. Authors
 
