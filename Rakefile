@@ -32,8 +32,9 @@ packnga_lib_dir = File.join(base_dir, 'lib')
 $LOAD_PATH.unshift(packnga_lib_dir)
 ENV["RUBYLIB"] = "#{packnga_lib_dir}:#{ENV['RUBYLIB']}"
 
+require "packnga"
+
 def guess_version
-  require "packnga/version"
   Packnga::VERSION.dup
 end
 
@@ -76,26 +77,9 @@ reference_base_dir = Pathname.new("doc/reference")
 doc_en_dir = reference_base_dir + "en"
 html_base_dir = Pathname.new("doc/html")
 html_reference_dir = html_base_dir + spec.name
-YARD::Rake::YardocTask.new do |task|
-  task.options += ["--title", spec.name]
-  # task.options += ["--charset", "UTF-8"]
-  task.options += ["--readme", "README.textile"]
-  task.options += ["--files", "doc/text/**/*"]
-  task.options += ["--output-dir", doc_en_dir.to_s]
-  task.options += ["--charset", "utf-8"]
-  task.files += FileList["ext/groonga/**/*.c"]
-  task.files += FileList["lib/**/*.rb"]
-end
 
-task :yard do
-  doc_en_dir.find do |path|
-    next if path.extname != ".html"
-    html = path.read
-    html = html.gsub(/<div id="footer">.+<\/div>/m,
-                     "<div id=\"footer\"></div>")
-    path.open("w") do |html_file|
-      html_file.print(html)
-    end
+Packnga::DocumentTask.new(spec) do |task|
+  task.yard do |yard_task|
   end
 end
 
