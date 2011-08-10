@@ -1,0 +1,20 @@
+h1. NEWS
+
+h2. 1.0.0: 2011-08-11
+
+h3. Improvements
+
+  * ...
+
+h3. Changes
+
+  * ...
+
+h3. Fixes
+
+  * ...
+
+h3. Thanks
+
+  * ...
+
