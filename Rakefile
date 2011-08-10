@@ -22,6 +22,7 @@ require 'pathname'
 require 'erb'
 require 'rubygems'
 require 'rubygems/package_task'
+require "rake/clean"
 require 'yard'
 require 'jeweler'
 
