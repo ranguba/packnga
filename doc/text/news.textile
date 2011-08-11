@@ -1,5 +1,3 @@
-fd804be27425fa6a8b8c5966c0bb5395b83c167a
-
 h1. NEWS
 
 h2. 1.0.0: 2011-08-11
@@ -11,4 +9,3 @@ h3. Improvements
   (only created function to define tasks for generate or update .po/.pot files.)
   * added *Tasks#base_dir to set default value for base_dir.
   * other tasks were created in Rakefile.
-
