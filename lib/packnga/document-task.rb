@@ -19,13 +19,12 @@ require "pathname"
 
 module Packnga
   class DocumentTask
-    include Rack::DSL
+    include Rake::DSL
 
     attr_writer :readme, :base_dir
     def initialize(spec)
       @spec = spec
-      @yardoc_task_defined = false
-      @yardoc_task = nil
+      @yardoc_hooks = []
       @readme = nil
       @text_files = nil
       @base_dir = nil
@@ -45,9 +44,8 @@ module Packnga
       @text_files ||= []
     end
 
-    def yard(&block)
-      set_default_values
-      define_yardoc_task(&block)
+    def yard(&hook)
+      @yardoc_hooks << hook
     end
 
     private
@@ -80,7 +78,9 @@ module Packnga
         yardoc_task.options += ["--output-dir", reference_en_dir.to_s]
         yardoc_task.options += ["--charset", "utf-8"]
         yardoc_task.files += @files
-        yield(yardoc_task) if block_given?
+        @yardoc_hooks.each do |hook|
+          hook.call(yardoc_task)
+        end
       end
       @yardoc_task_defined = true
     end
