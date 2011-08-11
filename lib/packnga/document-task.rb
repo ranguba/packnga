@@ -19,6 +19,8 @@ require "pathname"
 
 module Packnga
   class DocumentTask
+    include Rack::DSL
+
     attr_writer :readme, :base_dir
     def initialize(spec)
       @spec = spec
@@ -69,16 +71,16 @@ module Packnga
     end
 
     def define_yardoc_task
-      YARD::Rake::YardocTask.new do |task|
-        yield(task) if block_given?
-        task.options += ["--title", @spec.name]
-        task.options += ["--readme", readme]
+      YARD::Rake::YardocTask.new do |yardoc_task|
+        yardoc_task.options += ["--title", @spec.name]
+        yardoc_task.options += ["--readme", readme]
         @text_files.each do |file|
-          task.options += ["--files", file]
+          yardoc_task.options += ["--files", file]
         end
-        task.options += ["--output-dir", reference_en_dir.to_s]
-        task.options += ["--charset", "utf-8"]
-        task.files += @files
+        yardoc_task.options += ["--output-dir", reference_en_dir.to_s]
+        yardoc_task.options += ["--charset", "utf-8"]
+        yardoc_task.files += @files
+        yield(yardoc_task) if block_given?
       end
       @yardoc_task_defined = true
     end
@@ -86,7 +88,7 @@ module Packnga
     def define_yard_task
       define_yardoc_task unless @yardoc_task_defined
 
-      Rake::Task.define_task(:yard) do |task|
+      task :yard do |yard_task|
         reference_en_dir.find do |path|
           next if path.extname != ".html"
           html = path.read
