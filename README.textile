@@ -24,10 +24,22 @@ contributed patches.)
 
 h2. Dependencies
 
+  * Ruby >= 1.8 (including 1.9.2)
+
 h2. Install
+
+<pre>
+!!!command_line
+% sudo gem install packnga
+</pre>
 
 h2. Documents
 
+  * "Reference manual in English":http://groonga.rubyforge.org/packnga/en/
+  * "Reference manual in Japanese":http://groonga.rubyforge.org/packnga/ja/
+
 h2. Mailing list
+
+  * comming soon...
 
 h2. Thanks
