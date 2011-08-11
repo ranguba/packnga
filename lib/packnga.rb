@@ -19,3 +19,4 @@ require "rake"
 
 require "packnga/version"
 require "packnga/document-task"
+require "packnga/reference-task"

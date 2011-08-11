@@ -83,6 +83,9 @@ Packnga::DocumentTask.new(spec) do |task|
   end
 end
 
+Packnga::ReferenceTask.new(spec) do |task|
+end
+
 include ERB::Util
 
 def apply_template(content, paths, templates, language)
