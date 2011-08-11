@@ -1,0 +1,1182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-08-11 12:54+0900\n"
+"PO-Revision-Date: 2011-08-11 12:56+0900\n"
+"Last-Translator: Yoshihara Haruka <yoshihara@clear-code.com>\n"
+"Language-Team: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: doc/reference/en/class_list.html:21(script)
+#: doc/reference/en/method_list.html:21(script)
+#: doc/reference/en/file_list.html:21(script)
+msgid ""
+"if (window.top.frames.main) { document.getElementById('base_target').target "
+"= 'main'; document.body.className = 'frames'; }"
+msgstr ""
+
+#: doc/reference/en/class_list.html:28(h1) doc/reference/en/Packnga.html:47(a)
+#: doc/reference/en/file.news.html:45(a) doc/reference/en/index.html:45(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:47(a)
+#: doc/reference/en/Packnga/DocumentTask.html:47(a)
+#: doc/reference/en/top-level-namespace.html:47(a)
+#: doc/reference/en/_index.html:43(a) doc/reference/en/file.README.html:45(a)
+msgid "Class List"
+msgstr ""
+
+#: doc/reference/en/class_list.html:31(a)
+#: doc/reference/en/method_list.html:31(a)
+#: doc/reference/en/file_list.html:31(a)
+msgid "Classes"
+msgstr ""
+
+#: doc/reference/en/class_list.html:33(a)
+#: doc/reference/en/method_list.html:33(a)
+#: doc/reference/en/file_list.html:33(a)
+msgid "Methods"
+msgstr ""
+
+#: doc/reference/en/class_list.html:35(a)
+#: doc/reference/en/method_list.html:35(a)
+#: doc/reference/en/file_list.html:35(a)
+msgid "Files"
+msgstr ""
+
+#: doc/reference/en/class_list.html:38(div)
+#: doc/reference/en/method_list.html:38(div)
+#: doc/reference/en/file_list.html:38(div)
+msgid "Search: <input type=\"text\"/>"
+msgstr ""
+
+#: doc/reference/en/class_list.html:41(a)
+#: doc/reference/en/class_list.html:42(small)
+#: doc/reference/en/top-level-namespace.html:39(span)
+#: doc/reference/en/top-level-namespace.html:59(h1)
+msgid "Top Level Namespace"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/class_list.html:42(small)
+#: doc/reference/en/Packnga.html:39(span) doc/reference/en/index.html:59(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:37(a)
+#: doc/reference/en/Packnga/DocumentTask.html:37(a)
+#: doc/reference/en/top-level-namespace.html:81(a)
+#: doc/reference/en/_index.html:102(a) doc/reference/en/file.README.html:59(p)
+msgid "Packnga"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/Packnga/DocumentTask.html:39(span)
+#: doc/reference/en/Packnga/DocumentTask.html:241(a)
+#: doc/reference/en/_index.html:87(a)
+msgid "DocumentTask"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(li)
+msgid ""
+"<span class=\"object_link\"><placeholder-1/></span> &lt; "
+"Object<placeholder-2/>"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:39(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:192(a)
+#: doc/reference/en/_index.html:115(a)
+msgid "ReferenceTask"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:6(title)
+msgid "Module: Packnga &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:17(script)
+#: doc/reference/en/file.news.html:17(script)
+#: doc/reference/en/index.html:17(script)
+#: doc/reference/en/top-level-namespace.html:17(script)
+#: doc/reference/en/_index.html:15(script)
+#: doc/reference/en/file.README.html:17(script)
+msgid "relpath = ''; if (relpath != '') relpath += '/';"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:29(script)
+#: doc/reference/en/file.news.html:29(script)
+#: doc/reference/en/index.html:29(script)
+#: doc/reference/en/Packnga/ReferenceTask.html:29(script)
+#: doc/reference/en/Packnga/DocumentTask.html:29(script)
+#: doc/reference/en/top-level-namespace.html:29(script)
+#: doc/reference/en/_index.html:27(script)
+#: doc/reference/en/file.README.html:29(script)
+msgid "if (window.top.frames.main) document.body.className = 'frames';"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:36(a)
+msgid "Index (P)"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:42(span)
+#: doc/reference/en/file.news.html:40(span)
+#: doc/reference/en/index.html:40(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:42(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:258(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:261(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+#: doc/reference/en/Packnga/DocumentTask.html:42(span)
+#: doc/reference/en/Packnga/DocumentTask.html:314(span)
+#: doc/reference/en/Packnga/DocumentTask.html:324(span)
+#: doc/reference/en/Packnga/DocumentTask.html:393(span)
+#: doc/reference/en/Packnga/DocumentTask.html:488(span)
+#: doc/reference/en/Packnga/DocumentTask.html:490(span)
+#: doc/reference/en/top-level-namespace.html:42(span)
+#: doc/reference/en/_index.html:38(span)
+#: doc/reference/en/file.README.html:40(span)
+msgid "("
+msgstr ""
+
+#: doc/reference/en/Packnga.html:42(a) doc/reference/en/file.news.html:40(a)
+#: doc/reference/en/index.html:40(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:42(a)
+#: doc/reference/en/Packnga/DocumentTask.html:42(a)
+#: doc/reference/en/top-level-namespace.html:42(a)
+#: doc/reference/en/_index.html:38(a) doc/reference/en/file.README.html:40(a)
+msgid "no frames"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:42(span)
+#: doc/reference/en/file.news.html:40(span)
+#: doc/reference/en/index.html:40(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:42(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:258(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:261(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+#: doc/reference/en/Packnga/DocumentTask.html:42(span)
+#: doc/reference/en/Packnga/DocumentTask.html:314(span)
+#: doc/reference/en/Packnga/DocumentTask.html:324(span)
+#: doc/reference/en/Packnga/DocumentTask.html:393(span)
+#: doc/reference/en/Packnga/DocumentTask.html:488(span)
+#: doc/reference/en/Packnga/DocumentTask.html:490(span)
+#: doc/reference/en/top-level-namespace.html:42(span)
+#: doc/reference/en/_index.html:38(span)
+#: doc/reference/en/file.README.html:40(span)
+msgid ")"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:49(a) doc/reference/en/file.news.html:47(a)
+#: doc/reference/en/index.html:47(a) doc/reference/en/method_list.html:28(h1)
+#: doc/reference/en/Packnga/ReferenceTask.html:49(a)
+#: doc/reference/en/Packnga/DocumentTask.html:49(a)
+#: doc/reference/en/top-level-namespace.html:49(a)
+#: doc/reference/en/_index.html:45(a) doc/reference/en/file.README.html:47(a)
+msgid "Method List"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:51(a) doc/reference/en/file.news.html:49(a)
+#: doc/reference/en/index.html:49(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:51(a)
+#: doc/reference/en/Packnga/DocumentTask.html:51(a)
+#: doc/reference/en/top-level-namespace.html:51(a)
+#: doc/reference/en/_index.html:47(a) doc/reference/en/file_list.html:28(h1)
+#: doc/reference/en/file.README.html:49(a)
+msgid "File List"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:59(h1)
+msgid "Module: Packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:74(dt)
+#: doc/reference/en/Packnga/ReferenceTask.html:93(dt)
+#: doc/reference/en/Packnga/DocumentTask.html:89(dt)
+msgid "Defined in:"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:75(span)
+msgid ",<br/> lib/packnga/document-task.rb,<br/> lib/packnga/reference-task.rb"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:75(dd)
+msgid "lib/packnga/version.rb<placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:82(h2)
+msgid "Overview"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:84(p)
+msgid "Copyright (C) 2011 yoshihara haruka"
+msgstr ""
+
+#: doc/reference/en/Packnga.html:83(div)
+msgid ""
+"<placeholder-1/>@clear-code.com&gt; This library is free software; you can "
+"redistribute it and/or modify it under the terms of the GNU Lesser General "
+"Public License version 2.1 as published by the Free Software Foundation. "
+"This library is distributed in the hope that it will be useful, but WITHOUT "
+"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
+"FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License "
+"for more details. You should have received a copy of the GNU Lesser General "
+"Public License along with this library; if not, write to the Free Software "
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA "
+"Defined Under Namespace Classes: DocumentTask, ReferenceTask Constant "
+"Summary VERSION = 1.0.0"
+msgstr ""
+
+#: doc/reference/en/file.news.html:6(title)
+msgid "File: news &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/file.news.html:36(a) doc/reference/en/index.html:36(a)
+#: doc/reference/en/top-level-namespace.html:36(a)
+#: doc/reference/en/file.README.html:36(a)
+msgid "Index"
+msgstr ""
+
+#: doc/reference/en/file.news.html:37(span)
+msgid "File: news"
+msgstr ""
+
+#: doc/reference/en/file.news.html:57(span)
+msgid "NEWS"
+msgstr ""
+
+#: doc/reference/en/file.news.html:58(h2)
+msgid "1.0.0: 2011-08-11"
+msgstr ""
+
+#: doc/reference/en/file.news.html:59(h3)
+msgid "Improvements"
+msgstr ""
+
+#: doc/reference/en/file.news.html:61(li)
+#: doc/reference/en/file.news.html:65(li)
+#: doc/reference/en/file.news.html:69(li)
+#: doc/reference/en/file.news.html:73(li)
+msgid "…"
+msgstr ""
+
+#: doc/reference/en/file.news.html:63(h3)
+msgid "Changes"
+msgstr ""
+
+#: doc/reference/en/file.news.html:67(h3)
+msgid "Fixes"
+msgstr ""
+
+#: doc/reference/en/file.news.html:71(h3) doc/reference/en/index.html:76(h2)
+#: doc/reference/en/file.README.html:76(h2)
+msgid "Thanks"
+msgstr ""
+
+#: doc/reference/en/index.html:6(title)
+#: doc/reference/en/file.README.html:6(title)
+msgid "File: README &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/index.html:37(span)
+#: doc/reference/en/file.README.html:37(span)
+msgid "File: README"
+msgstr ""
+
+#: doc/reference/en/index.html:57(span) doc/reference/en/_index.html:63(a)
+#: doc/reference/en/file_list.html:43(a)
+#: doc/reference/en/file.README.html:57(span)
+msgid "README"
+msgstr ""
+
+#: doc/reference/en/index.html:58(h2) doc/reference/en/file.README.html:58(h2)
+msgid "Name"
+msgstr ""
+
+#: doc/reference/en/index.html:60(h2) doc/reference/en/file.README.html:60(h2)
+msgid "Description"
+msgstr ""
+
+#: doc/reference/en/index.html:61(p) doc/reference/en/file.README.html:61(p)
+msgid "An utility library to package i18n-ed library."
+msgstr ""
+
+#: doc/reference/en/index.html:62(span)
+#: doc/reference/en/file.README.html:62(span)
+msgid "YARD"
+msgstr ""
+
+#: doc/reference/en/index.html:62(p) doc/reference/en/file.README.html:62(p)
+msgid ""
+"Packnga is an library to translate to many languages by <placeholder-1/>."
+msgstr ""
+
+#: doc/reference/en/index.html:63(h2) doc/reference/en/file.README.html:63(h2)
+msgid "Authors"
+msgstr ""
+
+#: doc/reference/en/index.html:65(li) doc/reference/en/file.README.html:65(li)
+msgid "yoshihara haruka &lt;yoshihara@clear-code.com&gt;"
+msgstr ""
+
+#: doc/reference/en/index.html:66(li) doc/reference/en/file.README.html:66(li)
+msgid "Kouhei Sutou &lt;kou@clear-code.com&gt;"
+msgstr ""
+
+#: doc/reference/en/index.html:68(h2) doc/reference/en/file.README.html:68(h2)
+msgid "License"
+msgstr ""
+
+#: doc/reference/en/index.html:69(span)
+#: doc/reference/en/file.README.html:69(span)
+msgid "LGPL"
+msgstr ""
+
+#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
+msgid "<placeholder-1/> 2.1. See license/<placeholder-2/> for details."
+msgstr ""
+
+#: doc/reference/en/index.html:70(p) doc/reference/en/file.README.html:70(p)
+msgid ""
+"(Kouhei Sutou has a right to change the license including contributed "
+"patches.)"
+msgstr ""
+
+#: doc/reference/en/index.html:72(h2) doc/reference/en/file.README.html:72(h2)
+msgid "Dependencies"
+msgstr ""
+
+#: doc/reference/en/index.html:73(h2) doc/reference/en/file.README.html:73(h2)
+msgid "Install"
+msgstr ""
+
+#: doc/reference/en/index.html:74(h2) doc/reference/en/file.README.html:74(h2)
+msgid "Documents"
+msgstr ""
+
+#: doc/reference/en/index.html:75(h2) doc/reference/en/file.README.html:75(h2)
+msgid "Mailing list"
+msgstr ""
+
+#: doc/reference/en/method_list.html:44(a)
+msgid "#define_tasks"
+msgstr ""
+
+#: doc/reference/en/method_list.html:46(small)
+#: doc/reference/en/method_list.html:54(small)
+#: doc/reference/en/method_list.html:78(small)
+#: doc/reference/en/Packnga/ReferenceTask.html:74(li)
+#: doc/reference/en/Packnga/ReferenceTask.html:227(a)
+msgid "Packnga::ReferenceTask"
+msgstr ""
+
+#: doc/reference/en/method_list.html:52(a)
+#: doc/reference/en/method_list.html:60(a)
+msgid "#initialize"
+msgstr ""
+
+#: doc/reference/en/method_list.html:62(small)
+#: doc/reference/en/method_list.html:70(small)
+#: doc/reference/en/method_list.html:86(small)
+#: doc/reference/en/method_list.html:94(small)
+#: doc/reference/en/Packnga/DocumentTask.html:74(li)
+#: doc/reference/en/Packnga/DocumentTask.html:276(a)
+msgid "Packnga::DocumentTask"
+msgstr ""
+
+#: doc/reference/en/method_list.html:68(a)
+msgid "#readme"
+msgstr ""
+
+#: doc/reference/en/method_list.html:76(a)
+msgid "#set_default_values"
+msgstr ""
+
+#: doc/reference/en/method_list.html:84(a)
+msgid "#text_files"
+msgstr ""
+
+#: doc/reference/en/method_list.html:92(a)
+msgid "#yard"
+msgstr ""
+
+#: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
+#: doc/reference/en/_index.html:55(h1)
+msgid "packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:6(title)
+msgid "Class: Packnga::ReferenceTask &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:17(script)
+#: doc/reference/en/Packnga/DocumentTask.html:17(script)
+msgid "relpath = '..'; if (relpath != '') relpath += '/';"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:36(a)
+msgid "Index (R)"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:59(h1)
+msgid "Class: Packnga::ReferenceTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:67(dt)
+#: doc/reference/en/Packnga/DocumentTask.html:67(dt)
+msgid "Inherits:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:69(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:72(li)
+#: doc/reference/en/Packnga/ReferenceTask.html:280(tt)
+#: doc/reference/en/Packnga/ReferenceTask.html:342(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:69(span)
+#: doc/reference/en/Packnga/DocumentTask.html:72(li)
+#: doc/reference/en/Packnga/DocumentTask.html:344(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:407(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:442(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:470(tt)
+msgid "Object"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:77(a)
+#: doc/reference/en/Packnga/DocumentTask.html:77(a)
+msgid "show all"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:86(dt)
+msgid "Includes:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:87(dd)
+msgid "Rake::DSL"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:94(dd)
+msgid "lib/packnga/reference-task.rb"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:109(a)
+#: doc/reference/en/Packnga/DocumentTask.html:97(a)
+#: doc/reference/en/Packnga/DocumentTask.html:159(a)
+msgid "collapse"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:109(small)
+#: doc/reference/en/Packnga/ReferenceTask.html:212(span)
+#: doc/reference/en/Packnga/DocumentTask.html:97(small)
+#: doc/reference/en/Packnga/DocumentTask.html:159(small)
+#: doc/reference/en/Packnga/DocumentTask.html:261(span)
+msgid "(<placeholder-1/>)"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:107(h2)
+#: doc/reference/en/Packnga/DocumentTask.html:157(h2)
+msgid "Instance Method Summary <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:117(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:263(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:280(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:314(span)
+#: doc/reference/en/Packnga/DocumentTask.html:326(span)
+msgid "define_tasks"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:117(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:164(a)
+#: doc/reference/en/Packnga/DocumentTask.html:103(a)
+#: doc/reference/en/Packnga/DocumentTask.html:130(a)
+#: doc/reference/en/Packnga/DocumentTask.html:193(a)
+msgid "- (Object) <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:138(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:192(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:258(span)
+#: doc/reference/en/Packnga/DocumentTask.html:167(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:241(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:314(span)
+msgid "initialize"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:138(a)
+msgid "- (ReferenceTask) <placeholder-1/>(spec) {|_self| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:144(span)
+#: doc/reference/en/Packnga/DocumentTask.html:173(span)
+msgid "constructor"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:153(p)
+msgid "A new instance of ReferenceTask."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:164(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:262(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:342(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:359(span)
+#: doc/reference/en/Packnga/DocumentTask.html:325(span)
+#: doc/reference/en/Packnga/DocumentTask.html:489(span)
+msgid "set_default_values"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:187(h2)
+#: doc/reference/en/Packnga/DocumentTask.html:236(h2)
+msgid "Constructor Details"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:190(p)
+#: doc/reference/en/Packnga/DocumentTask.html:239(p)
+msgid ""
+"- (<tt><span class=\"object_link\"><placeholder-1/></span></tt>) "
+"<placeholder-2/>(spec) {|_self| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:198(p)
+msgid "A new instance of ReferenceTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:206(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:255(h3)
+msgid "Yields:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:212(tt)
+#: doc/reference/en/Packnga/ReferenceTask.html:224(span)
+#: doc/reference/en/Packnga/DocumentTask.html:261(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:273(span)
+msgid "_self"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:219(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:268(h3)
+msgid "Yield Parameters:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:227(span)
+#: doc/reference/en/Packnga/DocumentTask.html:276(span)
+msgid "(<tt><span class=\"object_link\"><placeholder-1/></span></tt>)"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:232(p)
+#: doc/reference/en/Packnga/DocumentTask.html:281(p)
+msgid "the object that the method was called on"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:244(pre)
+msgid "21 22 23 24 25 26 27"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:256(span)
+msgid "# File 'lib/packnga/reference-task.rb', line 21"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:258(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:314(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:359(span)
+#: doc/reference/en/Packnga/DocumentTask.html:314(span)
+#: doc/reference/en/Packnga/DocumentTask.html:393(span)
+#: doc/reference/en/Packnga/DocumentTask.html:424(span)
+#: doc/reference/en/Packnga/DocumentTask.html:459(span)
+#: doc/reference/en/Packnga/DocumentTask.html:488(span)
+msgid "def"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:258(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:259(span)
+#: doc/reference/en/Packnga/DocumentTask.html:314(span)
+#: doc/reference/en/Packnga/DocumentTask.html:315(span)
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+msgid "spec"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:259(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/DocumentTask.html:315(span)
+msgid "@spec"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:259(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:260(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:317(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:321(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:360(span)
+#: doc/reference/en/Packnga/DocumentTask.html:315(span)
+#: doc/reference/en/Packnga/DocumentTask.html:316(span)
+#: doc/reference/en/Packnga/DocumentTask.html:317(span)
+#: doc/reference/en/Packnga/DocumentTask.html:318(span)
+#: doc/reference/en/Packnga/DocumentTask.html:319(span)
+#: doc/reference/en/Packnga/DocumentTask.html:320(span)
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+#: doc/reference/en/Packnga/DocumentTask.html:394(span)
+msgid "="
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:260(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:360(span)
+msgid "@doc_en_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:260(span)
+#: doc/reference/en/Packnga/DocumentTask.html:317(span)
+#: doc/reference/en/Packnga/DocumentTask.html:318(span)
+#: doc/reference/en/Packnga/DocumentTask.html:319(span)
+#: doc/reference/en/Packnga/DocumentTask.html:320(span)
+msgid "nil"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:261(span)
+#: doc/reference/en/Packnga/DocumentTask.html:324(span)
+msgid "yield"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:261(span)
+#: doc/reference/en/Packnga/DocumentTask.html:324(span)
+msgid "self"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:264(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:326(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:330(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:331(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:332(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:333(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:361(span)
+#: doc/reference/en/Packnga/DocumentTask.html:323(span)
+#: doc/reference/en/Packnga/DocumentTask.html:327(span)
+#: doc/reference/en/Packnga/DocumentTask.html:395(span)
+#: doc/reference/en/Packnga/DocumentTask.html:426(span)
+#: doc/reference/en/Packnga/DocumentTask.html:461(span)
+#: doc/reference/en/Packnga/DocumentTask.html:491(span)
+msgid "end"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:274(h2)
+#: doc/reference/en/Packnga/DocumentTask.html:436(h2)
+msgid "Instance Method Details"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:278(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:340(p)
+#: doc/reference/en/Packnga/DocumentTask.html:405(p)
+#: doc/reference/en/Packnga/DocumentTask.html:440(p)
+msgid "- (<placeholder-1/>) <placeholder-2/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:287(pre)
+msgid "33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:312(span)
+msgid "# File 'lib/packnga/reference-task.rb', line 33"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:315(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:316(span)
+msgid "namespace"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:315(span)
+msgid ":reference"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:315(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:316(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:329(span)
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+msgid "do"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:316(span)
+msgid ":pot"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:317(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+msgid "translate_languages"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:317(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+#: doc/reference/en/Packnga/DocumentTask.html:460(span)
+msgid "["
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:317(span)
+msgid ":ja"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:317(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+#: doc/reference/en/Packnga/DocumentTask.html:460(span)
+msgid "]"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+msgid "supported_languages"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+msgid ":en"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid ","
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:318(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid "*"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid "html_files"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "FileList"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+msgid "+"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:321(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:328(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:360(span)
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "\""
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+msgid "**/*.html"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+msgid "to_s"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:319(span)
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "to_a"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:321(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:323(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+msgid "po_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:321(span)
+msgid "doc/po"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:329(span)
+msgid "pot_file"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+msgid "#{"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+msgid "}"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/DocumentTask.html:322(span)
+msgid "/"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid "name"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:322(span)
+msgid ".pot"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:323(span)
+msgid "directory"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+#: doc/reference/en/Packnga/DocumentTask.html:322(span)
+msgid "file"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:329(span)
+msgid "=&gt;"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:329(span)
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+msgid "|"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:324(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:329(span)
+msgid "t"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid "sh"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid "xml2po"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid "--keep-entities"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:325(span)
+msgid "--output"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:328(span)
+msgid "desc"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:328(span)
+msgid "Generates pot file."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:329(span)
+msgid "task"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:329(span)
+msgid ":generate"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:349(pre)
+msgid "29 30 31"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:357(span)
+msgid "# File 'lib/packnga/reference-task.rb', line 29"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:360(span)
+msgid "doc/reference/en"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:6(title)
+msgid "Class: Packnga::DocumentTask &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:36(a)
+msgid "Index (D)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:59(h1)
+msgid "Class: Packnga::DocumentTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:90(dd)
+msgid "lib/packnga/document-task.rb"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:97(h2)
+msgid "Instance Attribute Summary <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:103(strong)
+msgid "base_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:111(span)
+msgid "writeonly"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:119(p)
+msgid "Sets the attribute base_dir."
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:130(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:407(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:424(span)
+msgid "readme"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:167(a)
+msgid "- (DocumentTask) <placeholder-1/>(spec) {|_self| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:182(p)
+msgid "A new instance of DocumentTask."
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:193(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:442(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:459(span)
+msgid "text_files"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:214(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:470(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:488(span)
+msgid "yard"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:214(a)
+msgid "- (Object) <placeholder-1/>(&amp;block)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:247(p)
+msgid "A new instance of DocumentTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:293(pre)
+msgid "23 24 25 26 27 28 29 30 31 32 33 34 35 36"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:312(span)
+msgid "# File 'lib/packnga/document-task.rb', line 23"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:316(span)
+msgid "@yardoc_task_defined"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:316(span)
+msgid "false"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:317(span)
+msgid "@yardoc_task"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:318(span)
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "@readme"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:319(span)
+#: doc/reference/en/Packnga/DocumentTask.html:460(span)
+msgid "@text_files"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:320(span)
+#: doc/reference/en/Packnga/DocumentTask.html:394(span)
+msgid "@base_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+msgid "@files"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+msgid "files"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:321(span)
+msgid "find_all"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:322(span)
+msgid "\\.rb\\z"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:322(span)
+msgid "=~"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:336(h2)
+msgid "Instance Attribute Details"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:344(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:393(span)
+msgid "base_dir="
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:344(span)
+msgid "(writeonly)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:342(p)
+msgid "- (<placeholder-1/>) <placeholder-2/>(value) <placeholder-3/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:350(p)
+msgid "Sets the attribute base_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:358(h3)
+msgid "Parameters:"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:363(span)
+#: doc/reference/en/Packnga/DocumentTask.html:393(span)
+#: doc/reference/en/Packnga/DocumentTask.html:394(span)
+msgid "value"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:371(p)
+msgid "the value to set the attribute base_dir to."
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:383(pre)
+msgid "22 23 24"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:391(span)
+msgid "# File 'lib/packnga/document-task.rb', line 22"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:414(pre)
+msgid "38 39 40"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:422(span)
+msgid "# File 'lib/packnga/document-task.rb', line 38"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "||"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "Rake"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "::"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "README*"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:425(span)
+msgid "first"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:449(pre)
+msgid "42 43 44"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:457(span)
+msgid "# File 'lib/packnga/document-task.rb', line 42"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:460(span)
+msgid "||="
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:468(p)
+msgid "- (<placeholder-1/>) <placeholder-2/>(&amp;block)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:477(pre)
+msgid "46 47 48 49"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:486(span)
+msgid "# File 'lib/packnga/document-task.rb', line 46"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:488(span)
+#: doc/reference/en/Packnga/DocumentTask.html:490(span)
+msgid "&amp;"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:488(span)
+#: doc/reference/en/Packnga/DocumentTask.html:490(span)
+msgid "block"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:490(span)
+msgid "define_yardoc_task"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:6(title)
+msgid "Top Level Namespace &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:77(h2)
+msgid "Defined Under Namespace"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:81(strong)
+msgid "Modules:"
+msgstr ""
+
+#: doc/reference/en/_index.html:57(h1)
+msgid "Alphabetic Index"
+msgstr ""
+
+#: doc/reference/en/_index.html:59(h2)
+msgid "File Listing"
+msgstr ""
+
+#: doc/reference/en/_index.html:66(a) doc/reference/en/file_list.html:46(a)
+msgid "news"
+msgstr ""
+
+#: doc/reference/en/_index.html:72(h2)
+msgid "Namespace Listing A-Z"
+msgstr ""
+
+#: doc/reference/en/_index.html:83(li)
+msgid "D"
+msgstr ""
+
+#: doc/reference/en/_index.html:89(small)
+#: doc/reference/en/_index.html:117(small)
+msgid "(Packnga)"
+msgstr ""
+
+#: doc/reference/en/_index.html:98(li)
+msgid "P"
+msgstr ""
+
+#: doc/reference/en/_index.html:111(li)
+msgid "R"
+msgstr ""
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: doc/reference/en/file.README.html:0(None)
+msgid "translator-credits"
+msgstr ""

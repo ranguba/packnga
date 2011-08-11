@@ -37,13 +37,14 @@ module Packnga
 
     def define_tasks
       namespace :reference do
-        namespace :pot do
-          translate_languages = [:ja]
-          supported_languages = [:en, *translate_languages]
-          html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
+        translate_languages = [:ja]
+        supported_languages = [:en, *translate_languages]
+        html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
 
-          po_dir = "doc/po"
-          pot_file = "#{po_dir}/#{@spec.name}.pot"
+        po_dir = "doc/po"
+        pot_file = "#{po_dir}/#{@spec.name}.pot"
+
+        namespace :pot do
           directory po_dir
           file pot_file => [po_dir, *html_files] do |t|
             sh("xml2po", "--keep-entities", "--output", t.name, *html_files)
@@ -51,6 +52,30 @@ module Packnga
 
           desc "Generates pot file."
           task :generate => pot_file do |t|
+          end
+        end
+
+        namespace :po do
+          translate_languages.each do |language|
+            namespace language do
+              po_file = "#{po_dir}/#{language}.po"
+
+              if File.exist?(po_file)
+                file po_file => html_files do |t|
+                  sh("xml2po", "--keep-entities", "--update", t.name, *html_files)
+                end
+              else
+                file po_file => pot_file do |t|
+                  sh("msginit",
+                     "--input=#{pot_file}",
+                     "--output=#{t.name}",
+                     "--locale=#{language}")
+                end
+              end
+
+              desc "Updates po file for #{language}."
+              task :update => po_file
+            end
           end
         end
       end
