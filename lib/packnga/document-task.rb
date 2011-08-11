@@ -23,11 +23,10 @@ module Packnga
   class DocumentTask
     include Rake::DSL
 
-    attr_writer :base_dir
     def initialize(spec)
       @spec = spec
       @yard_task = YARDTask.new(@spec)
-      @base_dir = Pathname.new("doc")
+      self.base_dir = "doc"
       if block_given?
         yield(self)
         define
@@ -39,13 +38,17 @@ module Packnga
       define_tasks
     end
 
+    def base_dir=(dir)
+      dir = Pathname.new(dir)
+      @yard_task.base_dir = dir
+    end
+
     def yard
       yield(@yard_task)
     end
 
     private
     def set_default_values
-      @yard_task.base_dir ||= @base_dir
     end
 
     def define_tasks
