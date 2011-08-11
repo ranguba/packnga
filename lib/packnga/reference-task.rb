@@ -22,6 +22,10 @@ module Packnga
     def initialize(spec)
       @spec = spec
       @base_dir = nil
+      @translate_languages = nil
+      @html_files = nil
+      @po_dir = nil
+      @pot_file = nil
       yield(self)
       set_default_values
       define_tasks
@@ -29,6 +33,12 @@ module Packnga
 
     def set_default_values
       @base_dir ||= Pathname.new("doc")
+      @translate_languages ||= [:ja]
+      @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
+
+      @po_dir = "doc/po"
+      @pot_file = "#{@po_dir}/#{@spec.name}.pot"
+
     end
 
     def doc_en_dir
@@ -37,54 +47,54 @@ module Packnga
 
     def define_tasks
       namespace :reference do
-        translate_languages = [:ja]
-        supported_languages = [:en, *translate_languages]
-        html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
+        define_pot_tasks
+        define_po_tasks
+      end
+    end
 
-        po_dir = "doc/po"
-        pot_file = "#{po_dir}/#{@spec.name}.pot"
+    def define_pot_tasks
+      namespace :pot do
+        directory @po_dir
+        file @pot_file => [@po_dir, *@html_files] do |t|
+          sh("xml2po", "--keep-entities", "--output", t.name, *@html_files)
+        end
 
-        namespace :pot do
-          directory po_dir
-          file pot_file => [po_dir, *html_files] do |t|
-            sh("xml2po", "--keep-entities", "--output", t.name, *html_files)
-          end
+        desc "Generates pot file."
+        task :generate => @pot_file do |t|
+        end
+      end
+    end
 
-          desc "Generates pot file."
-          task :generate => pot_file do |t|
+    def define_po_tasks
+      namespace :po do
+        @translate_languages.each do |language|
+          namespace language do
+            po_file = "#{@po_dir}/#{language}.po"
+
+            if File.exist?(po_file)
+              file po_file => @html_files do |t|
+                sh("xml2po", "--keep-entities", "--update", t.name, *@html_files)
+              end
+            else
+              file po_file => @pot_file do |t|
+                sh("msginit",
+                   "--input=#{@pot_file}",
+                   "--output=#{t.name}",
+                   "--locale=#{language}")
+              end
+            end
+
+            desc "Updates po file for #{language}."
+            task :update => po_file
           end
         end
 
-        namespace :po do
-          translate_languages.each do |language|
-            namespace language do
-              po_file = "#{po_dir}/#{language}.po"
-
-              if File.exist?(po_file)
-                file po_file => html_files do |t|
-                  sh("xml2po", "--keep-entities", "--update", t.name, *html_files)
-                end
-              else
-                file po_file => pot_file do |t|
-                  sh("msginit",
-                     "--input=#{pot_file}",
-                     "--output=#{t.name}",
-                     "--locale=#{language}")
-                end
-              end
-
-              desc "Updates po file for #{language}."
-              task :update => po_file
-            end
-          end
-
-          desc "Updates po files."
-          task :update do
-            ruby($0, "clobber")
-            ruby($0, "yard")
-            translate_languages.each do |language|
-              ruby($0, "reference:po:#{language}:update")
-            end
+        desc "Updates po files."
+        task :update do
+          ruby($0, "clobber")
+          ruby($0, "yard")
+          @translate_languages.each do |language|
+            ruby($0, "reference:po:#{language}:update")
           end
         end
       end
