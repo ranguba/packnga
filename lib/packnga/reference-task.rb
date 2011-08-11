@@ -18,11 +18,21 @@
 module Packnga
   class ReferenceTask
     include Rake::DSL
-
+    attr_writer :base_dir
     def initialize(spec)
       @spec = spec
-      @doc_en_dir = Pathname.new("doc/reference/en")
+      @base_dir = nil
+      yield(self)
+      set_default_values
       define_tasks
+    end
+
+    def set_default_values
+      @base_dir ||= "doc"
+    end
+
+    def doc_en_dir
+      @base_dir + "reference/en"
     end
 
     def define_tasks
@@ -30,7 +40,7 @@ module Packnga
         namespace :pot do
           translate_languages = [:ja]
           supported_languages = [:en, *translate_languages]
-          html_files = FileList[(@doc_en_dir + "**/*.html").to_s].to_a
+          html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
 
           po_dir = "doc/po"
           pot_file = "#{po_dir}/#{@spec.name}.pot"
