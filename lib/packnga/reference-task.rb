@@ -28,7 +28,7 @@ module Packnga
     end
 
     def set_default_values
-      @base_dir ||= "doc"
+      @base_dir ||= Pathname.new("doc")
     end
 
     def doc_en_dir
