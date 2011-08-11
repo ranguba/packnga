@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-11 14:08+0900\n"
-"PO-Revision-Date: 2011-08-11 14:09+0900\n"
-"Last-Translator: Yoshihara Haruka <yue@lenontu.clear-code.local>\n"
+"POT-Creation-Date: 2011-08-11 15:32+0900\n"
+"PO-Revision-Date: 2011-08-11 15:45+0900\n"
+"Last-Translator: Yoshihara Haruka <yoshihara@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -250,43 +250,50 @@ msgstr ""
 #: doc/reference/en/top-level-namespace.html:36(a)
 #: doc/reference/en/file.README.html:36(a)
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: doc/reference/en/file.news.html:37(span)
 msgid "File: news"
+msgstr "ファイル：お知らせ"
+
+#: doc/reference/en/file.news.html:57(p)
+msgid "fd804be27425fa6a8b8c5966c0bb5395b83c167a"
 msgstr ""
 
-#: doc/reference/en/file.news.html:57(span)
+#: doc/reference/en/file.news.html:58(span)
 msgid "NEWS"
 msgstr ""
 
-#: doc/reference/en/file.news.html:58(h2)
+#: doc/reference/en/file.news.html:59(h2)
 msgid "1.0.0: 2011-08-11"
 msgstr ""
 
-#: doc/reference/en/file.news.html:59(h3)
+#: doc/reference/en/file.news.html:60(h3)
 msgid "Improvements"
-msgstr ""
+msgstr "改良"
 
-#: doc/reference/en/file.news.html:61(li)
+#: doc/reference/en/file.news.html:62(li)
+msgid "added DocumentTask for task of yard."
+msgstr "yardタスクを作成するためのDocumentTaskクラスを作成。"
+
+#: doc/reference/en/file.news.html:63(li)
+#, fuzzy
+msgid ""
+"added ReferenceTask. (only created function to define tasks for generate or "
+"update .po/.pot files.)"
+msgstr ""
+"ReferenceTaskクラスを作成。（.poファイルや.potファイルを生成・更新するタスク"
+"を作成する機能のみ作成）"
+
 #: doc/reference/en/file.news.html:65(li)
-#: doc/reference/en/file.news.html:69(li)
-#: doc/reference/en/file.news.html:73(li)
-msgid "…"
+msgid "added *Tasks#base_dir to set default value for base_dir."
 msgstr ""
+"作成したクラスにドキュメントのベースディレクトリを指定するbase_dirメソッドを"
+"追加。"
 
-#: doc/reference/en/file.news.html:63(h3)
-msgid "Changes"
-msgstr ""
-
-#: doc/reference/en/file.news.html:67(h3)
-msgid "Fixes"
-msgstr ""
-
-#: doc/reference/en/file.news.html:71(h3) doc/reference/en/index.html:76(h2)
-#: doc/reference/en/file.README.html:76(h2)
-msgid "Thanks"
-msgstr ""
+#: doc/reference/en/file.news.html:66(li)
+msgid "other tasks were created in Rakefile."
+msgstr "その他のタスクに関してはRakefileに作成。"
 
 #: doc/reference/en/index.html:6(title)
 #: doc/reference/en/file.README.html:6(title)
@@ -296,25 +303,25 @@ msgstr ""
 #: doc/reference/en/index.html:37(span)
 #: doc/reference/en/file.README.html:37(span)
 msgid "File: README"
-msgstr ""
+msgstr "ファイル：はじめに"
 
 #: doc/reference/en/index.html:57(span) doc/reference/en/_index.html:63(a)
 #: doc/reference/en/file_list.html:43(a)
 #: doc/reference/en/file.README.html:57(span)
 msgid "README"
-msgstr ""
+msgstr "はじめに"
 
 #: doc/reference/en/index.html:58(h2) doc/reference/en/file.README.html:58(h2)
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: doc/reference/en/index.html:60(h2) doc/reference/en/file.README.html:60(h2)
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: doc/reference/en/index.html:61(p) doc/reference/en/file.README.html:61(p)
 msgid "An utility library to package i18n-ed library."
-msgstr ""
+msgstr "複数言語化したライブラリを作成するためのユーティリティを集めたライブラリです。"
 
 #: doc/reference/en/index.html:62(span)
 #: doc/reference/en/file.README.html:62(span)
@@ -324,11 +331,11 @@ msgstr ""
 #: doc/reference/en/index.html:62(p) doc/reference/en/file.README.html:62(p)
 msgid ""
 "Packnga is an library to translate to many languages by <placeholder-1/>."
-msgstr ""
+msgstr "PackngaはYARDを用いてライブラリを多言語に翻訳します。"
 
 #: doc/reference/en/index.html:63(h2) doc/reference/en/file.README.html:63(h2)
 msgid "Authors"
-msgstr ""
+msgstr "作者"
 
 #: doc/reference/en/index.html:65(li) doc/reference/en/file.README.html:65(li)
 msgid "yoshihara haruka &lt;yoshihara@clear-code.com&gt;"
@@ -340,7 +347,7 @@ msgstr ""
 
 #: doc/reference/en/index.html:68(h2) doc/reference/en/file.README.html:68(h2)
 msgid "License"
-msgstr ""
+msgstr "ライセンス"
 
 #: doc/reference/en/index.html:69(span)
 #: doc/reference/en/file.README.html:69(span)
@@ -349,29 +356,54 @@ msgstr ""
 
 #: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
 msgid "<placeholder-1/> 2.1. See license/<placeholder-2/> for details."
-msgstr ""
+msgstr "LGPL 2.1です。詳しくはlicense/LGPLを見てください。"
 
 #: doc/reference/en/index.html:70(p) doc/reference/en/file.README.html:70(p)
 msgid ""
 "(Kouhei Sutou has a right to change the license including contributed "
 "patches.)"
-msgstr ""
+msgstr "（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する権利を持ちます。）"
 
 #: doc/reference/en/index.html:72(h2) doc/reference/en/file.README.html:72(h2)
 msgid "Dependencies"
+msgstr "依存ソフトウェア"
+
+#: doc/reference/en/index.html:74(li) doc/reference/en/file.README.html:74(li)
+msgid "Ruby &gt;= 1.8 (including 1.9.2)"
 msgstr ""
 
-#: doc/reference/en/index.html:73(h2) doc/reference/en/file.README.html:73(h2)
+#: doc/reference/en/index.html:76(h2) doc/reference/en/file.README.html:76(h2)
 msgid "Install"
+msgstr "インストール"
+
+#: doc/reference/en/index.html:77(pre)
+#: doc/reference/en/file.README.html:77(pre)
+msgid "% sudo gem install packnga"
 msgstr ""
 
-#: doc/reference/en/index.html:74(h2) doc/reference/en/file.README.html:74(h2)
+#: doc/reference/en/index.html:79(h2) doc/reference/en/file.README.html:79(h2)
 msgid "Documents"
-msgstr ""
+msgstr "ドキュメント"
 
-#: doc/reference/en/index.html:75(h2) doc/reference/en/file.README.html:75(h2)
+#: doc/reference/en/index.html:81(a) doc/reference/en/file.README.html:81(a)
+msgid "Reference manual in English"
+msgstr "リファレンスマニュアル（英語）"
+
+#: doc/reference/en/index.html:82(a) doc/reference/en/file.README.html:82(a)
+msgid "Reference manual in Japanese"
+msgstr "リファレンスマニュアル（日本語）"
+
+#: doc/reference/en/index.html:84(h2) doc/reference/en/file.README.html:84(h2)
 msgid "Mailing list"
-msgstr ""
+msgstr "メーリングリスト"
+
+#: doc/reference/en/index.html:86(li) doc/reference/en/file.README.html:86(li)
+msgid "comming soon…"
+msgstr "準備中です。"
+
+#: doc/reference/en/index.html:88(h2) doc/reference/en/file.README.html:88(h2)
+msgid "Thanks"
+msgstr "感謝"
 
 #: doc/reference/en/method_list.html:44(a)
 msgid "#define_tasks"
@@ -1455,3 +1487,6 @@ msgstr ""
 #: doc/reference/en/file.README.html:0(None)
 msgid "translator-credits"
 msgstr ""
+
+#~ msgid "added ReferenceTask."
+#~ msgstr "ReferenceTaskクラスを作成。"
