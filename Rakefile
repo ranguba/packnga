@@ -141,10 +141,6 @@ namespace :reference do
   po_dir = "doc/po"
   pot_file = "#{po_dir}/#{spec.name}.pot"
 
-  namespace :po do
-
-  end
-
   namespace :translate do
     translate_languages.each do |language|
       po_file = "#{po_dir}/#{language}.po"
