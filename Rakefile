@@ -23,7 +23,6 @@ require 'erb'
 require 'rubygems'
 require 'rubygems/package_task'
 require "rake/clean"
-require 'yard'
 require 'jeweler'
 
 base_dir = File.join(File.dirname(__FILE__))
@@ -79,8 +78,6 @@ html_base_dir = Pathname.new("doc/html")
 html_reference_dir = html_base_dir + spec.name
 
 Packnga::DocumentTask.new(spec) do |task|
-  task.yard do |yard_task|
-  end
 end
 
 Packnga::ReferenceTask.new(spec) do |task|
