@@ -143,14 +143,6 @@ namespace :reference do
 
   namespace :po do
 
-    desc "Updates po files."
-    task :update do
-      ruby($0, "clobber")
-      ruby($0, "yard")
-      translate_languages.each do |language|
-        ruby($0, "reference:po:#{language}:update")
-      end
-    end
   end
 
   namespace :translate do
