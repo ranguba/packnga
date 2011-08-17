@@ -24,6 +24,7 @@ module Packnga
       @spec = spec
       @base_dir = nil
       @translate_languages = nil
+      @supported_languages = nil
       @html_files = nil
       @po_dir = nil
       @pot_file = nil
@@ -35,6 +36,7 @@ module Packnga
     def set_default_values
       @base_dir ||= Pathname.new("doc")
       @translate_languages ||= [:ja]
+      @supported_languages = [:en, *@translate_languages]
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
 
       @po_dir = "doc/po"
@@ -50,12 +52,21 @@ module Packnga
       @base_dir + "reference/en"
     end
 
+    def html_base_dir
+      @base_dir + "html"
+    end
+
+    def html_reference_dir
+      html_base_dir + @spec.name
+    end
+
     def define_tasks
       namespace :reference do
         define_pot_tasks
         define_po_tasks
         define_translate_task
         define_generate_task
+        define_publication_task
       end
     end
 
@@ -147,6 +158,65 @@ module Packnga
       task :generate => [:yard, :translate]
     end
 
+    def define_publication_task
+      namespace :publication do
+        task :prepare do
+          @supported_languages.each do |language|
+            raw_reference_dir = reference_base_dir + language.to_s
+            prepared_reference_dir = html_reference_dir + language.to_s
+            rm_rf(prepared_reference_dir.to_s)
+            head = erb_template("head.#{language}")
+            header = erb_template("header.#{language}")
+            footer = erb_template("footer.#{language}")
+            raw_reference_dir.find do |path|
+              relative_path = path.relative_path_from(raw_reference_dir)
+              prepared_path = prepared_reference_dir + relative_path
+              if path.directory?
+                mkdir_p(prepared_path.to_s)
+              else
+                case path.basename.to_s
+                when /(?:file|method|class)_list\.html\z/
+                  cp(path.to_s, prepared_path.to_s)
+                when /\.html\z/
+                  relative_dir_path = relative_path.dirname
+                  current_path = relative_dir_path + path.basename
+                  if current_path.basename.to_s == "index.html"
+                    current_path = current_path.dirname
+                  end
+                  top_path = html_base_dir.relative_path_from(prepared_path.dirname)
+                  package_path = top_path + @spec.name
+                  paths = {
+                    :top => top_path,
+                    :current => current_path,
+                    :package => package_path,
+                  }
+                  templates = {
+                    :head => head,
+                    :header => header,
+                    :footer => footer
+                  }
+                  content = apply_template(File.read(path.to_s),
+                                           paths,
+                                           templates,
+                                           language)
+                  File.open(prepared_path.to_s, "w") do |file|
+                    file.print(content)
+                  end
+                else
+                  cp(path.to_s, prepared_path.to_s)
+                end
+              end
+            end
+          end
+          File.open("#{html_reference_dir}/.htaccess", "w") do |file|
+            file.puts("Redirect permanent /#{@spec.name}/text/TUTORIAL_ja_rdoc.html " +
+                      "#{@spec.homepage}#{@spec.name}/ja/file.tutorial.html")
+            file.puts("RedirectMatch permanent ^/#{@spec.name}/$ " +
+                      "#{@spec.homepage}#{@spec.name}/en/")
+          end
+        end
+      end
+    end
 
     def apply_template(content, paths, templates, language)
       content = content.sub(/lang="en"/, "lang=\"#{language}\"")
