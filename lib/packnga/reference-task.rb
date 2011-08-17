@@ -25,6 +25,7 @@ module Packnga
       @translate_languages = nil
       @html_files = nil
       @po_dir = nil
+      @po_file = nil
       @pot_file = nil
       yield(self)
       set_default_values
@@ -41,6 +42,10 @@ module Packnga
 
     end
 
+    def reference_base_dir
+      @base_dir + "reference"
+    end
+
     def doc_en_dir
       @base_dir + "reference/en"
     end
@@ -49,6 +54,7 @@ module Packnga
       namespace :reference do
         define_pot_tasks
         define_po_tasks
+        define_translate_task
       end
     end
 
@@ -69,14 +75,14 @@ module Packnga
       namespace :po do
         @translate_languages.each do |language|
           namespace language do
-            po_file = "#{@po_dir}/#{language}.po"
+            @po_file = "#{@po_dir}/#{language}.po"
 
-            if File.exist?(po_file)
-              file po_file => @html_files do |t|
+            if File.exist?(@po_file)
+              file @po_file => @html_files do |t|
                 sh("xml2po", "--keep-entities", "--update", t.name, *@html_files)
               end
             else
-              file po_file => @pot_file do |t|
+              file @po_file => @pot_file do |t|
                 sh("msginit",
                    "--input=#{@pot_file}",
                    "--output=#{t.name}",
@@ -85,7 +91,7 @@ module Packnga
             end
 
             desc "Updates po file for #{language}."
-            task :update => po_file
+            task :update => @po_file
           end
         end
 
@@ -95,6 +101,35 @@ module Packnga
           ruby($0, "yard")
           @translate_languages.each do |language|
             ruby($0, "reference:po:#{language}:update")
+          end
+        end
+      end
+    end
+
+    def define_translate_task
+      namespace :translate do
+
+        @translate_languages.each do |language|
+          @po_file = "#{@po_dir}/#{language}.po"
+          translate_doc_dir = "#{reference_base_dir}/#{language}"
+          desc "Translates documents to #{language}."
+          task language => [@po_file, reference_base_dir, *@html_files] do
+            doc_en_dir.find do |path|
+              base_path = path.relative_path_from(doc_en_dir)
+              translated_path = "#{translate_doc_dir}/#{base_path}"
+              if path.directory?
+                mkdir_p(translated_path)
+                next
+              end
+              case path.extname
+              when ".html"
+                sh("xml2po --keep-entities " +
+                   "--po-file #{@po_file} --language #{language} " +
+                   "#{path} > #{translated_path}")
+              else
+                cp(path.to_s, translated_path, :preserve => true)
+              end
+            end
           end
         end
       end
