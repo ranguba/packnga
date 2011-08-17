@@ -102,18 +102,6 @@ end
 
 namespace :release do
 
-  namespace :rubyforge do
-    desc "Upload tar.gz to RubyForge."
-    task :upload => "package" do
-      ruby("-S", "rubyforge",
-           "add_release",
-           spec.rubyforge_project,
-           spec.name,
-           spec.version.to_s,
-           "pkg/#{spec.name}-#{spec.version}.tar.gz")
-    end
-  end
-
   desc "Release to RubyForge."
   task :rubyforge => "release:rubyforge:upload"
 end

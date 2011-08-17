@@ -43,6 +43,7 @@ module Packnga
       define_reference_task
       define_html_task
       define_publish_task
+      define_upload_task
     end
 
     def define_reference_task
@@ -68,14 +69,30 @@ module Packnga
       task :publish => ["html:publish", "reference:publish"]
     end
 
+    def define_upload_task
+      namespace :release do
+        namespace :rubyforge do
+          desc "Upload tar.gz to RubyForge."
+          task :upload => "package" do
+            ruby("-S", "rubyforge",
+                 "add_release",
+                 @spec.rubyforge_project,
+                 @spec.name,
+                 @spec.version.to_s,
+                 "pkg/#{@spec.name}-#{@spec.version}.tar.gz")
+          end
+        end
+      end
+    end
+
     def rsync_to_rubyforge(spec, source, destination, options={})
       config = YAML.load(File.read(File.expand_path("~/.rubyforge/user-config.yml")))
       host = "#{config["username"]}@rubyforge.org"
 
-      rsync_args = "-av --exclude '*.erb' --chmod=ug+w"
+      rsync_args = "-av --dry-run --exclude '*.erb' --chmod=ug+w"
       rsync_args << " --delete" if options[:delete]
       remote_dir = "/var/www/gforge-projects/#{spec.rubyforge_project}/"
-      sh("rsync --dry-run -#{rsync_args} #{source} #{host}:#{remote_dir}#{destination}")
+      sh("rsync #{rsync_args} #{source} #{host}:#{remote_dir}#{destination}")
     end
 
   end
