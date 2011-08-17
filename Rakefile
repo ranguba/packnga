@@ -87,15 +87,6 @@ def rake(*arguments)
   ruby($0, *arguments)
 end
 
-namespace :reference do
-  translate_languages = [:ja]
-  supported_languages = [:en, *translate_languages]
-
-  directory reference_base_dir.to_s
-  CLOBBER.include(reference_base_dir.to_s)
-
-end
-
 namespace :html do
   desc "Publish HTML to Web site."
   task :publish do
