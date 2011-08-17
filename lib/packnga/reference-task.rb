@@ -18,6 +18,7 @@
 module Packnga
   class ReferenceTask
     include Rake::DSL
+    include ERB::Util
     attr_writer :base_dir
     def initialize(spec)
       @spec = spec
@@ -144,6 +145,35 @@ module Packnga
     def define_generate_task
       desc "Generates references."
       task :generate => [:yard, :translate]
+    end
+
+
+    def apply_template(content, paths, templates, language)
+      content = content.sub(/lang="en"/, "lang=\"#{language}\"")
+
+      title = nil
+      content = content.sub(/<title>(.+?)<\/title>/m) do
+        title = $1
+        templates[:head].result(binding)
+      end
+
+      content = content.sub(/<body(?:.*?)>/) do |body_start|
+        "#{body_start}\n#{templates[:header].result(binding)}\n"
+      end
+
+      content = content.sub(/<\/body/) do |body_end|
+        "\n#{templates[:footer].result(binding)}\n#{body_end}"
+      end
+
+      content
+    end
+
+    def erb_template(name)
+      file = File.join("doc/templates", "#{name}.html.erb")
+      template = File.read(file)
+      erb = ERB.new(template, nil, "-")
+      erb.filename = file
+      erb
     end
   end
 end
