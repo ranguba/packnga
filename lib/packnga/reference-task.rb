@@ -55,6 +55,7 @@ module Packnga
         define_pot_tasks
         define_po_tasks
         define_translate_task
+        define_generate_task
       end
     end
 
@@ -139,6 +140,11 @@ module Packnga
       end
       desc "Translates references."
       task :translate => translate_task_names
+    end
+
+    def define_generate_task
+      desc "Generates references."
+      task :generate => [:yard, :translate]
     end
   end
 end

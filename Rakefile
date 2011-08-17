@@ -138,10 +138,6 @@ namespace :reference do
   po_dir = "doc/po"
   pot_file = "#{po_dir}/#{spec.name}.pot"
 
-
-  desc "Generates references."
-  task :generate => [:yard, :translate]
-
   namespace :publication do
     task :prepare do
       supported_languages.each do |language|
