@@ -216,6 +216,11 @@ module Packnga
           end
         end
       end
+
+      desc "Upload document to rubyforge."
+      task :publish => [:generate, "reference:publication:prepare"] do
+        rsync_to_rubyforge(spec, "#{html_reference_dir}/", spec.name)
+      end
     end
 
     def apply_template(content, paths, templates, language)
