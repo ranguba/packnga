@@ -102,8 +102,6 @@ end
 
 namespace :release do
 
-  desc "Release to RubyForge."
-  task :rubyforge => "release:rubyforge:upload"
 end
 
 namespace :test do

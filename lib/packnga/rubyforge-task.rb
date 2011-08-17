@@ -43,7 +43,7 @@ module Packnga
       define_reference_task
       define_html_task
       define_publish_task
-      define_upload_task
+      define_upload_tasks
     end
 
     def define_reference_task
@@ -69,7 +69,7 @@ module Packnga
       task :publish => ["html:publish", "reference:publish"]
     end
 
-    def define_upload_task
+    def define_upload_tasks
       namespace :release do
         namespace :rubyforge do
           desc "Upload tar.gz to RubyForge."
@@ -82,6 +82,8 @@ module Packnga
                  "pkg/#{@spec.name}-#{@spec.version}.tar.gz")
           end
         end
+        desc "Release to RubyForge."
+        task :rubyforge => "release:rubyforge:upload"
       end
     end
 
