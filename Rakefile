@@ -83,7 +83,7 @@ end
 Packnga::ReferenceTask.new(spec) do |task|
 end
 
-Packnga::ReleaseTask.new do |task|
+Packnga::ReleaseTask.new(spec) do |task|
 end
 
 Packnga::RubyforgeTask.new(spec) do |task|
@@ -91,17 +91,6 @@ end
 
 def rake(*arguments)
   ruby($0, *arguments)
-end
-
-
-
-desc "Tag the current revision."
-task :tag do
-  sh("git tag -a #{version} -m 'release #{version}!!!'")
-end
-
-namespace :release do
-
 end
 
 namespace :test do

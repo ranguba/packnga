@@ -19,7 +19,8 @@ module Packnga
   class ReleaseTask
     include Rake::DSL
 
-    def initialize
+    def initialize(spec)
+      @spec = spec
       yield(self)
       set_default_values
       define_tasks
@@ -31,6 +32,7 @@ module Packnga
     def define_tasks
       namespace :release do
         define_info_task
+        define_tag_task
       end
     end
 
@@ -72,6 +74,14 @@ module Packnga
             end
           end
         end
+      end
+    end
+
+    def define_tag_task
+      desc "Tag the current revision."
+      task :tag do
+        version = @spec.version
+        sh("git tag -a #{version} -m 'release #{version}!!!'")
       end
     end
   end
