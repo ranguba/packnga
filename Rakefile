@@ -94,8 +94,6 @@ def rake(*arguments)
 end
 
 
-desc "Upload document and HTML to rubyforge."
-task :publish => ["html:publish", "reference:publish"]
 
 desc "Tag the current revision."
 task :tag do

@@ -42,6 +42,7 @@ module Packnga
     def define_tasks
       define_reference_task
       define_html_task
+      define_publish_task
     end
 
     def define_reference_task
@@ -60,6 +61,11 @@ module Packnga
           rsync_to_rubyforge(@spec, "#{html_base_dir}/", "")
         end
       end
+    end
+
+    def define_publish_task
+      desc "Upload document and HTML to rubyforge."
+      task :publish => ["html:publish", "reference:publish"]
     end
 
     def rsync_to_rubyforge(spec, source, destination, options={})
