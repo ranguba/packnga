@@ -133,6 +133,12 @@ module Packnga
           end
         end
       end
+
+      translate_task_names = @translate_languages.collect do |language|
+        "reference:translate:#{language}"
+      end
+      desc "Translates references."
+      task :translate => translate_task_names
     end
   end
 end
