@@ -15,10 +15,23 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-require "rake"
+module Packnga
+  class RubyforgeTask
+    include Rake::DSL
+    def initialize
+      yield(self)
+      set_default_values
+      define_tasks
+    end
 
-require "packnga/version"
-require "packnga/document-task"
-require "packnga/reference-task"
-require "packnga/rubyforge-task"
-require "packnga/release-task"
+    def set_default_values
+    end
+
+    def define_tasks
+      define_reference_task
+    end
+
+    def define_reference_task
+    end
+  end
+end

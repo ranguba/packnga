@@ -86,6 +86,9 @@ end
 Packnga::ReleaseTask.new do |task|
 end
 
+Packnga::RubyforgeTask.new do |task|
+end
+
 def rake(*arguments)
   ruby($0, *arguments)
 end
