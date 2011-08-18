@@ -72,11 +72,6 @@ Gem::PackageTask.new(spec) do |pkg|
   pkg.need_tar_gz = true
 end
 
-reference_base_dir = Pathname.new("doc/reference")
-doc_en_dir = reference_base_dir + "en"
-html_base_dir = Pathname.new("doc/html")
-html_reference_dir = html_base_dir + spec.name
-
 Packnga::DocumentTask.new(spec) do |task|
 end
 
