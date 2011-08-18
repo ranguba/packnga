@@ -80,9 +80,7 @@ end
 
 Packnga::ReleaseTask.new(spec) do |task|
   task.index_html_dir = "../rroonga/doc/html"
-end
-
-Packnga::RubyforgeTask.new(spec) do |task|
+  task.upload_rubyforge = true
 end
 
 def rake(*arguments)
