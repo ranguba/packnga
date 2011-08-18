@@ -20,9 +20,10 @@ require "yard"
 
 module Packnga
   class YARDTask
-    # This class creates YARD tasks.
+    # This class creates YARD task.
+    # YARD task create task to generate references by YARD.
     #
-    # @since 1.0.0
+    # @since 0.9.0
     include Rake::DSL
     attr_writer :readme
     attr_accessor :base_dir

@@ -20,9 +20,10 @@ require "rubyforge"
 module Packnga
   class ReleaseTask
     # This class creates release tasks.
-    #   Tasks are "release:info:update" and "release:tag"
+    #   Release task defines tasks to tag, test-install gem.
+    #   It also define tasks to upload rubyforge whether option.
     #
-    # @since 1.0.0
+    # @since 0.9.0
     include Rake::DSL
     attr_writer :index_html_dir
     attr_writer :base_dir, :upload_rubyforge
