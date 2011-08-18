@@ -163,8 +163,6 @@ module Packnga
     end
 
     def rsync_to_rubyforge(spec, source, destination, options={})
-
-      config = YAML.load(File.read(File.expand_path("~/.rubyforge/user-config.yml")))
       host = "#{@rubyforge.userconfig["username"]}@rubyforge.org"
 
       rsync_args = "-av --dry-run --exclude '*.erb' --chmod=ug+w"
