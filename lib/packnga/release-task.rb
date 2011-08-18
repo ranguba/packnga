@@ -151,9 +151,9 @@ module Packnga
             @rubyforge.userconfig["password"] =
               args[:password] || ENV["password"]
             @rubyforge.add_release(@spec.rubyforge_project,
-                 @spec.name,
-                 @spec.version.to_s,
-                 "pkg/#{@spec.name}-#{@spec.version}.tar.gz")
+                                   @spec.name,
+                                   @spec.version.to_s,
+                                   "pkg/#{@spec.name}-#{@spec.version}.tar.gz")
           end
         end
         desc "Release to RubyForge."
