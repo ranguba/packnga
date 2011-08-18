@@ -19,9 +19,15 @@ require "rubyforge"
 
 module Packnga
   class ReleaseTask
+    # This class creates release tasks.
+    #   Tasks are "release:info:update" and "release:tag"
+    #
+    # @since 1.0.0
     include Rake::DSL
     attr_writer :index_html_dir
     attr_writer :base_dir, :upload_rubyforge
+    # Defines task for preparing to release.
+    # @param [Jeweler::Task] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec
       @index_html_dir = nil

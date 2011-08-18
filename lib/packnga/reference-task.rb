@@ -17,9 +17,16 @@
 
 module Packnga
   class ReferenceTask
+    # This class creates reference tasks.
+    #   They run to generate, translate and publish references.
+    #
+    # @since 1.0.0
     include Rake::DSL
     include ERB::Util
     attr_writer :base_dir
+
+    # Defines task to generate or update reference.
+    # @param [Jeweler::Task] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec
       @base_dir = nil
@@ -33,6 +40,7 @@ module Packnga
       define_tasks
     end
 
+    private
     def set_default_values
       @base_dir ||= Pathname.new("doc")
       @translate_languages ||= [:ja]

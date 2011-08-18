@@ -20,10 +20,13 @@ require "yard"
 
 module Packnga
   class YARDTask
+    # This class creates YARD tasks.
+    #
+    # @since 1.0.0
     include Rake::DSL
-
     attr_writer :readme
     attr_accessor :base_dir
+    # Sets YARDOC task and defines YARD task.
     def initialize(spec)
       @spec = spec
       @hooks = []
@@ -39,19 +42,23 @@ module Packnga
       end
     end
 
+    # @private
     def readme
       @readme || Rake::FileList["README*"].to_a.first
     end
 
+    # @private
     def text_files
       @text_files ||= []
     end
 
+    # @private
     def define
       set_default_values
       define_tasks
     end
 
+    # Registers yardoc parameters with block.
     def before_define(&hook)
       @hooks << hook
     end
@@ -88,6 +95,7 @@ module Packnga
         end
         yardoc_task.options += ["--output-dir", reference_en_dir.to_s]
         yardoc_task.options += ["--charset", "utf-8"]
+        yardoc_task.options += ["--no-private"]
         yardoc_task.files += @files
         @hooks.each do |hook|
           hook.call(yardoc_task)
