@@ -32,7 +32,6 @@ module Packnga
     def initialize(spec)
       @spec = spec
       @index_html_dir = nil
-      @upload_rubyforge = false
       @rubyforge = nil
       yield(self)
       set_default_values
@@ -51,15 +50,13 @@ module Packnga
     def set_default_values
       @index_html_dir ||= "doc/html"
       @base_dir ||= Pathname.new("doc")
-      @rubyforge = RubyForge.new
-      @rubyforge.configure
     end
 
     def define_tasks
       namespace :release do
         define_info_task
         define_tag_task
-        define_rubyforge_tasks if @upload_rubyforge
+        define_rubyforge_tasks
       end
     end
 
@@ -113,6 +110,9 @@ module Packnga
     end
 
     def define_rubyforge_tasks
+      return if @spec.rubyforge_project.nil?
+      @rubyforge = RubyForge.new
+      @rubyforge.configure
       define_reference_task
       define_html_task
       define_publish_task
