@@ -15,6 +15,8 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+require "rubyforge"
+
 module Packnga
   class RubyforgeTask
     include Rake::DSL
@@ -22,11 +24,13 @@ module Packnga
     def initialize(spec)
       @spec = spec
       @base_dir = nil
+      @rubyforge = nil
       yield(self)
       set_default_values
       define_tasks
     end
 
+    private
     def html_base_dir
       @base_dir + "html"
     end
@@ -37,6 +41,8 @@ module Packnga
 
     def set_default_values
       @base_dir ||= Pathname.new("doc")
+      @rubyforge = RubyForge.new
+      @rubyforge.configure
     end
 
     def define_tasks
@@ -73,23 +79,26 @@ module Packnga
       namespace :release do
         namespace :rubyforge do
           desc "Upload tar.gz to RubyForge."
-          task :upload => "package" do
-            ruby("-S", "rubyforge",
-                 "add_release",
-                 @spec.rubyforge_project,
+          task :upload, "password"
+          task :upload => "package" do |t, args|
+            @rubyforge.userconfig["password"] =
+              args[:password] || ENV["password"]
+            @rubyforge.add_release(@spec.rubyforge_project,
                  @spec.name,
                  @spec.version.to_s,
                  "pkg/#{@spec.name}-#{@spec.version}.tar.gz")
           end
         end
         desc "Release to RubyForge."
+        task :rubyforge, "password"
         task :rubyforge => "release:rubyforge:upload"
       end
     end
 
     def rsync_to_rubyforge(spec, source, destination, options={})
+
       config = YAML.load(File.read(File.expand_path("~/.rubyforge/user-config.yml")))
-      host = "#{config["username"]}@rubyforge.org"
+      host = "#{@rubyforge.userconfig["username"]}@rubyforge.org"
 
       rsync_args = "-av --dry-run --exclude '*.erb' --chmod=ug+w"
       rsync_args << " --delete" if options[:delete]
