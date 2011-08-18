@@ -18,15 +18,18 @@
 module Packnga
   class ReleaseTask
     include Rake::DSL
-
+    attr_writer :index_html_dir
     def initialize(spec)
       @spec = spec
+      @index_html_dir = nil
       yield(self)
       set_default_values
       define_tasks
     end
 
+    private
     def set_default_values
+      @index_html_dir ||= "doc/html"
     end
 
     def define_tasks
@@ -52,8 +55,8 @@ module Packnga
           unless empty_options.empty?
             raise ArgumentError, "Specify option(s) of #{empty_options.join(", ")}."
           end
-
-          indexes = ["doc/html/index.html", "doc/html/index.html.ja"]
+          @index_html_dir = Pathname(@index_html_dir)
+          indexes = [@index_html_dir + "index.html", @index_html_dir + "index.html.ja"]
           indexes.each do |index|
             content = replaced_content = File.read(index)
             [[old_version, new_version],
