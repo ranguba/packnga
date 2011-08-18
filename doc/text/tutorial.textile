@@ -1,0 +1,67 @@
+h1. チュートリアル
+
+このページでは簡単なRakefileの作成を通して
+packngaの操作方法を紹介します。
+
+h2. インストール
+
+packngaはRubyGemsでインストールできます。
+
+<pre>
+!!!command_line
+% sudo gem install packnga
+</pre>
+
+h2. タスク作成の準備
+Packngaを使用する前に、Jeweler::Tasks.newメソッドにて @spec@ を作成します。
+この @spec@ を用いてPackngaはタスクを生成します。
+次にその例を示します。
+
+<pre>
+!!!
+spec = nil
+Jeweler::Tasks.new do |_spec|
+  spec = _spec
+  spec.name = "packnga"
+  spec.version = version
+  spec.rubyforge_project = "groonga"
+  spec.homepage = "http://groonga.rubyforge.org/"
+  spec.authors = ["Haruka Yoshihara", "Kouhei Sutou"]
+  spec.email = ["yoshihara@clear-code.com", "kou@clear-code.com"]
+  entries = File.read("README.textile").split(/^h2\.\s(.*)$/)
+  description = cleanup_white_space(entries[entries.index("Description") + 1])
+  spec.summary, spec.description, = description.split(/\n\n+/, 3)
+  spec.license = "LGPLv2"
+  spec.files = FileList["lib/**/*.rb",
+                        "Rakefile",
+                        "README.textile",
+                        "Gemfile",
+                        "doc/text/**"]
+  spec.test_files = FileList["test/**/*.rb"]
+end
+</pre>
+
+h2. タスクの作成
+Packngaでは、それぞれのタスクを担当するクラスのオブジェクトを作成し、
+それに渡すブロックにてオプションを指定できます。
+Packngaのクラスと、そのクラスで定義できるタスクは次のようになります。
+
+- Packnga::YARDTask :=
+  YARD関連のタスクを生成します。これにより
+  =:
+- Packnga::DocumentTask :=
+  
+  =:
+- Packnga::ReferenceTask :=
+  
+  =:
+- Packnga::ReleaseTask :=
+  
+  =:
+
+h3. ドキュメントのパスを設定する。
+デフォルトはdoc/htmlだけど任意の値に変更できる。
+それができるのはreference,rubyforge,yard
+またReleaseはインデックスページのあるディレクトリを指定できる。
+
+</pre>
