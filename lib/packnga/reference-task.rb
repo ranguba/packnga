@@ -35,7 +35,13 @@ module Packnga
       @html_files = nil
       @po_dir = nil
       @pot_file = nil
-      yield(self)
+      if block_given?
+        yield(self)
+        define
+      end
+    end
+
+    def define
       set_default_values
       define_tasks
     end
@@ -128,7 +134,6 @@ module Packnga
 
     def define_translate_task
       namespace :translate do
-
         @translate_languages.each do |language|
           po_file = "#{@po_dir}/#{language}.po"
           translate_doc_dir = "#{reference_base_dir}/#{language}"

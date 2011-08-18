@@ -30,6 +30,7 @@ module Packnga
     def initialize(spec)
       @spec = spec
       @yard_task = YARDTask.new(@spec)
+      @reference_task = ReferenceTask.new(@spec)
       self.base_dir = "doc"
       if block_given?
         yield(self)
@@ -48,6 +49,7 @@ module Packnga
     def base_dir=(dir)
       dir = Pathname.new(dir)
       @yard_task.base_dir = dir
+      @reference_task.base_dir = dir
     end
 
     # Sets parameters for yard task.
@@ -56,12 +58,17 @@ module Packnga
       yield(@yard_task)
     end
 
+    def reference
+      yield(@reference_task)
+    end
+
     private
     def set_default_values
     end
 
     def define_tasks
       @yard_task.define
+      @reference_task.define
     end
   end
 end

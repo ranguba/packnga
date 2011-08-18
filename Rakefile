@@ -75,9 +75,6 @@ end
 Packnga::DocumentTask.new(spec) do |task|
 end
 
-Packnga::ReferenceTask.new(spec) do |task|
-end
-
 Packnga::ReleaseTask.new(spec) do |task|
   task.index_html_dir = "../rroonga/doc/html"
   task.upload_rubyforge = true
