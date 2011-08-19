@@ -28,6 +28,10 @@ module Packnga
     attr_writer :index_html_dir
     attr_writer :base_dir, :upload_rubyforge
     # Defines task for preparing to release.
+    #   Defined tasks is to updating version and release-date,
+    #   to tag in git.
+    #   If spec's rubyforge_project is not nil,
+    #   it also define tasks to update rubyforge.
     # @param [Jeweler::Task] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec
@@ -157,7 +161,6 @@ module Packnga
           end
         end
         desc "Release to RubyForge."
-        task :rubyforge, "password"
         task :rubyforge => "release:rubyforge:upload"
       end
     end
