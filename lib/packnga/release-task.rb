@@ -174,6 +174,7 @@ module Packnga
       host = "#{@rubyforge.userconfig["username"]}@rubyforge.org"
 
       rsync_args = "-av --exclude '*.erb' --chmod=ug+w"
+      rsync_args << " --group=#{spec.rubyforge_project}"
       rsync_args << " --delete" if options[:delete]
       remote_dir = "/var/www/gforge-projects/#{spec.rubyforge_project}/"
       sh("rsync #{rsync_args} #{source} #{host}:#{remote_dir}#{destination}")
