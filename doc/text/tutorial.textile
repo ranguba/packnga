@@ -1,24 +1,23 @@
-h1. チュートリアル
+h1. Tutorial
 
-このページでは簡単なRakefileの作成を通して
-packngaの操作方法を紹介します。
+We introduce how to use Packnga with Packnga's Rakefile in this page.
 
-h2. インストール
+h2. Install
 
-packngaはRubyGemsでインストールできます。
+You can install Packnga from Rubygems.
 
 <pre>
 !!!command_line
 % sudo gem install packnga
 </pre>
 
-h2. タスク作成の準備
-Packngaを使用する前に、Jeweler::Tasks.newメソッドにて @spec@ を作成します。
-この @spec@ を用いてPackngaはタスクを生成します。
-次にその例を示します。
+h2. Prepare to create tasks
+
+Before using Packnga, you should create @spec@ variable with Jeweler::Task.new.
+Packnga create tasks with @spec@.
+Please see below example.
 
 <pre>
-!!!
 spec = nil
 Jeweler::Tasks.new do |_spec|
   spec = _spec
@@ -41,24 +40,52 @@ Jeweler::Tasks.new do |_spec|
 end
 </pre>
 
-h2. タスクの作成
-Packngaでは、それぞれのタスクを担当するクラスのオブジェクトを作成し、
-それに渡すブロックにてオプションを指定できます。
-Packngaのクラスと、そのクラスで定義できるタスクは次のようになります。
+If you set the attribute @rubyforge_project@ of @spec@,
+@Release Task@ create tasks for rubyforge.
+See below in detail.
+
+h2. Create tasks
+
+Packnga's classes has charge of each tasks.
+They are given block with .new method in order to set parameters of tasks.
+This table describes Packnga's classes.
 
 - Packnga::DocumentTask :=
-  
+  This class create tasks for generating references.
+  It define tasks to generate YARD documentation, po files, and 
+  to translate documents by po files.
   =:
-- Packnga::ReferenceTask :=
-  
-  =:
+
 - Packnga::ReleaseTask :=
-  
+  This class create tasks for uploading references and package and preparing to upload them.
+  It defines task to tag the current version in git and task to user-install gem for test.
+  It also create tasks for uploading rubyforge if you set @rubyforge_project@ in @spec@ .
   =:
 
-h3. ドキュメントのパスを設定する。
-デフォルトはdoc/htmlだけど任意の値に変更できる。
-それができるのはreference,rubyforge,yard
-またReleaseはインデックスページのあるディレクトリを指定できる。
+See below for creating tasks.
 
+<pre>
+Packnga::DocumentTask.new(spec)
+Packnga::ReleaseTask.new(spec)
 </pre>
+
+h3. Set the document path.
+
+You can set parameters with block when creating object of Packnga::DocumentTask and Releaesask.
+For example, We introduce to how to set document base directory.
+Document is created in this directory.
+You can write Rakefile to set this directory path, see below.
+NOTE: Please set same path to each clasess.
+
+<pre>
+Packnga::DocumentTask.new(spec) do |task|
+  task.base_dir = "doc/"
+end
+
+Packnga::ReleaseTask.new(spec) do |task|
+  task.base_dir = "doc/"
+end
+</pre>
+
+You can set other parameters.
+Please see Packnga's reference manual in detail.
