@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-08-19 17:12+0900\n"
+"POT-Creation-Date: 2011-08-19 17:41+0900\n"
 "PO-Revision-Date: 2011-08-19 17:11+0900\n"
 "Last-Translator: Yoshihara Haruka <yoshihara@clear-code.com>\n"
 "Language-Team: Japanese\n"
@@ -1278,34 +1278,12 @@ msgid "NEWS"
 msgstr "お知らせ"
 
 #: doc/reference/en/file.news.html:58(h2)
-msgid "1.0.0: 2011-08-11"
+msgid "0.9.0: 2011-08-19"
 msgstr ""
 
-#: doc/reference/en/file.news.html:59(h3)
-msgid "Improvements"
-msgstr "改良"
-
-#: doc/reference/en/file.news.html:61(li)
-msgid "added DocumentTask for task of yard."
-msgstr "yardタスクを作成するためのDocumentTaskクラスを作成。"
-
-#: doc/reference/en/file.news.html:62(li)
-msgid ""
-"added ReferenceTask. (only created function to define tasks for generate or "
-"update .po/.pot files.)"
+#: doc/reference/en/file.news.html:59(p)
+msgid "The first release!"
 msgstr ""
-"ReferenceTaskクラスを作成。（.poファイルや.potファイルを生成・更新するタスク"
-"を作成する機能のみ作成）"
-
-#: doc/reference/en/file.news.html:64(li)
-msgid "added *Tasks#base_dir to set default value for base_dir."
-msgstr ""
-"作成したクラスにドキュメントのベースディレクトリを指定するbase_dirメソッドを"
-"追加。"
-
-#: doc/reference/en/file.news.html:65(li)
-msgid "other tasks were created in Rakefile."
-msgstr "その他のタスクに関してはRakefileに作成。"
 
 #: doc/reference/en/Packnga/ReferenceTask.html:6(title)
 msgid "Class: Packnga::ReferenceTask &mdash; packnga"
@@ -3349,3 +3327,24 @@ msgstr "感謝"
 #: doc/reference/en/file.README.html:0(None)
 msgid "translator-credits"
 msgstr ""
+
+#~ msgid "Improvements"
+#~ msgstr "改良"
+
+#~ msgid "added DocumentTask for task of yard."
+#~ msgstr "yardタスクを作成するためのDocumentTaskクラスを作成。"
+
+#~ msgid ""
+#~ "added ReferenceTask. (only created function to define tasks for generate "
+#~ "or update .po/.pot files.)"
+#~ msgstr ""
+#~ "ReferenceTaskクラスを作成。（.poファイルや.potファイルを生成・更新するタス"
+#~ "クを作成する機能のみ作成）"
+
+#~ msgid "added *Tasks#base_dir to set default value for base_dir."
+#~ msgstr ""
+#~ "作成したクラスにドキュメントのベースディレクトリを指定するbase_dirメソッド"
+#~ "を追加。"
+
+#~ msgid "other tasks were created in Rakefile."
+#~ msgstr "その他のタスクに関してはRakefileに作成。"
