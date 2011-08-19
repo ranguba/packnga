@@ -19,15 +19,18 @@
 require "yard"
 
 module Packnga
+  # This class creates YARD task.
+  # YARD task generate references by YARD.
+  #
+  # @since 0.9.0
   class YARDTask
-    # This class creates YARD task.
-    # YARD task create task to generate references by YARD.
-    #
-    # @since 0.9.0
     include Rake::DSL
+
     attr_writer :readme
+    # This attribute is path of base directory of document.
     attr_accessor :base_dir
-    # Sets YARDOC task and defines YARD task.
+
+    # @private
     def initialize(spec)
       @spec = spec
       @hooks = []
@@ -43,7 +46,8 @@ module Packnga
       end
     end
 
-    # @private
+    # This attribute is used to sets README file to yardoc task.
+    # @return [String] path to readme file
     def readme
       @readme || Rake::FileList["README*"].to_a.first
     end
@@ -59,7 +63,7 @@ module Packnga
       define_tasks
     end
 
-    # Registers yardoc parameters with block.
+    # Regists yardoc parameters with block.
     def before_define(&hook)
       @hooks << hook
     end

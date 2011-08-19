@@ -21,13 +21,14 @@ require "packnga/yard-task"
 require "packnga/reference-task"
 
 module Packnga
+  # This class creates docment tasks.
+  # They generate YARD doucment or references.
+  #
+  # @since 0.9.0
   class DocumentTask
-    # This class creates docment tasks.
-    #
-    # @since 0.9.0
     include Rake::DSL
     # Defines tasks to generate YARD documentation
-    #   and to generate references.
+    # and to translate references.
     # @param [Jeweler::Task] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec
@@ -46,8 +47,8 @@ module Packnga
       define_tasks
     end
 
-    # Sets yard base directory.Default value is "doc".
-    # @param [String] yard base direcory path
+    # Sets base directory for documents. Default value is "doc".
+    # @param [String] base direcory path
     def base_dir=(dir)
       dir = Pathname.new(dir)
       @yard_task.base_dir = dir
@@ -55,13 +56,11 @@ module Packnga
     end
 
     # Runs block to task for YARD documentation.
-    # This task generate YARD documentation.
     def yard
       yield(@yard_task)
     end
 
     # Runs block to tasks for references.
-    #   Tasks for references are generating, translating and pripare to publish.
     def reference
       yield(@reference_task)
     end

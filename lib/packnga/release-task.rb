@@ -18,20 +18,27 @@
 require "rubyforge"
 
 module Packnga
+  # This class creates release tasks.
+  #
+  # Release tasks tag current version and install gem for test.
+  # It also define tasks to upload rubyforge whether option.
+  #
+  # @since 0.9.0
   class ReleaseTask
-    # This class creates release tasks.
-    #   Release task defines tasks to tag, test-install gem.
-    #   It also define tasks to upload rubyforge whether option.
-    #
-    # @since 0.9.0
     include Rake::DSL
+
+    # This attribute is path of HTML files written version and release date.
+    # @param [String] path of HTML files
     attr_writer :index_html_dir
-    attr_writer :base_dir, :upload_rubyforge
+    # This attribute is path of base directory of document.
+    # @param [String] path of base directory of document
+    attr_writer :base_dir
     # Defines task for preparing to release.
-    #   Defined tasks is to updating version and release-date,
-    #   to tag in git.
-    #   If spec's rubyforge_project is not nil,
-    #   it also define tasks to update rubyforge.
+    #
+    # Defined tasks update version and release-date in index files
+    # and tag in git.
+    # If rubyforge_project of Jeweler::Task's parameter is not nil,
+    # it also define tasks to update rubyforge.
     # @param [Jeweler::Task] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec

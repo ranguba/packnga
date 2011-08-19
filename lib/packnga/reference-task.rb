@@ -16,17 +16,17 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 module Packnga
+  # This class creates reference tasks.
+  # They generate, translate and prepare to publish references.
+  #
+  # @since 0.9.0
   class ReferenceTask
-    # This class creates reference tasks.
-    #   They run to generate, translate and prepare to publish references.
-    #
-    # @since 1.0.0
     include Rake::DSL
     include ERB::Util
+    # This attribute is path of base directory of document.
+    # @param [String] path of base directory of document
     attr_writer :base_dir
-
-    # Defines task for references.
-    # @param [Jeweler::Task] spec created by Jeweler::Task.new.
+    # @private
     def initialize(spec)
       @spec = spec
       @base_dir = nil
