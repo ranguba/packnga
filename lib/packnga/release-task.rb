@@ -34,17 +34,16 @@ module Packnga
     # @param [String] path of base directory of document
     attr_writer :base_dir
     # Defines task for preparing to release.
-    #
     # Defined tasks update version and release-date in index files
     # and tag in git.
-    # If rubyforge_project of Jeweler::Task's parameter is not nil,
+    # If you set rubyforge_project of Jeweler::Task.new with its given block,
     # it also define tasks to update rubyforge.
     # @param [Jeweler::Task] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec
       @index_html_dir = nil
       @rubyforge = nil
-      yield(self)
+      yield(self) if block_given?
       set_default_values
       define_tasks
     end
