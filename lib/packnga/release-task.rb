@@ -147,22 +147,21 @@ module Packnga
     end
 
     def define_upload_tasks
-      namespace :release do
-        namespace :rubyforge do
-          desc "Upload tar.gz to RubyForge."
-          task :upload, "password"
-          task :upload => "package" do |t, args|
-            @rubyforge.userconfig["password"] =
-              args[:password] || ENV["password"]
-            @rubyforge.add_release(@spec.rubyforge_project,
-                                   @spec.name,
-                                   @spec.version.to_s,
-                                   "pkg/#{@spec.name}-#{@spec.version}.tar.gz")
-          end
+      namespace :rubyforge do
+        desc "Upload tar.gz to RubyForge."
+        task :upload => "package" do
+          print "password:"
+          system("stty -echo")
+          @rubyforge.userconfig["password"] = STDIN.gets.chomp
+          system("stty echo")
+          @rubyforge.add_release(@spec.rubyforge_project,
+                                 @spec.name,
+                                 @spec.version.to_s,
+                                 "pkg/#{@spec.name}-#{@spec.version}.tar.gz")
         end
-        desc "Release to RubyForge."
-        task :rubyforge => "release:rubyforge:upload"
       end
+      desc "Release to RubyForge."
+      task :rubyforge => "release:rubyforge:upload"
     end
 
     def rsync_to_rubyforge(spec, source, destination, options={})
