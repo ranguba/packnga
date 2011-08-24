@@ -110,7 +110,11 @@ module Packnga
 
             if File.exist?(po_file)
               file po_file => @html_files do |t|
-                sh("xml2po", "--keep-entities", "--update", t.name, *@html_files)
+                sh("xml2po",
+                   "--keep-entities",
+                   "--mode", "xhtml",
+                   "--update", t.name,
+                   *@html_files)
               end
             else
               file po_file => @pot_file do |t|
@@ -153,7 +157,7 @@ module Packnga
               end
               case path.extname
               when ".html"
-                sh("xml2po --keep-entities " +
+                sh("xml2po --keep-entities --mode xhtml " +
                    "--po-file #{po_file} --language #{language} " +
                    "#{path} > #{translated_path}")
               else
