@@ -25,6 +25,13 @@ require 'rubygems/package_task'
 require "rake/clean"
 require 'jeweler'
 
+if YAML.const_defined?(:ENGINE)
+  begin
+    YAML::ENGINE.yamler = "psych"
+  rescue LoadError
+  end
+end
+
 base_dir = File.join(File.dirname(__FILE__))
 
 packnga_lib_dir = File.join(base_dir, 'lib')
