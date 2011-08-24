@@ -89,7 +89,11 @@ module Packnga
       namespace :pot do
         directory @po_dir
         file @pot_file => [@po_dir, *@html_files] do |t|
-          sh("xml2po", "--keep-entities", "--output", t.name, *@html_files)
+          sh("xml2po",
+             "--keep-entities",
+             "--mode", "xhtml",
+             "--output", t.name,
+             *@html_files)
         end
 
         desc "Generates pot file."
