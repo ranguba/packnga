@@ -160,6 +160,11 @@ module Packnga
           system("stty -echo")
           @rubyforge.userconfig["password"] = STDIN.gets.chomp
           system("stty echo")
+          if @rubyforge.autoconfig["group_ids"][@spec.rubyforge_project].nil?
+            @rubyforge.scrape_config
+            @rubyforge.save_autoconfig
+          end
+
           @rubyforge.add_release(@spec.rubyforge_project,
                                  @spec.name,
                                  @spec.version.to_s,
