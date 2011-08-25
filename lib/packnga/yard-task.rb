@@ -30,6 +30,10 @@ module Packnga
     # This attribute is path of base directory of document.
     attr_accessor :base_dir
 
+    # Customize yardoc command line options.
+    # @param [Array<String>] options custom yardoc command line options.
+    attr_accessor :options
+
     # @private
     def initialize(spec)
       @spec = spec
@@ -37,6 +41,7 @@ module Packnga
       @readme = nil
       @text_files = nil
       @base_dir = nil
+      @options = []
       @files = spec.files.find_all do |file|
         /\.rb\z/ =~ file
       end
@@ -102,6 +107,7 @@ module Packnga
         yardoc_task.options += ["--output-dir", reference_en_dir.to_s]
         yardoc_task.options += ["--charset", "utf-8"]
         yardoc_task.options += ["--no-private"]
+        yardoc_task.options += @options
         yardoc_task.files += @files
         @hooks.each do |hook|
           hook.call(yardoc_task)
