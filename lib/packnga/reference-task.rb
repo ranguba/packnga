@@ -95,7 +95,6 @@ module Packnga
         file @pot_file => [@po_dir, *@html_files] do |t|
           sh("xml2po",
              "--keep-entities",
-             "--mode", "xhtml",
              "--output", t.name,
              *@html_files)
         end
@@ -116,7 +115,6 @@ module Packnga
               file po_file => @html_files do |t|
                 sh("xml2po",
                    "--keep-entities",
-                   "--mode", "xhtml",
                    "--update", t.name,
                    *@html_files)
               end
@@ -161,7 +159,7 @@ module Packnga
               end
               case path.extname
               when ".html"
-                sh("xml2po --keep-entities --mode xhtml " +
+                sh("xml2po --keep-entities " +
                    "--po-file #{po_file} --language #{language} " +
                    "#{path} > #{translated_path}")
               else
