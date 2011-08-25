@@ -34,6 +34,7 @@ module Packnga
     # @param [String] path of base directory of document
     attr_writer :base_dir
     attr_writer :tag_message
+    attr_writer :publish_options
     # Defines task for preparing to release.
     # Defined tasks update version and release-date in index files
     # and tag in git.
@@ -45,6 +46,7 @@ module Packnga
       @index_html_dir = nil
       @rubyforge = nil
       @tag_messsage = nil
+      @publish_options = nil
       yield(self) if block_given?
       set_default_values
       define_tasks
@@ -63,6 +65,7 @@ module Packnga
       @index_html_dir ||= "doc/html"
       @base_dir ||= Pathname.new("doc")
       @tag_message ||= 'release #{version}!!!'
+      @publish_options ||= {}
     end
 
     def define_tasks
@@ -136,7 +139,7 @@ module Packnga
       namespace :reference do
         desc "Upload document to rubyforge."
         task :publish => ["reference:generate", "reference:publication:prepare"] do
-          rsync_to_rubyforge(@spec, "#{html_reference_dir}/", @spec.name)
+          rsync_to_rubyforge(@spec, "#{html_reference_dir}/", @spec.name, @publish_options)
         end
       end
     end
@@ -145,7 +148,7 @@ module Packnga
       namespace :html do
         desc "Publish HTML to Web site."
         task :publish do
-          rsync_to_rubyforge(@spec, "#{html_base_dir}/", "")
+          rsync_to_rubyforge(@spec, "#{html_base_dir}/", "", @publish_options)
         end
       end
     end
@@ -186,6 +189,7 @@ module Packnga
       rsync_args = "-av --exclude '*.erb' --chmod=ug+w"
       rsync_args << " --group=#{spec.rubyforge_project}"
       rsync_args << " --delete" if options[:delete]
+      rsync_args << " --dry-run" if options[:dryrun]
       remote_dir = "/var/www/gforge-projects/#{spec.rubyforge_project}/"
       sh("rsync #{rsync_args} #{source} #{host}:#{remote_dir}#{destination}")
     end
