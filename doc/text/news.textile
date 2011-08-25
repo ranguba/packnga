@@ -13,6 +13,7 @@ h3. Improvements
 
 h3. Fixes
 
+* fix bug release:reference:publish stop.
 * checked group_ids before add_releasing tar.gz to rubyforge.
 * wrote only sentence for redirect to english page in .htaccess file.
 (don't write sentence for redirect tutorial page.)
