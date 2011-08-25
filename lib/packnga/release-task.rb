@@ -37,7 +37,7 @@ module Packnga
     # @param [String] message
     attr_writer :tag_message
     # This attribute is options for uploading rubyforge by rsync.
-    # @param [hash] options for uploading.
+    # @param [Hash] options for uploading.
     attr_writer :publish_options
     # Defines task for preparing to release.
     # Defined tasks update version and release-date in index files
