@@ -33,6 +33,7 @@ module Packnga
     # This attribute is path of base directory of document.
     # @param [String] path of base directory of document
     attr_writer :base_dir
+    attr_writer :tag_message
     # Defines task for preparing to release.
     # Defined tasks update version and release-date in index files
     # and tag in git.
@@ -60,6 +61,7 @@ module Packnga
     def set_default_values
       @index_html_dir ||= "doc/html"
       @base_dir ||= Pathname.new("doc")
+      @tag_message ||= 'release #{version}!!!'
     end
 
     def define_tasks
@@ -115,7 +117,7 @@ module Packnga
       desc "Tag the current revision."
       task :tag do
         version = @spec.version
-        sh("git tag -a #{version} -m 'release #{version}!!!'")
+        sh("git tag -a #{version} -m '#{@tag_message}'")
       end
     end
 
