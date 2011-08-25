@@ -48,6 +48,7 @@ module Packnga
       define_tasks
     end
 
+    # path of .htaccess.
     def htaccess
       html_reference_dir + ".htaccess"
     end
