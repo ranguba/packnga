@@ -65,6 +65,10 @@ module Packnga
       yield(@reference_task)
     end
 
+    def htaccess
+      @reference_task.htaccess
+    end
+
     private
     def set_default_values
     end

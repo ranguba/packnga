@@ -30,10 +30,10 @@ module Packnga
     def initialize(spec)
       @spec = spec
       @base_dir = nil
-      @added_preparations = []
       @translate_languages = nil
       @supported_languages = nil
       @html_files = nil
+      @htaccess = nil
       @po_dir = nil
       @pot_file = nil
       if block_given?
@@ -48,8 +48,8 @@ module Packnga
       define_tasks
     end
 
-    def before_publish(&block)
-       @added_preparations << block
+    def htaccess
+      html_reference_dir + ".htaccess"
     end
 
     private
