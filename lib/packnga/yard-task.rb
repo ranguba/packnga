@@ -73,8 +73,9 @@ module Packnga
       @base_dir ||= "doc"
       @base_dir = Pathname.new(@base_dir)
       if @text_files.nil?
+        @text_files = []
         text_dir = @base_dir + "text"
-        @text_files = [(text_dir + "**/*").to_s] if text_dir.directory?
+        @text_files << (text_dir + "**/*").to_s if text_dir.directory?
       end
     end
 
