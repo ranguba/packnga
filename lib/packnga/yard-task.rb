@@ -27,11 +27,14 @@ module Packnga
     include Rake::DSL
 
     attr_writer :readme
-    # This attribute is path of base directory of document.
+
+    # @return [String] path of base directory of document.
     attr_accessor :base_dir
 
-    # Customize yardoc command line options.
-    # @param [Array<String>] options custom yardoc command line options.
+    # @return [Array<String>] document target files.
+    attr_accessor :files
+
+    # @return [Array<String>] custom yardoc command line options.
     attr_accessor :options
 
     # @private
