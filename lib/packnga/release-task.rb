@@ -44,6 +44,7 @@ module Packnga
       @spec = spec
       @index_html_dir = nil
       @rubyforge = nil
+      @tag_messsage = nil
       yield(self) if block_given?
       set_default_values
       define_tasks
