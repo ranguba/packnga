@@ -17,12 +17,12 @@
 
 source "http://rubygems.org/"
 
+gem "rake"
+gem "yard"
 gem "rubyforge"
 
 group :development, :test do
   gem "test-unit"
   gem "test-unit-notify"
-  gem "rake"
   gem "jeweler"
-  gem "yard"
 end
