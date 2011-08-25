@@ -30,6 +30,7 @@ module Packnga
     def initialize(spec)
       @spec = spec
       @base_dir = nil
+      @added_preparations = []
       @translate_languages = nil
       @supported_languages = nil
       @html_files = nil
@@ -45,6 +46,10 @@ module Packnga
     def define
       set_default_values
       define_tasks
+    end
+
+    def before_publish(&block)
+       @added_preparations << block
     end
 
     private
@@ -235,6 +240,12 @@ module Packnga
                       "#{@spec.homepage}#{@spec.name}/ja/file.tutorial.html")
             file.puts("RedirectMatch permanent ^/#{@spec.name}/$ " +
                       "#{@spec.homepage}#{@spec.name}/en/")
+          end
+
+          unless @added_preparations.nil?
+            @added_preparations.each do |preparation|
+                preparation.call
+            end
           end
         end
       end
