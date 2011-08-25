@@ -1,5 +1,22 @@
 h1. NEWS
 
+h2. 0.9.1: 2011-08-25
+
+h3. Improvements
+
+* created package in rubyforge if package isn't created.
+* added Packnga::ReleaseTask#tag_message.
+* added Packnga::ReleaseTask#publish_options.
+* added attribute in DocumentTask for getting .htaccess file path.
+* added reference:publicaton:generate.
+(This task is run after prepareing to publish references.)
+
+h3. Fixes
+
+* checked group_ids before add_releasing tar.gz to rubyforge.
+* wrote only sentence for redirect to english page in .htaccess file.
+(don't write sentence for redirect tutorial page.)
+
 h2. 0.9.0: 2011-08-19
 
 The first release!
