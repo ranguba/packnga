@@ -58,10 +58,8 @@ module Packnga
       @translate_languages ||= [:ja]
       @supported_languages = [:en, *@translate_languages]
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
-
       @po_dir = "doc/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
-
     end
 
     def reference_base_dir
