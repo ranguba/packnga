@@ -138,7 +138,7 @@ module Packnga
     def define_reference_task
       namespace :reference do
         desc "Upload document to rubyforge."
-        task :publish => ["reference:generate", "reference:publication:prepare"] do
+        task :publish => "reference:publication:generate" do
           rsync_to_rubyforge(@spec, "#{html_reference_dir}/", @spec.name, @publish_options)
         end
       end

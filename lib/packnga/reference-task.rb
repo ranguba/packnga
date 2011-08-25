@@ -235,19 +235,15 @@ module Packnga
               end
             end
           end
-          File.open("#{html_reference_dir}/.htaccess", "w") do |file|
+          File.open(htaccess, "w") do |file|
             file.puts("Redirect permanent /#{@spec.name}/text/TUTORIAL_ja_rdoc.html " +
                       "#{@spec.homepage}#{@spec.name}/ja/file.tutorial.html")
             file.puts("RedirectMatch permanent ^/#{@spec.name}/$ " +
                       "#{@spec.homepage}#{@spec.name}/en/")
           end
-
-          unless @added_preparations.nil?
-            @added_preparations.each do |preparation|
-                preparation.call
-            end
-          end
         end
+
+        task :generate => ["reference:generate", "reference:publication:prepare"]
       end
     end
 
