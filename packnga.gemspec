@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{packnga}
-  s.version = "0.9.0"
+  s.version = "0.9.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Haruka Yoshihara", "Kouhei Sutou"]
-  s.date = %q{2011-08-19}
+  s.date = %q{2011-08-25}
   s.description = %q{Packnga is an library to translate to many languages by YARD.
 }
   s.email = ["yoshihara@clear-code.com", "kou@clear-code.com"]
