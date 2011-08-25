@@ -33,10 +33,10 @@ module Packnga
     # This attribute is path of base directory of document.
     # @param [String] path of base directory of document
     attr_writer :base_dir
-    #This attribute is message when tagging in release.
+    # This attribute is message when tagging in release.
     # @param [String] message
     attr_writer :tag_message
-    #Thes attribute is options for uploading rubyforge.
+    # This attribute is options for uploading rubyforge.
     # @param [hash] options for uploading.
     attr_writer :publish_options
     # Defines task for preparing to release.
