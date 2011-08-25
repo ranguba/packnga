@@ -25,13 +25,18 @@ module Packnga
   class ReferenceTask
     include Rake::DSL
     include ERB::Util
-    # This attribute is path of base directory of document.
-    # @param [String] path of base directory of document
+
+    # @return [String] path of base directory of document
     attr_writer :base_dir
+
+    # @return [String] mode used in xml2po. The default is "docbook".
+    attr_writer :mode
+
     # @private
     def initialize(spec)
       @spec = spec
       @base_dir = nil
+      @mode = nil
       @translate_languages = nil
       @supported_languages = nil
       @html_files = nil
@@ -58,6 +63,7 @@ module Packnga
     private
     def set_default_values
       @base_dir ||= Pathname.new("doc")
+      @mode ||= "docbook"
       @translate_languages ||= [:ja]
       @supported_languages = [:en, *@translate_languages]
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
@@ -97,6 +103,7 @@ module Packnga
         file @pot_file => [@po_dir, *@html_files] do |t|
           sh("xml2po",
              "--keep-entities",
+             "--mode", @mode,
              "--output", t.name,
              *@html_files)
         end
@@ -117,6 +124,7 @@ module Packnga
               file po_file => @html_files do |t|
                 sh("xml2po",
                    "--keep-entities",
+                   "--mode", @mode,
                    "--update", t.name,
                    *@html_files)
               end
@@ -161,9 +169,13 @@ module Packnga
               end
               case path.extname
               when ".html"
-                sh("xml2po --keep-entities " +
-                   "--po-file #{po_file} --language #{language} " +
-                   "#{path} > #{translated_path}")
+                sh("xml2po",
+                   "--keep-entities",
+                   "--mode", @mode,
+                   "--po-file", po_file.to_s,
+                   "--language", language.to_s,
+                   "--output", translated_path.to_s,
+                   path.to_s)
               else
                 cp(path.to_s, translated_path, :preserve => true)
               end
