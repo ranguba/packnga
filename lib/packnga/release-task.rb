@@ -164,7 +164,9 @@ module Packnga
             @rubyforge.scrape_config
             @rubyforge.save_autoconfig
           end
-
+          if @rubyforge.autoconfig["package_ids"][@spec.name].nil?
+            @rubyforge.create_package(@rubyforge.autoconfig["group_ids"][@spec.rubyforge_project], @spec.name)
+          end
           @rubyforge.add_release(@spec.rubyforge_project,
                                  @spec.name,
                                  @spec.version.to_s,
