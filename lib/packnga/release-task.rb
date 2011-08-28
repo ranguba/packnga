@@ -170,6 +170,7 @@ module Packnga
           system("stty -echo")
           @rubyforge.userconfig["password"] = STDIN.gets.chomp
           system("stty echo")
+          puts
           if @rubyforge.autoconfig["group_ids"][@spec.rubyforge_project].nil?
             @rubyforge.scrape_config
             @rubyforge.save_autoconfig
