@@ -46,7 +46,7 @@ module Packnga
       @base_dir = nil
       @options = []
       @files = spec.files.find_all do |file|
-        /\.rb\z/ =~ file
+        /\Alib\// =~ file and /\.rb\z/ =~ file
       end
       if block_given?
         yield(self)
