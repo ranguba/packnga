@@ -1,5 +1,14 @@
 h1. NEWS
 
+h2. 0.9.2: 2011-08-29
+
+h3. Improvements
+
+* Supported doc/text/ nonexistence case.
+* Supported yardoc options customize.
+* Supported xml2po mode customize.
+* Used only lib/**/*.rb as document target by default.
+
 h2. 0.9.1: 2011-08-25
 
 h3. Improvements
