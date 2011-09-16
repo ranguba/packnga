@@ -68,7 +68,7 @@ module Packnga
     def set_default_values
       @index_html_dir ||= "doc/html"
       @base_dir ||= Pathname.new("doc")
-      @tag_message ||= 'release #{version}!!!'
+      @tag_message ||= "release #{@spec.version}!!!"
       @publish_options ||= {}
     end
 
