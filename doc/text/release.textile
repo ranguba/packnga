@@ -63,6 +63,7 @@ h2. gemパッケージの作成
 下記コマンドを打ってアップロード用のgemパッケージをビルドする。
 
 <pre>
+$ make clean
 $ ruby1.8 -S rake build
 </pre>
 
