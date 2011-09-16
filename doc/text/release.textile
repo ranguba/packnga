@@ -15,9 +15,10 @@ $ git log -p --reverse （前回のリリースバージョン)..
 動作の変更などはChanges,
 バグの修正など前バージョンまでにあった問題を修正したものはFixesに記述する。
 また、コミットログの行末に[人名]がある場合はその人名をThanks以下に書く。
-この作業をリリース予定日よりも前に行った場合は、news.rdocの先頭にコミットIDをメモしておく。
+この作業をリリース予定日よりも前に行った場合は、目に見えるところにコミットIDをメモしておく。
+news.textileだと次のrake reference:po:updateで翻訳対象になってしまいノイズになってしまうので注意すること。
 
-h3. news.rdocの1リリース分のテンプレート
+h3. news.textileの1リリース分のテンプレート
 
 <pre>
 h2. （リリースするバージョン）: リリース日（yyyy-mm-dd）
@@ -36,29 +37,6 @@ h3. Fixes
 
 h3. Thanks
 </pre>
-
-<pre>
-== （リリースするバージョン）: リリース日（yyyy-mm-dd）
-
-=== Improvements
-
-* 
-
-=== Changes
-
-* 
-
-=== Fixes
-
-* 
-
-=== Thanks
-
-* 
-
-</pre>
-
-TODO:テンプレをtextileにする
 
 h2. 日本語訳の作成
 
