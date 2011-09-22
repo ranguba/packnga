@@ -300,4 +300,4 @@ $ rake releace:rubyforge:news:post
 
 h2. 次回リリース時のバージョン番号の設定
 
-ext/groonga/rb-grn.hにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更する。
+rroongaはext/groonga/rb-grn.h、それ以外はlib/（パッケージ名）/version.rbにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更する。
