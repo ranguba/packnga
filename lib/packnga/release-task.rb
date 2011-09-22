@@ -16,6 +16,7 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 require "rubyforge"
+require "digest"
 
 module Packnga
   # This class creates release tasks.
@@ -56,6 +57,7 @@ module Packnga
       @tag_messsage = nil
       @publish_options = nil
       @changes = nil
+      @rubyforge_password = nil
       yield(self) if block_given?
       set_default_values
       define_tasks
@@ -138,7 +140,8 @@ module Packnga
     def define_rubyforge_tasks
       return if @spec.rubyforge_project.nil?
       @rubyforge = RubyForge.new
-      @rubyforge.configure
+      @uninitialized_password = Digest::SHA2.hexdigest(Time.now.to_f.to_s)
+      @rubyforge.configure("password" => @uninitialized_password)
       define_reference_task
       define_html_task
       define_publish_task
@@ -173,11 +176,7 @@ module Packnga
       namespace :rubyforge do
         desc "Upload tar.gz to RubyForge."
         task :upload => "package" do
-          print "password:"
-          system("stty -echo")
-          @rubyforge.userconfig["password"] = STDIN.gets.chomp
-          system("stty echo")
-          puts
+          ensure_rubyforge_password
           if @rubyforge.autoconfig["group_ids"][@spec.rubyforge_project].nil?
             @rubyforge.scrape_config
             @rubyforge.save_autoconfig
@@ -200,11 +199,7 @@ module Packnga
         namespace :news do
           desc "Post news to RubyForge."
           task :post do
-            print "password:"
-            system("stty -echo")
-            @rubyforge.userconfig["password"] = STDIN.gets.chomp
-            system("stty echo")
-            puts
+            ensure_rubyforge_password
             group_id =
               @rubyforge.autoconfig["group_ids"][@spec.rubyforge_project]
             subject =
@@ -228,6 +223,16 @@ module Packnga
       rsync_args << " --dry-run" if options[:dryrun]
       remote_dir = "/var/www/gforge-projects/#{spec.rubyforge_project}/"
       sh("rsync #{rsync_args} #{source} #{host}:#{remote_dir}#{destination}")
+    end
+
+    def ensure_rubyforge_password
+      if @rubyforge.userconfig["password"] == @uninitialized_password
+        print "password:"
+        system("stty -echo")
+        @rubyforge.userconfig["password"] = STDIN.gets.chomp
+        system("stty echo")
+        puts
+      end
     end
   end
 end
