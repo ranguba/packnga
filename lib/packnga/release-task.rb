@@ -200,13 +200,20 @@ module Packnga
         namespace :news do
           desc "Post news to RubyForge."
           task :post do
+            print "password:"
+            system("stty -echo")
+            @rubyforge.userconfig["password"] = STDIN.gets.chomp
+            system("stty echo")
+            puts
             group_id =
               @rubyforge.autoconfig["group_ids"][@spec.rubyforge_project]
             subject =
               "#{@spec.name} version #{@spec.version} has been released!"
             body = @spec.description + "\nChanges:" + @changes
 
-            @rubyforge.post_news(group_id, subject, body)
+            if @rubyforge.post_news(group_id, subject, body).nil?
+              raise "News couldn't be posted to RubyForge."
+            end
           end
         end
       end
