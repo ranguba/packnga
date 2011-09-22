@@ -291,7 +291,12 @@ yoshihara
 
 h2. rubyforgeのニュースを更新
 
-rubyforgeのpost_newsコマンドを使ってrubyforgeの最新ニュースを更新する。
+rroonga以外の場合、もとのディレクトリに戻る。
+下記コマンドを入力してrubyforgeの最新ニュースを更新する。
+
+<pre>
+$ rake releace:rubyforge:news:post
+</pre>
 
 h2. 次回リリース時のバージョン番号の設定
 
