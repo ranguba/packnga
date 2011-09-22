@@ -21,7 +21,7 @@ module Packnga
   # This class creates release tasks.
   #
   # Release tasks tag current version and install gem for test.
-  # It also define tasks to upload rubyforge whether option.
+  # It also define tasks to upload RubyForge whether option.
   #
   # @since 0.9.0
   class ReleaseTask
@@ -36,18 +36,18 @@ module Packnga
     # This attribute is message when tagging in release.
     # @param [String] message
     attr_writer :tag_message
-    # This attribute is options for uploading rubyforge by rsync.
+    # This attribute is options for uploading RubyForge by rsync.
     # @param [Hash] options for uploading.
     attr_writer :publish_options
     # This attribute is text for changes in new release
-    # to post news to Rubyforge.
+    # to post news to RubyForge.
     # @param [String] text for changes.
     attr_writer :changes
     # Defines task for preparing to release.
     # Defined tasks update version and release-date in index files
     # and tag in git.
     # If you set rubyforge_project of Jeweler::Task.new with its given block,
-    # it also define tasks to update rubyforge.
+    # it also define tasks to update RubyForge.
     # @param [Jeweler::Task] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec
@@ -148,7 +148,7 @@ module Packnga
 
     def define_reference_task
       namespace :reference do
-        desc "Upload document to rubyforge."
+        desc "Upload document to RubyForge."
         task :publish => "reference:publication:generate" do
           rsync_to_rubyforge(@spec, "#{html_reference_dir}/", @spec.name, @publish_options)
         end
@@ -165,7 +165,7 @@ module Packnga
     end
 
     def define_publish_task
-      desc "Upload document and HTML to rubyforge."
+      desc "Upload document and HTML to RubyForge."
       task :publish => ["html:publish", "reference:publish"]
     end
 
@@ -198,7 +198,7 @@ module Packnga
     def define_post_task
       namespace :rubyforge do
         namespace :news do
-          desc "Post news to Rubyforge."
+          desc "Post news to RubyForge."
           task :post do
             group_id =
               @rubyforge.autoconfig["group_ids"][@spec.rubyforge_project]
