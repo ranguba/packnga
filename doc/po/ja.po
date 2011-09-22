@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Packnga 0.9.2\n"
-"POT-Creation-Date: 2011-08-28 22:54+0900\n"
-"PO-Revision-Date: 2011-08-28 22:59+0900\n"
+"POT-Creation-Date: 2011-09-22 15:08+0900\n"
+"PO-Revision-Date: 2011-09-22 15:09+0900\n"
 "Last-Translator: Yoshihara Haruka <yoshihara@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -15,34 +15,142 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: doc/reference/en/class_list.html:21(script)
+#: doc/reference/en/method_list.html:21(script)
+#: doc/reference/en/file_list.html:21(script)
+msgid ""
+"if (window.top.frames.main) { document.getElementById('base_target').target "
+"= 'main'; document.body.className = 'frames'; }"
+msgstr ""
+
+#: doc/reference/en/class_list.html:28(h1) doc/reference/en/Packnga.html:47(a)
+#: doc/reference/en/file.news.html:45(a) doc/reference/en/index.html:45(a)
+#: doc/reference/en/file.lgpl.html:45(a)
+#: doc/reference/en/file.tutorial.html:45(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:47(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:47(a)
+#: doc/reference/en/Packnga/YARDTask.html:47(a)
+#: doc/reference/en/Packnga/DocumentTask.html:47(a)
+#: doc/reference/en/top-level-namespace.html:47(a)
+#: doc/reference/en/_index.html:43(a) doc/reference/en/file.release.html:45(a)
+#: doc/reference/en/file.README.html:45(a)
+msgid "Class List"
+msgstr "クラスリスト"
+
+#: doc/reference/en/class_list.html:31(a)
+#: doc/reference/en/method_list.html:31(a)
+#: doc/reference/en/file_list.html:31(a)
+msgid "Classes"
+msgstr "クラス"
+
+#: doc/reference/en/class_list.html:33(a)
+#: doc/reference/en/method_list.html:33(a)
+#: doc/reference/en/file_list.html:33(a)
+msgid "Methods"
+msgstr "メソッド"
+
+#: doc/reference/en/class_list.html:35(a)
+#: doc/reference/en/method_list.html:35(a)
+#: doc/reference/en/file_list.html:35(a)
+msgid "Files"
+msgstr "ファイル"
+
+#: doc/reference/en/class_list.html:38(div)
+#: doc/reference/en/method_list.html:38(div)
+#: doc/reference/en/file_list.html:38(div)
+msgid "Search: <input type=\"text\"/>"
+msgstr ""
+
+#: doc/reference/en/class_list.html:41(a)
+#: doc/reference/en/class_list.html:42(small)
+#: doc/reference/en/top-level-namespace.html:39(span)
+#: doc/reference/en/top-level-namespace.html:59(h1)
+msgid "Top Level Namespace"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/class_list.html:42(small)
+#: doc/reference/en/Packnga.html:39(span) doc/reference/en/index.html:59(p)
+#: doc/reference/en/file.tutorial.html:110(span)
+#: doc/reference/en/file.tutorial.html:111(span)
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:37(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:37(a)
+#: doc/reference/en/Packnga/YARDTask.html:37(a)
+#: doc/reference/en/Packnga/DocumentTask.html:37(a)
+#: doc/reference/en/top-level-namespace.html:81(a)
+#: doc/reference/en/_index.html:111(a) doc/reference/en/file.README.html:59(p)
+msgid "Packnga"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/file.tutorial.html:110(span)
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/Packnga/DocumentTask.html:39(span)
+#: doc/reference/en/Packnga/DocumentTask.html:272(a)
+#: doc/reference/en/_index.html:96(a)
+msgid "DocumentTask"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(li)
+msgid ""
+"<span class=\"object_link\"><placeholder-1/></span> &lt; "
+"Object<placeholder-2/>"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:39(span)
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+#: doc/reference/en/_index.html:124(a)
+msgid "ReferenceTask"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/file.tutorial.html:111(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:39(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:323(a)
+#: doc/reference/en/_index.html:131(a)
+msgid "ReleaseTask"
+msgstr ""
+
+#: doc/reference/en/class_list.html:42(a)
+#: doc/reference/en/Packnga/YARDTask.html:39(span)
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/_index.html:146(a)
+msgid "YARDTask"
+msgstr ""
+
 #: doc/reference/en/Packnga.html:6(title)
 msgid "Module: Packnga &mdash; packnga"
 msgstr ""
 
 #: doc/reference/en/Packnga.html:17(script)
 #: doc/reference/en/file.news.html:17(script)
-#: doc/reference/en/top-level-namespace.html:17(script)
-#: doc/reference/en/file.lgpl.html:17(script)
 #: doc/reference/en/index.html:17(script)
-#: doc/reference/en/file.README.html:17(script)
+#: doc/reference/en/file.lgpl.html:17(script)
 #: doc/reference/en/file.tutorial.html:17(script)
+#: doc/reference/en/top-level-namespace.html:17(script)
 #: doc/reference/en/_index.html:15(script)
+#: doc/reference/en/file.release.html:17(script)
+#: doc/reference/en/file.README.html:17(script)
 msgid "relpath = ''; if (relpath != '') relpath += '/';"
 msgstr ""
 
 #: doc/reference/en/Packnga.html:29(script)
 #: doc/reference/en/file.news.html:29(script)
-#: doc/reference/en/Packnga/RubyforgeTask.html:29(script)
-#: doc/reference/en/Packnga/YARDTask.html:29(script)
-#: doc/reference/en/Packnga/ReleaseTask.html:29(script)
-#: doc/reference/en/Packnga/DocumentTask.html:29(script)
-#: doc/reference/en/Packnga/ReferenceTask.html:29(script)
-#: doc/reference/en/top-level-namespace.html:29(script)
-#: doc/reference/en/file.lgpl.html:29(script)
 #: doc/reference/en/index.html:29(script)
-#: doc/reference/en/file.README.html:29(script)
+#: doc/reference/en/file.lgpl.html:29(script)
 #: doc/reference/en/file.tutorial.html:29(script)
+#: doc/reference/en/Packnga/ReleaseTask.html:29(script)
+#: doc/reference/en/Packnga/ReferenceTask.html:29(script)
+#: doc/reference/en/Packnga/YARDTask.html:29(script)
+#: doc/reference/en/Packnga/DocumentTask.html:29(script)
+#: doc/reference/en/top-level-namespace.html:29(script)
 #: doc/reference/en/_index.html:27(script)
+#: doc/reference/en/file.release.html:29(script)
+#: doc/reference/en/file.README.html:29(script)
 msgid "if (window.top.frames.main) document.body.className = 'frames';"
 msgstr ""
 
@@ -50,62 +158,10 @@ msgstr ""
 msgid "Index (P)"
 msgstr ""
 
-#: doc/reference/en/Packnga.html:39(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:37(a)
-#: doc/reference/en/Packnga/YARDTask.html:37(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:37(a)
-#: doc/reference/en/Packnga/DocumentTask.html:37(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:37(a)
-#: doc/reference/en/top-level-namespace.html:81(a)
-#: doc/reference/en/class_list.html:42(a)
-#: doc/reference/en/class_list.html:42(small)
-#: doc/reference/en/index.html:59(p) doc/reference/en/file.README.html:59(p)
-#: doc/reference/en/file.tutorial.html:110(span)
-#: doc/reference/en/file.tutorial.html:111(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-#: doc/reference/en/_index.html:108(a)
-msgid "Packnga"
-msgstr ""
-
 #: doc/reference/en/Packnga.html:42(span)
 #: doc/reference/en/file.news.html:40(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:42(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:434(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:437(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:506(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:551(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:705(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:814(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-#: doc/reference/en/Packnga/YARDTask.html:42(span)
-#: doc/reference/en/Packnga/YARDTask.html:643(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:42(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:395(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:401(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:486(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:565(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:644(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:718(span)
-#: doc/reference/en/Packnga/DocumentTask.html:42(span)
-#: doc/reference/en/Packnga/DocumentTask.html:338(span)
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-#: doc/reference/en/Packnga/DocumentTask.html:344(span)
-#: doc/reference/en/Packnga/DocumentTask.html:430(span)
-#: doc/reference/en/Packnga/DocumentTask.html:431(span)
-#: doc/reference/en/Packnga/DocumentTask.html:556(span)
-#: doc/reference/en/Packnga/DocumentTask.html:625(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:42(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:301(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:378(span)
-#: doc/reference/en/top-level-namespace.html:42(span)
-#: doc/reference/en/file.lgpl.html:40(span)
 #: doc/reference/en/index.html:40(span)
-#: doc/reference/en/file.README.html:40(span)
+#: doc/reference/en/file.lgpl.html:40(span)
 #: doc/reference/en/file.tutorial.html:40(span)
 #: doc/reference/en/file.tutorial.html:77(span)
 #: doc/reference/en/file.tutorial.html:78(span)
@@ -114,62 +170,52 @@ msgstr ""
 #: doc/reference/en/file.tutorial.html:111(span)
 #: doc/reference/en/file.tutorial.html:120(span)
 #: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:42(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:434(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:441(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:527(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:608(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:688(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:768(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:842(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:42(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:307(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:385(span)
+#: doc/reference/en/Packnga/YARDTask.html:42(span)
+#: doc/reference/en/Packnga/YARDTask.html:654(span)
+#: doc/reference/en/Packnga/DocumentTask.html:42(span)
+#: doc/reference/en/Packnga/DocumentTask.html:345(span)
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+#: doc/reference/en/Packnga/DocumentTask.html:351(span)
+#: doc/reference/en/Packnga/DocumentTask.html:438(span)
+#: doc/reference/en/Packnga/DocumentTask.html:439(span)
+#: doc/reference/en/Packnga/DocumentTask.html:563(span)
+#: doc/reference/en/Packnga/DocumentTask.html:632(span)
+#: doc/reference/en/top-level-namespace.html:42(span)
 #: doc/reference/en/_index.html:38(span)
+#: doc/reference/en/file.release.html:40(span)
+#: doc/reference/en/file.README.html:40(span)
 msgid "("
 msgstr ""
 
 #: doc/reference/en/Packnga.html:42(a) doc/reference/en/file.news.html:40(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:42(a)
-#: doc/reference/en/Packnga/YARDTask.html:42(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:42(a)
-#: doc/reference/en/Packnga/DocumentTask.html:42(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:42(a)
-#: doc/reference/en/top-level-namespace.html:42(a)
-#: doc/reference/en/file.lgpl.html:40(a) doc/reference/en/index.html:40(a)
-#: doc/reference/en/file.README.html:40(a)
+#: doc/reference/en/index.html:40(a) doc/reference/en/file.lgpl.html:40(a)
 #: doc/reference/en/file.tutorial.html:40(a)
-#: doc/reference/en/_index.html:38(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:42(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:42(a)
+#: doc/reference/en/Packnga/YARDTask.html:42(a)
+#: doc/reference/en/Packnga/DocumentTask.html:42(a)
+#: doc/reference/en/top-level-namespace.html:42(a)
+#: doc/reference/en/_index.html:38(a) doc/reference/en/file.release.html:40(a)
+#: doc/reference/en/file.README.html:40(a)
 msgid "no frames"
 msgstr ""
 
 #: doc/reference/en/Packnga.html:42(span)
 #: doc/reference/en/file.news.html:40(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:42(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:434(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:437(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:506(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:551(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:710(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:814(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-#: doc/reference/en/Packnga/YARDTask.html:42(span)
-#: doc/reference/en/Packnga/YARDTask.html:643(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:42(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:395(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:401(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:486(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:565(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:644(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:718(span)
-#: doc/reference/en/Packnga/DocumentTask.html:42(span)
-#: doc/reference/en/Packnga/DocumentTask.html:338(span)
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-#: doc/reference/en/Packnga/DocumentTask.html:344(span)
-#: doc/reference/en/Packnga/DocumentTask.html:430(span)
-#: doc/reference/en/Packnga/DocumentTask.html:431(span)
-#: doc/reference/en/Packnga/DocumentTask.html:556(span)
-#: doc/reference/en/Packnga/DocumentTask.html:625(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:42(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:301(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:378(span)
-#: doc/reference/en/top-level-namespace.html:42(span)
-#: doc/reference/en/file.lgpl.html:40(span)
 #: doc/reference/en/index.html:40(span)
-#: doc/reference/en/file.README.html:40(span)
+#: doc/reference/en/file.lgpl.html:40(span)
 #: doc/reference/en/file.tutorial.html:40(span)
 #: doc/reference/en/file.tutorial.html:77(span)
 #: doc/reference/en/file.tutorial.html:78(span)
@@ -178,51 +224,60 @@ msgstr ""
 #: doc/reference/en/file.tutorial.html:111(span)
 #: doc/reference/en/file.tutorial.html:120(span)
 #: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:42(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:434(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:441(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:527(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:608(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:688(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:768(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:842(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:42(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:307(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:385(span)
+#: doc/reference/en/Packnga/YARDTask.html:42(span)
+#: doc/reference/en/Packnga/YARDTask.html:654(span)
+#: doc/reference/en/Packnga/DocumentTask.html:42(span)
+#: doc/reference/en/Packnga/DocumentTask.html:345(span)
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+#: doc/reference/en/Packnga/DocumentTask.html:351(span)
+#: doc/reference/en/Packnga/DocumentTask.html:438(span)
+#: doc/reference/en/Packnga/DocumentTask.html:439(span)
+#: doc/reference/en/Packnga/DocumentTask.html:563(span)
+#: doc/reference/en/Packnga/DocumentTask.html:632(span)
+#: doc/reference/en/top-level-namespace.html:42(span)
 #: doc/reference/en/_index.html:38(span)
+#: doc/reference/en/file.release.html:40(span)
+#: doc/reference/en/file.README.html:40(span)
 msgid ")"
 msgstr ""
 
-#: doc/reference/en/Packnga.html:47(a) doc/reference/en/file.news.html:45(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:47(a)
-#: doc/reference/en/Packnga/YARDTask.html:47(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:47(a)
-#: doc/reference/en/Packnga/DocumentTask.html:47(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:47(a)
-#: doc/reference/en/top-level-namespace.html:47(a)
-#: doc/reference/en/class_list.html:28(h1)
-#: doc/reference/en/file.lgpl.html:45(a) doc/reference/en/index.html:45(a)
-#: doc/reference/en/file.README.html:45(a)
-#: doc/reference/en/file.tutorial.html:45(a)
-#: doc/reference/en/_index.html:43(a)
-msgid "Class List"
-msgstr "クラスリスト"
-
 #: doc/reference/en/Packnga.html:49(a) doc/reference/en/file.news.html:47(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:49(a)
-#: doc/reference/en/Packnga/YARDTask.html:49(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:49(a)
-#: doc/reference/en/Packnga/DocumentTask.html:49(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:49(a)
-#: doc/reference/en/top-level-namespace.html:49(a)
-#: doc/reference/en/method_list.html:28(h1)
-#: doc/reference/en/file.lgpl.html:47(a) doc/reference/en/index.html:47(a)
-#: doc/reference/en/file.README.html:47(a)
+#: doc/reference/en/index.html:47(a) doc/reference/en/method_list.html:28(h1)
+#: doc/reference/en/file.lgpl.html:47(a)
 #: doc/reference/en/file.tutorial.html:47(a)
-#: doc/reference/en/_index.html:45(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:49(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:49(a)
+#: doc/reference/en/Packnga/YARDTask.html:49(a)
+#: doc/reference/en/Packnga/DocumentTask.html:49(a)
+#: doc/reference/en/top-level-namespace.html:49(a)
+#: doc/reference/en/_index.html:45(a) doc/reference/en/file.release.html:47(a)
+#: doc/reference/en/file.README.html:47(a)
 msgid "Method List"
 msgstr "メソッドリスト"
 
 #: doc/reference/en/Packnga.html:51(a) doc/reference/en/file.news.html:49(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:51(a)
-#: doc/reference/en/Packnga/YARDTask.html:51(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:51(a)
-#: doc/reference/en/Packnga/DocumentTask.html:51(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:51(a)
-#: doc/reference/en/top-level-namespace.html:51(a)
-#: doc/reference/en/file.lgpl.html:49(a) doc/reference/en/index.html:49(a)
-#: doc/reference/en/file.README.html:49(a)
+#: doc/reference/en/index.html:49(a) doc/reference/en/file.lgpl.html:49(a)
 #: doc/reference/en/file.tutorial.html:49(a)
-#: doc/reference/en/file_list.html:28(h1) doc/reference/en/_index.html:47(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:51(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:51(a)
+#: doc/reference/en/Packnga/YARDTask.html:51(a)
+#: doc/reference/en/Packnga/DocumentTask.html:51(a)
+#: doc/reference/en/top-level-namespace.html:51(a)
+#: doc/reference/en/_index.html:47(a) doc/reference/en/file_list.html:28(h1)
+#: doc/reference/en/file.release.html:49(a)
+#: doc/reference/en/file.README.html:49(a)
 msgid "File List"
 msgstr "ファイルリスト"
 
@@ -231,11 +286,10 @@ msgid "Module: Packnga"
 msgstr ""
 
 #: doc/reference/en/Packnga.html:74(dt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:93(dt)
-#: doc/reference/en/Packnga/YARDTask.html:93(dt)
 #: doc/reference/en/Packnga/ReleaseTask.html:93(dt)
-#: doc/reference/en/Packnga/DocumentTask.html:93(dt)
 #: doc/reference/en/Packnga/ReferenceTask.html:93(dt)
+#: doc/reference/en/Packnga/YARDTask.html:93(dt)
+#: doc/reference/en/Packnga/DocumentTask.html:93(dt)
 msgid "Defined in:"
 msgstr "定義元ファイル"
 
@@ -250,120 +304,46 @@ msgid "lib/packnga/version.rb<placeholder-1/>"
 msgstr ""
 
 #: doc/reference/en/Packnga.html:82(h2)
-#: doc/reference/en/Packnga/YARDTask.html:99(h2)
 #: doc/reference/en/Packnga/ReleaseTask.html:99(h2)
-#: doc/reference/en/Packnga/DocumentTask.html:99(h2)
 #: doc/reference/en/Packnga/ReferenceTask.html:99(h2)
+#: doc/reference/en/Packnga/YARDTask.html:99(h2)
+#: doc/reference/en/Packnga/DocumentTask.html:99(h2)
 msgid "Overview"
 msgstr ""
 
-#: doc/reference/en/Packnga.html:85(p)
-msgid ""
-"Copyright (C) 2011 yoshihara haruka &lt;yoshihara@clear-code.com&gt; "
-"Copyright (C) 2011 Kouhei Sutou &lt;kou@clear-code.com&gt;"
+#: doc/reference/en/Packnga.html:84(p)
+msgid "Copyright (C) 2011 yoshihara haruka"
 msgstr ""
 
-#: doc/reference/en/Packnga.html:88(p)
-msgid ""
-"This library is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU Lesser General Public License version 2.1 as "
-"published by the Free Software Foundation."
+#: doc/reference/en/Packnga.html:83(div)
+msgid "<placeholder-1/>@clear-code.com&gt; Copyright (C) 2011 Kouhei Sutou"
 msgstr ""
 
-#: doc/reference/en/Packnga.html:92(p)
+#: doc/reference/en/Packnga.html:82(div)
 msgid ""
+"<placeholder-1/>@clear-code.com&gt; This library is free software; you can "
+"redistribute it and/or modify it under the terms of the GNU Lesser General "
+"Public License version 2.1 as published by the Free Software Foundation. "
 "This library is distributed in the hope that it will be useful, but WITHOUT "
 "ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
 "FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License "
-"for more details."
-msgstr ""
-
-#: doc/reference/en/Packnga.html:97(p)
-msgid ""
-"You should have received a copy of the GNU Lesser General Public License "
-"along with this library; if not, write to the Free Software Foundation, "
-"Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:107(h2)
-#: doc/reference/en/top-level-namespace.html:77(h2)
-msgid "Defined Under Namespace"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:113(strong)
-msgid "Classes:"
-msgstr "クラス:"
-
-#: doc/reference/en/Packnga.html:113(a)
-#: doc/reference/en/Packnga/DocumentTask.html:39(span)
-#: doc/reference/en/Packnga/DocumentTask.html:267(a)
-#: doc/reference/en/class_list.html:42(a)
-#: doc/reference/en/file.tutorial.html:110(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/_index.html:93(a)
-msgid "DocumentTask"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:113(a)
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:39(span)
-#: doc/reference/en/class_list.html:42(a) doc/reference/en/_index.html:121(a)
-msgid "ReferenceTask"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:113(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:39(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:288(a)
-#: doc/reference/en/class_list.html:42(a)
-#: doc/reference/en/file.tutorial.html:111(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-#: doc/reference/en/_index.html:128(a)
-msgid "ReleaseTask"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:113(a)
-#: doc/reference/en/Packnga/YARDTask.html:39(span)
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/class_list.html:42(a) doc/reference/en/_index.html:143(a)
-msgid "YARDTask"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:108(p)
-msgid ""
-"<placeholder-1/> <span class=\"object_link\"><placeholder-2/></span>, <span "
-"class=\"object_link\"><placeholder-3/></span>, <span class=\"object_link"
-"\"><placeholder-4/></span>, <span class=\"object_link\"><placeholder-5/></"
-"span>"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:118(h2)
-msgid "Constant Summary"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:126(p)
-msgid "Packnga version."
-msgstr ""
-
-#: doc/reference/en/Packnga.html:122(dt)
-msgid ""
-"VERSION = <div class=\"docstring\"><div class=\"discussion\"><placeholder-1/"
-"></div></div>\n"
-"<placeholder-2/>"
-msgstr ""
-
-#: doc/reference/en/Packnga.html:136(span)
-msgid "\"0.9.2\""
+"for more details. You should have received a copy of the GNU Lesser General "
+"Public License along with this library; if not, write to the Free Software "
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA "
+"Defined Under Namespace Classes: DocumentTask, ReferenceTask, ReleaseTask, "
+"YARDTask Constant Summary VERSION = Packnga version. 0.9.3"
 msgstr ""
 
 #: doc/reference/en/file.news.html:6(title)
 msgid "File: news &mdash; packnga"
 msgstr "ファイル：お知らせ；Packnga"
 
-#: doc/reference/en/file.news.html:36(a)
-#: doc/reference/en/top-level-namespace.html:36(a)
-#: doc/reference/en/file.lgpl.html:36(a) doc/reference/en/index.html:36(a)
-#: doc/reference/en/file.README.html:36(a)
+#: doc/reference/en/file.news.html:36(a) doc/reference/en/index.html:36(a)
+#: doc/reference/en/file.lgpl.html:36(a)
 #: doc/reference/en/file.tutorial.html:36(a)
+#: doc/reference/en/top-level-namespace.html:36(a)
+#: doc/reference/en/file.release.html:36(a)
+#: doc/reference/en/file.README.html:36(a)
 msgid "Index"
 msgstr "索引"
 
@@ -397,12 +377,16 @@ msgid "Supported xml2po mode customize."
 msgstr "xml2poのモードのカスタマイズに対応。"
 
 #: doc/reference/en/file.news.html:64(strong)
+#: doc/reference/en/file.tutorial.html:77(span)
+#: doc/reference/en/file.tutorial.html:79(span)
 msgid "/"
 msgstr ""
 
 #: doc/reference/en/file.news.html:64(li)
 msgid "Used only lib/<placeholder-1/>.rb as document target by default."
-msgstr "デフォルトのドキュメント対象のファイルにはlib/<placeholder-1/>.rbだけを使うようにした。"
+msgstr ""
+"デフォルトのドキュメント対象のファイルにはlib/<placeholder-1/>.rbだけを使うよ"
+"うにした。"
 
 #: doc/reference/en/file.news.html:66(h2)
 msgid "0.9.1: 2011-08-25"
@@ -462,1962 +446,151 @@ msgstr ""
 msgid "The first release!"
 msgstr ""
 
-#: doc/reference/en/Packnga/RubyforgeTask.html:6(title)
-msgid "Class: Packnga::RubyforgeTask &mdash; packnga"
+#: doc/reference/en/index.html:6(title)
+#: doc/reference/en/file.README.html:6(title)
+msgid "File: README &mdash; packnga"
 msgstr ""
 
-#: doc/reference/en/Packnga/RubyforgeTask.html:17(script)
-#: doc/reference/en/Packnga/YARDTask.html:17(script)
-#: doc/reference/en/Packnga/ReleaseTask.html:17(script)
-#: doc/reference/en/Packnga/DocumentTask.html:17(script)
-#: doc/reference/en/Packnga/ReferenceTask.html:17(script)
-msgid "relpath = '..'; if (relpath != '') relpath += '/';"
-msgstr ""
+#: doc/reference/en/index.html:37(span)
+#: doc/reference/en/file.README.html:37(span)
+msgid "File: README"
+msgstr "ファイル：はじめに"
 
-#: doc/reference/en/Packnga/RubyforgeTask.html:36(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:36(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:36(a)
-msgid "Index (R)"
-msgstr ""
+#: doc/reference/en/index.html:57(span) doc/reference/en/_index.html:63(a)
+#: doc/reference/en/file_list.html:43(a)
+#: doc/reference/en/file.README.html:57(span)
+msgid "README"
+msgstr "はじめに"
 
-#: doc/reference/en/Packnga/RubyforgeTask.html:39(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:369(a)
-msgid "RubyforgeTask"
-msgstr ""
+#: doc/reference/en/index.html:58(h2) doc/reference/en/file.README.html:58(h2)
+msgid "Name"
+msgstr "名前"
 
-#: doc/reference/en/Packnga/RubyforgeTask.html:59(h1)
-msgid "Class: Packnga::RubyforgeTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:67(dt)
-#: doc/reference/en/Packnga/YARDTask.html:67(dt)
-#: doc/reference/en/Packnga/ReleaseTask.html:67(dt)
-#: doc/reference/en/Packnga/DocumentTask.html:67(dt)
-#: doc/reference/en/Packnga/ReferenceTask.html:67(dt)
-msgid "Inherits:"
-msgstr "継承クラス"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:69(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:72(li)
-#: doc/reference/en/Packnga/RubyforgeTask.html:458(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:525(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:564(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:595(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:634(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:669(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:726(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:755(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:784(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:825(tt)
-#: doc/reference/en/Packnga/YARDTask.html:69(span)
-#: doc/reference/en/Packnga/YARDTask.html:72(li)
-#: doc/reference/en/Packnga/YARDTask.html:599(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:69(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:72(li)
-#: doc/reference/en/Packnga/ReleaseTask.html:422(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:501(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:580(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:659(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:69(span)
-#: doc/reference/en/Packnga/DocumentTask.html:72(li)
-#: doc/reference/en/Packnga/DocumentTask.html:364(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:444(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:498(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:567(tt)
-#: doc/reference/en/Packnga/ReferenceTask.html:69(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:72(li)
-#: doc/reference/en/Packnga/ReferenceTask.html:397(tt)
-msgid "Object"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:74(li)
-#: doc/reference/en/Packnga/RubyforgeTask.html:404(a)
-msgid "Packnga::RubyforgeTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:77(a)
-#: doc/reference/en/Packnga/YARDTask.html:77(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:77(a)
-#: doc/reference/en/Packnga/DocumentTask.html:77(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:77(a)
-msgid "show all"
-msgstr "すべて表示"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:86(dt)
-#: doc/reference/en/Packnga/YARDTask.html:86(dt)
-#: doc/reference/en/Packnga/ReleaseTask.html:86(dt)
-#: doc/reference/en/Packnga/DocumentTask.html:86(dt)
-#: doc/reference/en/Packnga/ReferenceTask.html:86(dt)
-msgid "Includes:"
-msgstr "インクルード"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:87(dd)
-#: doc/reference/en/Packnga/YARDTask.html:87(dd)
-#: doc/reference/en/Packnga/ReleaseTask.html:87(dd)
-#: doc/reference/en/Packnga/DocumentTask.html:87(dd)
-msgid "Rake::DSL"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:94(dd)
-msgid "lib/packnga/rubyforge-task.rb"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:102(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:140(a)
-#: doc/reference/en/Packnga/YARDTask.html:129(a)
-#: doc/reference/en/Packnga/YARDTask.html:245(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:132(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:248(a)
-#: doc/reference/en/Packnga/DocumentTask.html:137(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:131(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:196(a)
-msgid "collapse"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:102(small)
-#: doc/reference/en/Packnga/RubyforgeTask.html:140(small)
-#: doc/reference/en/Packnga/RubyforgeTask.html:389(span)
-#: doc/reference/en/Packnga/YARDTask.html:129(small)
-#: doc/reference/en/Packnga/YARDTask.html:245(small)
-#: doc/reference/en/Packnga/YARDTask.html:307(span)
-#: doc/reference/en/Packnga/YARDTask.html:384(span)
-#: doc/reference/en/Packnga/YARDTask.html:461(span)
-#: doc/reference/en/Packnga/YARDTask.html:538(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:132(small)
-#: doc/reference/en/Packnga/ReleaseTask.html:248(small)
-#: doc/reference/en/Packnga/ReleaseTask.html:312(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:331(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:443(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:522(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:601(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:680(span)
-#: doc/reference/en/Packnga/DocumentTask.html:137(small)
-#: doc/reference/en/Packnga/DocumentTask.html:288(span)
-#: doc/reference/en/Packnga/DocumentTask.html:385(span)
-#: doc/reference/en/Packnga/DocumentTask.html:518(span)
-#: doc/reference/en/Packnga/DocumentTask.html:587(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:131(small)
-#: doc/reference/en/Packnga/ReferenceTask.html:196(small)
-#: doc/reference/en/Packnga/ReferenceTask.html:259(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:336(span)
-msgid "(<placeholder-1/>)"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:102(h2)
-#: doc/reference/en/Packnga/YARDTask.html:129(h2)
-#: doc/reference/en/Packnga/ReleaseTask.html:132(h2)
-#: doc/reference/en/Packnga/ReferenceTask.html:131(h2)
-msgid "Instance Attribute Summary <placeholder-1/>"
-msgstr "属性の一覧"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:108(strong)
-#: doc/reference/en/Packnga/YARDTask.html:135(strong)
-#: doc/reference/en/Packnga/YARDTask.html:287(strong)
-#: doc/reference/en/Packnga/YARDTask.html:349(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:138(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:342(span)
-#: doc/reference/en/Packnga/DocumentTask.html:432(span)
-#: doc/reference/en/Packnga/DocumentTask.html:433(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:137(strong)
-#: doc/reference/en/file.tutorial.html:121(span)
-#: doc/reference/en/file.tutorial.html:125(span)
-msgid "base_dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:108(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:148(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:169(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:190(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:211(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:232(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:253(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:274(a)
-#: doc/reference/en/Packnga/RubyforgeTask.html:341(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:138(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:164(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:190(a)
-#: doc/reference/en/Packnga/ReleaseTask.html:216(a)
-#: doc/reference/en/Packnga/DocumentTask.html:168(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:204(a)
-msgid "- (Object) <placeholder-1/>"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:116(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:146(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:172(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:198(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:224(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:145(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:171(span)
-msgid "writeonly"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:125(p)
-msgid "Sets the attribute base_dir."
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:138(h2)
-#: doc/reference/en/Packnga/YARDTask.html:243(h2)
-#: doc/reference/en/Packnga/ReleaseTask.html:246(h2)
-#: doc/reference/en/Packnga/DocumentTask.html:135(h2)
-#: doc/reference/en/Packnga/ReferenceTask.html:194(h2)
-msgid "Instance Method Summary <placeholder-1/>"
-msgstr "インスタンスメソッドの一覧"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:148(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:525(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:547(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:656(span)
-msgid "define_html_task"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:169(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:564(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:582(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:657(span)
-msgid "define_publish_task"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:190(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:595(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:617(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:655(span)
-msgid "define_reference_task"
-msgstr "ReferenceTaskクラスを作成。"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:211(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:439(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:634(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:654(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:403(span)
-msgid "define_tasks"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:232(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:658(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:669(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:700(span)
-msgid "define_upload_tasks"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:253(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:726(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:743(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:773(span)
-msgid "html_base_dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:274(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:755(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:772(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:442(span)
-msgid "html_reference_dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:295(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:369(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:434(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:256(strong)
-#: doc/reference/en/Packnga/ReleaseTask.html:288(strong)
-#: doc/reference/en/Packnga/ReleaseTask.html:395(span)
-#: doc/reference/en/Packnga/DocumentTask.html:189(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:267(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:338(span)
-msgid "initialize"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:295(a)
-msgid "- (RubyforgeTask) <placeholder-1/>(spec) {|_self| ... }"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:301(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:262(span)
-#: doc/reference/en/Packnga/DocumentTask.html:195(span)
-msgid "constructor"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:311(p)
-msgid "A new instance of RubyforgeTask."
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:320(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:551(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:784(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-msgid "rsync_to_rubyforge"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:320(a)
-msgid "- (Object) <placeholder-1/>(spec, source, destination, options = {})"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:341(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:438(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:825(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:842(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:402(span)
-msgid "set_default_values"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:364(h2)
-#: doc/reference/en/Packnga/ReleaseTask.html:283(h2)
-#: doc/reference/en/Packnga/DocumentTask.html:262(h2)
-msgid "Constructor Details"
-msgstr "コンストラクタ詳細"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:367(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:286(p)
-msgid ""
-"- (<tt><span class=\"object_link\"><placeholder-1/></span></tt>) "
-"<placeholder-2/>(spec) {|_self| ... }"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:376(p)
-msgid "A new instance of RubyforgeTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:383(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:325(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:512(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:581(h3)
-msgid "Yields:"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:389(tt)
-#: doc/reference/en/Packnga/RubyforgeTask.html:401(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:331(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:343(span)
-msgid "_self"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:396(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:338(h3)
-msgid "Yield Parameters:"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:404(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:346(span)
-msgid "(<tt><span class=\"object_link\"><placeholder-1/></span></tt>)"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:410(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:352(p)
-msgid "the object that the method was called on"
-msgstr "selfをyieldに渡しています。"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:420(pre)
-msgid "22 23 24 25 26 27 28"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:432(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 22"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:434(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:506(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:547(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:582(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:617(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:654(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:700(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:743(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:772(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:842(span)
-#: doc/reference/en/Packnga/YARDTask.html:349(span)
-#: doc/reference/en/Packnga/YARDTask.html:426(span)
-#: doc/reference/en/Packnga/YARDTask.html:503(span)
-#: doc/reference/en/Packnga/YARDTask.html:580(span)
-#: doc/reference/en/Packnga/YARDTask.html:643(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:395(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:486(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:565(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:644(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:718(span)
-#: doc/reference/en/Packnga/DocumentTask.html:338(span)
-#: doc/reference/en/Packnga/DocumentTask.html:430(span)
-#: doc/reference/en/Packnga/DocumentTask.html:486(span)
-#: doc/reference/en/Packnga/DocumentTask.html:555(span)
-#: doc/reference/en/Packnga/DocumentTask.html:624(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:301(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:378(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:441(span)
-msgid "def"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:434(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:435(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:309(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:395(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:396(span)
-#: doc/reference/en/Packnga/DocumentTask.html:285(span)
-#: doc/reference/en/Packnga/DocumentTask.html:338(span)
-#: doc/reference/en/Packnga/DocumentTask.html:339(span)
-#: doc/reference/en/file.tutorial.html:64(code)
-#: doc/reference/en/file.tutorial.html:65(code)
-#: doc/reference/en/file.tutorial.html:68(span)
-#: doc/reference/en/file.tutorial.html:70(span)
-#: doc/reference/en/file.tutorial.html:71(span)
-#: doc/reference/en/file.tutorial.html:72(span)
-#: doc/reference/en/file.tutorial.html:73(span)
-#: doc/reference/en/file.tutorial.html:74(span)
-#: doc/reference/en/file.tutorial.html:75(span)
-#: doc/reference/en/file.tutorial.html:76(span)
-#: doc/reference/en/file.tutorial.html:79(span)
-#: doc/reference/en/file.tutorial.html:80(span)
-#: doc/reference/en/file.tutorial.html:81(span)
-#: doc/reference/en/file.tutorial.html:86(span)
-#: doc/reference/en/file.tutorial.html:89(code)
-#: doc/reference/en/file.tutorial.html:106(code)
-#: doc/reference/en/file.tutorial.html:110(span)
-#: doc/reference/en/file.tutorial.html:111(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-msgid "spec"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:435(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:551(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:707(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:708(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:709(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:773(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:396(span)
-#: doc/reference/en/Packnga/DocumentTask.html:339(span)
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-msgid "@spec"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:435(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:436(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:507(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:704(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:714(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:809(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:811(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:813(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:396(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:397(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:398(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:399(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:400(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:487(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:566(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:645(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:719(span)
-#: doc/reference/en/Packnga/DocumentTask.html:339(span)
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-#: doc/reference/en/Packnga/DocumentTask.html:342(span)
-#: doc/reference/en/Packnga/DocumentTask.html:431(span)
-#: doc/reference/en/Packnga/DocumentTask.html:432(span)
-#: doc/reference/en/Packnga/DocumentTask.html:433(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:302(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:379(span)
-#: doc/reference/en/file.tutorial.html:68(span)
-#: doc/reference/en/file.tutorial.html:70(span)
-#: doc/reference/en/file.tutorial.html:71(span)
-#: doc/reference/en/file.tutorial.html:72(span)
-#: doc/reference/en/file.tutorial.html:73(span)
-#: doc/reference/en/file.tutorial.html:74(span)
-#: doc/reference/en/file.tutorial.html:75(span)
-#: doc/reference/en/file.tutorial.html:76(span)
-#: doc/reference/en/file.tutorial.html:77(span)
+#: doc/reference/en/index.html:60(h2)
 #: doc/reference/en/file.tutorial.html:78(span)
-#: doc/reference/en/file.tutorial.html:79(span)
-#: doc/reference/en/file.tutorial.html:80(span)
-#: doc/reference/en/file.tutorial.html:81(span)
-#: doc/reference/en/file.tutorial.html:86(span)
-#: doc/reference/en/file.tutorial.html:121(span)
-#: doc/reference/en/file.tutorial.html:125(span)
-msgid "="
+#: doc/reference/en/file.README.html:60(h2)
+msgid "Description"
 msgstr ""
 
-#: doc/reference/en/Packnga/RubyforgeTask.html:436(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:507(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:744(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-#: doc/reference/en/Packnga/YARDTask.html:350(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:487(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:302(span)
-msgid "@base_dir"
+#: doc/reference/en/index.html:61(p) doc/reference/en/file.README.html:61(p)
+msgid "An utility library to package i18n-ed library."
 msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:436(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:397(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:398(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:399(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:400(span)
-#: doc/reference/en/file.tutorial.html:68(span)
-msgid "nil"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:437(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:401(span)
-#: doc/reference/en/Packnga/DocumentTask.html:344(span)
-#: doc/reference/en/Packnga/DocumentTask.html:556(span)
-#: doc/reference/en/Packnga/DocumentTask.html:625(span)
-msgid "yield"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:437(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:401(span)
-#: doc/reference/en/Packnga/DocumentTask.html:342(span)
-#: doc/reference/en/Packnga/DocumentTask.html:344(span)
-msgid "self"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:440(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:508(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:552(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:553(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:554(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:585(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:622(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:623(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:624(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:659(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:711(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:712(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:715(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:716(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:745(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:774(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:815(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:844(span)
-#: doc/reference/en/Packnga/YARDTask.html:351(span)
-#: doc/reference/en/Packnga/YARDTask.html:428(span)
-#: doc/reference/en/Packnga/YARDTask.html:505(span)
-#: doc/reference/en/Packnga/YARDTask.html:582(span)
-#: doc/reference/en/Packnga/YARDTask.html:645(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:404(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:488(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:567(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:646(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:720(span)
-#: doc/reference/en/Packnga/DocumentTask.html:346(span)
-#: doc/reference/en/Packnga/DocumentTask.html:347(span)
-#: doc/reference/en/Packnga/DocumentTask.html:434(span)
-#: doc/reference/en/Packnga/DocumentTask.html:488(span)
-#: doc/reference/en/Packnga/DocumentTask.html:557(span)
-#: doc/reference/en/Packnga/DocumentTask.html:626(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:303(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:380(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:443(span)
-#: doc/reference/en/file.tutorial.html:87(span)
-#: doc/reference/en/file.tutorial.html:122(span)
-#: doc/reference/en/file.tutorial.html:126(span)
-msgid "end"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:450(h2)
-#: doc/reference/en/Packnga/YARDTask.html:279(h2)
-#: doc/reference/en/Packnga/ReleaseTask.html:414(h2)
-#: doc/reference/en/Packnga/ReferenceTask.html:231(h2)
-msgid "Instance Attribute Details"
-msgstr "属性の詳細"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:458(strong)
-#: doc/reference/en/Packnga/RubyforgeTask.html:506(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:422(strong)
-#: doc/reference/en/Packnga/ReleaseTask.html:486(span)
-#: doc/reference/en/Packnga/DocumentTask.html:145(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:364(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:430(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:239(strong)
-#: doc/reference/en/Packnga/ReferenceTask.html:301(span)
-msgid "base_dir="
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:458(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:422(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:501(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:580(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:659(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:239(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:316(span)
-msgid "(writeonly)"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:456(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:420(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:499(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:578(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:657(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:237(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:314(p)
-msgid "- (<placeholder-1/>) <placeholder-2/>(value) <placeholder-3/>"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:465(p)
-msgid "Sets the attribute base_dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:471(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:304(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:435(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:514(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:593(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:672(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:280(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:377(h3)
-msgid "Parameters:"
-msgstr "パラメータ:"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:476(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:506(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:507(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:486(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:487(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:565(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:566(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:644(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:645(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:718(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:719(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:301(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:302(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:378(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:379(span)
-msgid "value"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:485(p)
-msgid "the value to set the attribute base_dir to."
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:496(pre)
-msgid "21 22 23"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:504(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 21"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:519(h2)
-#: doc/reference/en/Packnga/YARDTask.html:593(h2)
-#: doc/reference/en/Packnga/DocumentTask.html:358(h2)
-#: doc/reference/en/Packnga/ReferenceTask.html:391(h2)
-msgid "Instance Method Details"
-msgstr "インスタンスメソッド詳細"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:523(p)
-#: doc/reference/en/Packnga/RubyforgeTask.html:562(p)
-#: doc/reference/en/Packnga/RubyforgeTask.html:593(p)
-#: doc/reference/en/Packnga/RubyforgeTask.html:632(p)
-#: doc/reference/en/Packnga/RubyforgeTask.html:667(p)
-#: doc/reference/en/Packnga/RubyforgeTask.html:724(p)
-#: doc/reference/en/Packnga/RubyforgeTask.html:753(p)
-#: doc/reference/en/Packnga/RubyforgeTask.html:823(p)
-#: doc/reference/en/Packnga/YARDTask.html:285(p)
-#: doc/reference/en/Packnga/YARDTask.html:362(p)
-#: doc/reference/en/Packnga/YARDTask.html:439(p)
-#: doc/reference/en/Packnga/YARDTask.html:516(p)
-#: doc/reference/en/Packnga/DocumentTask.html:442(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:395(p)
-msgid "- (<placeholder-1/>) <placeholder-2/>"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:532(pre)
-msgid "58 59 60 61 62 63 64 65"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:545(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 58"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:548(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:618(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:701(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:702(span)
-msgid "namespace"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:548(span)
-msgid ":html"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:548(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:550(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:618(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:701(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:702(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:704(span)
-#: doc/reference/en/file.tutorial.html:69(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-msgid "do"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:549(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:583(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:619(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:703(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:713(span)
-msgid "desc"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:549(span)
-msgid "\"Publish HTML to Web site.\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:550(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:704(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:714(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/file.tutorial.html:121(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-#: doc/reference/en/file.tutorial.html:125(span)
-msgid "task"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:550(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-msgid ":publish"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:551(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:705(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:706(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:707(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:708(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:709(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-#: doc/reference/en/file.tutorial.html:75(span)
-#: doc/reference/en/file.tutorial.html:76(span)
-#: doc/reference/en/file.tutorial.html:79(span)
-#: doc/reference/en/file.tutorial.html:81(span)
-#: doc/reference/en/file.tutorial.html:82(span)
-#: doc/reference/en/file.tutorial.html:83(span)
-#: doc/reference/en/file.tutorial.html:84(span)
-msgid ","
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:551(span)
-msgid "\"#{html_base_dir}/\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:551(span)
-msgid "\"\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:571(pre)
-msgid "67 68 69 70"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:580(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 67"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:583(span)
-msgid "\"Upload document and HTML to rubyforge.\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:704(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:714(span)
-msgid "&gt;"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-#: doc/reference/en/file.tutorial.html:75(span)
-#: doc/reference/en/file.tutorial.html:76(span)
-#: doc/reference/en/file.tutorial.html:78(span)
-#: doc/reference/en/file.tutorial.html:81(span)
-#: doc/reference/en/file.tutorial.html:86(span)
-msgid "["
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-msgid "\"html:publish\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-msgid "\"reference:publish\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:584(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-#: doc/reference/en/file.tutorial.html:75(span)
-#: doc/reference/en/file.tutorial.html:76(span)
-#: doc/reference/en/file.tutorial.html:78(span)
-#: doc/reference/en/file.tutorial.html:85(span)
-#: doc/reference/en/file.tutorial.html:86(span)
-msgid "]"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:602(pre)
-msgid "49 50 51 52 53 54 55 56"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:615(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 49"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:618(span)
-msgid ":reference"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:619(span)
-msgid "\"Upload document to rubyforge.\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-msgid ":generate"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:620(span)
-msgid "\"reference:publication:prepare\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-msgid "\"#{html_reference_dir}/\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:707(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:708(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:709(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:773(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-#: doc/reference/en/Packnga/DocumentTask.html:342(span)
-#: doc/reference/en/Packnga/DocumentTask.html:431(span)
-#: doc/reference/en/Packnga/DocumentTask.html:432(span)
-#: doc/reference/en/Packnga/DocumentTask.html:433(span)
-#: doc/reference/en/Packnga/DocumentTask.html:487(span)
-#: doc/reference/en/file.tutorial.html:69(span)
-#: doc/reference/en/file.tutorial.html:71(span)
-#: doc/reference/en/file.tutorial.html:72(span)
-#: doc/reference/en/file.tutorial.html:73(span)
-#: doc/reference/en/file.tutorial.html:74(span)
-#: doc/reference/en/file.tutorial.html:75(span)
-#: doc/reference/en/file.tutorial.html:76(span)
-#: doc/reference/en/file.tutorial.html:77(span)
-#: doc/reference/en/file.tutorial.html:78(span)
-#: doc/reference/en/file.tutorial.html:79(span)
-#: doc/reference/en/file.tutorial.html:80(span)
-#: doc/reference/en/file.tutorial.html:81(span)
-#: doc/reference/en/file.tutorial.html:86(span)
-#: doc/reference/en/file.tutorial.html:110(span)
-#: doc/reference/en/file.tutorial.html:111(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/file.tutorial.html:121(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-#: doc/reference/en/file.tutorial.html:125(span)
-msgid "."
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:621(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:708(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:773(span)
-#: doc/reference/en/file.tutorial.html:71(span)
-msgid "name"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:641(pre)
-msgid "42 43 44 45 46 47"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:652(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 42"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:676(pre)
-msgid "72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:698(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 72"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:701(span)
-msgid ":release"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:702(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:714(span)
-msgid ":rubyforge"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:703(span)
-msgid "\"Upload tar.gz to RubyForge.\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:704(span)
-msgid ":upload"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:704(span)
-msgid "\"package\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:705(span)
-msgid "ruby"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:705(span)
-msgid "\"-S\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:705(span)
-msgid "\"rubyforge\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:706(span)
-msgid "\"add_release\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:707(span)
-#: doc/reference/en/file.tutorial.html:73(span)
-#: doc/reference/en/file.tutorial.html:89(code)
-#: doc/reference/en/file.tutorial.html:106(code)
-msgid "rubyforge_project"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:709(span)
-#: doc/reference/en/file.tutorial.html:72(span)
-msgid "version"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:709(span)
-msgid "to_s"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:710(span)
-msgid "\"pkg/#{@spec.name}-#{@spec.version}.tar.gz\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:713(span)
-msgid "\"Release to RubyForge.\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:714(span)
-msgid "\"release:rubyforge:upload\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:733(pre)
-#: doc/reference/en/Packnga/ReferenceTask.html:291(pre)
-msgid "30 31 32"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:741(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 30"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:744(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:773(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:442(span)
-#: doc/reference/en/file.tutorial.html:78(span)
-msgid "+"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:744(span)
-msgid "\"html\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:762(pre)
-msgid "34 35 36"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:770(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 34"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:782(p)
-msgid ""
-"- (<placeholder-1/>) <placeholder-2/>(spec, source, destination, options = "
-"{})"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:791(pre)
-msgid "90 91 92 93 94 95 96 97 98"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:805(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 90"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-msgid "source"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-msgid "destination"
-msgstr "説明"
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-#: doc/reference/en/Packnga/YARDTask.html:187(strong)
-#: doc/reference/en/Packnga/YARDTask.html:441(strong)
-#: doc/reference/en/Packnga/YARDTask.html:503(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:598(span)
-msgid "options"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-msgid "{"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:807(span)
-msgid "}"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-msgid "config"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-msgid "YAML"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-msgid "load"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-#: doc/reference/en/file.tutorial.html:77(span)
-msgid "File"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-#: doc/reference/en/file.tutorial.html:77(span)
-msgid "read"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-msgid "expand_path"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:808(span)
-msgid "\"~/.rubyforge/user-config.yml\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:809(span)
-msgid "host"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:809(span)
-msgid "\"#{config[\"username\"]}@rubyforge.org\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:811(span)
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-msgid "rsync_args"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:811(span)
-msgid "\"-av --dry-run --exclude '*.erb' --chmod=ug+w\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-#: doc/reference/en/Packnga/YARDTask.html:644(span)
-msgid "&lt;&lt;"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-msgid "\" --delete\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:401(span)
-#: doc/reference/en/Packnga/DocumentTask.html:343(span)
-msgid "if"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:812(span)
-msgid ":delete"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:813(span)
-msgid "remote_dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:813(span)
-msgid "\"/var/www/gforge-projects/#{spec.rubyforge_project}/\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:814(span)
-msgid "sh"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:814(span)
-msgid "\"rsync #{rsync_args} #{source} #{host}:#{remote_dir}#{destination}\""
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:832(pre)
-#: doc/reference/en/Packnga/YARDTask.html:493(pre)
-#: doc/reference/en/Packnga/ReleaseTask.html:708(pre)
-msgid "38 39 40"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:840(span)
-msgid "# File 'lib/packnga/rubyforge-task.rb', line 38"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-msgid "||="
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-#: doc/reference/en/Packnga/DocumentTask.html:431(span)
-msgid "Pathname"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-#: doc/reference/en/Packnga/DocumentTask.html:431(span)
-#: doc/reference/en/file.tutorial.html:69(span)
-#: doc/reference/en/file.tutorial.html:110(span)
-#: doc/reference/en/file.tutorial.html:111(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-msgid "new"
-msgstr ""
-
-#: doc/reference/en/Packnga/RubyforgeTask.html:843(span)
-#: doc/reference/en/Packnga/DocumentTask.html:342(span)
-msgid "\"doc\""
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:6(title)
-msgid "Class: Packnga::YARDTask &mdash; packnga"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:36(a)
-msgid "Index (Y)"
-msgstr "索引"
-
-#: doc/reference/en/Packnga/YARDTask.html:59(h1)
-msgid "Class: Packnga::YARDTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:74(li)
-#: doc/reference/en/method_list.html:46(small)
-#: doc/reference/en/method_list.html:62(small)
-#: doc/reference/en/method_list.html:70(small)
-#: doc/reference/en/method_list.html:110(small)
-#: doc/reference/en/method_list.html:118(small)
-msgid "Packnga::YARDTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:94(dd)
-msgid "lib/packnga/yard-task.rb"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:102(p)
-msgid "This class creates YARD task. YARD task generate references by YARD."
-msgstr ""
-"このクラスはYARD関連のタスクを定義します。このタスクはYARDによりドキュメント"
-"を生成します。"
-
-#: doc/reference/en/Packnga/YARDTask.html:109(h3)
-#: doc/reference/en/Packnga/YARDTask.html:319(h3)
-#: doc/reference/en/Packnga/YARDTask.html:396(h3)
-#: doc/reference/en/Packnga/YARDTask.html:473(h3)
-#: doc/reference/en/Packnga/YARDTask.html:550(h3)
-#: doc/reference/en/Packnga/YARDTask.html:613(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:112(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:358(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:456(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:535(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:614(h3)
-#: doc/reference/en/Packnga/ReleaseTask.html:688(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:110(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:301(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:398(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:456(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:525(h3)
-#: doc/reference/en/Packnga/DocumentTask.html:594(h3)
-#: doc/reference/en/Packnga/ReferenceTask.html:110(h3)
-#: doc/reference/en/Packnga/ReferenceTask.html:271(h3)
-#: doc/reference/en/Packnga/ReferenceTask.html:348(h3)
-#: doc/reference/en/Packnga/ReferenceTask.html:411(h3)
-msgid "Since:"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:119(p)
-#: doc/reference/en/Packnga/YARDTask.html:329(p)
-#: doc/reference/en/Packnga/YARDTask.html:406(p)
-#: doc/reference/en/Packnga/YARDTask.html:483(p)
-#: doc/reference/en/Packnga/YARDTask.html:560(p)
-#: doc/reference/en/Packnga/YARDTask.html:623(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:122(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:368(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:466(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:545(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:624(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:698(p)
-#: doc/reference/en/Packnga/DocumentTask.html:120(p)
-#: doc/reference/en/Packnga/DocumentTask.html:311(p)
-#: doc/reference/en/Packnga/DocumentTask.html:408(p)
-#: doc/reference/en/Packnga/DocumentTask.html:466(p)
-#: doc/reference/en/Packnga/DocumentTask.html:535(p)
-#: doc/reference/en/Packnga/DocumentTask.html:604(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:120(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:281(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:358(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:421(p)
-msgid "0.9.0"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:135(a)
-#: doc/reference/en/Packnga/YARDTask.html:213(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:137(a)
-#: doc/reference/en/Packnga/ReferenceTask.html:163(a)
-msgid "- (String) <placeholder-1/>"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:152(p)
-#: doc/reference/en/Packnga/YARDTask.html:294(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:154(p)
-msgid "Path of base directory of document."
-msgstr "ドキュメントのベースディレクトリのパス"
-
-#: doc/reference/en/Packnga/YARDTask.html:161(strong)
-#: doc/reference/en/Packnga/YARDTask.html:364(strong)
-#: doc/reference/en/Packnga/YARDTask.html:426(span)
-#: doc/reference/en/file.tutorial.html:81(span)
-msgid "files"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:161(a)
-#: doc/reference/en/Packnga/YARDTask.html:187(a)
-msgid "- (Array&lt;String&gt;) <placeholder-1/>"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:178(p)
-#: doc/reference/en/Packnga/YARDTask.html:371(p)
-msgid "Document target files."
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:204(p)
-#: doc/reference/en/Packnga/YARDTask.html:448(p)
-msgid "Custom yardoc command line options."
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:213(strong)
-#: doc/reference/en/Packnga/YARDTask.html:518(strong)
-#: doc/reference/en/Packnga/YARDTask.html:580(span)
-msgid "readme"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:230(p)
-#: doc/reference/en/Packnga/YARDTask.html:525(p)
-msgid "This attribute is used to sets README file to yardoc task."
-msgstr "この属性はyardocに対して設定するReadmeの場所を設定します。"
-
-#: doc/reference/en/Packnga/YARDTask.html:253(strong)
-#: doc/reference/en/Packnga/YARDTask.html:599(strong)
-#: doc/reference/en/Packnga/YARDTask.html:643(span)
-msgid "before_define"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:253(a)
-msgid "- (Object) <placeholder-1/>(&amp;hook)"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:267(p)
-#: doc/reference/en/Packnga/YARDTask.html:606(p)
-msgid "Regists yardoc parameters with block."
-msgstr "与えられたブロックをyardocにパラメータを設定するものとして登録します。"
-
-#: doc/reference/en/Packnga/YARDTask.html:287(tt)
-#: doc/reference/en/Packnga/YARDTask.html:307(tt)
-#: doc/reference/en/Packnga/YARDTask.html:518(tt)
-#: doc/reference/en/Packnga/YARDTask.html:538(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:443(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:522(tt)
-#: doc/reference/en/Packnga/ReleaseTask.html:680(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:385(tt)
-#: doc/reference/en/Packnga/ReferenceTask.html:239(tt)
-#: doc/reference/en/Packnga/ReferenceTask.html:259(tt)
-#: doc/reference/en/Packnga/ReferenceTask.html:316(tt)
-#: doc/reference/en/Packnga/ReferenceTask.html:336(tt)
-msgid "String"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:301(h3)
-#: doc/reference/en/Packnga/YARDTask.html:378(h3)
-#: doc/reference/en/Packnga/YARDTask.html:455(h3)
-#: doc/reference/en/Packnga/YARDTask.html:532(h3)
-#: doc/reference/en/Packnga/ReferenceTask.html:253(h3)
-#: doc/reference/en/Packnga/ReferenceTask.html:330(h3)
-msgid "Returns:"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:313(p)
-msgid "path of base directory of document."
-msgstr "ドキュメントのベースディレクトリのパス"
-
-#: doc/reference/en/Packnga/YARDTask.html:339(pre)
-#: doc/reference/en/Packnga/ReleaseTask.html:555(pre)
-msgid "32 33 34"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:347(span)
-msgid "# File 'lib/packnga/yard-task.rb', line 32"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:364(tt)
-#: doc/reference/en/Packnga/YARDTask.html:384(tt)
-#: doc/reference/en/Packnga/YARDTask.html:441(tt)
-#: doc/reference/en/Packnga/YARDTask.html:461(tt)
-msgid "Array&lt;String&gt;"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:390(p)
-msgid "document target files."
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:416(pre)
-#: doc/reference/en/Packnga/ReleaseTask.html:476(pre)
-msgid "35 36 37"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:424(span)
-msgid "# File 'lib/packnga/yard-task.rb', line 35"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:427(span)
-msgid "@files"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:467(p)
-msgid "custom yardoc command line options."
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:501(span)
-msgid "# File 'lib/packnga/yard-task.rb', line 38"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:504(span)
-msgid "@options"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:544(p)
-msgid "path to readme file"
-msgstr "Readmeファイルを示すパス"
-
-#: doc/reference/en/Packnga/YARDTask.html:570(pre)
-#: doc/reference/en/Packnga/DocumentTask.html:614(pre)
-#: doc/reference/en/Packnga/ReferenceTask.html:431(pre)
-msgid "59 60 61"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:578(span)
-msgid "# File 'lib/packnga/yard-task.rb', line 59"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-msgid "@readme"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-msgid "||"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-msgid "Rake"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-#: doc/reference/en/file.tutorial.html:69(span)
-#: doc/reference/en/file.tutorial.html:110(span)
-#: doc/reference/en/file.tutorial.html:111(span)
-#: doc/reference/en/file.tutorial.html:120(span)
-#: doc/reference/en/file.tutorial.html:124(span)
-msgid "::"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-#: doc/reference/en/file.tutorial.html:81(span)
-#: doc/reference/en/file.tutorial.html:86(span)
-msgid "FileList"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-msgid "\"README*\""
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-msgid "to_a"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:581(span)
-msgid "first"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:597(p)
-msgid "- (<placeholder-1/>) <placeholder-2/>(&amp;hook)"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:633(pre)
-msgid "75 76 77"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:641(span)
-msgid "# File 'lib/packnga/yard-task.rb', line 75"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:643(span)
-msgid "&amp;"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:643(span)
-#: doc/reference/en/Packnga/YARDTask.html:644(span)
-msgid "hook"
-msgstr ""
-
-#: doc/reference/en/Packnga/YARDTask.html:644(span)
-msgid "@hooks"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:6(title)
-msgid "Class: Packnga::ReleaseTask &mdash; packnga"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:59(h1)
-msgid "Class: Packnga::ReleaseTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:74(li)
-#: doc/reference/en/Packnga/ReleaseTask.html:346(a)
-#: doc/reference/en/method_list.html:102(small)
-#: doc/reference/en/file.tutorial.html:103(dt)
-msgid "Packnga::ReleaseTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:94(dd)
-msgid "lib/packnga/release-task.rb"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:102(p)
-msgid "This class creates release tasks."
-msgstr "このクラスはリリース関連のタスクを扱います。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:104(p)
-msgid ""
-"Release tasks tag current version and install gem for test. It also define "
-"tasks to upload rubyforge whether option."
-msgstr ""
-"リリース関連のタスクは、現在のバージョンのタグを打ったり、テスト用にgemをイン"
-"ストールします。またspecのオプションによってはrubyforgeにアップロードするため"
-"のタスクも定義します。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:155(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:429(p)
-msgid "This attribute is path of base directory of document."
-msgstr "この属性はドキュメントのベースディレクトリを表します。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:164(strong)
-msgid "index_html_dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:181(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:508(p)
-msgid "This attribute is path of HTML files written version and release date."
-msgstr ""
-"この属性はバージョンやリリース日が書かれたHTMLファイルのパスを示します。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:190(strong)
-msgid "publish_options"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:207(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:587(p)
-msgid "This attribute is options for uploading rubyforge by rsync."
-msgstr ""
-"この属性はrubyforgeにアップロードするときのrsyncのオプションを表します。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:216(strong)
-msgid "tag_message"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:233(p)
-#: doc/reference/en/Packnga/ReleaseTask.html:666(p)
-msgid "This attribute is message when tagging in release."
-msgstr "この属性はタグに付けるメッセージを示します。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:256(a)
-msgid "- (ReleaseTask) <placeholder-1/>(spec) {|_self| ... }"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:272(p)
-msgid "Defines task for preparing to release."
-msgstr "リリース準備を行うためのタスクを定義します。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:295(p)
-msgid ""
-"Defines task for preparing to release. Defined tasks update version and "
-"release-date in index files and tag in git. If you set rubyforge_project of "
-"Jeweler::Task.new with its given block, it also define tasks to update "
-"rubyforge."
-msgstr ""
-"gitへ現在バージョンのタグを打ったりインデックスファイルのバージョンやリリース"
-"日を更新するタグを定義します。Jeweler::Task.newに渡したブロック内にて、"
-"rubyforge_projectを設定していると、rubyforgeへのアップロードするためのタスク"
-"も定義します。"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:312(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:288(tt)
-msgid "Jeweler::Task"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:318(p)
-#: doc/reference/en/Packnga/DocumentTask.html:294(p)
-msgid "created by Jeweler::Task.new."
-msgstr "Jeweler::Task.newによって生成される"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:378(pre)
-msgid "48 49 50 51 52 53 54 55 56 57"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:393(span)
-msgid "# File 'lib/packnga/release-task.rb', line 48"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:397(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:566(span)
-msgid "@index_html_dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:398(span)
-msgid "@rubyforge"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:399(span)
-msgid "@tag_messsage"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:400(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:645(span)
-msgid "@publish_options"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:401(span)
-#: doc/reference/en/Packnga/DocumentTask.html:343(span)
-msgid "block_given?"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:440(span)
-#: doc/reference/en/Packnga/ReleaseTask.html:519(span)
-msgid "path"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:449(p)
-msgid "of base directory of document"
-msgstr "ドキュメントのベースディレクトリ"
-
-#: doc/reference/en/Packnga/ReleaseTask.html:484(span)
-msgid "# File 'lib/packnga/release-task.rb', line 35"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:501(strong)
-#: doc/reference/en/Packnga/ReleaseTask.html:565(span)
-msgid "index_html_dir="
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:528(p)
-msgid "of HTML files"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:563(span)
-msgid "# File 'lib/packnga/release-task.rb', line 32"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:580(strong)
-#: doc/reference/en/Packnga/ReleaseTask.html:644(span)
-msgid "publish_options="
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:601(tt)
-msgid "Hash"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:607(p)
-msgid "for uploading."
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:634(pre)
-msgid "41 42 43"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:642(span)
-msgid "# File 'lib/packnga/release-task.rb', line 41"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:659(strong)
-#: doc/reference/en/Packnga/ReleaseTask.html:718(span)
-msgid "tag_message="
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:677(span)
-msgid "message"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:716(span)
-msgid "# File 'lib/packnga/release-task.rb', line 38"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReleaseTask.html:719(span)
-msgid "@tag_message"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:6(title)
-msgid "Class: Packnga::DocumentTask &mdash; packnga"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:36(a)
-msgid "Index (D)"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:59(h1)
-msgid "Class: Packnga::DocumentTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:74(li)
-#: doc/reference/en/method_list.html:54(small)
-#: doc/reference/en/method_list.html:86(small)
-#: doc/reference/en/method_list.html:94(small)
-#: doc/reference/en/method_list.html:126(small)
-#: doc/reference/en/method_list.html:134(small)
-#: doc/reference/en/file.tutorial.html:97(dt)
-msgid "Packnga::DocumentTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:94(dd)
-msgid "lib/packnga/document-task.rb"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:102(p)
-msgid ""
-"This class creates docment tasks. They generate YARD doucment or references."
-msgstr ""
-"このクラスはドキュメント関連のタスクを生成します。それらはYARDによりドキュメ"
-"ントを生成したりリファレンスを作成します。"
-
-#: doc/reference/en/Packnga/DocumentTask.html:145(a)
-msgid "- (Object) <placeholder-1/>(dir)"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:159(p)
-msgid "Sets base directory for documents."
-msgstr "ドキュメントのベースとなるディレクトリを設定します。"
-
-#: doc/reference/en/Packnga/DocumentTask.html:168(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:444(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:486(span)
-#: doc/reference/en/Packnga/DocumentTask.html:487(span)
-#: doc/reference/en/Packnga/ReferenceTask.html:204(strong)
-#: doc/reference/en/Packnga/ReferenceTask.html:397(strong)
-#: doc/reference/en/Packnga/ReferenceTask.html:441(span)
-msgid "htaccess"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:189(a)
-msgid "- (DocumentTask) <placeholder-1/>(spec)"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:205(p)
-#: doc/reference/en/Packnga/DocumentTask.html:274(p)
-msgid ""
-"Defines tasks to generate YARD documentation and to translate references."
-msgstr ""
-"YARDによるドキュメントを生成したりリファレンスを翻訳するタスクを定義します。"
-
-#: doc/reference/en/Packnga/DocumentTask.html:214(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:498(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:555(span)
-msgid "reference"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:214(a)
-msgid "- (Object) <placeholder-1/> {|@reference_task| ... }"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:228(p)
-#: doc/reference/en/Packnga/DocumentTask.html:505(p)
-msgid "Runs block to tasks for references."
-msgstr ""
-"リファレンス関連のタスクに関する設定を与えられたブロックにて設定します。"
-
-#: doc/reference/en/Packnga/DocumentTask.html:237(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:567(strong)
-#: doc/reference/en/Packnga/DocumentTask.html:624(span)
-msgid "yard"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:237(a)
-msgid "- (Object) <placeholder-1/> {|@yard_task| ... }"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:251(p)
-#: doc/reference/en/Packnga/DocumentTask.html:574(p)
-msgid "Runs block to task for YARD documentation."
-msgstr ""
-"YARDによるドキュメントのためのタスクに関する設定を与えられたブロックにて設定"
-"します。"
-
-#: doc/reference/en/Packnga/DocumentTask.html:265(p)
-msgid ""
-"- (<tt><span class=\"object_link\"><placeholder-1/></span></tt>) "
-"<placeholder-2/>(spec)"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:321(pre)
-msgid "33 34 35 36 37 38 39 40 41 42"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:336(span)
-msgid "# File 'lib/packnga/document-task.rb', line 33"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:340(span)
-#: doc/reference/en/Packnga/DocumentTask.html:432(span)
-#: doc/reference/en/Packnga/DocumentTask.html:587(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:625(span)
-msgid "@yard_task"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:341(span)
-#: doc/reference/en/Packnga/DocumentTask.html:433(span)
-#: doc/reference/en/Packnga/DocumentTask.html:487(span)
-#: doc/reference/en/Packnga/DocumentTask.html:518(tt)
-#: doc/reference/en/Packnga/DocumentTask.html:556(span)
-msgid "@reference_task"
-msgstr "ReferenceTaskクラスを作成。"
-
-#: doc/reference/en/Packnga/DocumentTask.html:345(span)
-msgid "define"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:362(p)
-msgid "- (<placeholder-1/>) <placeholder-2/>(dir)"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:371(p)
-msgid "Sets base directory for documents. Default value is “doc”."
-msgstr ""
-"ドキュメントのベースとなるディレクトリを設定します。デフォルトの値は\"doc\"で"
+"複数言語化したライブラリを作成するためのユーティリティを集めたライブラリで"
 "す。"
 
-#: doc/reference/en/Packnga/DocumentTask.html:382(span)
-msgid "base"
+#: doc/reference/en/index.html:62(span)
+#: doc/reference/en/file.tutorial.html:99(span)
+#: doc/reference/en/file.README.html:62(span)
+msgid "YARD"
 msgstr ""
 
-#: doc/reference/en/Packnga/DocumentTask.html:391(p)
-msgid "direcory path"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:418(pre)
-msgid "52 53 54 55 56"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:428(span)
-msgid "# File 'lib/packnga/document-task.rb', line 52"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:430(span)
-#: doc/reference/en/Packnga/DocumentTask.html:431(span)
-#: doc/reference/en/Packnga/DocumentTask.html:432(span)
-#: doc/reference/en/Packnga/DocumentTask.html:433(span)
-msgid "dir"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:476(pre)
-msgid "68 69 70"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:484(span)
-msgid "# File 'lib/packnga/document-task.rb', line 68"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:496(p)
-msgid "- (<placeholder-1/>) <placeholder-2/> {|@reference_task| ... }"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:545(pre)
-msgid "64 65 66"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:553(span)
-msgid "# File 'lib/packnga/document-task.rb', line 64"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:565(p)
-msgid "- (<placeholder-1/>) <placeholder-2/> {|@yard_task| ... }"
-msgstr ""
-
-#: doc/reference/en/Packnga/DocumentTask.html:622(span)
-msgid "# File 'lib/packnga/document-task.rb', line 59"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:6(title)
-msgid "Class: Packnga::ReferenceTask &mdash; packnga"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:59(h1)
-msgid "Class: Packnga::ReferenceTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:74(li)
-#: doc/reference/en/method_list.html:78(small)
-msgid "Packnga::ReferenceTask"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:87(dd)
-msgid "ERB::Util, Rake::DSL"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:94(dd)
-msgid "lib/packnga/reference-task.rb"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:102(p)
+#: doc/reference/en/index.html:62(p) doc/reference/en/file.README.html:62(p)
 msgid ""
-"This class creates reference tasks. They generate, translate and prepare to "
-"publish references."
-msgstr ""
-"このクラスはリファレンス関係のタスクを生成します。\n"
-"これらタスクはリファレンスを生成、翻訳、また公開の準備を行います。"
+"Packnga is an library to translate to many languages by <placeholder-1/>."
+msgstr "PackngaはYARDを用いてライブラリを多言語に翻訳します。"
 
-#: doc/reference/en/Packnga/ReferenceTask.html:163(strong)
-msgid "mode"
-msgstr ""
+#: doc/reference/en/index.html:63(h2) doc/reference/en/file.README.html:63(h2)
+msgid "Authors"
+msgstr "作者"
 
-#: doc/reference/en/Packnga/ReferenceTask.html:180(p)
-msgid "Mode used in xml2po."
+#: doc/reference/en/index.html:65(li) doc/reference/en/file.README.html:65(li)
+msgid "yoshihara haruka &lt;yoshihara@clear-code.com&gt;"
 msgstr ""
 
-#: doc/reference/en/Packnga/ReferenceTask.html:218(p)
-#: doc/reference/en/Packnga/ReferenceTask.html:404(p)
-msgid "path of .htaccess."
-msgstr ".htaccessファイルのパス"
-
-#: doc/reference/en/Packnga/ReferenceTask.html:246(p)
-msgid "Path of base directory of document"
-msgstr "ドキュメントのベースディレクトリのパス"
-
-#: doc/reference/en/Packnga/ReferenceTask.html:265(p)
-msgid "path of base directory of document"
-msgstr "ドキュメントのベースディレクトリのパス"
-
-#: doc/reference/en/Packnga/ReferenceTask.html:299(span)
-msgid "# File 'lib/packnga/reference-task.rb', line 30"
+#: doc/reference/en/index.html:66(li) doc/reference/en/file.README.html:66(li)
+msgid "Kouhei Sutou &lt;kou@clear-code.com&gt;"
 msgstr ""
 
-#: doc/reference/en/Packnga/ReferenceTask.html:316(strong)
-#: doc/reference/en/Packnga/ReferenceTask.html:378(span)
-msgid "mode="
+#: doc/reference/en/index.html:68(h2) doc/reference/en/file.README.html:68(h2)
+msgid "License"
+msgstr "ライセンス"
+
+#: doc/reference/en/index.html:69(span)
+#: doc/reference/en/file.README.html:69(span)
+msgid "LGPL"
 msgstr ""
 
-#: doc/reference/en/Packnga/ReferenceTask.html:323(p)
-msgid "Mode used in xml2po. The default is “docbook”."
-msgstr ""
+#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
+msgid "<placeholder-1/> 2.1. See license/<placeholder-2/> for details."
+msgstr "LGPL 2.1です。詳しくはlicense/LGPLを見てください。"
 
-#: doc/reference/en/Packnga/ReferenceTask.html:342(p)
-msgid "mode used in xml2po. The default is “docbook”."
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:368(pre)
-msgid "33 34 35"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:376(span)
-msgid "# File 'lib/packnga/reference-task.rb', line 33"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:379(span)
-msgid "@mode"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:439(span)
-msgid "# File 'lib/packnga/reference-task.rb', line 59"
-msgstr ""
-
-#: doc/reference/en/Packnga/ReferenceTask.html:442(span)
-msgid "\".htaccess\""
-msgstr ""
-
-#: doc/reference/en/top-level-namespace.html:6(title)
-msgid "Top Level Namespace &mdash; packnga"
-msgstr ""
-
-#: doc/reference/en/top-level-namespace.html:39(span)
-#: doc/reference/en/top-level-namespace.html:59(h1)
-#: doc/reference/en/class_list.html:41(a)
-#: doc/reference/en/class_list.html:42(small)
-msgid "Top Level Namespace"
-msgstr ""
-
-#: doc/reference/en/top-level-namespace.html:81(strong)
-msgid "Modules:"
-msgstr ""
-
-#: doc/reference/en/method_list.html:21(script)
-#: doc/reference/en/class_list.html:21(script)
-#: doc/reference/en/file_list.html:21(script)
+#: doc/reference/en/index.html:70(p) doc/reference/en/file.README.html:70(p)
 msgid ""
-"if (window.top.frames.main) { document.getElementById('base_target').target "
-"= 'main'; document.body.className = 'frames'; }"
+"(Kouhei Sutou has a right to change the license including contributed "
+"patches.)"
+msgstr ""
+"（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する"
+"権利を持ちます。）"
+
+#: doc/reference/en/index.html:72(h2) doc/reference/en/file.README.html:72(h2)
+msgid "Dependencies"
+msgstr "依存ソフトウェア"
+
+#: doc/reference/en/index.html:74(li) doc/reference/en/file.README.html:74(li)
+msgid "Ruby &gt;= 1.8 (including 1.9.2)"
 msgstr ""
 
-#: doc/reference/en/method_list.html:31(a)
-#: doc/reference/en/class_list.html:31(a)
-#: doc/reference/en/file_list.html:31(a)
-msgid "Classes"
-msgstr "クラス"
+#: doc/reference/en/index.html:76(h2)
+#: doc/reference/en/file.tutorial.html:59(h2)
+#: doc/reference/en/file.README.html:76(h2)
+msgid "Install"
+msgstr "インストール"
 
-#: doc/reference/en/method_list.html:33(a)
-#: doc/reference/en/class_list.html:33(a)
-#: doc/reference/en/file_list.html:33(a)
-msgid "Methods"
-msgstr "メソッド"
-
-#: doc/reference/en/method_list.html:35(a)
-#: doc/reference/en/class_list.html:35(a)
-#: doc/reference/en/file_list.html:35(a)
-msgid "Files"
-msgstr "ファイル"
-
-#: doc/reference/en/method_list.html:38(div)
-#: doc/reference/en/class_list.html:38(div)
-#: doc/reference/en/file_list.html:38(div)
-msgid "Search: <input type=\"text\"/>"
+#: doc/reference/en/index.html:77(pre)
+#: doc/reference/en/file.tutorial.html:61(pre)
+#: doc/reference/en/file.README.html:77(pre)
+msgid "% sudo gem install packnga"
 msgstr ""
+
+#: doc/reference/en/index.html:79(h2) doc/reference/en/file.README.html:79(h2)
+msgid "Documents"
+msgstr "ドキュメント"
+
+#: doc/reference/en/index.html:81(a) doc/reference/en/file.README.html:81(a)
+msgid "Reference manual in English"
+msgstr "リファレンスマニュアル（英語）"
+
+#: doc/reference/en/index.html:82(a) doc/reference/en/file.README.html:82(a)
+msgid "Reference manual in Japanese"
+msgstr "リファレンスマニュアル（日本語）"
+
+#: doc/reference/en/index.html:84(h2) doc/reference/en/file.README.html:84(h2)
+msgid "Mailing list"
+msgstr "メーリングリスト"
+
+#: doc/reference/en/index.html:86(li) doc/reference/en/file.README.html:86(li)
+msgid "comming soon…"
+msgstr "準備中です。"
+
+#: doc/reference/en/index.html:88(h2) doc/reference/en/file.README.html:88(h2)
+msgid "Thanks"
+msgstr "感謝"
 
 #: doc/reference/en/method_list.html:44(a)
 msgid "#base_dir"
 msgstr ""
 
+#: doc/reference/en/method_list.html:46(small)
+#: doc/reference/en/method_list.html:62(small)
+#: doc/reference/en/method_list.html:70(small)
+#: doc/reference/en/method_list.html:110(small)
+#: doc/reference/en/method_list.html:118(small)
+#: doc/reference/en/Packnga/YARDTask.html:74(li)
+msgid "Packnga::YARDTask"
+msgstr ""
+
 #: doc/reference/en/method_list.html:52(a)
 msgid "#base_dir="
+msgstr ""
+
+#: doc/reference/en/method_list.html:54(small)
+#: doc/reference/en/method_list.html:78(small)
+#: doc/reference/en/method_list.html:102(small)
+#: doc/reference/en/method_list.html:126(small)
+#: doc/reference/en/method_list.html:134(small)
+#: doc/reference/en/file.tutorial.html:97(dt)
+#: doc/reference/en/Packnga/DocumentTask.html:74(li)
+msgid "Packnga::DocumentTask"
 msgstr ""
 
 #: doc/reference/en/method_list.html:60(a)
@@ -2433,9 +606,21 @@ msgstr ""
 msgid "#htaccess"
 msgstr ""
 
+#: doc/reference/en/method_list.html:86(small)
+#: doc/reference/en/Packnga/ReferenceTask.html:74(li)
+msgid "Packnga::ReferenceTask"
+msgstr ""
+
 #: doc/reference/en/method_list.html:92(a)
 #: doc/reference/en/method_list.html:100(a)
 msgid "#initialize"
+msgstr ""
+
+#: doc/reference/en/method_list.html:94(small)
+#: doc/reference/en/file.tutorial.html:103(dt)
+#: doc/reference/en/Packnga/ReleaseTask.html:74(li)
+#: doc/reference/en/Packnga/ReleaseTask.html:382(a)
+msgid "Packnga::ReleaseTask"
 msgstr ""
 
 #: doc/reference/en/method_list.html:108(a)
@@ -2452,12 +637,6 @@ msgstr ""
 
 #: doc/reference/en/method_list.html:132(a)
 msgid "#yard"
-msgstr ""
-
-#: doc/reference/en/class_list.html:42(li)
-msgid ""
-"<span class=\"object_link\"><placeholder-1/></span> &lt; "
-"Object<placeholder-2/>"
 msgstr ""
 
 #: doc/reference/en/file.lgpl.html:6(title)
@@ -2842,123 +1021,6 @@ msgid ""
 "That's all there is to it!"
 msgstr ""
 
-#: doc/reference/en/index.html:6(title)
-#: doc/reference/en/file.README.html:6(title)
-msgid "File: README &mdash; packnga"
-msgstr ""
-
-#: doc/reference/en/index.html:37(span)
-#: doc/reference/en/file.README.html:37(span)
-msgid "File: README"
-msgstr "ファイル：はじめに"
-
-#: doc/reference/en/index.html:57(span)
-#: doc/reference/en/file.README.html:57(span)
-#: doc/reference/en/file_list.html:43(a) doc/reference/en/_index.html:63(a)
-msgid "README"
-msgstr "はじめに"
-
-#: doc/reference/en/index.html:58(h2) doc/reference/en/file.README.html:58(h2)
-msgid "Name"
-msgstr "名前"
-
-#: doc/reference/en/index.html:60(h2) doc/reference/en/file.README.html:60(h2)
-msgid "Description"
-msgstr ""
-
-#: doc/reference/en/index.html:61(p) doc/reference/en/file.README.html:61(p)
-msgid "An utility library to package i18n-ed library."
-msgstr ""
-"複数言語化したライブラリを作成するためのユーティリティを集めたライブラリで"
-"す。"
-
-#: doc/reference/en/index.html:62(span)
-#: doc/reference/en/file.README.html:62(span)
-#: doc/reference/en/file.tutorial.html:99(span)
-msgid "YARD"
-msgstr ""
-
-#: doc/reference/en/index.html:62(p) doc/reference/en/file.README.html:62(p)
-msgid ""
-"Packnga is an library to translate to many languages by <placeholder-1/>."
-msgstr "PackngaはYARDを用いてライブラリを多言語に翻訳します。"
-
-#: doc/reference/en/index.html:63(h2) doc/reference/en/file.README.html:63(h2)
-msgid "Authors"
-msgstr "作者"
-
-#: doc/reference/en/index.html:65(li) doc/reference/en/file.README.html:65(li)
-msgid "yoshihara haruka &lt;yoshihara@clear-code.com&gt;"
-msgstr ""
-
-#: doc/reference/en/index.html:66(li) doc/reference/en/file.README.html:66(li)
-msgid "Kouhei Sutou &lt;kou@clear-code.com&gt;"
-msgstr ""
-
-#: doc/reference/en/index.html:68(h2) doc/reference/en/file.README.html:68(h2)
-msgid "License"
-msgstr "ライセンス"
-
-#: doc/reference/en/index.html:69(span)
-#: doc/reference/en/file.README.html:69(span)
-msgid "LGPL"
-msgstr ""
-
-#: doc/reference/en/index.html:69(p) doc/reference/en/file.README.html:69(p)
-msgid "<placeholder-1/> 2.1. See license/<placeholder-2/> for details."
-msgstr "LGPL 2.1です。詳しくはlicense/LGPLを見てください。"
-
-#: doc/reference/en/index.html:70(p) doc/reference/en/file.README.html:70(p)
-msgid ""
-"(Kouhei Sutou has a right to change the license including contributed "
-"patches.)"
-msgstr ""
-"（コントリビュートされたパッチなども含み、Kouhei Sutouがライセンスを変更する"
-"権利を持ちます。）"
-
-#: doc/reference/en/index.html:72(h2) doc/reference/en/file.README.html:72(h2)
-msgid "Dependencies"
-msgstr "依存ソフトウェア"
-
-#: doc/reference/en/index.html:74(li) doc/reference/en/file.README.html:74(li)
-msgid "Ruby &gt;= 1.8 (including 1.9.2)"
-msgstr ""
-
-#: doc/reference/en/index.html:76(h2) doc/reference/en/file.README.html:76(h2)
-#: doc/reference/en/file.tutorial.html:59(h2)
-msgid "Install"
-msgstr "インストール"
-
-#: doc/reference/en/index.html:77(pre)
-#: doc/reference/en/file.README.html:77(pre)
-#: doc/reference/en/file.tutorial.html:61(pre)
-msgid "% sudo gem install packnga"
-msgstr ""
-
-#: doc/reference/en/index.html:79(h2) doc/reference/en/file.README.html:79(h2)
-msgid "Documents"
-msgstr "ドキュメント"
-
-#: doc/reference/en/index.html:81(a) doc/reference/en/file.README.html:81(a)
-msgid "Reference manual in English"
-msgstr "リファレンスマニュアル（英語）"
-
-#: doc/reference/en/index.html:82(a) doc/reference/en/file.README.html:82(a)
-msgid "Reference manual in Japanese"
-msgstr "リファレンスマニュアル（日本語）"
-
-#: doc/reference/en/index.html:84(h2) doc/reference/en/file.README.html:84(h2)
-msgid "Mailing list"
-msgstr "メーリングリスト"
-
-#: doc/reference/en/index.html:86(li) doc/reference/en/file.README.html:86(li)
-msgid "comming soon…"
-msgstr "準備中です。"
-
-#: doc/reference/en/index.html:88(h2) doc/reference/en/file.README.html:88(h2)
-msgid "Thanks"
-msgstr "感謝"
-
 #: doc/reference/en/file.tutorial.html:6(title)
 msgid "File: tutorial &mdash; packnga"
 msgstr ""
@@ -2985,6 +1047,35 @@ msgstr "PackngaはRubyGemsでインストールできます。"
 msgid "Prepare to create tasks"
 msgstr "タスク生成の準備"
 
+#: doc/reference/en/file.tutorial.html:64(code)
+#: doc/reference/en/file.tutorial.html:65(code)
+#: doc/reference/en/file.tutorial.html:68(span)
+#: doc/reference/en/file.tutorial.html:70(span)
+#: doc/reference/en/file.tutorial.html:71(span)
+#: doc/reference/en/file.tutorial.html:72(span)
+#: doc/reference/en/file.tutorial.html:73(span)
+#: doc/reference/en/file.tutorial.html:74(span)
+#: doc/reference/en/file.tutorial.html:75(span)
+#: doc/reference/en/file.tutorial.html:76(span)
+#: doc/reference/en/file.tutorial.html:79(span)
+#: doc/reference/en/file.tutorial.html:80(span)
+#: doc/reference/en/file.tutorial.html:81(span)
+#: doc/reference/en/file.tutorial.html:86(span)
+#: doc/reference/en/file.tutorial.html:89(code)
+#: doc/reference/en/file.tutorial.html:106(code)
+#: doc/reference/en/file.tutorial.html:110(span)
+#: doc/reference/en/file.tutorial.html:111(span)
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:345(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:434(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:435(span)
+#: doc/reference/en/Packnga/DocumentTask.html:291(span)
+#: doc/reference/en/Packnga/DocumentTask.html:345(span)
+#: doc/reference/en/Packnga/DocumentTask.html:346(span)
+msgid "spec"
+msgstr ""
+
 #: doc/reference/en/file.tutorial.html:64(p)
 msgid ""
 "Before using Packnga, you should create <placeholder-1/> variable with "
@@ -2994,12 +1085,116 @@ msgstr ""
 "Packngaを使用する前に、Jeweler::Tasks.newメソッドにてspecを作成します。この"
 "specを用いてPackngaはタスクを生成します。次にその例を示します。"
 
+#: doc/reference/en/file.tutorial.html:68(span)
+#: doc/reference/en/file.tutorial.html:70(span)
+#: doc/reference/en/file.tutorial.html:71(span)
+#: doc/reference/en/file.tutorial.html:72(span)
+#: doc/reference/en/file.tutorial.html:73(span)
+#: doc/reference/en/file.tutorial.html:74(span)
+#: doc/reference/en/file.tutorial.html:75(span)
+#: doc/reference/en/file.tutorial.html:76(span)
+#: doc/reference/en/file.tutorial.html:77(span)
+#: doc/reference/en/file.tutorial.html:78(span)
+#: doc/reference/en/file.tutorial.html:79(span)
+#: doc/reference/en/file.tutorial.html:80(span)
+#: doc/reference/en/file.tutorial.html:81(span)
+#: doc/reference/en/file.tutorial.html:86(span)
+#: doc/reference/en/file.tutorial.html:121(span)
+#: doc/reference/en/file.tutorial.html:125(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:435(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:436(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:437(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:438(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:439(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:440(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:528(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:609(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:689(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:769(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:843(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:308(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:386(span)
+#: doc/reference/en/Packnga/DocumentTask.html:346(span)
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+#: doc/reference/en/Packnga/DocumentTask.html:349(span)
+#: doc/reference/en/Packnga/DocumentTask.html:439(span)
+#: doc/reference/en/Packnga/DocumentTask.html:440(span)
+#: doc/reference/en/Packnga/DocumentTask.html:441(span)
+msgid "="
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:68(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:436(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:437(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:438(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:439(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:440(span)
+msgid "nil"
+msgstr ""
+
 #: doc/reference/en/file.tutorial.html:69(span)
 msgid "Jeweler"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:69(span)
+#: doc/reference/en/file.tutorial.html:110(span)
+#: doc/reference/en/file.tutorial.html:111(span)
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "::"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:69(span)
 msgid "Tasks"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:69(span)
+#: doc/reference/en/file.tutorial.html:71(span)
+#: doc/reference/en/file.tutorial.html:72(span)
+#: doc/reference/en/file.tutorial.html:73(span)
+#: doc/reference/en/file.tutorial.html:74(span)
+#: doc/reference/en/file.tutorial.html:75(span)
+#: doc/reference/en/file.tutorial.html:76(span)
+#: doc/reference/en/file.tutorial.html:77(span)
+#: doc/reference/en/file.tutorial.html:78(span)
+#: doc/reference/en/file.tutorial.html:79(span)
+#: doc/reference/en/file.tutorial.html:80(span)
+#: doc/reference/en/file.tutorial.html:81(span)
+#: doc/reference/en/file.tutorial.html:86(span)
+#: doc/reference/en/file.tutorial.html:110(span)
+#: doc/reference/en/file.tutorial.html:111(span)
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/file.tutorial.html:121(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/file.tutorial.html:125(span)
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+#: doc/reference/en/Packnga/DocumentTask.html:349(span)
+#: doc/reference/en/Packnga/DocumentTask.html:439(span)
+#: doc/reference/en/Packnga/DocumentTask.html:440(span)
+#: doc/reference/en/Packnga/DocumentTask.html:441(span)
+#: doc/reference/en/Packnga/DocumentTask.html:494(span)
+msgid "."
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:69(span)
+#: doc/reference/en/file.tutorial.html:110(span)
+#: doc/reference/en/file.tutorial.html:111(span)
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+#: doc/reference/en/Packnga/DocumentTask.html:439(span)
+msgid "new"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:69(span)
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+msgid "do"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:69(span)
@@ -3014,11 +1209,49 @@ msgid "_spec"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:71(span)
-msgid "\"packnga\""
+msgid "name"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:71(span)
+#: doc/reference/en/file.tutorial.html:73(span)
+#: doc/reference/en/file.tutorial.html:74(span)
+#: doc/reference/en/file.tutorial.html:75(span)
+#: doc/reference/en/file.tutorial.html:76(span)
+#: doc/reference/en/file.tutorial.html:77(span)
+#: doc/reference/en/file.tutorial.html:78(span)
+#: doc/reference/en/file.tutorial.html:80(span)
+#: doc/reference/en/file.tutorial.html:81(span)
+#: doc/reference/en/file.tutorial.html:82(span)
+#: doc/reference/en/file.tutorial.html:83(span)
+#: doc/reference/en/file.tutorial.html:84(span)
+#: doc/reference/en/file.tutorial.html:85(span)
+#: doc/reference/en/file.tutorial.html:86(span)
+#: doc/reference/en/file.tutorial.html:121(span)
+#: doc/reference/en/file.tutorial.html:125(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:449(span)
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+#: doc/reference/en/Packnga/DocumentTask.html:349(span)
+msgid "\""
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:71(span)
+#: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
+#: doc/reference/en/_index.html:55(h1)
+msgid "packnga"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:72(span)
+msgid "version"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:73(span)
-msgid "\"groonga\""
+#: doc/reference/en/file.tutorial.html:89(code)
+#: doc/reference/en/file.tutorial.html:106(code)
+msgid "rubyforge_project"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:73(span)
+msgid "groonga"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:74(span)
@@ -3026,7 +1259,7 @@ msgid "homepage"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:74(span)
-msgid "\"http://groonga.rubyforge.org/\""
+msgid "http://groonga.rubyforge.org/"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:75(span)
@@ -3034,11 +1267,39 @@ msgid "authors"
 msgstr "作者"
 
 #: doc/reference/en/file.tutorial.html:75(span)
-msgid "\"Haruka Yoshihara\""
+#: doc/reference/en/file.tutorial.html:76(span)
+#: doc/reference/en/file.tutorial.html:78(span)
+#: doc/reference/en/file.tutorial.html:81(span)
+#: doc/reference/en/file.tutorial.html:86(span)
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "["
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:75(span)
-msgid "\"Kouhei Sutou\""
+msgid "Haruka Yoshihara"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:75(span)
+#: doc/reference/en/file.tutorial.html:76(span)
+#: doc/reference/en/file.tutorial.html:79(span)
+#: doc/reference/en/file.tutorial.html:81(span)
+#: doc/reference/en/file.tutorial.html:82(span)
+#: doc/reference/en/file.tutorial.html:83(span)
+#: doc/reference/en/file.tutorial.html:84(span)
+msgid ","
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:75(span)
+msgid "Kouhei Sutou"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:75(span)
+#: doc/reference/en/file.tutorial.html:76(span)
+#: doc/reference/en/file.tutorial.html:78(span)
+#: doc/reference/en/file.tutorial.html:85(span)
+#: doc/reference/en/file.tutorial.html:86(span)
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "]"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:76(span)
@@ -3046,11 +1307,11 @@ msgid "email"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:76(span)
-msgid "\"yoshihara@clear-code.com\""
+msgid "yoshihara@clear-code.com"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:76(span)
-msgid "\"kou@clear-code.com\""
+msgid "kou@clear-code.com"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:77(span)
@@ -3059,9 +1320,18 @@ msgid "entries"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:77(span)
-#: doc/reference/en/file.tutorial.html:83(span)
-msgid "\"README.textile\""
+msgid "File"
 msgstr ""
+
+#: doc/reference/en/file.tutorial.html:77(span)
+msgid "read"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:77(span)
+#: doc/reference/en/file.tutorial.html:83(span)
+#, fuzzy
+msgid "README.textile"
+msgstr "はじめに"
 
 #: doc/reference/en/file.tutorial.html:77(span)
 #: doc/reference/en/file.tutorial.html:79(span)
@@ -3069,7 +1339,7 @@ msgid "split"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:77(span)
-msgid "/^h2\\.\\s(.*)$/"
+msgid "^h2\\.\\s(.*)$"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:78(span)
@@ -3086,7 +1356,8 @@ msgid "index"
 msgstr "索引"
 
 #: doc/reference/en/file.tutorial.html:78(span)
-msgid "\"Description\""
+#: doc/reference/en/Packnga/ReferenceTask.html:449(span)
+msgid "+"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:78(span)
@@ -3098,7 +1369,7 @@ msgid "summary"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:79(span)
-msgid "/\\n\\n+/"
+msgid "\\n\\n+"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:79(span)
@@ -3110,23 +1381,36 @@ msgid "license"
 msgstr "ライセンス"
 
 #: doc/reference/en/file.tutorial.html:80(span)
-msgid "\"LGPLv2\""
+msgid "LGPLv2"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:81(span)
-msgid "\"lib/**/*.rb\""
+#: doc/reference/en/Packnga/YARDTask.html:163(strong)
+#: doc/reference/en/Packnga/YARDTask.html:371(strong)
+#: doc/reference/en/Packnga/YARDTask.html:435(span)
+msgid "files"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:81(span)
+#: doc/reference/en/file.tutorial.html:86(span)
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "FileList"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:81(span)
+msgid "lib/**/*.rb"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:82(span)
-msgid "\"Rakefile\""
+msgid "Rakefile"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:84(span)
-msgid "\"Gemfile\""
+msgid "Gemfile"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:85(span)
-msgid "\"doc/text/**\""
+msgid "doc/text/**"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:86(span)
@@ -3134,7 +1418,33 @@ msgid "test_files"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:86(span)
-msgid "\"test/**/*.rb\""
+msgid "test/**/*.rb"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:87(span)
+#: doc/reference/en/file.tutorial.html:122(span)
+#: doc/reference/en/file.tutorial.html:126(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:444(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:529(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:610(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:690(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:770(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:844(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:309(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:387(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:450(span)
+#: doc/reference/en/Packnga/YARDTask.html:359(span)
+#: doc/reference/en/Packnga/YARDTask.html:437(span)
+#: doc/reference/en/Packnga/YARDTask.html:515(span)
+#: doc/reference/en/Packnga/YARDTask.html:593(span)
+#: doc/reference/en/Packnga/YARDTask.html:656(span)
+#: doc/reference/en/Packnga/DocumentTask.html:353(span)
+#: doc/reference/en/Packnga/DocumentTask.html:354(span)
+#: doc/reference/en/Packnga/DocumentTask.html:442(span)
+#: doc/reference/en/Packnga/DocumentTask.html:495(span)
+#: doc/reference/en/Packnga/DocumentTask.html:564(span)
+#: doc/reference/en/Packnga/DocumentTask.html:633(span)
+msgid "end"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:90(code)
@@ -3211,9 +1521,29 @@ msgstr ""
 "値を独自に設定したい場合には次のようにRakefileに記述します。また、このベース"
 "ディレクトリの値は両方のクラスにて同じものを指定してください。"
 
+#: doc/reference/en/file.tutorial.html:120(span)
+#: doc/reference/en/file.tutorial.html:121(span)
+#: doc/reference/en/file.tutorial.html:124(span)
+#: doc/reference/en/file.tutorial.html:125(span)
+msgid "task"
+msgstr ""
+
 #: doc/reference/en/file.tutorial.html:121(span)
 #: doc/reference/en/file.tutorial.html:125(span)
-msgid "\"doc/\""
+#: doc/reference/en/Packnga/ReleaseTask.html:140(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:138(strong)
+#: doc/reference/en/Packnga/YARDTask.html:136(strong)
+#: doc/reference/en/Packnga/YARDTask.html:293(strong)
+#: doc/reference/en/Packnga/YARDTask.html:357(span)
+#: doc/reference/en/Packnga/DocumentTask.html:349(span)
+#: doc/reference/en/Packnga/DocumentTask.html:440(span)
+#: doc/reference/en/Packnga/DocumentTask.html:441(span)
+msgid "base_dir"
+msgstr ""
+
+#: doc/reference/en/file.tutorial.html:121(span)
+#: doc/reference/en/file.tutorial.html:125(span)
+msgid "doc/"
 msgstr ""
 
 #: doc/reference/en/file.tutorial.html:128(p)
@@ -3224,22 +1554,1116 @@ msgstr ""
 "他にも設定できるパラメータがあります。詳しくはリファレンスマニュアルをご覧く"
 "ださい。"
 
-#: doc/reference/en/frames.html:7(title) doc/reference/en/_index.html:6(title)
-#: doc/reference/en/_index.html:55(h1)
-msgid "packnga"
+#: doc/reference/en/Packnga/ReleaseTask.html:6(title)
+msgid "Class: Packnga::ReleaseTask &mdash; packnga"
 msgstr ""
 
-#: doc/reference/en/file_list.html:46(a) doc/reference/en/_index.html:66(a)
-msgid "tutorial"
-msgstr "チュートリアル"
-
-#: doc/reference/en/file_list.html:49(a) doc/reference/en/_index.html:69(a)
-msgid "lgpl"
+#: doc/reference/en/Packnga/ReleaseTask.html:17(script)
+#: doc/reference/en/Packnga/ReferenceTask.html:17(script)
+#: doc/reference/en/Packnga/YARDTask.html:17(script)
+#: doc/reference/en/Packnga/DocumentTask.html:17(script)
+msgid "relpath = '..'; if (relpath != '') relpath += '/';"
 msgstr ""
 
-#: doc/reference/en/file_list.html:52(a) doc/reference/en/_index.html:72(a)
-msgid "news"
-msgstr "お知らせ"
+#: doc/reference/en/Packnga/ReleaseTask.html:36(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:36(a)
+msgid "Index (R)"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:59(h1)
+msgid "Class: Packnga::ReleaseTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:67(dt)
+#: doc/reference/en/Packnga/ReferenceTask.html:67(dt)
+#: doc/reference/en/Packnga/YARDTask.html:67(dt)
+#: doc/reference/en/Packnga/DocumentTask.html:67(dt)
+msgid "Inherits:"
+msgstr "継承クラス"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:69(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:72(li)
+#: doc/reference/en/Packnga/ReleaseTask.html:461(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:541(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:622(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:702(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:782(tt)
+#: doc/reference/en/Packnga/ReferenceTask.html:69(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:72(li)
+#: doc/reference/en/Packnga/ReferenceTask.html:403(tt)
+#: doc/reference/en/Packnga/YARDTask.html:69(span)
+#: doc/reference/en/Packnga/YARDTask.html:72(li)
+#: doc/reference/en/Packnga/YARDTask.html:609(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:69(span)
+#: doc/reference/en/Packnga/DocumentTask.html:72(li)
+#: doc/reference/en/Packnga/DocumentTask.html:370(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:451(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:504(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:573(tt)
+msgid "Object"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:77(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:77(a)
+#: doc/reference/en/Packnga/YARDTask.html:77(a)
+#: doc/reference/en/Packnga/DocumentTask.html:77(a)
+msgid "show all"
+msgstr "すべて表示"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:86(dt)
+#: doc/reference/en/Packnga/ReferenceTask.html:86(dt)
+#: doc/reference/en/Packnga/YARDTask.html:86(dt)
+#: doc/reference/en/Packnga/DocumentTask.html:86(dt)
+msgid "Includes:"
+msgstr "インクルード"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:87(dd)
+#: doc/reference/en/Packnga/YARDTask.html:87(dd)
+#: doc/reference/en/Packnga/DocumentTask.html:87(dd)
+msgid "Rake::DSL"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:94(dd)
+msgid "lib/packnga/release-task.rb"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:101(p)
+msgid "This class creates release tasks."
+msgstr "このクラスはリリース関連のタスクを扱います。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:104(p)
+msgid ""
+"Release tasks tag current version and install gem for test. It also define "
+"tasks to upload rubyforge whether option."
+msgstr ""
+"リリース関連のタスクは、現在のバージョンのタグを打ったり、テスト用にgemをイン"
+"ストールします。またspecのオプションによってはrubyforgeにアップロードするため"
+"のタスクも定義します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:113(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:395(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:496(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:577(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:657(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:737(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:811(h3)
+#: doc/reference/en/Packnga/ReferenceTask.html:110(h3)
+#: doc/reference/en/Packnga/ReferenceTask.html:276(h3)
+#: doc/reference/en/Packnga/ReferenceTask.html:354(h3)
+#: doc/reference/en/Packnga/ReferenceTask.html:417(h3)
+#: doc/reference/en/Packnga/YARDTask.html:109(h3)
+#: doc/reference/en/Packnga/YARDTask.html:326(h3)
+#: doc/reference/en/Packnga/YARDTask.html:404(h3)
+#: doc/reference/en/Packnga/YARDTask.html:482(h3)
+#: doc/reference/en/Packnga/YARDTask.html:560(h3)
+#: doc/reference/en/Packnga/YARDTask.html:623(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:110(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:307(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:405(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:462(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:531(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:600(h3)
+msgid "Since:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:122(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:404(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:505(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:586(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:666(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:746(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:820(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:119(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:285(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:363(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:426(p)
+#: doc/reference/en/Packnga/YARDTask.html:118(p)
+#: doc/reference/en/Packnga/YARDTask.html:335(p)
+#: doc/reference/en/Packnga/YARDTask.html:413(p)
+#: doc/reference/en/Packnga/YARDTask.html:491(p)
+#: doc/reference/en/Packnga/YARDTask.html:569(p)
+#: doc/reference/en/Packnga/YARDTask.html:632(p)
+#: doc/reference/en/Packnga/DocumentTask.html:119(p)
+#: doc/reference/en/Packnga/DocumentTask.html:316(p)
+#: doc/reference/en/Packnga/DocumentTask.html:414(p)
+#: doc/reference/en/Packnga/DocumentTask.html:471(p)
+#: doc/reference/en/Packnga/DocumentTask.html:540(p)
+#: doc/reference/en/Packnga/DocumentTask.html:609(p)
+msgid "0.9.0"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:134(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:282(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:132(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:199(a)
+#: doc/reference/en/Packnga/YARDTask.html:130(a)
+#: doc/reference/en/Packnga/YARDTask.html:250(a)
+#: doc/reference/en/Packnga/DocumentTask.html:138(a)
+msgid "collapse"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:134(small)
+#: doc/reference/en/Packnga/ReleaseTask.html:282(small)
+#: doc/reference/en/Packnga/ReleaseTask.html:348(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:367(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:483(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:564(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:644(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:724(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:804(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:132(small)
+#: doc/reference/en/Packnga/ReferenceTask.html:199(small)
+#: doc/reference/en/Packnga/ReferenceTask.html:263(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:341(span)
+#: doc/reference/en/Packnga/YARDTask.html:130(small)
+#: doc/reference/en/Packnga/YARDTask.html:250(small)
+#: doc/reference/en/Packnga/YARDTask.html:313(span)
+#: doc/reference/en/Packnga/YARDTask.html:391(span)
+#: doc/reference/en/Packnga/YARDTask.html:469(span)
+#: doc/reference/en/Packnga/YARDTask.html:547(span)
+#: doc/reference/en/Packnga/DocumentTask.html:138(small)
+#: doc/reference/en/Packnga/DocumentTask.html:294(span)
+#: doc/reference/en/Packnga/DocumentTask.html:392(span)
+#: doc/reference/en/Packnga/DocumentTask.html:524(span)
+#: doc/reference/en/Packnga/DocumentTask.html:593(span)
+msgid "(<placeholder-1/>)"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:134(h2)
+#: doc/reference/en/Packnga/ReferenceTask.html:132(h2)
+#: doc/reference/en/Packnga/YARDTask.html:130(h2)
+msgid "Instance Attribute Summary <placeholder-1/>"
+msgstr "属性の一覧"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:140(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:167(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:195(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:222(a)
+#: doc/reference/en/Packnga/ReleaseTask.html:249(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:207(a)
+#: doc/reference/en/Packnga/DocumentTask.html:170(a)
+msgid "- (Object) <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:148(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:175(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:203(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:230(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:257(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:146(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:173(span)
+msgid "writeonly"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:156(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:467(p)
+msgid "This attribute is path of base directory of document."
+msgstr "この属性はドキュメントのベースディレクトリを表します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:167(strong)
+msgid "changes"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:183(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:547(p)
+msgid ""
+"This attribute is text for changes in new release to post news to Rubyforge."
+msgstr "この属性は、RubyForgeにニュースをポストする際に使う最新リリースでの変更点を表します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:195(strong)
+msgid "index_html_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:211(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:628(p)
+msgid "This attribute is path of HTML files written version and release date."
+msgstr ""
+"この属性はバージョンやリリース日が書かれたHTMLファイルのパスを示します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:222(strong)
+msgid "publish_options"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:238(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:708(p)
+msgid "This attribute is options for uploading rubyforge by rsync."
+msgstr ""
+"この属性はrubyforgeにアップロードするときのrsyncのオプションを表します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:249(strong)
+msgid "tag_message"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:265(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:788(p)
+msgid "This attribute is message when tagging in release."
+msgstr "この属性はタグに付けるメッセージを示します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:280(h2)
+#: doc/reference/en/Packnga/ReferenceTask.html:197(h2)
+#: doc/reference/en/Packnga/YARDTask.html:248(h2)
+#: doc/reference/en/Packnga/DocumentTask.html:136(h2)
+msgid "Instance Method Summary <placeholder-1/>"
+msgstr "インスタンスメソッドの一覧"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:290(strong)
+#: doc/reference/en/Packnga/ReleaseTask.html:323(strong)
+#: doc/reference/en/Packnga/ReleaseTask.html:434(span)
+#: doc/reference/en/Packnga/DocumentTask.html:191(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:272(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:345(span)
+msgid "initialize"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:290(a)
+msgid "- (ReleaseTask) <placeholder-1/>(spec) {|_self| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:296(span)
+#: doc/reference/en/Packnga/DocumentTask.html:197(span)
+msgid "constructor"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:305(p)
+msgid "Defines task for preparing to release."
+msgstr "リリース準備を行うためのタスクを定義します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:318(h2)
+#: doc/reference/en/Packnga/DocumentTask.html:267(h2)
+msgid "Constructor Details"
+msgstr "コンストラクタ詳細"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:321(p)
+msgid ""
+"- (<tt><span class=\"object_link\"><placeholder-1/></span></tt>) "
+"<placeholder-2/>(spec) {|_self| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:329(p)
+msgid ""
+"Defines task for preparing to release. Defined tasks update version and "
+"release-date in index files and tag in git. If you set rubyforge_project of "
+"Jeweler::Task.new with its given block, it also define tasks to update "
+"rubyforge."
+msgstr ""
+"gitへ現在バージョンのタグを打ったりインデックスファイルのバージョンやリリース"
+"日を更新するタグを定義します。Jeweler::Task.newに渡したブロック内にて、"
+"rubyforge_projectを設定していると、rubyforgeへのアップロードするためのタスク"
+"も定義します。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:340(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:475(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:556(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:636(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:716(h3)
+#: doc/reference/en/Packnga/ReleaseTask.html:796(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:286(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:384(h3)
+msgid "Parameters:"
+msgstr "パラメータ:"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:348(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:294(tt)
+msgid "Jeweler::Task"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:353(p)
+#: doc/reference/en/Packnga/DocumentTask.html:299(p)
+msgid "created by Jeweler::Task.new."
+msgstr "Jeweler::Task.newによって生成される"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:361(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:518(h3)
+#: doc/reference/en/Packnga/DocumentTask.html:587(h3)
+msgid "Yields:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:367(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:379(span)
+msgid "_self"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:374(h3)
+msgid "Yield Parameters:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:382(span)
+msgid "(<tt><span class=\"object_link\"><placeholder-1/></span></tt>)"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:387(p)
+msgid "the object that the method was called on"
+msgstr "selfをyieldに渡しています。"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:416(pre)
+msgid "52 53 54 55 56 57 58 59 60 61 62"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:432(span)
+msgid "# File 'lib/packnga/release-task.rb', line 52"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:434(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:527(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:608(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:688(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:768(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:842(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:307(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:385(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:448(span)
+#: doc/reference/en/Packnga/YARDTask.html:357(span)
+#: doc/reference/en/Packnga/YARDTask.html:435(span)
+#: doc/reference/en/Packnga/YARDTask.html:513(span)
+#: doc/reference/en/Packnga/YARDTask.html:591(span)
+#: doc/reference/en/Packnga/YARDTask.html:654(span)
+#: doc/reference/en/Packnga/DocumentTask.html:345(span)
+#: doc/reference/en/Packnga/DocumentTask.html:438(span)
+#: doc/reference/en/Packnga/DocumentTask.html:493(span)
+#: doc/reference/en/Packnga/DocumentTask.html:562(span)
+#: doc/reference/en/Packnga/DocumentTask.html:631(span)
+msgid "def"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:435(span)
+#: doc/reference/en/Packnga/DocumentTask.html:346(span)
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+msgid "@spec"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:436(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:689(span)
+msgid "@index_html_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:437(span)
+msgid "@rubyforge"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:438(span)
+msgid "@tag_messsage"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:439(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:769(span)
+msgid "@publish_options"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:440(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:609(span)
+msgid "@changes"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:441(span)
+#: doc/reference/en/Packnga/DocumentTask.html:351(span)
+#: doc/reference/en/Packnga/DocumentTask.html:563(span)
+#: doc/reference/en/Packnga/DocumentTask.html:632(span)
+msgid "yield"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:441(span)
+#: doc/reference/en/Packnga/DocumentTask.html:349(span)
+#: doc/reference/en/Packnga/DocumentTask.html:351(span)
+msgid "self"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:441(span)
+#: doc/reference/en/Packnga/DocumentTask.html:350(span)
+msgid "if"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:441(span)
+#: doc/reference/en/Packnga/DocumentTask.html:350(span)
+msgid "block_given?"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:442(span)
+msgid "set_default_values"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:443(span)
+msgid "define_tasks"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:453(h2)
+#: doc/reference/en/Packnga/ReferenceTask.html:235(h2)
+#: doc/reference/en/Packnga/YARDTask.html:285(h2)
+msgid "Instance Attribute Details"
+msgstr "属性の詳細"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:461(strong)
+#: doc/reference/en/Packnga/ReleaseTask.html:527(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:243(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:307(span)
+#: doc/reference/en/Packnga/DocumentTask.html:146(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:370(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:438(span)
+msgid "base_dir="
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:461(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:541(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:622(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:702(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:782(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:243(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:321(span)
+msgid "(writeonly)"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:459(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:539(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:620(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:700(p)
+#: doc/reference/en/Packnga/ReleaseTask.html:780(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:241(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:319(p)
+msgid "- (<placeholder-1/>) <placeholder-2/>(value) <placeholder-3/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:480(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:641(span)
+msgid "path"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:483(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:564(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:644(tt)
+#: doc/reference/en/Packnga/ReleaseTask.html:804(tt)
+#: doc/reference/en/Packnga/ReferenceTask.html:243(tt)
+#: doc/reference/en/Packnga/ReferenceTask.html:263(tt)
+#: doc/reference/en/Packnga/ReferenceTask.html:321(tt)
+#: doc/reference/en/Packnga/ReferenceTask.html:341(tt)
+#: doc/reference/en/Packnga/YARDTask.html:293(tt)
+#: doc/reference/en/Packnga/YARDTask.html:313(tt)
+#: doc/reference/en/Packnga/YARDTask.html:527(tt)
+#: doc/reference/en/Packnga/YARDTask.html:547(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:392(tt)
+msgid "String"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:488(p)
+msgid "of base directory of document"
+msgstr "ドキュメントのベースディレクトリ"
+
+#: doc/reference/en/Packnga/ReleaseTask.html:517(pre)
+#: doc/reference/en/Packnga/YARDTask.html:425(pre)
+msgid "35 36 37"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:525(span)
+msgid "# File 'lib/packnga/release-task.rb', line 35"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:527(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:528(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:608(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:609(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:688(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:689(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:768(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:769(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:842(span)
+#: doc/reference/en/Packnga/ReleaseTask.html:843(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:307(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:308(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:385(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:386(span)
+msgid "value"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:528(span)
+#: doc/reference/en/Packnga/ReferenceTask.html:308(span)
+#: doc/reference/en/Packnga/YARDTask.html:358(span)
+msgid "@base_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:541(strong)
+#: doc/reference/en/Packnga/ReleaseTask.html:608(span)
+msgid "changes="
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:561(span)
+msgid "text"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:569(p)
+msgid "for changes."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:598(pre)
+msgid "45 46 47"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:606(span)
+msgid "# File 'lib/packnga/release-task.rb', line 45"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:622(strong)
+#: doc/reference/en/Packnga/ReleaseTask.html:688(span)
+msgid "index_html_dir="
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:649(p)
+msgid "of HTML files"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:678(pre)
+#: doc/reference/en/Packnga/YARDTask.html:347(pre)
+msgid "32 33 34"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:686(span)
+msgid "# File 'lib/packnga/release-task.rb', line 32"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:702(strong)
+#: doc/reference/en/Packnga/ReleaseTask.html:768(span)
+msgid "publish_options="
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:721(span)
+#: doc/reference/en/Packnga/YARDTask.html:190(strong)
+#: doc/reference/en/Packnga/YARDTask.html:449(strong)
+#: doc/reference/en/Packnga/YARDTask.html:513(span)
+msgid "options"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:724(tt)
+msgid "Hash"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:729(p)
+msgid "for uploading."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:758(pre)
+msgid "41 42 43"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:766(span)
+msgid "# File 'lib/packnga/release-task.rb', line 41"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:782(strong)
+#: doc/reference/en/Packnga/ReleaseTask.html:842(span)
+msgid "tag_message="
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:801(span)
+msgid "message"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:832(pre)
+#: doc/reference/en/Packnga/YARDTask.html:503(pre)
+msgid "38 39 40"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:840(span)
+msgid "# File 'lib/packnga/release-task.rb', line 38"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReleaseTask.html:843(span)
+msgid "@tag_message"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:6(title)
+msgid "Class: Packnga::ReferenceTask &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:59(h1)
+msgid "Class: Packnga::ReferenceTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:87(dd)
+msgid "ERB::Util, Rake::DSL"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:94(dd)
+msgid "lib/packnga/reference-task.rb"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:101(p)
+msgid ""
+"This class creates reference tasks. They generate, translate and prepare to "
+"publish references."
+msgstr ""
+"このクラスはリファレンス関係のタスクを生成します。\n"
+"これらタスクはリファレンスを生成、翻訳、また公開の準備を行います。"
+
+#: doc/reference/en/Packnga/ReferenceTask.html:138(a)
+#: doc/reference/en/Packnga/ReferenceTask.html:165(a)
+#: doc/reference/en/Packnga/YARDTask.html:136(a)
+#: doc/reference/en/Packnga/YARDTask.html:217(a)
+msgid "- (String) <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:154(p)
+#: doc/reference/en/Packnga/YARDTask.html:152(p)
+#: doc/reference/en/Packnga/YARDTask.html:299(p)
+msgid "Path of base directory of document."
+msgstr "ドキュメントのベースディレクトリのパス"
+
+#: doc/reference/en/Packnga/ReferenceTask.html:165(strong)
+msgid "mode"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:181(p)
+msgid "Mode used in xml2po."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:207(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:403(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:448(span)
+#: doc/reference/en/Packnga/DocumentTask.html:170(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:451(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:493(span)
+#: doc/reference/en/Packnga/DocumentTask.html:494(span)
+msgid "htaccess"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:220(p)
+#: doc/reference/en/Packnga/ReferenceTask.html:409(p)
+msgid "path of .htaccess."
+msgstr ".htaccessファイルのパス"
+
+#: doc/reference/en/Packnga/ReferenceTask.html:249(p)
+msgid "Path of base directory of document"
+msgstr "ドキュメントのベースディレクトリのパス"
+
+#: doc/reference/en/Packnga/ReferenceTask.html:257(h3)
+#: doc/reference/en/Packnga/ReferenceTask.html:335(h3)
+#: doc/reference/en/Packnga/YARDTask.html:307(h3)
+#: doc/reference/en/Packnga/YARDTask.html:385(h3)
+#: doc/reference/en/Packnga/YARDTask.html:463(h3)
+#: doc/reference/en/Packnga/YARDTask.html:541(h3)
+msgid "Returns:"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:268(p)
+msgid "path of base directory of document"
+msgstr "ドキュメントのベースディレクトリのパス"
+
+#: doc/reference/en/Packnga/ReferenceTask.html:297(pre)
+msgid "30 31 32"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:305(span)
+msgid "# File 'lib/packnga/reference-task.rb', line 30"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:321(strong)
+#: doc/reference/en/Packnga/ReferenceTask.html:385(span)
+msgid "mode="
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:327(p)
+msgid "Mode used in xml2po. The default is “docbook”."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:346(p)
+msgid "mode used in xml2po. The default is “docbook”."
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:375(pre)
+msgid "33 34 35"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:383(span)
+msgid "# File 'lib/packnga/reference-task.rb', line 33"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:386(span)
+msgid "@mode"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:397(h2)
+#: doc/reference/en/Packnga/YARDTask.html:603(h2)
+#: doc/reference/en/Packnga/DocumentTask.html:364(h2)
+msgid "Instance Method Details"
+msgstr "インスタンスメソッド詳細"
+
+#: doc/reference/en/Packnga/ReferenceTask.html:401(p)
+#: doc/reference/en/Packnga/YARDTask.html:291(p)
+#: doc/reference/en/Packnga/YARDTask.html:369(p)
+#: doc/reference/en/Packnga/YARDTask.html:447(p)
+#: doc/reference/en/Packnga/YARDTask.html:525(p)
+#: doc/reference/en/Packnga/DocumentTask.html:449(p)
+msgid "- (<placeholder-1/>) <placeholder-2/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:438(pre)
+#: doc/reference/en/Packnga/YARDTask.html:581(pre)
+#: doc/reference/en/Packnga/DocumentTask.html:621(pre)
+msgid "59 60 61"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:446(span)
+msgid "# File 'lib/packnga/reference-task.rb', line 59"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:449(span)
+msgid "html_reference_dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/ReferenceTask.html:449(span)
+#, fuzzy
+msgid ".htaccess"
+msgstr ".htaccessファイルのパス"
+
+#: doc/reference/en/Packnga/YARDTask.html:6(title)
+msgid "Class: Packnga::YARDTask &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:36(a)
+msgid "Index (Y)"
+msgstr "索引"
+
+#: doc/reference/en/Packnga/YARDTask.html:59(h1)
+msgid "Class: Packnga::YARDTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:94(dd)
+msgid "lib/packnga/yard-task.rb"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:101(p)
+msgid "This class creates YARD task. YARD task generate references by YARD."
+msgstr ""
+"このクラスはYARD関連のタスクを定義します。このタスクはYARDによりドキュメント"
+"を生成します。"
+
+#: doc/reference/en/Packnga/YARDTask.html:163(a)
+#: doc/reference/en/Packnga/YARDTask.html:190(a)
+msgid "- (Array&lt;String&gt;) <placeholder-1/>"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:179(p)
+#: doc/reference/en/Packnga/YARDTask.html:377(p)
+msgid "Document target files."
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:206(p)
+#: doc/reference/en/Packnga/YARDTask.html:455(p)
+msgid "Custom yardoc command line options."
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:217(strong)
+#: doc/reference/en/Packnga/YARDTask.html:527(strong)
+#: doc/reference/en/Packnga/YARDTask.html:591(span)
+msgid "readme"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:233(p)
+#: doc/reference/en/Packnga/YARDTask.html:533(p)
+msgid "This attribute is used to sets README file to yardoc task."
+msgstr "この属性はyardocに対して設定するReadmeの場所を設定します。"
+
+#: doc/reference/en/Packnga/YARDTask.html:258(strong)
+#: doc/reference/en/Packnga/YARDTask.html:609(strong)
+#: doc/reference/en/Packnga/YARDTask.html:654(span)
+msgid "before_define"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:258(a)
+msgid "- (Object) <placeholder-1/>(&amp;hook)"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:271(p)
+#: doc/reference/en/Packnga/YARDTask.html:615(p)
+msgid "Regists yardoc parameters with block."
+msgstr "与えられたブロックをyardocにパラメータを設定するものとして登録します。"
+
+#: doc/reference/en/Packnga/YARDTask.html:318(p)
+msgid "path of base directory of document."
+msgstr "ドキュメントのベースディレクトリのパス"
+
+#: doc/reference/en/Packnga/YARDTask.html:355(span)
+msgid "# File 'lib/packnga/yard-task.rb', line 32"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:371(tt)
+#: doc/reference/en/Packnga/YARDTask.html:391(tt)
+#: doc/reference/en/Packnga/YARDTask.html:449(tt)
+#: doc/reference/en/Packnga/YARDTask.html:469(tt)
+msgid "Array&lt;String&gt;"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:396(p)
+msgid "document target files."
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:433(span)
+msgid "# File 'lib/packnga/yard-task.rb', line 35"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:436(span)
+msgid "@files"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:474(p)
+msgid "custom yardoc command line options."
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:511(span)
+msgid "# File 'lib/packnga/yard-task.rb', line 38"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:514(span)
+msgid "@options"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:552(p)
+msgid "path to readme file"
+msgstr "Readmeファイルを示すパス"
+
+#: doc/reference/en/Packnga/YARDTask.html:589(span)
+msgid "# File 'lib/packnga/yard-task.rb', line 59"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "@readme"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "||"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "Rake"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+#, fuzzy
+msgid "README*"
+msgstr "はじめに"
+
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "to_a"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:592(span)
+msgid "first"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:607(p)
+msgid "- (<placeholder-1/>) <placeholder-2/>(&amp;hook)"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:644(pre)
+msgid "75 76 77"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:652(span)
+msgid "# File 'lib/packnga/yard-task.rb', line 75"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:654(span)
+msgid "&amp;"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:654(span)
+#: doc/reference/en/Packnga/YARDTask.html:655(span)
+msgid "hook"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:655(span)
+msgid "@hooks"
+msgstr ""
+
+#: doc/reference/en/Packnga/YARDTask.html:655(span)
+msgid "&lt;&lt;"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:6(title)
+msgid "Class: Packnga::DocumentTask &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:36(a)
+msgid "Index (D)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:59(h1)
+msgid "Class: Packnga::DocumentTask"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:94(dd)
+msgid "lib/packnga/document-task.rb"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:101(p)
+msgid ""
+"This class creates docment tasks. They generate YARD doucment or references."
+msgstr ""
+"このクラスはドキュメント関連のタスクを生成します。それらはYARDによりドキュメ"
+"ントを生成したりリファレンスを作成します。"
+
+#: doc/reference/en/Packnga/DocumentTask.html:146(a)
+msgid "- (Object) <placeholder-1/>(dir)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:159(p)
+msgid "Sets base directory for documents."
+msgstr "ドキュメントのベースとなるディレクトリを設定します。"
+
+#: doc/reference/en/Packnga/DocumentTask.html:191(a)
+msgid "- (DocumentTask) <placeholder-1/>(spec)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:206(p)
+#: doc/reference/en/Packnga/DocumentTask.html:278(p)
+msgid ""
+"Defines tasks to generate YARD documentation and to translate references."
+msgstr ""
+"YARDによるドキュメントを生成したりリファレンスを翻訳するタスクを定義します。"
+
+#: doc/reference/en/Packnga/DocumentTask.html:217(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:504(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:562(span)
+msgid "reference"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:217(a)
+msgid "- (Object) <placeholder-1/> {|@reference_task| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:230(p)
+#: doc/reference/en/Packnga/DocumentTask.html:510(p)
+msgid "Runs block to tasks for references."
+msgstr ""
+"リファレンス関連のタスクに関する設定を与えられたブロックにて設定します。"
+
+#: doc/reference/en/Packnga/DocumentTask.html:241(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:573(strong)
+#: doc/reference/en/Packnga/DocumentTask.html:631(span)
+msgid "yard"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:241(a)
+msgid "- (Object) <placeholder-1/> {|@yard_task| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:254(p)
+#: doc/reference/en/Packnga/DocumentTask.html:579(p)
+msgid "Runs block to task for YARD documentation."
+msgstr ""
+"YARDによるドキュメントのためのタスクに関する設定を与えられたブロックにて設定"
+"します。"
+
+#: doc/reference/en/Packnga/DocumentTask.html:270(p)
+msgid ""
+"- (<tt><span class=\"object_link\"><placeholder-1/></span></tt>) "
+"<placeholder-2/>(spec)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:328(pre)
+msgid "33 34 35 36 37 38 39 40 41 42"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:343(span)
+msgid "# File 'lib/packnga/document-task.rb', line 33"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:347(span)
+#: doc/reference/en/Packnga/DocumentTask.html:440(span)
+#: doc/reference/en/Packnga/DocumentTask.html:593(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:632(span)
+msgid "@yard_task"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:348(span)
+#: doc/reference/en/Packnga/DocumentTask.html:441(span)
+#: doc/reference/en/Packnga/DocumentTask.html:494(span)
+#: doc/reference/en/Packnga/DocumentTask.html:524(tt)
+#: doc/reference/en/Packnga/DocumentTask.html:563(span)
+msgid "@reference_task"
+msgstr "ReferenceTaskクラスを作成。"
+
+#: doc/reference/en/Packnga/DocumentTask.html:349(span)
+msgid "doc"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:352(span)
+msgid "define"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:368(p)
+msgid "- (<placeholder-1/>) <placeholder-2/>(dir)"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:376(p)
+msgid "Sets base directory for documents. Default value is “doc”."
+msgstr ""
+"ドキュメントのベースとなるディレクトリを設定します。デフォルトの値は\"doc\"で"
+"す。"
+
+#: doc/reference/en/Packnga/DocumentTask.html:389(span)
+msgid "base"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:397(p)
+msgid "direcory path"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:426(pre)
+msgid "52 53 54 55 56"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:436(span)
+msgid "# File 'lib/packnga/document-task.rb', line 52"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:438(span)
+#: doc/reference/en/Packnga/DocumentTask.html:439(span)
+#: doc/reference/en/Packnga/DocumentTask.html:440(span)
+#: doc/reference/en/Packnga/DocumentTask.html:441(span)
+msgid "dir"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:439(span)
+msgid "Pathname"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:483(pre)
+msgid "68 69 70"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:491(span)
+msgid "# File 'lib/packnga/document-task.rb', line 68"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:502(p)
+msgid "- (<placeholder-1/>) <placeholder-2/> {|@reference_task| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:552(pre)
+msgid "64 65 66"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:560(span)
+msgid "# File 'lib/packnga/document-task.rb', line 64"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:571(p)
+msgid "- (<placeholder-1/>) <placeholder-2/> {|@yard_task| ... }"
+msgstr ""
+
+#: doc/reference/en/Packnga/DocumentTask.html:629(span)
+msgid "# File 'lib/packnga/document-task.rb', line 59"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:6(title)
+msgid "Top Level Namespace &mdash; packnga"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:77(h2)
+msgid "Defined Under Namespace"
+msgstr ""
+
+#: doc/reference/en/top-level-namespace.html:81(strong)
+msgid "Modules:"
+msgstr ""
 
 #: doc/reference/en/_index.html:57(h1)
 msgid "Alphabetic Index"
@@ -3249,37 +2673,510 @@ msgstr "アルファベット一覧"
 msgid "File Listing"
 msgstr "ファイルリスト"
 
-#: doc/reference/en/_index.html:78(h2)
+#: doc/reference/en/_index.html:66(a) doc/reference/en/file_list.html:46(a)
+msgid "lgpl"
+msgstr ""
+
+#: doc/reference/en/_index.html:69(a) doc/reference/en/file_list.html:49(a)
+msgid "tutorial"
+msgstr "チュートリアル"
+
+#: doc/reference/en/_index.html:72(a) doc/reference/en/file_list.html:52(a)
+msgid "release"
+msgstr ""
+
+#: doc/reference/en/_index.html:75(a) doc/reference/en/file_list.html:55(a)
+msgid "news"
+msgstr "お知らせ"
+
+#: doc/reference/en/_index.html:81(h2)
 msgid "Namespace Listing A-Z"
 msgstr "アルファベット順ネームスペース一覧"
 
-#: doc/reference/en/_index.html:89(li)
+#: doc/reference/en/_index.html:92(li)
 msgid "D"
 msgstr ""
 
-#: doc/reference/en/_index.html:95(small)
-#: doc/reference/en/_index.html:123(small)
-#: doc/reference/en/_index.html:130(small)
-#: doc/reference/en/_index.html:145(small)
+#: doc/reference/en/_index.html:98(small)
+#: doc/reference/en/_index.html:126(small)
+#: doc/reference/en/_index.html:133(small)
+#: doc/reference/en/_index.html:148(small)
 msgid "(Packnga)"
 msgstr ""
 
-#: doc/reference/en/_index.html:104(li)
+#: doc/reference/en/_index.html:107(li)
 msgid "P"
 msgstr ""
 
-#: doc/reference/en/_index.html:117(li)
+#: doc/reference/en/_index.html:120(li)
 msgid "R"
 msgstr ""
 
-#: doc/reference/en/_index.html:139(li)
+#: doc/reference/en/_index.html:142(li)
 msgid "Y"
 msgstr ""
 
+#: doc/reference/en/file.release.html:6(title)
+#, fuzzy
+msgid "File: release &mdash; packnga"
+msgstr "ファイル：お知らせ；Packnga"
+
+#: doc/reference/en/file.release.html:37(span)
+#, fuzzy
+msgid "File: release"
+msgstr "ファイル：お知らせ"
+
+#: doc/reference/en/file.release.html:57(h1)
+msgid "リリース手順"
+msgstr ""
+
+#: doc/reference/en/file.release.html:58(h2)
+msgid "news.rdocに前回リリースからの変更点のまとめ"
+msgstr ""
+
+#: doc/reference/en/file.release.html:59(p)
+msgid ""
+"news.rdocに前回のリリース時から現在までの変更点をnews.rdocにまとめるため、下"
+"記コマンドを実行してgitのコミットログを表示する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:60(pre)
+msgid "$ git log -p --reverse （前回のリリースバージョン).."
+msgstr ""
+
+#: doc/reference/en/file.release.html:63(p)
+msgid ""
+"ログを\"Author:\"で検索しながら、ユーザにとって知る必要があるもの（ユーザに見"
+"える情報）のコミットログのみを抜き出す。 その動詞を過去形にする。 それらログ"
+"をそれぞれを次のようにまとめる。 機能などに新しく追加されたものに関しては"
+"Improvement, 動作の変更などはChanges, バグの修正など前バージョンまでにあった"
+"問題を修正したものはFixesに記述する。 また、コミットログの行末に[人名]がある"
+"場合はその人名をThanks以下に書く。 この作業をリリース予定日よりも前に行った場"
+"合は、目に見えるところにコミットIDをメモしておく。 news.textileだと次のrake "
+"reference:po:updateで翻訳対象になってしまいノイズになってしまうので注意するこ"
+"と。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:72(h3)
+msgid "news.textileの1リリース分のテンプレート"
+msgstr ""
+
+#: doc/reference/en/file.release.html:73(pre)
+msgid ""
+"h2. （リリースするバージョン）: リリース日（yyyy-mm-dd） h3. Improvements * "
+"h3. Changes * h3. Fixes * h3. Thanks"
+msgstr ""
+
+#: doc/reference/en/file.release.html:90(h2)
+msgid "日本語訳の作成"
+msgstr ""
+
+#: doc/reference/en/file.release.html:91(p)
+msgid "下記コマンドを実行してja.poを更新する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:92(pre)
+#: doc/reference/en/file.release.html:134(pre)
+msgid "$ rake reference:po:update"
+msgstr ""
+
+#: doc/reference/en/file.release.html:95(p)
+msgid ""
+"その後、ja.poを開いて、各msgid（コミットログ）に対応するmsgstrにコミットログ"
+"の和訳を作成する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:96(h2)
+msgid "バージョンとリリース日の更新"
+msgstr ""
+
+#: doc/reference/en/file.release.html:97(p)
+msgid ""
+"下記コマンドを入力して、プロジェクトページ（html/index.html、html/index.html."
+"ja）のrroongaの項にある最新バージョンとリリース日をそれぞれ次回リリースに合わ"
+"せたものに更新する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:98(pre)
+msgid ""
+"$ rake release:info:update OLD_VERSION=（現在のバージョン） OLD_RELEASE_DATE="
+"（前回リリース日） RELEASE_DATE=（今回のリリース日）"
+msgstr ""
+
+#: doc/reference/en/file.release.html:101(span)
+#: doc/reference/en/file.release.html:109(span)
+#: doc/reference/en/file.release.html:273(span)
+msgid "TODO"
+msgstr ""
+
+#: doc/reference/en/file.release.html:101(p)
+msgid ""
+"<placeholder-1/>:別パッケージで同じ日付があった場合にそちらも更新されてしまう"
+"ので、バージョンと日付どちらも当てはまる行のみ更新するようにしたほうがいい。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:102(h2)
+msgid "gemパッケージの作成"
+msgstr ""
+
+#: doc/reference/en/file.release.html:103(p)
+msgid "下記コマンドを打ってアップロード用のgemパッケージをビルドする。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:104(pre)
+msgid "$ make clean $ ruby1.8 -S rake build"
+msgstr ""
+
+#: doc/reference/en/file.release.html:108(p)
+msgid ""
+"rroongaの場合、ruby1.9.1ではパースできないオブジェクトがあるためruby1.8で作成"
+"する。 <placeholder-1/>: YAMLの設定ファイルを直して1.9.1でやる"
+msgstr ""
+
+#: doc/reference/en/file.release.html:110(h2)
+msgid "gemパッケージの動作確認"
+msgstr ""
+
+#: doc/reference/en/file.release.html:111(p)
+msgid ""
+"そのgemパッケージの動作を確認するため、下記コマンドを打ってローカル環境にイン"
+"ストールする。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:112(pre)
+msgid "$ gem1.9.1 install pkg/rroonga-（バージョン番号）.gem --user-install"
+msgstr ""
+
+#: doc/reference/en/file.release.html:115(p)
+msgid ""
+"インストールが成功すると/home/(ユーザ名)/.gem/ruby/1.9.1/gems/rroonga-（バー"
+"ジョン番号）/にインストールされる。 このディレクトリに移動して、テストを実行"
+"し動作を確認する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:117(pre)
+msgid "$ NO_MAKE=yes ruby1.9.1 test/run-test.rb"
+msgstr ""
+
+#: doc/reference/en/file.release.html:120(h2)
+msgid "news.rdocの再まとめ"
+msgstr ""
+
+#: doc/reference/en/file.release.html:121(p)
+msgid ""
+"news.rdocの行頭にコミットIDが残っている場合、 下記コマンドを実行してログを表"
+"示する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:123(pre)
+msgid "git log --reverse -p （リリースバージョン）..（残っていたコミットID）"
+msgstr ""
+
+#: doc/reference/en/file.release.html:126(p)
+msgid ""
+"上記ログを\"Author:\"で検索しながら、ユーザにとって知る必要があるもの（ユーザ"
+"に見える情報）のコミットログのみを抜き出す。 その動詞を過去形にする。 それら"
+"ログをそれぞれを次のようにまとめる。 機能などに新しく追加されたものに関しては"
+"Improvement, 動作の変更などはChanges, バグの修正など前バージョンまでにあった"
+"問題を修正したものはFixesに記述する。 また、コミットログの行末に[人名]がある"
+"場合はその人名をThanks以下に書く。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:133(p)
+msgid "その後、下記コマンドを実行してja.poを更新する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:137(p)
+msgid ""
+"その後、ja.poを開いて、各msgid（追加したコミットログ）に対応するmsgstrにコ"
+"ミットログの和訳を作成する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:138(h2)
+msgid "これまでの変更をpush"
+msgstr ""
+
+#: doc/reference/en/file.release.html:139(p)
+msgid ""
+"ここまでに行った変更をcommitしてgit pushする。 h2. リリースバージョンのタグを"
+"作成"
+msgstr ""
+
+#: doc/reference/en/file.release.html:141(p)
+msgid ""
+"下記コマンドを入力して、今回リリースするバージョンのタグを打ってgit pushす"
+"る。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:142(pre)
+msgid "$ rake release $ git push --tag"
+msgstr ""
+
+#: doc/reference/en/file.release.html:146(h2)
+msgid "rubygems.orgにパッケージをアップロード"
+msgstr ""
+
+#: doc/reference/en/file.release.html:147(p)
+msgid "下記コマンドを実行してパッケージをアップロードする。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:148(pre)
+msgid "$ ruby1.8 -S rake gemcutter:release"
+msgstr ""
+
+#: doc/reference/en/file.release.html:151(h2)
+msgid "rubyforgeにパッケージをアップロード"
+msgstr ""
+
+#: doc/reference/en/file.release.html:152(p)
+msgid "下記コマンドを実行してアップロードする。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:153(pre)
+msgid ""
+"$ ruby1.8 -S rake release:rubyforge:upload $ ruby1.8 -S rake release:"
+"reference:publish $ ruby1.8 -S rake release:html:publish"
+msgstr ""
+
+#: doc/reference/en/file.release.html:158(p)
+msgid ""
+"rroonga以外の場合、index.html関連はrake release:html:publishでアップロードさ"
+"れないので、rroonga側からアップロードする。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:159(h2)
+msgid "メーリングリストにリリースの周知"
+msgstr ""
+
+#: doc/reference/en/file.release.html:160(p)
+msgid ""
+"メーリングリストにリリースした旨を書いたメールを流す。 日本語の他、英語のメー"
+"リングリストにもリリースした旨を英語で書いたメールを流す。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:162(p)
+msgid "h3.日本語でのメールの具体例"
+msgstr ""
+
+#: doc/reference/en/file.release.html:163(p)
+msgid "吉原です。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:164(p)
+msgid ""
+"（最新バージョンをリリースしたことを書く） groongaのRubyバインディング"
+"rroonga1.2.3をリリースしました。 （rroongaのインデックスページのURL） http://"
+"groonga.rubyforge.org/index.html.ja#about-rroonga"
+msgstr ""
+
+#: doc/reference/en/file.release.html:168(p)
+msgid ""
+"（ソフトウェアの概略） rroongaはRubyらしい書き方でgroongaを操作できることを重"
+"視しています。 同時に、groongaの速度をそのまま生かすことも大事にしています。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:171(p)
+msgid ""
+"（前回リリースから今回リリースまでに変更された点のうち、ユーザにとって重要な"
+"ものを書く） 1.2.1からの変更された点としては、ドキュメントの一部英訳化、リ"
+"ファ レンスのパスの修正などを行いました。また、rroongaをインストールし ようと"
+"した際、groongaがないと自動でインストールする機能が復活しま した。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:176(p)
+msgid ""
+"（コマンドなどのインストール方法） インストール: % sudo gem install rroonga"
+msgstr ""
+
+#: doc/reference/en/file.release.html:179(p)
+msgid ""
+"（チュートリアルページのURL） irbを使ったrroongaのチュートリアルはこちらにあ"
+"ります。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:182(p)
+msgid ""
+"（http://groonga.rubyforge.org/rroonga/ja/file.news.htmlを見て、前回リリース"
+"時からの変更点を書く） 1.2.1からの変更点は以下の通りです。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:184(p)
+msgid "1.2.3: 2011-06-27"
+msgstr ""
+
+#: doc/reference/en/file.release.html:185(p)
+msgid ""
+"修正 gemパッケージに含まれてしまったオブジェクトファイル(*.o)を削除。 一部の"
+"リファレンスマニュアルの文字化けを修正。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:188(p)
+msgid "1.2.2: 2011-06-27"
+msgstr ""
+
+#: doc/reference/en/file.release.html:189(p)
+msgid ""
+"改良 英語版の「開発者向け情報」ページを作成。 “html:publish”タスクと\"publish"
+"\"に関しての説明を追加。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:192(p)
+msgid ""
+"変更 Groonga::Record#attributesが重複したレコードが現れた際に 同じattributes"
+"オブジェクトを返すようにした。 Groonga::Record#attributesにドキュメントを追"
+"加。 「開発者向け情報」ページ内にあるドキュメント作成ツールを変更。 NEWS*."
+"rdocとtutorial.texttileをディレクトリdoc/text/に移動。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:198(p)
+msgid ""
+"修正 インデックスページにある「チュートリアル」ページへのリンクを修正。 イン"
+"デックスページにある英語版「チュートリアル」ページへのリンクを修正。 新しい"
+"groongaのダウンロードURLに対応。 [mallowlabs]"
+msgstr ""
+
+#: doc/reference/en/file.release.html:202(p)
+msgid "感謝 mallowlabsさん"
+msgstr ""
+
+#: doc/reference/en/file.release.html:204(h3)
+msgid "英語でのメールの具体例"
+msgstr ""
+
+#: doc/reference/en/file.release.html:205(pre)
+msgid ""
+"Everyone, （rroongaの再榛バージョンをリリースしたことを書く） We relesed "
+"rroonga 1.2.3. （インデックスページのURLを書く） http://groonga.rubyforge."
+"org/#about-rroonga （rroongaの説明） rroonga is the library which ruby-"
+"binding for grronga. （前回リリース時からの変更点のうち、ユーザにとって大事な"
+"ものを書く） Since ver.1.2.1 was released, we translated some documents from "
+"Japanese to English, and fixed pathes in reference-manual. Thanks to "
+"mallowlabs, when installing rroonga without groonga installed, grronga is "
+"automatically installed. （インストール方法を書く） How to install: % sudo "
+"gem install rroonga （チュートリアルについてのURLなどを書く） There is the "
+"tutorial of rroonga with irb: http://groonga.rubyforge.org/rroonga/en/file."
+"tutorial.html （news.rdocから今回リリースのために書いた部分をコピーする） "
+"Please see below changes since ver.1.2.1. == 1.2.3: 2011-06-27 === Fixes * "
+"remove object files in gem packages. * fix charactor corruption in "
+"reference. == 1.2.2: 2011-06-27 === Improvements * created \"Developers\" "
+"page in English. * added description for tasks of \"html:publish\" and "
+"\"publish\". === Changes * Groonga::Record#attributes return same attributes "
+"object for duplicate records. * added document for Groonga::"
+"Record#attributes. * changed tool name in document page for creating "
+"document. * moved NEWS*.rdoc and tutorial.texttile to doc/text/. === Fixes * "
+"fixed the tutorial path in index page. * fixed the path of tutorial in index "
+"page in English. * follow the groonga downlowd URL change. [mallowlabs] === "
+"Thanks * mallowlabs -- （名前とメールアドレス） yoshihara (yoshihara at "
+"clear-code.com)"
+msgstr ""
+
+#: doc/reference/en/file.release.html:271(h2)
+msgid "rubyforgeのニュースを更新"
+msgstr ""
+
+#: doc/reference/en/file.release.html:272(p)
+msgid "rubyforgeのpost_newsコマンドを使ってrubyforgeの最新ニュースを更新する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:273(p)
+msgid ""
+"<placeholder-1/>:自動でnews.textileやreadme.textileから拾ってきてpost_newsす"
+"るタスクを作る。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:274(h2)
+msgid "次回リリース時のバージョン番号の設定"
+msgstr ""
+
+#: doc/reference/en/file.release.html:275(p)
+msgid ""
+"ext/groonga/rb-grn.hにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,"
+"RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更する。"
+msgstr ""
+
+#: doc/reference/en/file.release.html:57(div)
+msgid ""
+"<placeholder-1/>\n"
+"<placeholder-2/>\n"
+"<placeholder-3/>\n"
+"<placeholder-4/>\n"
+"<placeholder-5/>\n"
+"<placeholder-6/>\n"
+"<placeholder-7/>\n"
+"<placeholder-8/>\n"
+"<placeholder-9/>\n"
+"<placeholder-10/>\n"
+"<placeholder-11/>\n"
+"<placeholder-12/>\n"
+"<placeholder-13/>\n"
+"<placeholder-14/>\n"
+"<placeholder-15/>\n"
+"<placeholder-16/>\n"
+"<placeholder-17/>\n"
+"<placeholder-18/>\n"
+"<placeholder-19/>\n"
+"<placeholder-20/>\n"
+"<placeholder-21/>\n"
+"<placeholder-22/>\n"
+"<placeholder-23/>\n"
+"<placeholder-24/>\n"
+"<placeholder-25/>\n"
+"<placeholder-26/>\n"
+"<placeholder-27/>\n"
+"<placeholder-28/>\n"
+"<placeholder-29/>\n"
+"<placeholder-30/>\n"
+"<placeholder-31/>\n"
+"<placeholder-32/>\n"
+"<placeholder-33/>\n"
+"<placeholder-34/>\n"
+"<placeholder-35/>\n"
+"<placeholder-36/>\n"
+"<placeholder-37/>\n"
+"<placeholder-38/>\n"
+"<placeholder-39/>\n"
+"<placeholder-40/>\n"
+"<placeholder-41/>\n"
+"<placeholder-42/>\n"
+"<placeholder-43/>\n"
+"<placeholder-44/>\n"
+"<placeholder-45/>\n"
+"<placeholder-46/>\n"
+"<placeholder-47/>\n"
+"<placeholder-48/>\n"
+"<placeholder-49/>\n"
+"<placeholder-50/>\n"
+"<placeholder-51/> http://groonga.rubyforge.org/rroonga/ja/file.tutorial.html "
+"<placeholder-52/>\n"
+"<placeholder-53/>\n"
+"<placeholder-54/>\n"
+"<placeholder-55/>\n"
+"<placeholder-56/>\n"
+"<placeholder-57/>\n"
+"<placeholder-58/>\n"
+"<placeholder-59/>\n"
+"<placeholder-60/>\n"
+"<placeholder-61/>\n"
+"<placeholder-62/>\n"
+"<placeholder-63/>\n"
+"<placeholder-64/>\n"
+"<placeholder-65/>\n"
+"<placeholder-66/>"
+msgstr ""
+
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: doc/reference/en/_index.html:0(None)
+#: doc/reference/en/file.README.html:0(None)
 msgid "translator-credits"
 msgstr ""
+
+#~ msgid "Classes:"
+#~ msgstr "クラス:"
+
+#~ msgid "define_reference_task"
+#~ msgstr "ReferenceTaskクラスを作成。"
+
+#~ msgid "destination"
+#~ msgstr "説明"
 
 #~ msgid "File: #jatutorial &mdash; packnga"
 #~ msgstr "ファイル：お知らせ；Packnga"
