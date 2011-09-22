@@ -116,8 +116,8 @@ module Packnga
 
     def define_po_tasks
       namespace :po do
+        namespace :update do
         @translate_languages.each do |language|
-          namespace language do
             po_file = "#{@po_dir}/#{language}.po"
 
             if File.exist?(po_file)
@@ -138,7 +138,7 @@ module Packnga
             end
 
             desc "Updates po file for #{language}."
-            task :update => po_file
+            task language => po_file
           end
         end
 
@@ -147,7 +147,7 @@ module Packnga
           ruby($0, "clobber")
           ruby($0, "yard")
           @translate_languages.each do |language|
-            ruby($0, "reference:po:#{language}:update")
+            ruby($0, "reference:po:update:#{language}")
           end
         end
       end
