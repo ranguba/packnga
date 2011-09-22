@@ -1,5 +1,21 @@
 h1. NEWS
 
+h2. 0.9.3: 2011-09-22
+
+h3. Improvements
+
+* Printed newline after getting password.
+* Added task "release:rubyforge:news:post" to post news to RubyForge.
+
+h3. Changes
+
+* Changed name of tasks for update po file for each languages.
+(For example, "translate:po:ja:update" was changed to "translate:po:update:ja".)
+
+h3. Fixes
+
+* Applied version number to tag message instead of "version".
+
 h2. 0.9.2: 2011-08-29
 
 h3. Improvements
