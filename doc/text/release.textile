@@ -1,8 +1,8 @@
 h1. リリース手順
 
-h2. news.rdocに前回リリースからの変更点のまとめ
+h2. news.textileに前回リリースからの変更点のまとめ
 
-news.rdocに前回のリリース時から現在までの変更点をnews.rdocにまとめるため、下記コマンドを実行してgitのコミットログを表示する。
+前回のリリース時から現在までの変更点をnews.textileにまとめるため、下記コマンドを実行してgitのコミットログを表示する。
 
 <pre>
 $ git log -p --reverse （前回のリリースバージョン)..
@@ -85,9 +85,9 @@ $ gem1.9.1 install pkg/rroonga-（バージョン番号）.gem --user-install
 $ NO_MAKE=yes ruby1.9.1 test/run-test.rb
 </pre>
 
-h2. news.rdocの再まとめ
+h2. news.textileの再まとめ
 
-news.rdocの行頭にコミットIDが残っている場合、
+news.textileの行頭にコミットIDが残っている場合、
 下記コマンドを実行してログを表示する。
 
 <pre>
@@ -234,7 +234,7 @@ There is the tutorial of rroonga with irb:
 
   http://groonga.rubyforge.org/rroonga/en/file.tutorial.html
 
-（news.rdocから今回リリースのために書いた部分をコピーする）
+（news.textileから今回リリースのために書いた部分をコピーする）
 Please see below changes since ver.1.2.1.
 
 == 1.2.3: 2011-06-27
