@@ -149,10 +149,13 @@ h2. rubyforgeにパッケージをアップロード
 <pre>
 $ ruby1.8 -S rake release:rubyforge:upload
 $ ruby1.8 -S rake release:reference:publish
-$ ruby1.8 -S rake release:html:publish
 </pre>
 
-rroonga以外の場合、index.html関連はrake release:html:publishでアップロードされないので、rroonga側からアップロードする。
+rroonga以外の場合、index.html関連はrake release:html:publishでアップロードされないので、rroongaに移動してから下記コマンドを実行する。
+
+<pre>
+$ ruby1.8 -S rake release:html:publish
+</pre>
 
 h2. メーリングリストにリリースの周知
 
