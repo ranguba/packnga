@@ -39,7 +39,8 @@ module Packnga
     # This attribute is options for uploading rubyforge by rsync.
     # @param [Hash] options for uploading.
     attr_writer :publish_options
-    # This attribute is text for changes in new release.
+    # This attribute is text for changes in new release
+    # to post news to Rubyforge.
     # @param [String] text for changes.
     attr_writer :changes
     # Defines task for preparing to release.
