@@ -130,7 +130,7 @@ h2. リリースバージョンのタグを作成
 下記コマンドを入力して、今回リリースするバージョンのタグを打ってgit pushする。
 
 <pre>
-$ rake release
+$ rake release:tag
 $ git push --tag
 </pre>
 
