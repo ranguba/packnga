@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Packnga 0.9.2\n"
-"POT-Creation-Date: 2011-09-22 15:08+0900\n"
-"PO-Revision-Date: 2011-09-22 15:09+0900\n"
+"POT-Creation-Date: 2011-09-22 15:41+0900\n"
+"PO-Revision-Date: 2011-09-22 15:53+0900\n"
 "Last-Translator: Yoshihara Haruka <yoshihara@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -356,59 +356,91 @@ msgid "NEWS"
 msgstr "お知らせ"
 
 #: doc/reference/en/file.news.html:58(h2)
-msgid "0.9.2: 2011-08-29"
+msgid "0.9.3: 2011-09-22"
 msgstr ""
 
 #: doc/reference/en/file.news.html:59(h3)
-#: doc/reference/en/file.news.html:67(h3)
+#: doc/reference/en/file.news.html:74(h3)
+#: doc/reference/en/file.news.html:82(h3)
 msgid "Improvements"
 msgstr "改良"
 
 #: doc/reference/en/file.news.html:61(li)
+msgid "Printed newline after getting password."
+msgstr "パスワードを入力した後に改行するようにした。"
+
+#: doc/reference/en/file.news.html:62(li)
+msgid "Added task “release:rubyforge:news:post” to post news to RubyForge."
+msgstr "RubyForgeに更新情報をポストするタスク\"release:rubyforge:news:post\"を追加。"
+
+#: doc/reference/en/file.news.html:64(h3)
+msgid "Changes"
+msgstr "変更"
+
+#: doc/reference/en/file.news.html:66(li)
+msgid ""
+"Changed name of tasks for update po file for each languages. (For example, "
+"“translate:po:ja:update” was changed to “translate:po:update:ja”.)"
+msgstr "各言語のpoファイルをアップデートするタスクの名前を変更。（例えば、\"translate:po:ja:update\"は\"translate:po:update:ja\"に変更された。）"
+
+#: doc/reference/en/file.news.html:69(h3)
+#: doc/reference/en/file.news.html:91(h3)
+msgid "Fixes"
+msgstr "修正"
+
+#: doc/reference/en/file.news.html:71(li)
+msgid "Applied version number to tag message instead of “version”."
+msgstr "git tag時に添付するメッセージで\"version\"という文字列が含まれていた部分をバージョン番号になるように修正。"
+
+#: doc/reference/en/file.news.html:73(h2)
+msgid "0.9.2: 2011-08-29"
+msgstr ""
+
+#: doc/reference/en/file.news.html:76(li)
 msgid "Supported doc/text/ nonexistence case."
 msgstr "doc/text/がないケースに対応。"
 
-#: doc/reference/en/file.news.html:62(li)
+#: doc/reference/en/file.news.html:77(li)
 msgid "Supported yardoc options customize."
 msgstr "yardocのオプションのカスタマイズに対応。"
 
-#: doc/reference/en/file.news.html:63(li)
+#: doc/reference/en/file.news.html:78(li)
 msgid "Supported xml2po mode customize."
 msgstr "xml2poのモードのカスタマイズに対応。"
 
-#: doc/reference/en/file.news.html:64(strong)
+#: doc/reference/en/file.news.html:79(strong)
 #: doc/reference/en/file.tutorial.html:77(span)
 #: doc/reference/en/file.tutorial.html:79(span)
 msgid "/"
 msgstr ""
 
-#: doc/reference/en/file.news.html:64(li)
+#: doc/reference/en/file.news.html:79(li)
 msgid "Used only lib/<placeholder-1/>.rb as document target by default."
 msgstr ""
 "デフォルトのドキュメント対象のファイルにはlib/<placeholder-1/>.rbだけを使うよ"
 "うにした。"
 
-#: doc/reference/en/file.news.html:66(h2)
+#: doc/reference/en/file.news.html:81(h2)
 msgid "0.9.1: 2011-08-25"
 msgstr ""
 
-#: doc/reference/en/file.news.html:69(li)
+#: doc/reference/en/file.news.html:84(li)
 msgid "created package in rubyforge if package isn’t created."
 msgstr "rubyforgeにパッケージがない時にパッケージを作るようになった。"
 
-#: doc/reference/en/file.news.html:70(li)
+#: doc/reference/en/file.news.html:85(li)
 msgid "added Packnga::ReleaseTask#tag_message."
 msgstr "Packnga::ReleaseTask#tag_messageを追加。"
 
-#: doc/reference/en/file.news.html:71(li)
+#: doc/reference/en/file.news.html:86(li)
 msgid "added Packnga::ReleaseTask#publish_options."
 msgstr "Packnga::ReleaseTask#publish_optionsを追加。<"
 
-#: doc/reference/en/file.news.html:72(li)
+#: doc/reference/en/file.news.html:87(li)
 msgid "added attribute in DocumentTask for getting .htaccess file path."
 msgstr "yardタスクを作成するためのDocumentTaskクラスを作成。"
 
-#: doc/reference/en/file.news.html:73(li)
+#: doc/reference/en/file.news.html:88(li)
 msgid ""
 "added reference:publicaton:generate. (This task is run after prepareing to "
 "publish references.)"
@@ -416,21 +448,17 @@ msgstr ""
 "reference:publication:generateタスクを追加。（このタスクはリファレンスの公開"
 "準備のあとに実行されます。）"
 
-#: doc/reference/en/file.news.html:76(h3)
-msgid "Fixes"
-msgstr "修正"
-
-#: doc/reference/en/file.news.html:78(li)
+#: doc/reference/en/file.news.html:93(li)
 msgid "fix bug release:reference:publish stop."
 msgstr "release:reference:publishタスクが止まってしまうバグを修正。"
 
-#: doc/reference/en/file.news.html:79(li)
+#: doc/reference/en/file.news.html:94(li)
 msgid "checked group_ids before add_releasing tar.gz to rubyforge."
 msgstr ""
 "rubyforgeにtar.gzファイルをアップロードする前にグループidをチェックするように"
 "修正。"
 
-#: doc/reference/en/file.news.html:80(li)
+#: doc/reference/en/file.news.html:95(li)
 msgid ""
 "wrote only sentence for redirect to english page in .htaccess file. (don’t "
 "write sentence for redirect tutorial page.)"
@@ -438,11 +466,11 @@ msgstr ""
 ".htaccessファイルに英語ページをリダイレクトするための文のみ書くようにした。"
 "（チュートリアルのリダイレクトは書かないようになった。）"
 
-#: doc/reference/en/file.news.html:83(h2)
+#: doc/reference/en/file.news.html:98(h2)
 msgid "0.9.0: 2011-08-19"
 msgstr ""
 
-#: doc/reference/en/file.news.html:84(p)
+#: doc/reference/en/file.news.html:99(p)
 msgid "The first release!"
 msgstr ""
 
@@ -470,13 +498,12 @@ msgstr "名前"
 #: doc/reference/en/file.tutorial.html:78(span)
 #: doc/reference/en/file.README.html:60(h2)
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: doc/reference/en/index.html:61(p) doc/reference/en/file.README.html:61(p)
 msgid "An utility library to package i18n-ed library."
 msgstr ""
-"複数言語化したライブラリを作成するためのユーティリティを集めたライブラリで"
-"す。"
+"多言語化したライブラリを作成するためのユーティリティを集めたライブラリです。"
 
 #: doc/reference/en/index.html:62(span)
 #: doc/reference/en/file.tutorial.html:99(span)
@@ -1329,7 +1356,6 @@ msgstr ""
 
 #: doc/reference/en/file.tutorial.html:77(span)
 #: doc/reference/en/file.tutorial.html:83(span)
-#, fuzzy
 msgid "README.textile"
 msgstr "はじめに"
 
@@ -1634,7 +1660,7 @@ msgstr "このクラスはリリース関連のタスクを扱います。"
 #: doc/reference/en/Packnga/ReleaseTask.html:104(p)
 msgid ""
 "Release tasks tag current version and install gem for test. It also define "
-"tasks to upload rubyforge whether option."
+"tasks to upload RubyForge whether option."
 msgstr ""
 "リリース関連のタスクは、現在のバージョンのタグを打ったり、テスト用にgemをイン"
 "ストールします。またspecのオプションによってはrubyforgeにアップロードするため"
@@ -1767,8 +1793,10 @@ msgstr ""
 #: doc/reference/en/Packnga/ReleaseTask.html:183(p)
 #: doc/reference/en/Packnga/ReleaseTask.html:547(p)
 msgid ""
-"This attribute is text for changes in new release to post news to Rubyforge."
-msgstr "この属性は、RubyForgeにニュースをポストする際に使う最新リリースでの変更点を表します。"
+"This attribute is text for changes in new release to post news to RubyForge."
+msgstr ""
+"この属性は、RubyForgeにニュースをポストする際に使う最新リリースでの変更点を表"
+"します。"
 
 #: doc/reference/en/Packnga/ReleaseTask.html:195(strong)
 msgid "index_html_dir"
@@ -1786,7 +1814,7 @@ msgstr ""
 
 #: doc/reference/en/Packnga/ReleaseTask.html:238(p)
 #: doc/reference/en/Packnga/ReleaseTask.html:708(p)
-msgid "This attribute is options for uploading rubyforge by rsync."
+msgid "This attribute is options for uploading RubyForge by rsync."
 msgstr ""
 "この属性はrubyforgeにアップロードするときのrsyncのオプションを表します。"
 
@@ -1844,7 +1872,7 @@ msgid ""
 "Defines task for preparing to release. Defined tasks update version and "
 "release-date in index files and tag in git. If you set rubyforge_project of "
 "Jeweler::Task.new with its given block, it also define tasks to update "
-"rubyforge."
+"RubyForge."
 msgstr ""
 "gitへ現在バージョンのタグを打ったりインデックスファイルのバージョンやリリース"
 "日を更新するタグを定義します。Jeweler::Task.newに渡したブロック内にて、"
@@ -2107,7 +2135,7 @@ msgstr ""
 
 #: doc/reference/en/Packnga/ReleaseTask.html:649(p)
 msgid "of HTML files"
-msgstr ""
+msgstr "HTMLファイルのパス"
 
 #: doc/reference/en/Packnga/ReleaseTask.html:678(pre)
 #: doc/reference/en/Packnga/YARDTask.html:347(pre)
@@ -2136,7 +2164,7 @@ msgstr ""
 
 #: doc/reference/en/Packnga/ReleaseTask.html:729(p)
 msgid "for uploading."
-msgstr ""
+msgstr "アップロードする際のオプション"
 
 #: doc/reference/en/Packnga/ReleaseTask.html:758(pre)
 msgid "41 42 43"
@@ -2308,9 +2336,8 @@ msgid "html_reference_dir"
 msgstr ""
 
 #: doc/reference/en/Packnga/ReferenceTask.html:449(span)
-#, fuzzy
 msgid ".htaccess"
-msgstr ".htaccessファイルのパス"
+msgstr ""
 
 #: doc/reference/en/Packnga/YARDTask.html:6(title)
 msgid "Class: Packnga::YARDTask &mdash; packnga"
@@ -2435,9 +2462,8 @@ msgid "Rake"
 msgstr ""
 
 #: doc/reference/en/Packnga/YARDTask.html:592(span)
-#, fuzzy
 msgid "README*"
-msgstr "はじめに"
+msgstr ""
 
 #: doc/reference/en/Packnga/YARDTask.html:592(span)
 msgid "to_a"
@@ -2717,12 +2743,10 @@ msgid "Y"
 msgstr ""
 
 #: doc/reference/en/file.release.html:6(title)
-#, fuzzy
 msgid "File: release &mdash; packnga"
 msgstr "ファイル：お知らせ；Packnga"
 
 #: doc/reference/en/file.release.html:37(span)
-#, fuzzy
 msgid "File: release"
 msgstr "ファイル：お知らせ"
 
@@ -2731,13 +2755,13 @@ msgid "リリース手順"
 msgstr ""
 
 #: doc/reference/en/file.release.html:58(h2)
-msgid "news.rdocに前回リリースからの変更点のまとめ"
+msgid "news.textileに前回リリースからの変更点のまとめ"
 msgstr ""
 
 #: doc/reference/en/file.release.html:59(p)
 msgid ""
-"news.rdocに前回のリリース時から現在までの変更点をnews.rdocにまとめるため、下"
-"記コマンドを実行してgitのコミットログを表示する。"
+"前回のリリース時から現在までの変更点をnews.textileにまとめるため、下記コマン"
+"ドを実行してgitのコミットログを表示する。"
 msgstr ""
 
 #: doc/reference/en/file.release.html:60(pre)
@@ -2805,7 +2829,6 @@ msgstr ""
 
 #: doc/reference/en/file.release.html:101(span)
 #: doc/reference/en/file.release.html:109(span)
-#: doc/reference/en/file.release.html:273(span)
 msgid "TODO"
 msgstr ""
 
@@ -2859,13 +2882,13 @@ msgid "$ NO_MAKE=yes ruby1.9.1 test/run-test.rb"
 msgstr ""
 
 #: doc/reference/en/file.release.html:120(h2)
-msgid "news.rdocの再まとめ"
+msgid "news.textileの再まとめ"
 msgstr ""
 
 #: doc/reference/en/file.release.html:121(p)
 msgid ""
-"news.rdocの行頭にコミットIDが残っている場合、 下記コマンドを実行してログを表"
-"示する。"
+"news.textileの行頭にコミットIDが残っている場合、 下記コマンドを実行してログを"
+"表示する。"
 msgstr ""
 
 #: doc/reference/en/file.release.html:123(pre)
@@ -3055,7 +3078,7 @@ msgid ""
 "automatically installed. （インストール方法を書く） How to install: % sudo "
 "gem install rroonga （チュートリアルについてのURLなどを書く） There is the "
 "tutorial of rroonga with irb: http://groonga.rubyforge.org/rroonga/en/file."
-"tutorial.html （news.rdocから今回リリースのために書いた部分をコピーする） "
+"tutorial.html （news.textileから今回リリースのために書いた部分をコピーする） "
 "Please see below changes since ver.1.2.1. == 1.2.3: 2011-06-27 === Fixes * "
 "remove object files in gem packages. * fix charactor corruption in "
 "reference. == 1.2.2: 2011-06-27 === Improvements * created \"Developers\" "
@@ -3078,17 +3101,11 @@ msgstr ""
 msgid "rubyforgeのpost_newsコマンドを使ってrubyforgeの最新ニュースを更新する。"
 msgstr ""
 
-#: doc/reference/en/file.release.html:273(p)
-msgid ""
-"<placeholder-1/>:自動でnews.textileやreadme.textileから拾ってきてpost_newsす"
-"るタスクを作る。"
-msgstr ""
-
-#: doc/reference/en/file.release.html:274(h2)
+#: doc/reference/en/file.release.html:273(h2)
 msgid "次回リリース時のバージョン番号の設定"
 msgstr ""
 
-#: doc/reference/en/file.release.html:275(p)
+#: doc/reference/en/file.release.html:274(p)
 msgid ""
 "ext/groonga/rb-grn.hにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,"
 "RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更する。"
@@ -3160,8 +3177,7 @@ msgid ""
 "<placeholder-62/>\n"
 "<placeholder-63/>\n"
 "<placeholder-64/>\n"
-"<placeholder-65/>\n"
-"<placeholder-66/>"
+"<placeholder-65/>"
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
