@@ -39,6 +39,9 @@ module Packnga
     # This attribute is options for uploading rubyforge by rsync.
     # @param [Hash] options for uploading.
     attr_writer :publish_options
+    # This attribute is text for changes in new release.
+    # @param [String] text for changes.
+    attr_writer :changes
     # Defines task for preparing to release.
     # Defined tasks update version and release-date in index files
     # and tag in git.
@@ -51,6 +54,7 @@ module Packnga
       @rubyforge = nil
       @tag_messsage = nil
       @publish_options = nil
+      @changes = nil
       yield(self) if block_given?
       set_default_values
       define_tasks
@@ -70,6 +74,7 @@ module Packnga
       @base_dir ||= Pathname.new("doc")
       @tag_message ||= "release #{@spec.version}!!!"
       @publish_options ||= {}
+      @changes ||= ""
     end
 
     def define_tasks
@@ -137,6 +142,7 @@ module Packnga
       define_html_task
       define_publish_task
       define_upload_tasks
+      define_post_task
     end
 
     def define_reference_task
@@ -186,6 +192,23 @@ module Packnga
       end
       desc "Release to RubyForge."
       task :rubyforge => "release:rubyforge:upload"
+    end
+
+    def define_post_task
+      namespace :rubyforge do
+        namespace :news do
+          desc "Post news to Rubyforge."
+          task :post do
+            group_id =
+              @rubyforge.autoconfig["group_ids"][@spec.rubyforge_project]
+            subject =
+              "#{@spec.name} version #{@spec.version} has been released!"
+            body = @spec.description + "\nChanges:" + @changes
+
+            @rubyforge.post_news(group_id, subject, body)
+          end
+        end
+      end
     end
 
     def rsync_to_rubyforge(spec, source, destination, options={})
