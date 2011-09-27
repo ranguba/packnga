@@ -150,7 +150,7 @@ $ ruby1.8 -S rake release:reference:publish
 rroonga以外の場合、index.html関連はrake release:html:publishでアップロードされないので、rroongaに移動してから下記コマンドを実行する。
 
 <pre>
-$ ruby1.8 -S rake release:html:publish
+$ ruby1.9.1 -S rake release:html:publish
 </pre>
 
 h2. メーリングリストにリリースの周知
