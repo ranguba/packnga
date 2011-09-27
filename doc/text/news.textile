@@ -1,5 +1,19 @@
 h1. NEWS
 
+h2. 0.9.4: 2011-09-27
+
+h3. Improvements
+
+* Saved password inputted once in same process.
+
+h3. Changes
+
+* Checked ruby version before run task to build gem.
+
+h3. Fixes
+
+* Fixed bug of posting no news to RubyForge in task "release:po:ja:update".
+
 h2. 0.9.3: 2011-09-22
 
 h3. Improvements
