@@ -78,3 +78,13 @@ Packnga::ReleaseTask.new(spec) do |task|
   task.index_html_dir = "../rroonga/doc/html"
   task.changes = File.read("doc/text/news.textile").split(/^h2\.\s(.*)$/)[2]
 end
+
+namespace :requirement do
+  task :ruby18 do
+    if RUBY_VERSION.to_f >= 1.9
+      raise "This task must be run with ruby1.8."
+    end
+  end
+end
+
+task "build" => "requirement:ruby18"
