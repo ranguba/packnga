@@ -90,7 +90,7 @@ module Packnga
 
     def define_info_task
       namespace :info do
-        desc "update version in index HTML."
+        desc "Update version in index HTML."
         task :update do
           old_version = ENV["OLD_VERSION"]
           old_release_date = ENV["OLD_RELEASE_DATE"]
