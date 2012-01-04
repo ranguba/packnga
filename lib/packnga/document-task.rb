@@ -35,10 +35,8 @@ module Packnga
       @yard_task = YARDTask.new(@spec)
       @reference_task = ReferenceTask.new(@spec)
       self.base_dir = "doc"
-      if block_given?
-        yield(self)
-        define
-      end
+      yield(self) if block_given?
+      define
     end
 
     # @private
