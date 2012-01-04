@@ -39,12 +39,6 @@ module Packnga
       define
     end
 
-    # @private
-    def define
-      set_default_values
-      define_tasks
-    end
-
     # Sets base directory for documents. Default value is "doc".
     # @param [String] base direcory path
     def base_dir=(dir)
@@ -68,6 +62,12 @@ module Packnga
     end
 
     private
+    # @private
+    def define
+      set_default_values
+      define_tasks
+    end
+
     def set_default_values
     end
 
