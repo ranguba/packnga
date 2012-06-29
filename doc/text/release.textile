@@ -222,7 +222,7 @@ h3. 英語でのメールの具体例
 Everyone,
 
 （rroongaの再榛バージョンをリリースしたことを書く）
-We relesed rroonga 1.2.3.
+We released rroonga 1.2.3.
 
 （インデックスページのURLを書く）
   http://groonga.rubyforge.org/#about-rroonga
