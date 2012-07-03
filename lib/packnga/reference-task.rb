@@ -69,6 +69,8 @@ module Packnga
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
       @po_dir = "doc/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
+      @sources = FileList["lib/**/*.rb"]
+      @extra_files = FileList["README.textile", "doc/text/**"]
     end
 
     def reference_base_dir
@@ -99,15 +101,20 @@ module Packnga
 
     def define_pot_tasks
       namespace :pot do
-        directory @po_dir
-        file @pot_file => [@po_dir, *@html_files] do |t|
-          sh("xml2po",
-             "--keep-entities",
-             "--mode", @mode,
-             "--output", t.name,
-             *@html_files)
-        end
+        file @pot_file => [@po_dir, *@sources, *@extra_files] do |t|
+          generator = YARD::I18n::PotGenerator.new(@po_dir)
+          YARD.parse(@sources)
+          objects = YARD::Registry.all(:root, :module, :class)
+          generator.parse_objects(objects)
+          extra_file_objects = @extra_files.map do |file|
+            YARD::CodeObjects::ExtraFileObject.new(file)
+          end
+          generator.parse_files(extra_file_objects)
 
+          File.open(t.name, "w") do |pot_file|
+            pot_file.puts(generator.generate)
+          end
+        end
         desc "Generates pot file."
         task :generate => @pot_file do |t|
         end
@@ -122,11 +129,13 @@ module Packnga
 
             if File.exist?(po_file)
               file po_file => @html_files do |t|
-                sh("xml2po",
-                   "--keep-entities",
-                   "--mode", @mode,
-                   "--update", t.name,
-                   *@html_files)
+                # TODO: update po-file with @sources and extra_files
+                #  used when creating pot-file.
+                # sh("xml2po",
+                #    "--keep-entities",
+                #    "--mode", @mode,
+                #    "--update", t.name,
+                #    *@html_files)
               end
             else
               file po_file => @pot_file do |t|
