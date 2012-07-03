@@ -5,3 +5,4 @@
 /pkg/
 /doc/html
 /*.gemspec
+/Gemfile.lock
