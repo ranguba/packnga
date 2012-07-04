@@ -102,17 +102,8 @@ module Packnga
     def define_pot_tasks
       namespace :pot do
         file @pot_file => [@po_dir, *@sources, *@extra_files] do |t|
-          generator = YARD::I18n::PotGenerator.new(@po_dir)
-          YARD.parse(@sources)
-          objects = YARD::Registry.all(:root, :module, :class)
-          generator.parse_objects(objects)
-          extra_file_objects = @extra_files.map do |file|
-            YARD::CodeObjects::ExtraFileObject.new(file)
-          end
-          generator.parse_files(extra_file_objects)
-
           File.open(t.name, "w") do |pot_file|
-            pot_file.puts(generator.generate)
+            pot_file.puts(generate_pot)
           end
         end
         desc "Generates pot file."
@@ -160,6 +151,18 @@ module Packnga
           end
         end
       end
+    end
+
+    def generate_pot
+          generator = YARD::I18n::PotGenerator.new(@po_dir)
+          YARD.parse(@sources)
+          objects = YARD::Registry.all(:root, :module, :class)
+          generator.parse_objects(objects)
+          extra_file_objects = @extra_files.map do |file|
+            YARD::CodeObjects::ExtraFileObject.new(file)
+          end
+          generator.parse_files(extra_file_objects)
+          generator.generate
     end
 
     def define_translate_task
