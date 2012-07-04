@@ -104,9 +104,7 @@ module Packnga
     def define_pot_tasks
       namespace :pot do
         file @pot_file => [@po_dir, *@sources, *@extra_files] do |t|
-          File.open(t.name, "w") do |pot_file|
-            pot_file.puts(generate_pot)
-          end
+          create_pot_file(@pot_file)
         end
         desc "Generates pot file."
         task :generate => @pot_file do |t|
@@ -122,10 +120,9 @@ module Packnga
 
             if File.exist?(po_file)
               file po_file => [*@sources, *@extra_files] do |t|
-                current_pot = Tempfile.new("tmp.pot")
-                current_pot.puts(generate_pot)
-                current_pot.close
-                GetText.msgmerge(po_file, File.realpath(current_pot),
+                current_pot_file = Tempfile.new("tmp.pot").path
+                create_pot_file(current_pot_file)
+                GetText.msgmerge(po_file, current_pot_file,
                                  "#{@spec.name} #{Packnga::VERSION}")
               end
             else
@@ -152,19 +149,10 @@ module Packnga
       end
     end
 
-    def generate_pot
-      generator = YARD::I18n::PotGenerator.new(@po_dir)
-
-      YARD.parse(@sources)
-      objects = YARD::Registry.all(:root, :module, :class)
-      generator.parse_objects(objects)
-
-      extra_file_objects = @extra_files.map do |file|
-        YARD::CodeObjects::ExtraFileObject.new(file)
-      end
-      generator.parse_files(extra_file_objects)
-
-      generator.generate
+    def create_pot_file(pot_file_path)
+      i18n_command = YARD::CLI::I18n.new
+      i18n_command.run("-o", "#{pot_file_path}",
+                       *@sources, "-", *@extra_files)
     end
 
     def define_translate_task
