@@ -162,7 +162,7 @@ module Packnga
         YARD::CodeObjects::ExtraFileObject.new(file)
       end
       generator.parse_files(extra_file_objects)
-   generator.generate
+      generator.generate
     end
 
     def define_translate_task
