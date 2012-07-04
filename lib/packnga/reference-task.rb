@@ -16,6 +16,8 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 require "erb"
+require "gettext/tools"
+require "tempfile"
 
 module Packnga
   # This class creates reference tasks.
@@ -119,14 +121,12 @@ module Packnga
             po_file = "#{@po_dir}/#{language}.po"
 
             if File.exist?(po_file)
-              file po_file => @html_files do |t|
-                # TODO: update po-file with @sources and extra_files
-                #  used when creating pot-file.
-                # sh("xml2po",
-                #    "--keep-entities",
-                #    "--mode", @mode,
-                #    "--update", t.name,
-                #    *@html_files)
+              file po_file => [*@sources, *@extra_files] do |t|
+                current_pot = Tempfile.new("tmp.pot")
+                current_pot.puts(generate_pot)
+                current_pot.close
+                GetText.msgmerge(po_file, File.realpath(current_pot),
+                                 "#{@spec.name} #{Packnga::VERSION}")
               end
             else
               file po_file => @pot_file do |t|
