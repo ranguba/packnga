@@ -20,6 +20,7 @@ source "http://rubygems.org/"
 gem "rake"
 gem "yard"
 gem "rubyforge"
+gem "gettext"
 
 group :development, :test do
   gem "test-unit"
