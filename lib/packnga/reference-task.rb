@@ -154,13 +154,16 @@ module Packnga
 
     def generate_pot
       generator = YARD::I18n::PotGenerator.new(@po_dir)
+
       YARD.parse(@sources)
       objects = YARD::Registry.all(:root, :module, :class)
       generator.parse_objects(objects)
+
       extra_file_objects = @extra_files.map do |file|
         YARD::CodeObjects::ExtraFileObject.new(file)
       end
       generator.parse_files(extra_file_objects)
+
       generator.generate
     end
 
