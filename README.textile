@@ -8,7 +8,7 @@ h2. Description
 
 An utility library to package i18n-ed library.
 
-Packnga is an library to translate to many languages by YARD.
+Packnga is a library to translate to many languages by YARD.
 
 h2. Authors
 
