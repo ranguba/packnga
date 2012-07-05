@@ -18,6 +18,7 @@
 require "erb"
 require "gettext/tools"
 require "tempfile"
+require "tmpdir"
 
 module Packnga
   # This class creates reference tasks.
@@ -161,26 +162,19 @@ module Packnga
           po_file = "#{@po_dir}/#{language}.po"
           translate_doc_dir = "#{reference_base_dir}/#{language}"
           desc "Translates documents to #{language}."
-          task language => [po_file, reference_base_dir, *@html_files] do
-            doc_en_dir.find do |path|
-              base_path = path.relative_path_from(doc_en_dir)
-              translated_path = "#{translate_doc_dir}/#{base_path}"
-              if path.directory?
-                mkdir_p(translated_path)
-                next
+          task language => [po_file, reference_base_dir, *@sources, *@extra_files] do
+            locale = YARD::I18n::Locale.new(language)
+            locale.load(@po_dir)
+            Dir.mktmpdir do |temp_dir|
+              @sources.each do |source|
+                create_translate_file(source, temp_dir, locale)
               end
-              case path.extname
-              when ".html"
-                sh("xml2po",
-                   "--keep-entities",
-                   "--mode", @mode,
-                   "--po-file", po_file.to_s,
-                   "--language", language.to_s,
-                   "--output", translated_path.to_s,
-                   path.to_s)
-              else
-                cp(path.to_s, translated_path, :preserve => true)
+
+              yardoc_command = YARD::CLI::Yardoc.new
+              translated_sources = @sources.collect do |source|
+                File.join(temp_dir, source)
               end
+              yardoc_command.run("-o", translate_doc_dir, translated_sources)
             end
           end
         end
@@ -284,6 +278,21 @@ module Packnga
       erb = ERB.new(template, nil, "-")
       erb.filename = file
       erb
+    end
+
+    def create_translate_file(original_file, translated_file_dir, locale)
+      translated_file = File.join(translated_file_dir, original_file)
+      FileUtils.mkdir_p(File.dirname(translated_file))
+
+      translated_text = ""
+      File.read(original_file).each_line do |line|
+        text = YARD::I18n::Text.new(line, :have_header => true)
+        translated_text << text.translate(locale)
+      end
+
+      File.open(translated_file, "w") do |file|
+        file.puts(translated_text)
+      end
     end
   end
 end
