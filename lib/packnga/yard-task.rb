@@ -20,7 +20,7 @@ require "yard"
 
 module Packnga
   # This class creates YARD task.
-  # YARD task generate references by YARD.
+  # YARD task generates references by YARD.
   #
   # @since 0.9.0
   class YARDTask
