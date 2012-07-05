@@ -42,8 +42,12 @@ module Packnga
       @mode = nil
       @translate_languages = nil
       @supported_languages = nil
-      @sources = nil
-      @extra_files = nil
+      @sources = spec.files.find_all do |file|
+        /\Alib\// =~ file and /\.rb\z/ =~ file
+      end
+      @extra_files = spec.files.find_all do |file|
+        /\.textile\z/ =~ file
+      end
       @html_files = nil
       @htaccess = nil
       @po_dir = nil
@@ -74,8 +78,6 @@ module Packnga
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
       @po_dir = "doc/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
-      @sources = FileList["lib/**/*.rb"]
-      @extra_files = FileList["README.textile", "doc/text/**"]
     end
 
     def reference_base_dir
