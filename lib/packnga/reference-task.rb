@@ -280,18 +280,18 @@ module Packnga
 
     def create_translate_files(original_files, translated_file_dir, locale)
       original_files.each do |original_file|
-      translated_file = File.join(translated_file_dir, original_file)
-      FileUtils.mkdir_p(File.dirname(translated_file))
+        translated_file = File.join(translated_file_dir, original_file)
+        FileUtils.mkdir_p(File.dirname(translated_file))
 
-      translated_text = ""
-      File.read(original_file).each_line do |line|
-        text = YARD::I18n::Text.new(line, :have_header => true)
-        translated_text << text.translate(locale)
-      end
+        translated_text = ""
+        File.read(original_file).each_line do |line|
+          text = YARD::I18n::Text.new(line, :have_header => true)
+          translated_text << text.translate(locale)
+        end
 
-      File.open(translated_file, "w") do |file|
-        file.puts(translated_text)
-      end
+        File.open(translated_file, "w") do |file|
+          file.puts(translated_text)
+        end
       end
     end
   end
