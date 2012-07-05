@@ -47,7 +47,6 @@ module Packnga
       end
       @extra_files = nil
       @html_files = nil
-      @htaccess = nil
       @po_dir = nil
       @pot_file = nil
       if block_given?
