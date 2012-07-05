@@ -32,14 +32,10 @@ module Packnga
     # @return [String] path of base directory of document
     attr_writer :base_dir
 
-    # @return [String] mode used in xml2po. The default is "docbook".
-    attr_writer :mode
-
     # @private
     def initialize(spec)
       @spec = spec
       @base_dir = nil
-      @mode = nil
       @translate_languages = nil
       @supported_languages = nil
       @sources = spec.files.find_all do |file|
@@ -69,7 +65,6 @@ module Packnga
     private
     def set_default_values
       @base_dir ||= Pathname.new("doc")
-      @mode ||= "docbook"
       @translate_languages ||= [:ja]
       @supported_languages = [:en, *@translate_languages]
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
