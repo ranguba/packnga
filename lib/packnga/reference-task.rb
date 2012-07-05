@@ -42,6 +42,8 @@ module Packnga
       @mode = nil
       @translate_languages = nil
       @supported_languages = nil
+      @sources = nil
+      @extra_files = nil
       @html_files = nil
       @htaccess = nil
       @po_dir = nil
