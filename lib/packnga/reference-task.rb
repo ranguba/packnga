@@ -104,6 +104,7 @@ module Packnga
 
     def define_pot_tasks
       namespace :pot do
+        directory @po_dir
         file @pot_file => [@po_dir, *@sources, *@extra_files] do |t|
           create_pot_file(@pot_file)
         end
