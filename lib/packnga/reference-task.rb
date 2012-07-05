@@ -72,7 +72,7 @@ module Packnga
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
       text_dir = @base_dir + "text"
       @extra_files = @spec.files.find_all do |file|
-        /\.textile\z/ =~ file or /\A#{text_dir}/ =~ file
+        /\.textile\z/ =~ file or /\A#{Regexp.escape(text_dir.to_s)}/ =~ file
       end
     end
 
