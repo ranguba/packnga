@@ -122,10 +122,11 @@ module Packnga
 
             if File.exist?(po_file)
               file po_file => [*@sources, *@extra_files] do |t|
-                current_pot_file = Tempfile.new("tmp.pot").path
+                current_pot_file = "tmp.pot"
                 create_pot_file(current_pot_file)
                 GetText.msgmerge(po_file, current_pot_file,
                                  "#{@spec.name} #{Packnga::VERSION}")
+                FileUtils.rm_f(current_pot_file)
               end
             else
               file po_file => @pot_file do |t|
