@@ -297,20 +297,16 @@ module Packnga
         code_objects = YARD::Registry.all
         code_objects.each do |code_object|
           original_docstring = code_object.docstring
-          text = YARD::I18n::Text.new(original_docstring)
-          translated_docstring = text.translate(locale)
           content = translate_content_part(content,
                                            original_docstring,
-                                           translated_docstring)
+                                           locale)
 
           original_docstring.tags.each do |tag|
             original_tag_text = tag.text
             next if original_tag_text.nil?
-            text = YARD::I18n::Text.new(original_tag_text)
-            translated_tag_text = text.translate(locale)
             content = translate_content_part(content,
                                              original_tag_text,
-                                             translated_tag_text)
+                                             locale)
           end
         end
 
@@ -320,8 +316,10 @@ module Packnga
       end
     end
 
-    def translate_content_part(content, original_text, translate_text)
+    def translate_content_part(content, original_text, locale)
       translated_content = ""
+      text = YARD::I18n::Text.new(original_text)
+      translate_text = text.translate(locale)
       original_text = original_text.each_line.map do |line|
         "(.+)#{Regexp.escape(line)}"
       end
