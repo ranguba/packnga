@@ -306,8 +306,9 @@ module Packnga
             next if original_tag_text.nil?
             text = YARD::I18n::Text.new(original_tag_text)
             translated_tag_text = text.translate(locale)
-            content = content.gsub(/#{Regexp.escape(original_tag_text)}/,
-                                   translated_tag_text)
+            content = translate_content_part(content,
+                                             original_tag_text,
+                                             translated_tag_text)
           end
         end
 
