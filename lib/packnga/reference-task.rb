@@ -168,8 +168,8 @@ module Packnga
             locale = YARD::I18n::Locale.new(language)
             locale.load(@po_dir)
             Dir.mktmpdir do |temp_dir|
-              create_translate_files(@sources, temp_dir, locale)
-              create_translate_extra_files(@extra_files, temp_dir, locale)
+              create_translated_files(@sources, temp_dir, locale)
+              create_translated_extra_files(@extra_files, temp_dir, locale)
 
               yardoc_command = YARD::CLI::Yardoc.new
               translated_sources = @sources.collect do |source|
@@ -288,7 +288,7 @@ module Packnga
       erb
     end
 
-    def create_translate_files(original_files, translated_file_dir, locale)
+    def create_translated_files(original_files, translated_file_dir, locale)
       original_files.each do |original_file|
         translated_file = File.join(translated_file_dir, original_file)
         FileUtils.mkdir_p(File.dirname(translated_file))
@@ -317,7 +317,7 @@ module Packnga
       end
     end
 
-    def create_translate_extra_files(original_files, translated_file_dir, locale)
+    def create_translated_extra_files(original_files, translated_file_dir, locale)
       original_files.each do |original_file|
         translated_file = File.join(translated_file_dir, original_file)
         FileUtils.mkdir_p(File.dirname(translated_file))
