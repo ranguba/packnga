@@ -178,6 +178,8 @@ module Packnga
                 File.join(temp_dir, extra_files)
               end
               yardoc_command.run("-o", translate_doc_dir,
+                                 "--charset", "utf-8",
+                                 "--no-private",
                                  translated_sources,
                                  "-", translated_extra_files)
             end
