@@ -297,9 +297,9 @@ module Packnga
           original_docstring = code_object.docstring
           text = YARD::I18n::Text.new(original_docstring)
           translated_docstring = text.translate(locale)
-          # TODO translate "original_docstring" whose each line starts "#"
-          content = content.gsub(/#{Regexp.escape(original_docstring)}/,
-                                 translated_docstring)
+          content = translate_content_part(content,
+                                           original_docstring,
+                                           translated_docstring)
 
           original_docstring.tags.each do |tag|
             original_tag_text = tag.text
@@ -315,6 +315,19 @@ module Packnga
           file.puts(content)
         end
       end
+    end
+
+    def translate_content_part(content, original_text, translate_text)
+      translated_content = ""
+      original_text = original_text.each_line.map do |line|
+        "(.+)#{Regexp.escape(line)}"
+      end
+      translate_text = translate_text.each_line.map do |line|
+        "\\1#{line}"
+      end
+      translated_content = content.sub(/#{original_text.join}/,
+                                       translate_text.join)
+      translated_content
     end
   end
 end
