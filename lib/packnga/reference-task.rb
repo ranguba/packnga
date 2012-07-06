@@ -289,15 +289,30 @@ module Packnga
       original_files.each do |original_file|
         translated_file = File.join(translated_file_dir, original_file)
         FileUtils.mkdir_p(File.dirname(translated_file))
+        content = File.read(original_file)
 
-        translated_text = ""
-        File.read(original_file).each_line do |line|
-          text = YARD::I18n::Text.new(line, :have_header => true)
-          translated_text << text.translate(locale)
+        YARD.parse(original_file)
+        code_objects = YARD::Registry.all
+        code_objects.each do |code_object|
+          original_docstring = code_object.docstring
+          text = YARD::I18n::Text.new(original_docstring)
+          translated_docstring = text.translate(locale)
+          # TODO translate "original_docstring" whose each line starts "#"
+          content = content.gsub(/#{Regexp.escape(original_docstring)}/,
+                                 translated_docstring)
+
+          original_docstring.tags.each do |tag|
+            original_tag_text = tag.text
+            next if original_tag_text.nil?
+            text = YARD::I18n::Text.new(original_tag_text)
+            translated_tag_text = text.translate(locale)
+            content = content.gsub(/#{Regexp.escape(original_tag_text)}/,
+                                   translated_tag_text)
+          end
         end
 
         File.open(translated_file, "w") do |file|
-          file.puts(translated_text)
+          file.puts(content)
         end
       end
     end
