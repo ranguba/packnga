@@ -286,7 +286,7 @@ module Packnga
                 File.join(translated_files_dir, file)
               end
               translated_readme = translated_extra_files.select do |file|
-                /\AREADME/ =~ file
+                /\/README/ =~ file
               end
               translated_readme = translated_readme.first
               translated_extra_files.delete(translated_readme)
