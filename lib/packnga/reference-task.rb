@@ -352,9 +352,7 @@ module Packnga
       translate_text = translate_text.each_line.map do |line|
         "\\1#{line}"
       end
-      translated_content = content.sub(/#{original_text.join}/,
-                                       translate_text.join)
-      translated_content
+      content.sub(/#{original_text.join}/, translate_text.join)
     end
   end
 end
