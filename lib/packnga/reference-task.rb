@@ -168,7 +168,7 @@ module Packnga
             locale.load(@po_dir)
             Dir.mktmpdir do |temp_dir|
               create_translated_sources(@sources, temp_dir, locale)
-              create_translated_extra_files(@extra_files, temp_dir, locale)
+              create_translated_extra_files(temp_dir, locale)
               create_translated_documents(temp_dir, locale)
             end
           end
@@ -321,8 +321,8 @@ module Packnga
       end
     end
 
-    def create_translated_extra_files(original_files, translated_files_dir, locale)
-      create_translated_files(original_files, translated_files_dir, locale) do |_, content, locale|
+    def create_translated_extra_files(translated_files_dir, locale)
+      create_translated_files(@extra_files, translated_files_dir, locale) do |_, content, locale|
         text = YARD::I18n::Text.new(content)
         text.translate(locale)
       end
