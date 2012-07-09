@@ -300,7 +300,7 @@ module Packnga
     end
 
     def create_translated_sources(translated_files_dir, locale)
-      create_translated_files(@sources, translated_files_dir, locale) do |original_file, content|
+      create_translated_files(@sources, translated_files_dir) do |original_file, content|
         YARD.parse(original_file)
         code_objects = YARD::Registry.all
         code_objects.each do |code_object|
@@ -322,13 +322,13 @@ module Packnga
     end
 
     def create_translated_extra_files(translated_files_dir, locale)
-      create_translated_files(@extra_files, translated_files_dir, locale) do |_, content|
+      create_translated_files(@extra_files, translated_files_dir) do |_, content|
         text = YARD::I18n::Text.new(content)
         text.translate(locale)
       end
     end
 
-    def create_translated_files(original_files, translated_files_dir, locale)
+    def create_translated_files(original_files, translated_files_dir)
       original_files.each do |file|
         translated_file = File.join(translated_files_dir, file)
         FileUtils.mkdir_p(File.dirname(translated_file))
