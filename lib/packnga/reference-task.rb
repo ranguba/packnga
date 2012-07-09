@@ -291,7 +291,8 @@ module Packnga
       translated_readme = translated_readme.first
       translated_extra_files.delete(translated_readme)
 
-      yardoc_command.run("-o", translate_doc_dir,
+      yardoc_command.run("--title", @spec.name,
+                         "-o", translate_doc_dir,
                          "--charset", "utf-8",
                          "--readme", translated_readme,
                          "--no-private",
