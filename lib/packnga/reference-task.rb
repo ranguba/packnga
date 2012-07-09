@@ -162,7 +162,6 @@ module Packnga
       namespace :translate do
         @translate_languages.each do |language|
           po_file = "#{@po_dir}/#{language}.po"
-          translate_doc_dir = "#{reference_base_dir}/#{language}"
           desc "Translates documents to #{language}."
           task language => [po_file, reference_base_dir, *@sources, *@extra_files] do
             locale = YARD::I18n::Locale.new(language)
@@ -170,27 +169,7 @@ module Packnga
             Dir.mktmpdir do |temp_dir|
               create_translated_sources(@sources, temp_dir, locale)
               create_translated_extra_files(@extra_files, temp_dir, locale)
-
-              yardoc_command = YARD::CLI::Yardoc.new
-              translated_sources = @sources.collect do |source|
-                File.join(temp_dir, source)
-              end
-
-              translated_extra_files = @extra_files.collect do |file|
-                File.join(temp_dir, file)
-              end
-              translated_readme = translated_extra_files.select do |file|
-                /\AREADME/ =~ file
-              end
-              translated_readme = translated_readme.first
-              translated_extra_files.delete(translated_readme)
-
-              yardoc_command.run("-o", translate_doc_dir,
-                                 "--charset", "utf-8",
-                                 "--readme", translated_readme,
-                                 "--no-private",
-                                 translated_sources,
-                                 "-", translated_extra_files)
+              create_translated_documents(temp_dir, locale)
             end
           end
         end
@@ -294,6 +273,30 @@ module Packnga
       erb = ERB.new(template, nil, "-")
       erb.filename = file
       erb
+    end
+
+    def create_translated_documents(translated_files_dir, locale)
+          translate_doc_dir = "#{reference_base_dir}/#{locale.name.to_s}"
+              yardoc_command = YARD::CLI::Yardoc.new
+              translated_sources = @sources.collect do |source|
+                File.join(translated_files_dir, source)
+              end
+
+              translated_extra_files = @extra_files.collect do |file|
+                File.join(translated_files_dir, file)
+              end
+              translated_readme = translated_extra_files.select do |file|
+                /\AREADME/ =~ file
+              end
+              translated_readme = translated_readme.first
+              translated_extra_files.delete(translated_readme)
+
+              yardoc_command.run("-o", translate_doc_dir,
+                                 "--charset", "utf-8",
+                                 "--readme", translated_readme,
+                                 "--no-private",
+                                 translated_sources,
+                                 "-", translated_extra_files)
     end
 
     def create_translated_sources(original_files, translated_files_dir, locale)
