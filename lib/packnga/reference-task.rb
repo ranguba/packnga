@@ -175,11 +175,19 @@ module Packnga
               translated_sources = @sources.collect do |source|
                 File.join(temp_dir, source)
               end
+
               translated_extra_files = @extra_files.collect do |file|
                 File.join(temp_dir, file)
               end
+              translated_readme = translated_extra_files.select do |file|
+                /\AREADME/ =~ file
+              end
+              translated_readme = translated_readme.first
+              translated_extra_files.delete(translated_readme)
+
               yardoc_command.run("-o", translate_doc_dir,
                                  "--charset", "utf-8",
+                                 "--readme", translated_readme,
                                  "--no-private",
                                  translated_sources,
                                  "-", translated_extra_files)
