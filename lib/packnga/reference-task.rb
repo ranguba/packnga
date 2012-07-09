@@ -279,7 +279,6 @@ module Packnga
       translate_doc_dir = "#{reference_base_dir}/#{locale.name.to_s}"
       mkdir_p(translate_doc_dir)
 
-      yardoc_command = YARD::CLI::Yardoc.new
       readme = @extra_files.select do |file|
         /README/ =~ file
       end
@@ -289,6 +288,7 @@ module Packnga
       Dir.chdir(output_dir) do
         YARD::Registry.clear
         YARD.parse(@sources)
+        yardoc_command = YARD::CLI::Yardoc.new
         yardoc_command.run("--title", @spec.name,
                            "-o", translate_doc_dir,
                            "--charset", "utf-8",
