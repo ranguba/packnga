@@ -175,8 +175,8 @@ module Packnga
               translated_sources = @sources.collect do |source|
                 File.join(temp_dir, source)
               end
-              translated_extra_files = @extra_files.collect do |extra_files|
-                File.join(temp_dir, extra_files)
+              translated_extra_files = @extra_files.collect do |file|
+                File.join(temp_dir, file)
               end
               yardoc_command.run("-o", translate_doc_dir,
                                  "--charset", "utf-8",
