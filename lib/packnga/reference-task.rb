@@ -292,6 +292,8 @@ module Packnga
       @extra_files.delete(readme)
 
       Dir.chdir(output_dir) do
+        YARD::Registry.clear
+        YARD.parse(@sources)
         yardoc_command.run("--title", @spec.name,
                            "-o", translate_doc_dir,
                            "--charset", "utf-8",
