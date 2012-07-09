@@ -277,6 +277,8 @@ module Packnga
 
     def create_translated_documents(output_dir, locale)
       translate_doc_dir = "#{reference_base_dir}/#{locale.name.to_s}"
+      mkdir_p(translate_doc_dir)
+
       yardoc_command = YARD::CLI::Yardoc.new
       readme = @extra_files.select do |file|
         /README/ =~ file
