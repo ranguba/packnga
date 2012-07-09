@@ -275,15 +275,15 @@ module Packnga
       erb
     end
 
-    def create_translated_documents(translated_files_dir, locale)
+    def create_translated_documents(output_dir, locale)
       translate_doc_dir = "#{reference_base_dir}/#{locale.name.to_s}"
       yardoc_command = YARD::CLI::Yardoc.new
       translated_sources = @sources.collect do |source|
-        File.join(translated_files_dir, source)
+        File.join(output_dir, source)
       end
 
       translated_extra_files = @extra_files.collect do |file|
-        File.join(translated_files_dir, file)
+        File.join(output_dir, file)
       end
       translated_readme = translated_extra_files.select do |file|
         /\/README/ =~ file
@@ -299,9 +299,9 @@ module Packnga
                          "-", translated_extra_files)
     end
 
-    def create_translated_sources(translated_files_dir, locale)
+    def create_translated_sources(output_dir, locale)
       YARD.parse(@sources)
-      create_translated_files(@sources, translated_files_dir) do |content|
+      create_translated_files(@sources, output_dir) do |content|
         code_objects = YARD::Registry.all
         code_objects.each do |code_object|
           original_docstring = code_object.docstring
@@ -321,16 +321,16 @@ module Packnga
       end
     end
 
-    def create_translated_extra_files(translated_files_dir, locale)
-      create_translated_files(@extra_files, translated_files_dir) do |content|
+    def create_translated_extra_files(output_dir, locale)
+      create_translated_files(@extra_files, output_dir) do |content|
         text = YARD::I18n::Text.new(content)
         text.translate(locale)
       end
     end
 
-    def create_translated_files(original_files, translated_files_dir)
+    def create_translated_files(original_files, output_dir)
       original_files.each do |file|
-        translated_file = File.join(translated_files_dir, file)
+        translated_file = File.join(output_dir, file)
         FileUtils.mkdir_p(File.dirname(translated_file))
         content = File.read(file)
 
