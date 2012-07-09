@@ -285,19 +285,23 @@ module Packnga
       translated_extra_files = @extra_files.collect do |file|
         File.join(output_dir, file)
       end
-      translated_readme = translated_extra_files.select do |file|
-        /\/README/ =~ file
+      readme = @extra_files.select do |file|
+        /README/ =~ file
       end
-      translated_readme = translated_readme.first
-      translated_extra_files.delete(translated_readme)
+      readme = readme.first
+      @extra_files.delete(readme)
 
-      yardoc_command.run("--title", @spec.name,
-                         "-o", translate_doc_dir,
-                         "--charset", "utf-8",
-                         "--readme", translated_readme,
-                         "--no-private",
-                         translated_sources,
-                         "-", translated_extra_files)
+      Dir.chdir(output_dir) do
+        yardoc_command.run("--title", @spec.name,
+                           "-o", translate_doc_dir,
+                           "--charset", "utf-8",
+                           "--readme", readme,
+                           "--no-private",
+                           @sources,
+                           "-", @extra_files)
+      end
+      translated_files = File.join(output_dir, translate_doc_dir, "**")
+      FileUtils.cp_r(Dir.glob(translated_files), translate_doc_dir)
     end
 
     def create_translated_sources(output_dir, locale)
