@@ -300,8 +300,8 @@ module Packnga
     end
 
     def create_translated_sources(translated_files_dir, locale)
+      YARD.parse(@sources)
       create_translated_files(@sources, translated_files_dir) do |content|
-        YARD.parse(@sources)
         code_objects = YARD::Registry.all
         code_objects.each do |code_object|
           original_docstring = code_object.docstring
