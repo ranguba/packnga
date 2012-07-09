@@ -276,27 +276,27 @@ module Packnga
     end
 
     def create_translated_documents(translated_files_dir, locale)
-          translate_doc_dir = "#{reference_base_dir}/#{locale.name.to_s}"
-              yardoc_command = YARD::CLI::Yardoc.new
-              translated_sources = @sources.collect do |source|
-                File.join(translated_files_dir, source)
-              end
+      translate_doc_dir = "#{reference_base_dir}/#{locale.name.to_s}"
+      yardoc_command = YARD::CLI::Yardoc.new
+      translated_sources = @sources.collect do |source|
+        File.join(translated_files_dir, source)
+      end
 
-              translated_extra_files = @extra_files.collect do |file|
-                File.join(translated_files_dir, file)
-              end
-              translated_readme = translated_extra_files.select do |file|
-                /\/README/ =~ file
-              end
-              translated_readme = translated_readme.first
-              translated_extra_files.delete(translated_readme)
+      translated_extra_files = @extra_files.collect do |file|
+        File.join(translated_files_dir, file)
+      end
+      translated_readme = translated_extra_files.select do |file|
+        /\/README/ =~ file
+      end
+      translated_readme = translated_readme.first
+      translated_extra_files.delete(translated_readme)
 
-              yardoc_command.run("-o", translate_doc_dir,
-                                 "--charset", "utf-8",
-                                 "--readme", translated_readme,
-                                 "--no-private",
-                                 translated_sources,
-                                 "-", translated_extra_files)
+      yardoc_command.run("-o", translate_doc_dir,
+                         "--charset", "utf-8",
+                         "--readme", translated_readme,
+                         "--no-private",
+                         translated_sources,
+                         "-", translated_extra_files)
     end
 
     def create_translated_sources(original_files, translated_files_dir, locale)
