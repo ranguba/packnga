@@ -278,7 +278,7 @@ module Packnga
     def create_translated_documents(output_dir, locale)
       language = locale.name.to_s
       translate_doc_dir = "#{reference_base_dir}/#{language}"
-      po_dir = File.realpath(@po_dir)
+      po_dir = File.expand_path(@po_dir)
       mkdir_p(translate_doc_dir)
 
       readme = @extra_files.select do |file|
