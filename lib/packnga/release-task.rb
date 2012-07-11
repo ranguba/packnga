@@ -29,20 +29,20 @@ module Packnga
     include Rake::DSL
 
     # This attribute is path of HTML files written version and release date.
-    # @param [String] path of HTML files
+    # @param [String] value path of HTML files
     attr_writer :index_html_dir
     # This attribute is path of base directory of document.
-    # @param [String] path of base directory of document
+    # @param [String] value path of base directory of document
     attr_writer :base_dir
     # This attribute is message when tagging in release.
-    # @param [String] message
+    # @param [String] value message
     attr_writer :tag_message
     # This attribute is options for uploading RubyForge by rsync.
-    # @param [Hash] options for uploading.
+    # @param [Hash] value options for uploading.
     attr_writer :publish_options
     # This attribute is text for changes in new release
     # to post news to RubyForge.
-    # @param [String] text for changes.
+    # @param [String] value text for changes.
     attr_writer :changes
     # Defines task for preparing to release.
     # Defined tasks update version and release-date in index files

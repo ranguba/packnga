@@ -40,7 +40,7 @@ module Packnga
     end
 
     # Sets base directory for documents. Default value is "doc".
-    # @param [String] base direcory path
+    # @param [String] dir base direcory path
     def base_dir=(dir)
       dir = Pathname.new(dir)
       @yard_task.base_dir = dir
