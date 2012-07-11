@@ -168,7 +168,7 @@ module Packnga
             locale.load(@po_dir)
             Dir.mktmpdir do |temp_dir|
               create_translated_sources(temp_dir, locale)
-              create_translated_extra_files(temp_dir, locale)
+              copy_extra_files(temp_dir)
               create_translated_documents(temp_dir, locale)
             end
           end
@@ -276,7 +276,9 @@ module Packnga
     end
 
     def create_translated_documents(output_dir, locale)
-      translate_doc_dir = "#{reference_base_dir}/#{locale.name.to_s}"
+      language = locale.name.to_s
+      translate_doc_dir = "#{reference_base_dir}/#{language}"
+      po_dir = File.realpath(@po_dir)
       mkdir_p(translate_doc_dir)
 
       readme = @extra_files.select do |file|
@@ -291,6 +293,8 @@ module Packnga
         yardoc_command = YARD::CLI::Yardoc.new
         yardoc_command.run("--title", @spec.name,
                            "-o", translate_doc_dir,
+                           "--po-dir", po_dir,
+                           "--locale", language,
                            "--charset", "utf-8",
                            "--readme", readme,
                            "--no-private",
@@ -323,10 +327,11 @@ module Packnga
       end
     end
 
-    def create_translated_extra_files(output_dir, locale)
-      create_translated_files(@extra_files, output_dir) do |content|
-        text = YARD::I18n::Text.new(content)
-        text.translate(locale)
+    def copy_extra_files(output_dir)
+      @extra_files.each do |file|
+        target_extra_file = File.join(output_dir, file)
+        FileUtils.mkdir_p(File.dirname(target_extra_file))
+        FileUtils.cp_r(file, target_extra_file)
       end
     end
 
