@@ -12,7 +12,7 @@ h3. Changes
 
 h3. Fixes
 
-* Fixed bug of posting no news to RubyForge in task "release:po:ja:update".
+* Fixed bug of posting no news to RubyForge in task "release:rubyforge:news:post".
 
 h2. 0.9.3: 2011-09-22
 
