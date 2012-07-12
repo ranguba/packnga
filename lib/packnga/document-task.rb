@@ -29,7 +29,7 @@ module Packnga
     include Rake::DSL
     # Defines tasks to generate YARD documentation
     # and to translate references.
-    # @param [Jeweler::Tasks] spec created object by Jeweler::Task.new
+    # @param [Gem::Specification] spec created object by Jeweler::Task.new
     def initialize(spec)
       @spec = spec
       @yard_task = YARDTask.new(@spec)

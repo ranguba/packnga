@@ -49,7 +49,7 @@ module Packnga
     # and tag in git.
     # If you set rubyforge_project of Jeweler::Task.new with its given block,
     # it also define tasks to update RubyForge.
-    # @param [Jeweler::Task] spec created by Jeweler::Task.new.
+    # @param [Gem::Specification] spec created by Jeweler::Task.new.
     def initialize(spec)
       @spec = spec
       @index_html_dir = nil
