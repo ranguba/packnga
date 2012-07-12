@@ -223,7 +223,7 @@ h3. 英語でのメールの具体例
 <pre>
 Everyone,
 
-（rroongaの再榛バージョンをリリースしたことを書く）
+（rroongaの最新バージョンをリリースしたことを書く）
 We released rroonga 1.2.3.
 
 （インデックスページのURLを書く）

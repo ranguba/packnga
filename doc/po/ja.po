@@ -1404,7 +1404,7 @@ msgstr ""
 
 #: doc/text/release.textile:226
 msgid ""
-"（rroongaの再榛バージョンをリリースしたことを書く）\n"
+"（rroongaの最新バージョンをリリースしたことを書く）\n"
 "We released rroonga 1.2.3."
 msgstr ""
 
