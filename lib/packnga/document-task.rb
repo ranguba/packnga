@@ -21,7 +21,7 @@ require "packnga/yard-task"
 require "packnga/reference-task"
 
 module Packnga
-  # This class creates docment tasks.
+  # This class creates tasks for document.
   # They generate YARD doucment or references.
   #
   # @since 0.9.0
@@ -29,7 +29,7 @@ module Packnga
     include Rake::DSL
     # Defines tasks to generate YARD documentation
     # and to translate references.
-    # @param [Gem::Specification] spec specification for your package.
+    # @param [Jeweler::Tasks] spec created object by Jeweler::Task.new
     def initialize(spec)
       @spec = spec
       @yard_task = YARDTask.new(@spec)
