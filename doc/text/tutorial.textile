@@ -52,7 +52,7 @@ This table describes Packnga's classes.
 
 - Packnga::DocumentTask :=
   This class create tasks for generating references.
-  It define tasks to generate YARD documentation, po files, and 
+  It define tasks to generate YARD documentation, po files, and
   to translate documents by po files.
   =:
 
