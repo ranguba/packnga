@@ -45,10 +45,6 @@ module Packnga
       @html_files = nil
       @po_dir = nil
       @pot_file = nil
-      if block_given?
-        yield(self)
-        define
-      end
     end
 
     # @private

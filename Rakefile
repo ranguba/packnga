@@ -71,8 +71,7 @@ Gem::PackageTask.new(spec) do |pkg|
   pkg.need_tar_gz = true
 end
 
-Packnga::DocumentTask.new(spec) do |task|
-end
+Packnga::DocumentTask.new(spec)
 
 Packnga::ReleaseTask.new(spec) do |task|
   task.index_html_dir = "../rroonga/doc/html"

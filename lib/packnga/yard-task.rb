@@ -48,10 +48,6 @@ module Packnga
       @files = spec.files.find_all do |file|
         /\Alib\// =~ file and /\.rb\z/ =~ file
       end
-      if block_given?
-        yield(self)
-        define
-      end
     end
 
     # This attribute is used to sets README file to yardoc task.
