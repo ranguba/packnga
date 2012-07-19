@@ -4,5 +4,4 @@
 /doc/po/packnga.pot
 /pkg/
 /doc/html
-/*.gemspec
 /Gemfile.lock
