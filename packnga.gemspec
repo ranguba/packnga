@@ -15,17 +15,11 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
+require "packnga"
+
 base_dir = File.dirname(__FILE__)
 
-guess_version = ""
-version_file_path = File.join(base_dir, "lib", "packnga", "version.rb")
-File.open(version_file_path) do |file|
-  file.each_line do |line|
-    if /\A\s*VERSION.+?([\d\.]+)/ =~ line
-      guess_version = $1
-    end
-  end
-end
+guess_version = Packnga::VERSION.dup
 
 readme_path = File.join(base_dir, "README.textile")
 entries = File.read(readme_path).split(/^h2\.\s(.*)$/)
