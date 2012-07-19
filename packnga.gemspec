@@ -19,7 +19,7 @@ require "packnga/version.rb"
 
 base_dir = File.dirname(__FILE__)
 
-guess_version = Packnga::VERSION.dup
+version = Packnga::VERSION.dup
 
 readme_path = File.join(base_dir, "README.textile")
 entries = File.read(readme_path).split(/^h2\.\s(.*)$/)
@@ -44,7 +44,7 @@ summary, description = description.split(/\n\n+/, 2)
 
 Gem::Specification.new do |s|
   s.name = "packnga"
-  s.version = guess_version
+  s.version = version
   s.authors = authors
   s.email = emails
   s.summary = summary
