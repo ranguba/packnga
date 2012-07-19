@@ -74,7 +74,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("gettext")
   s.add_development_dependency("test-unit")
   s.add_development_dependency("test-unit-notify")
-  s.add_development_dependency("jeweler")
+  s.add_development_dependency("bundler")
   s.add_development_dependency("RedCloth")
 end
 

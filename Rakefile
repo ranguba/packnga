@@ -22,7 +22,7 @@ require 'pathname'
 require 'rubygems'
 require 'rubygems/package_task'
 require "rake/clean"
-require 'jeweler'
+require 'bundler/gem_helper'
 
 base_dir = File.join(File.dirname(__FILE__))
 
@@ -32,40 +32,10 @@ ENV["RUBYLIB"] = "#{packnga_lib_dir}:#{ENV['RUBYLIB']}"
 
 require "packnga"
 
-def guess_version
-  Packnga::VERSION.dup
-end
-
-def cleanup_white_space(entry)
-  entry.gsub(/(\A\n+|\n+\z)/, '') + "\n"
-end
-
-ENV["VERSION"] ||= guess_version
-version = ENV["VERSION"].dup
-spec = nil
-Jeweler::Tasks.new do |_spec|
-  spec = _spec
-  spec.name = "packnga"
-  spec.version = version
-  spec.rubyforge_project = "groonga"
-  spec.homepage = "http://groonga.rubyforge.org/"
-  spec.authors = ["Haruka Yoshihara", "Kouhei Sutou"]
-  spec.email = ["yoshihara@clear-code.com", "kou@clear-code.com"]
-  entries = File.read("README.textile").split(/^h2\.\s(.*)$/)
-  description = cleanup_white_space(entries[entries.index("Description") + 1])
-  spec.summary, spec.description, = description.split(/\n\n+/, 3)
-  spec.license = "LGPLv2"
-  spec.files = FileList["lib/**/*.rb",
-                        "Rakefile",
-                        "README.textile",
-                        "Gemfile",
-                        "doc/text/**"]
-  spec.test_files = FileList["test/**/*.rb"]
-end
-
+helper = Bundler::GemHelper.new(base_dir)
+helper.install
+spec = helper.gemspec
 Rake::Task["release"].prerequisites.clear
-Jeweler::RubygemsDotOrgTasks.new do
-end
 
 Gem::PackageTask.new(spec) do |pkg|
   pkg.need_tar_gz = true
