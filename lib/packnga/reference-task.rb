@@ -41,6 +41,8 @@ module Packnga
       @sources = spec.files.find_all do |file|
         /\Alib\// =~ file and /\.rb\z/ =~ file
       end
+      @text_files = nil
+      @readme = nil
       @extra_files = nil
       @html_files = nil
       @po_dir = nil
@@ -67,9 +69,14 @@ module Packnga
       @po_dir = "doc/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
       text_dir = @base_dir + "text"
-      @extra_files = @spec.files.find_all do |file|
-        /\.textile\z/ =~ file or /\A#{Regexp.escape(text_dir.to_s)}/ =~ file
+      @text_files = @spec.files.find_all do |file|
+        /\A#{Regexp.escape(text_dir.to_s)}/ =~ file
       end
+      readme_files = @spec.files.find_all do |file|
+        /README/ =~ file
+      end
+      @readme = readme_files.first
+      @extra_files = @text_files + [@readme]
     end
 
     def reference_base_dir
@@ -277,12 +284,6 @@ module Packnga
       po_dir = File.expand_path(@po_dir)
       mkdir_p(translate_doc_dir)
 
-      readme = @extra_files.select do |file|
-        /README/ =~ file
-      end
-      readme = readme.first
-      @extra_files.delete(readme)
-
       Dir.chdir(output_dir) do
         YARD::Registry.clear
         YARD.parse(@sources)
@@ -292,10 +293,10 @@ module Packnga
                            "--po-dir", po_dir,
                            "--locale", language,
                            "--charset", "utf-8",
-                           "--readme", readme,
+                           "--readme", @readme,
                            "--no-private",
                            @sources,
-                           "-", @extra_files)
+                           "-", @text_files)
       end
       translated_files = File.join(output_dir, translate_doc_dir, "**")
       FileUtils.cp_r(Dir.glob(translated_files), translate_doc_dir)
