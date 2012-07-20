@@ -32,7 +32,7 @@ module Packnga
     # @return [String] path of base directory of document
     attr_writer :base_dir
 
-    attr_writer :readme
+    attr_accessor :readme
 
     # @private
     def initialize(spec)

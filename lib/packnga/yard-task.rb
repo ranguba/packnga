@@ -26,7 +26,9 @@ module Packnga
   class YARDTask
     include Rake::DSL
 
-    attr_writer :readme
+    # This attribute is used to sets README file to yardoc task.
+    # @return [String] path to readme file
+    attr_accessor :readme
 
     # @return [String] path of base directory of document.
     attr_accessor :base_dir
@@ -48,12 +50,6 @@ module Packnga
       @files = spec.files.find_all do |file|
         /\Alib\// =~ file and /\.rb\z/ =~ file
       end
-    end
-
-    # This attribute is used to sets README file to yardoc task.
-    # @return [String] path to readme file
-    def readme
-      @readme
     end
 
     # @private
