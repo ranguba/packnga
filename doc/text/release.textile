@@ -76,7 +76,7 @@ h2. gemパッケージの作成
 
 <pre>
 $ make clean
-$ ruby1.8 -S rake build
+$ rake build
 </pre>
 
 h2. gemパッケージの動作確認
