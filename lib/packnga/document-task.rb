@@ -71,6 +71,7 @@ module Packnga
     def set_default_values
       set_default_readme
       set_default_source_files
+      set_default_text_files
     end
 
     def set_default_readme
@@ -87,6 +88,15 @@ module Packnga
       end
       @yard_task.source_files = source_files
       @reference_task.source_files = source_files
+    end
+
+    def set_default_text_files
+      text_dir = @yard_task.base_dir + "text"
+      text_files = @spec.files.find_all do |file|
+        /\A#{Regexp.escape(text_dir.to_s)}/ =~ file
+      end
+      @yard_task.text_files = text_files
+      @reference_task.text_files = text_files
     end
 
     def define_tasks

@@ -36,6 +36,8 @@ module Packnga
 
     attr_accessor :source_files
 
+    attr_accessor :text_files
+
     # @private
     def initialize(spec)
       @spec = spec
@@ -70,10 +72,6 @@ module Packnga
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
       @po_dir = "doc/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
-      text_dir = @base_dir + "text"
-      @text_files = @spec.files.find_all do |file|
-        /\A#{Regexp.escape(text_dir.to_s)}/ =~ file
-      end
       @extra_files = @text_files + [@readme]
     end
 

@@ -36,6 +36,8 @@ module Packnga
     # @return [Array<String>] document target files.
     attr_accessor :source_files
 
+    attr_accessor :text_files
+
     # @return [Array<String>] custom yardoc command line options.
     attr_accessor :options
 
@@ -70,11 +72,6 @@ module Packnga
     def set_default_values
       @base_dir ||= "doc"
       @base_dir = Pathname.new(@base_dir)
-      if @text_files.nil?
-        @text_files = []
-        text_dir = @base_dir + "text"
-        @text_files << (text_dir + "**/*").to_s if text_dir.directory?
-      end
     end
 
     def reference_dir
