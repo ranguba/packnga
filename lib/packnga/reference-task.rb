@@ -29,13 +29,20 @@ module Packnga
     include Rake::DSL
     include ERB::Util
 
+    # This attribute is used to set path of base directory of document.
     # @return [String] path of base directory of document
     attr_writer :base_dir
 
+    # This attribute is used to set README file.
+    # @return [String] path of readme file
     attr_accessor :readme
 
+    # This attribute is used to set source files for document.
+    # @return [Array<String>] document target files
     attr_accessor :source_files
 
+    # This attribute is used to set text files for document.
+    # @return [Array<String>] document target files
     attr_accessor :text_files
 
     # @private

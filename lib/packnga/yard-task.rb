@@ -27,18 +27,22 @@ module Packnga
     include Rake::DSL
 
     # This attribute is used to set README file to yardoc task.
-    # @return [String] path to readme file
+    # @return [String] path of readme file
     attr_accessor :readme
 
-    # @return [String] path of base directory of document.
+    # This attribute is used to set path of base directory of document.
+    # @return [String] path of base directory of document
     attr_accessor :base_dir
 
-    # @return [Array<String>] document target files.
+    # This attribute is used to set source files for document.
+    # @return [Array<String>] document target files
     attr_accessor :source_files
 
+    # This attribute is used to set text files for document.
+    # @return [Array<String>] document target files
     attr_accessor :text_files
 
-    # @return [Array<String>] custom yardoc command line options.
+    # @return [Array<String>] custom yardoc command line options
     attr_accessor :options
 
     # @private
