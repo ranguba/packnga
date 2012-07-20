@@ -84,7 +84,7 @@ module Packnga
 
     def set_default_source_files
       source_files = @spec.files.find_all do |file|
-        /\Alib\// =~ file and /\.rb\z/ =~ file
+        file.start_with?("lib/") and file.end_with?(".rb")
       end
       @yard_task.source_files = source_files
       @reference_task.source_files = source_files
