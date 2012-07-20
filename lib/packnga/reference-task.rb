@@ -32,6 +32,8 @@ module Packnga
     # @return [String] path of base directory of document
     attr_writer :base_dir
 
+    attr_writer :readme
+
     # @private
     def initialize(spec)
       @spec = spec
@@ -72,10 +74,6 @@ module Packnga
       @text_files = @spec.files.find_all do |file|
         /\A#{Regexp.escape(text_dir.to_s)}/ =~ file
       end
-      readme_files = @spec.files.find_all do |file|
-        /README/ =~ file
-      end
-      @readme = readme_files.first
       @extra_files = @text_files + [@readme]
     end
 

@@ -53,7 +53,7 @@ module Packnga
     # This attribute is used to sets README file to yardoc task.
     # @return [String] path to readme file
     def readme
-      @readme || Rake::FileList["README*"].to_a.first
+      @readme
     end
 
     # @private

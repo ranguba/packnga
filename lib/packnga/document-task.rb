@@ -69,6 +69,16 @@ module Packnga
     end
 
     def set_default_values
+      set_default_readme
+    end
+
+    def set_default_readme
+      readme_files = @spec.files.find_all do |file|
+        /README/ =~ file
+      end
+      readme = readme_files.first
+      @yard_task.readme = readme
+      @reference_task.readme = readme
     end
 
     def define_tasks
