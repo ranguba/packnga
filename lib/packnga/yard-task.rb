@@ -34,7 +34,7 @@ module Packnga
     attr_accessor :base_dir
 
     # @return [Array<String>] document target files.
-    attr_accessor :files
+    attr_accessor :source_files
 
     # @return [Array<String>] custom yardoc command line options.
     attr_accessor :options
@@ -47,7 +47,7 @@ module Packnga
       @text_files = nil
       @base_dir = nil
       @options = []
-      @files = spec.files.find_all do |file|
+      @source_files = spec.files.find_all do |file|
         /\Alib\// =~ file and /\.rb\z/ =~ file
       end
     end
@@ -103,7 +103,7 @@ module Packnga
         yardoc_task.options += ["--charset", "utf-8"]
         yardoc_task.options += ["--no-private"]
         yardoc_task.options += @options
-        yardoc_task.files += @files
+        yardoc_task.files += @source_files
         @hooks.each do |hook|
           hook.call(yardoc_task)
         end

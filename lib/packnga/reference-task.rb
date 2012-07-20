@@ -40,7 +40,7 @@ module Packnga
       @base_dir = nil
       @translate_languages = nil
       @supported_languages = nil
-      @sources = spec.files.find_all do |file|
+      @source_files = spec.files.find_all do |file|
         /\Alib\// =~ file and /\.rb\z/ =~ file
       end
       @text_files = nil
@@ -106,7 +106,7 @@ module Packnga
     def define_pot_tasks
       namespace :pot do
         directory @po_dir
-        file @pot_file => [@po_dir, *@sources, *@extra_files] do |t|
+        file @pot_file => [@po_dir, *@source_files, *@extra_files] do |t|
           create_pot_file(@pot_file)
         end
         desc "Generates pot file."
@@ -122,7 +122,7 @@ module Packnga
             po_file = "#{@po_dir}/#{language}.po"
 
             if File.exist?(po_file)
-              file po_file => [*@sources, *@extra_files] do |t|
+              file po_file => [*@source_files, *@extra_files] do |t|
                 current_pot_file = "tmp.pot"
                 create_pot_file(current_pot_file)
                 GetText.msgmerge(po_file, current_pot_file,
@@ -156,7 +156,7 @@ module Packnga
     def create_pot_file(pot_file_path)
       i18n_command = YARD::CLI::I18n.new
       i18n_command.run("-o", "#{pot_file_path}",
-                       *@sources, "-", *@extra_files)
+                       *@source_files, "-", *@extra_files)
     end
 
     def define_translate_task
@@ -164,7 +164,7 @@ module Packnga
         @translate_languages.each do |language|
           po_file = "#{@po_dir}/#{language}.po"
           desc "Translates documents to #{language}."
-          task language => [po_file, reference_base_dir, *@sources, *@extra_files] do
+          task language => [po_file, reference_base_dir, *@source_files, *@extra_files] do
             locale = YARD::I18n::Locale.new(language)
             locale.load(@po_dir)
             Dir.mktmpdir do |temp_dir|
@@ -284,7 +284,7 @@ module Packnga
 
       Dir.chdir(output_dir) do
         YARD::Registry.clear
-        YARD.parse(@sources)
+        YARD.parse(@source_files)
         yardoc_command = YARD::CLI::Yardoc.new
         yardoc_command.run("--title", @spec.name,
                            "-o", translate_doc_dir,
@@ -293,7 +293,7 @@ module Packnga
                            "--charset", "utf-8",
                            "--readme", @readme,
                            "--no-private",
-                           @sources,
+                           @source_files,
                            "-", @text_files)
       end
       translated_files = File.join(output_dir, translate_doc_dir, "**")
@@ -301,8 +301,8 @@ module Packnga
     end
 
     def create_translated_sources(output_dir, locale)
-      YARD.parse(@sources)
-      create_translated_files(@sources, output_dir) do |content|
+      YARD.parse(@source_files)
+      create_translated_files(@source_files, output_dir) do |content|
         code_objects = YARD::Registry.all
         code_objects.each do |code_object|
           original_docstring = code_object.docstring
