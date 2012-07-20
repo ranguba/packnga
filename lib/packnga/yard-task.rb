@@ -26,7 +26,7 @@ module Packnga
   class YARDTask
     include Rake::DSL
 
-    # This attribute is used to sets README file to yardoc task.
+    # This attribute is used to set README file to yardoc task.
     # @return [String] path to readme file
     attr_accessor :readme
 
