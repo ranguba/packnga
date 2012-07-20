@@ -70,6 +70,7 @@ module Packnga
 
     def set_default_values
       set_default_readme
+      set_default_source_files
     end
 
     def set_default_readme
@@ -78,6 +79,14 @@ module Packnga
       end
       @yard_task.readme = readme
       @reference_task.readme = readme
+    end
+
+    def set_default_source_files
+      source_files = @spec.files.find_all do |file|
+        /\Alib\// =~ file and /\.rb\z/ =~ file
+      end
+      @yard_task.source_files = source_files
+      @reference_task.source_files = source_files
     end
 
     def define_tasks

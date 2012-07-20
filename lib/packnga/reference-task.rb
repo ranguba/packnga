@@ -34,15 +34,15 @@ module Packnga
 
     attr_accessor :readme
 
+    attr_accessor :source_files
+
     # @private
     def initialize(spec)
       @spec = spec
       @base_dir = nil
       @translate_languages = nil
       @supported_languages = nil
-      @source_files = spec.files.find_all do |file|
-        /\Alib\// =~ file and /\.rb\z/ =~ file
-      end
+      @source_files = nil
       @text_files = nil
       @readme = nil
       @extra_files = nil

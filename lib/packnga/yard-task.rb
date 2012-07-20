@@ -47,9 +47,7 @@ module Packnga
       @text_files = nil
       @base_dir = nil
       @options = []
-      @source_files = spec.files.find_all do |file|
-        /\Alib\// =~ file and /\.rb\z/ =~ file
-      end
+      @source_files = nil
     end
 
     # @private
