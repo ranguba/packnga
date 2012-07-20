@@ -35,11 +35,11 @@ module Packnga
     attr_accessor :base_dir
 
     # This attribute is used to set source files for document.
-    # @return [Array<String>] document target files
+    # @return [Array<String>] target source files
     attr_accessor :source_files
 
     # This attribute is used to set text files for document.
-    # @return [Array<String>] document target files
+    # @return [Array<String>] target text files
     attr_accessor :text_files
 
     # @return [Array<String>] custom yardoc command line options
