@@ -43,3 +43,6 @@ h2. Mailing list
   * comming soon...
 
 h2. Thanks
+
+  * SHIMADA Koji: send a patch.
+
