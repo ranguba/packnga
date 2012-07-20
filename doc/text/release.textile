@@ -64,7 +64,7 @@ doc/reference/ja/file.news.htmlなどのja.poを編集した箇所が正しく�
 
 h2. バージョンとリリース日の更新
 
-下記コマンドを入力して、プロジェクトページ（html/index.html、html/index.html.ja）のrroongaの項にある最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新する。
+下記コマンドを入力して、プロジェクトページ（html/index.html、html/index.html.ja）の最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新する。
 
 <pre>
 $ rake release:info:update OLD_VERSION=（前回リリース時のバージョン） OLD_RELEASE_DATE=（前回リリース日） RELEASE_DATE=（今回のリリース日）
