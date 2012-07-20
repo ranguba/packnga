@@ -22,7 +22,7 @@ require "packnga/reference-task"
 
 module Packnga
   # This class creates tasks for document.
-  # They generate YARD doucment or references.
+  # They generate YARD document or references.
   #
   # @since 0.9.0
   class DocumentTask
