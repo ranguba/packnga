@@ -1,6 +1,6 @@
 h1. Tutorial
 
-We introduce how to use Packnga with Packnga's Rakefile in this page.
+We introduce how to use Packnga with Packnga's Rakefile and gemspec in this page.
 
 h2. Install
 
@@ -13,11 +13,92 @@ You can install Packnga from Rubygems.
 
 h2. Prepare to create tasks
 
-Before using Packnga, you should create @spec@ variable with Jeweler::Task.new.
-Packnga create tasks with @spec@.
-Please see below example.
+Before using Packnga, you should create @spec@ variable with
+ Gem::Specification.new or Jeweler::Tasks.new.
+Packnga create tasks with @spec@ in Rakefile.
+
+h3. Create spec with Gem::Specification.new
+
+We introduce to create @spec@ with Gem::Specification.new in a gemspec file.
+Please see below gemspec example with Gem::Specification.new.
 
 <pre>
+!!!ruby
+version = Packnga::VERSION.dup
+
+readme_path = File.join(base_dir, "README.textile")
+entries = File.read(readme_path).split(/^h2\.\s(.*)$/)
+entry = lambda do |entry_title|
+  entries[entries.index(entry_title) + 1]
+end
+
+authors = []
+emails = []
+entry.call("Authors").each_line do |line|
+  if /\*\s*(.+)\s<([^<>]*)>$/ =~ line
+    authors << $1
+    emails << $2
+  end
+end
+
+clean_white_space = lambda do |entry|
+  entry.gsub(/(\A\n+|\n+\z)/, '') + "\n"
+end
+description = clean_white_space.call(entry.call("Description"))
+summary, description = description.split(/\n\n+/, 2)
+
+Gem::Specification.new do |s|
+  s.name = "packnga"
+  s.version = version
+  s.authors = authors
+  s.email = emails
+  s.summary = summary
+  s.description = description
+
+  s.extra_rdoc_files = ["README.textile"]
+  s.files = ["README.textile", "Rakefile", "Gemfile"]
+  Dir.chdir(base_dir) do
+    s.files += Dir.glob("lib/**/*.rb")
+    s.files += Dir.glob("doc/text/*.*")
+  end
+
+  s.homepage = "http://groonga.rubyforge.org/"
+  s.licenses = ["LGPLv2"]
+  s.require_paths = ["lib"]
+  s.rubyforge_project = "groonga"
+
+  s.add_runtime_dependency("rake")
+  s.add_runtime_dependency("yard")
+  s.add_runtime_dependency("rubyforge")
+  s.add_runtime_dependency("gettext")
+  s.add_development_dependency("test-unit")
+  s.add_development_dependency("test-unit-notify")
+  s.add_development_dependency("bundler")
+  s.add_development_dependency("RedCloth")
+end
+</pre>
+
+If you set the attribute @rubyforge_project@ of @spec@ value,
+"Packnga::ReleaseTask" class creates tasks for rubyforge.
+
+Next, we should get @spec@ value in Rakefile from gemspec,
+ so we write below source code in  Rakefile.
+
+<pre>
+!!!ruby
+helper = Bundler::GemHelper.new(base_dir)
+helper.install
+spec = helper.gemspec
+</pre>
+
+h3. Create spec with Jeweler::Tasks.new
+
+If you want to create @spec@ with Jeweler::Tasks.new in your Rakefile,
+please see below example.
+This source code is written in old Packnga's Rakefile.
+
+<pre>
+!!!ruby
 spec = nil
 Jeweler::Tasks.new do |_spec|
   spec = _spec
@@ -40,14 +121,9 @@ Jeweler::Tasks.new do |_spec|
 end
 </pre>
 
-If you set the attribute @rubyforge_project@ of @spec@,
-@Release Task@ create tasks for rubyforge.
-See below in detail.
-
 h2. Create tasks
 
 Packnga's classes has charge of each tasks.
-They are given block with .new method in order to set parameters of tasks.
 This table describes Packnga's classes.
 
 - Packnga::DocumentTask :=
