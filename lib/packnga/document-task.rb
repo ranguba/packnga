@@ -76,7 +76,7 @@ module Packnga
 
     def set_default_readme
       readme = @spec.files.find do |file|
-        /README/ =~ file
+        file.include?("README")
       end
       @yard_task.readme = readme
       @reference_task.readme = readme
