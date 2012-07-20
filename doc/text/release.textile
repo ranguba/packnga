@@ -5,6 +5,7 @@ h2. news.textileに変更点のまとめ
 前回のリリース時から現在までの変更点をnews.textileにまとめるため、下記コマンドを実行してgitのコミットログを表示する。
 
 <pre>
+!!!command_line
 $ git log -p --reverse （前回のリリースバージョン)..
 </pre>
 
@@ -46,6 +47,7 @@ h2. 日本語訳の作成
 下記コマンドを実行してja.poを更新する。
 
 <pre>
+!!!command_line
 $ rake reference:po:update
 </pre>
 
@@ -57,6 +59,7 @@ h2. リファレンスの確認
 下記コマンドを実行して、リファレンスの翻訳を行う。
 
 <pre>
+!!!command_line
 $ rake reference:translate
 </pre>
 
@@ -67,6 +70,7 @@ h2. バージョンとリリース日の更新
 下記コマンドを入力して、プロジェクトページ（html/index.html、html/index.html.ja）の最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新する。
 
 <pre>
+!!!command_line
 $ rake release:info:update OLD_VERSION=（前回リリース時のバージョン） OLD_RELEASE_DATE=（前回リリース日） RELEASE_DATE=（今回のリリース日）
 </pre>
 
@@ -75,6 +79,7 @@ h2. gemパッケージの作成
 下記コマンドを打ってアップロード用のgemパッケージをビルドする。
 
 <pre>
+!!!command_line
 $ make clean
 $ rake build
 </pre>
@@ -84,6 +89,7 @@ h2. gemパッケージの動作確認
 そのgemパッケージの動作を確認するため、下記コマンドを打ってローカル環境にインストールする。
 
 <pre>
+!!!command_line
 $ gem1.9.1 install pkg/（パッケージ名）-（今回リリースバージョン番号）.gem --user-install
 </pre>
 
@@ -91,6 +97,7 @@ $ gem1.9.1 install pkg/（パッケージ名）-（今回リリースバージ�
 このディレクトリに移動して、テストを実行し動作を確認する。
 
 <pre>
+!!!command_line
 $ NO_MAKE=yes ruby1.9.1 test/run-test.rb
 </pre>
 
@@ -100,6 +107,7 @@ h2. news.textileの最終的なまとめとリファレンス作成
 コミットIDをメモしていた場合、下記コマンドを実行してログを表示する。
 
 <pre>
+!!!command_line
 git log --reverse -p （前回のリリース時のバージョン）..（メモしていたコミットID）
 </pre>
 
@@ -116,6 +124,7 @@ git log --reverse -p （前回のリリース時のバージョン）..（メモ
 下記コマンドを実行してja.poを更新する。
 
 <pre>
+!!!command_line
 $ rake reference:po:update
 </pre>
 
@@ -125,6 +134,7 @@ fuzzyを検索して見つかったら訳を確認し必要なら修正を行う
 さらに下記コマンドを実行して、リファレンスの翻訳を行う。
 
 <pre>
+!!!command_line
 $ rake reference:translate
 </pre>
 
@@ -139,6 +149,7 @@ h2. リリースバージョンのタグの作成とrubygems.orgへのパッケ�
 下記コマンドを実行してリリースバージョンのタグを作成し、パッケージをrubygems.orgへアップロードする。
 
 <pre>
+!!!command_line
 $ rake release
 </pre>
 
@@ -147,6 +158,7 @@ h2. rubyforgeにパッケージをアップロード
 下記コマンドを実行してアップロードする。
 
 <pre>
+!!!command_line
 $ ruby1.8 -S rake release:rubyforge:upload
 $ ruby1.8 -S rake release:reference:publish
 </pre>
@@ -154,6 +166,7 @@ $ ruby1.8 -S rake release:reference:publish
 rroonga以外の場合、index.html関連はrake release:html:publishでアップロードされないので、rroongaに移動してから下記コマンドを実行する。
 
 <pre>
+!!!command_line
 $ ruby1.9.1 -S rake release:html:publish
 </pre>
 
@@ -297,6 +310,7 @@ rroonga以外の場合、もとのディレクトリに戻る。
 下記コマンドを入力してrubyforgeの最新ニュースを更新する。
 
 <pre>
+!!!command_line
 $ rake releace:rubyforge:news:post
 </pre>
 
