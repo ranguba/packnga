@@ -93,7 +93,7 @@ module Packnga
     def set_default_text_files
       text_dir = @yard_task.base_dir + "text"
       text_files = @spec.files.find_all do |file|
-        /\A#{Regexp.escape(text_dir.to_s)}/ =~ file
+        file.start_with?(text_dir.to_s)
       end
       @yard_task.text_files = text_files
       @reference_task.text_files = text_files
