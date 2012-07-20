@@ -62,7 +62,6 @@ module Packnga
     end
 
     private
-    # @private
     def define
       set_default_values
       define_tasks
