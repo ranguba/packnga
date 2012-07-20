@@ -134,11 +134,11 @@ This table describes Packnga's classes.
 
 - Packnga::ReleaseTask :=
   This class create tasks for uploading references and package and preparing to upload them.
-  It defines task to tag the current version in git and task to user-install gem for test.
+  It defines a task to tag the current version in git and a task to user-install gem for test.
   It also create tasks for uploading rubyforge if you set @rubyforge_project@ in @spec@ .
   =:
 
-See below for creating tasks.
+Please see below for creating tasks.
 
 <pre>
 Packnga::DocumentTask.new(spec)
@@ -148,9 +148,10 @@ Packnga::ReleaseTask.new(spec)
 h3. Set the document path.
 
 You can set parameters with block when creating object of Packnga::DocumentTask and Releasetask.
-For example, We introduce to how to set document base directory.
+For example, We introduce to how to set base directory for document.
 Document is created in this directory.
 You can write Rakefile to set this directory path, see below.
+
 NOTE: Please set same path to each clasess.
 
 <pre>
