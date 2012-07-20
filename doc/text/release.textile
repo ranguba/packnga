@@ -49,8 +49,8 @@ h2. 日本語訳の作成
 $ rake reference:po:update
 </pre>
 
-その後、ja.poを開いて、各msgid（コミットログ）に対応するmsgstrにコミットログの和訳を作成する。
-fuzzyを検索して見つかったらC-iで消す。
+その後、ja.poを開いて、各msgid（翻訳対象となる文章）に対応するmsgstrに対応する和訳を作成する。
+fuzzyを検索して見つかったら訳を確認し必要なら修正を行う。その後fuzzyを消す。
 
 h2. リファレンスの確認
 
@@ -60,7 +60,7 @@ h2. リファレンスの確認
 $ rake reference:translate
 </pre>
 
-doc/reference/ja/file.news.htmlなどのja.poを編集した箇所を確認する。
+doc/reference/ja/file.news.htmlなどのja.poを編集した箇所が正しく翻訳されているか確認する。
 
 h2. バージョンとリリース日の更新
 
