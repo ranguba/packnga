@@ -134,21 +134,12 @@ h2. これまでの変更をpush
 
 ここまでに行った変更をcommitしてgit pushする。
 
-h2. リリースバージョンのタグを作成
+h2. リリースバージョンのタグの作成とrubygems.orgへのパッケージのアップロード
 
-下記コマンドを入力して、今回リリースするバージョンのタグを打ってgit pushする。
-
-<pre>
-$ rake release:tag
-$ git push --tag
-</pre>
-
-h2. rubygems.orgにパッケージをアップロード
-
-下記コマンドを実行してパッケージをアップロードする。
+下記コマンドを実行してリリースバージョンのタグを作成し、パッケージをrubygems.orgへアップロードする。
 
 <pre>
-$ ruby1.8 -S rake gemcutter:release
+$ rake release
 </pre>
 
 h2. rubyforgeにパッケージをアップロード
