@@ -17,6 +17,6 @@
 
 require "rake"
 
-require "./lib/packnga/version"
+require "packnga/version"
 require "packnga/document-task"
 require "packnga/release-task"
