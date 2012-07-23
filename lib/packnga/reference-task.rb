@@ -161,9 +161,14 @@ module Packnga
     end
 
     def create_pot_file(pot_file_path)
+      options = ["-o", pot_file_path]
+      options += @source_files
+      options += ["-"]
+      @extra_files.each do |file|
+        options += [file]
+      end
       i18n_command = YARD::CLI::I18n.new
-      i18n_command.run("-o", "#{pot_file_path}",
-                       *@source_files, "-", *@extra_files)
+      i18n_command.run(*options)
     end
 
     def define_translate_task
