@@ -164,9 +164,7 @@ module Packnga
       options = ["-o", pot_file_path]
       options += @source_files
       options += ["-"]
-      @extra_files.each do |file|
-        options += [file]
-      end
+      options += @extra_files
       i18n_command = YARD::CLI::I18n.new
       i18n_command.run(*options)
     end
