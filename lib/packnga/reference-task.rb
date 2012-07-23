@@ -55,6 +55,7 @@ module Packnga
       @text_files = nil
       @readme = nil
       @extra_files = nil
+      @files = nil
       @html_files = nil
       @po_dir = nil
       @pot_file = nil
@@ -80,6 +81,7 @@ module Packnga
       @po_dir = "doc/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
       @extra_files = @text_files + [@readme]
+      @files = @source_files + @extra_files
     end
 
     def reference_base_dir
@@ -111,7 +113,7 @@ module Packnga
     def define_pot_tasks
       namespace :pot do
         directory @po_dir
-        file @pot_file => [@po_dir, *@source_files, *@extra_files] do |t|
+        file @pot_file => [@po_dir, *@files] do |t|
           create_pot_file(@pot_file)
         end
         desc "Generates pot file."
@@ -127,7 +129,7 @@ module Packnga
             po_file = "#{@po_dir}/#{language}.po"
 
             if File.exist?(po_file)
-              file po_file => [*@source_files, *@extra_files] do |t|
+              file po_file => [*@files] do |t|
                 current_pot_file = "tmp.pot"
                 create_pot_file(current_pot_file)
                 GetText.msgmerge(po_file, current_pot_file,
@@ -169,7 +171,7 @@ module Packnga
         @translate_languages.each do |language|
           po_file = "#{@po_dir}/#{language}.po"
           desc "Translates documents to #{language}."
-          task language => [po_file, reference_base_dir, *@source_files, *@extra_files] do
+          task language => [po_file, reference_base_dir, *@files] do
             locale = YARD::I18n::Locale.new(language)
             locale.load(@po_dir)
             Dir.mktmpdir do |temp_dir|
