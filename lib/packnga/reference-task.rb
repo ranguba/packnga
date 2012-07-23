@@ -358,10 +358,10 @@ module Packnga
       translated_content = ""
       text = YARD::I18n::Text.new(original_text)
       translate_text = text.translate(locale)
-      original_text = original_text.each_line.map do |line|
+      original_text = original_text.each_line.collect do |line|
         "(.+)#{Regexp.escape(line)}"
       end
-      translate_text = translate_text.each_line.map do |line|
+      translate_text = translate_text.each_line.collect do |line|
         "\\1#{line}"
       end
       content.sub(/#{original_text.join}/, translate_text.join)
