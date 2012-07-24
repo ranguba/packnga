@@ -47,3 +47,10 @@ Packnga::ReleaseTask.new(spec) do |task|
   task.index_html_dir = "../rroonga/doc/html"
   task.changes = File.read("doc/text/news.textile").split(/^h2\.\s(.*)$/)[2]
 end
+
+desc "Run tests."
+task :test do
+  ruby("-rubygems", "test/run-test.rb")
+end
+
+task :default => :test
