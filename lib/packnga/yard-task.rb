@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2011  yoshihara haruka <yoshihara@clear-code.com>
+# Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
 # Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or

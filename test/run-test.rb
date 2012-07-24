@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# Copyright (C) 2012  yoshihara haruka <yoshihara@clear-code.com>
+# Copyright (C) 2012  Haruka Yoshihara <yoshihara@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
