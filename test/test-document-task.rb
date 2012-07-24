@@ -15,15 +15,9 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-require "jeweler"
-
 class DocumentTaskTest < Test::Unit::TestCase
   def test_base_directory_set
-    spec = nil
-    Jeweler::Tasks.new do |_spec|
-      spec = _spec
-    end
-
+    spec = Gem::Specification.new
     base_dir = Pathname("base_directory")
     document_task = Packnga::DocumentTask.new(spec) do |task|
       task.base_dir = base_dir.to_s
