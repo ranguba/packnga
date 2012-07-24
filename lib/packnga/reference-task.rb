@@ -31,7 +31,7 @@ module Packnga
 
     # This attribute is used to set path of base directory of document.
     # @return [String] path of base directory of document
-    attr_writer :base_dir
+    attr_accessor :base_dir
 
     # This attribute is used to set README file.
     # @return [String] path of readme file
