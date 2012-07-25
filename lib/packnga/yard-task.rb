@@ -94,7 +94,7 @@ module Packnga
     def define_yardoc_task
       YARD::Rake::YardocTask.new do |yardoc_task|
         yardoc_task.options += ["--title", @spec.name]
-        yardoc_task.options += ["--readme", readme]
+        yardoc_task.options += ["--readme", readme] if readme
         @text_files.each do |file|
           yardoc_task.options += ["--files", file]
         end

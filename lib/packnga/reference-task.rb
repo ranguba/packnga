@@ -296,16 +296,22 @@ module Packnga
       Dir.chdir(output_dir) do
         YARD::Registry.clear
         YARD.parse(@source_files)
+
         yardoc_command = YARD::CLI::Yardoc.new
-        yardoc_command.run("--title", @spec.name,
-                           "-o", translate_doc_dir,
-                           "--po-dir", po_dir,
-                           "--locale", language,
-                           "--charset", "utf-8",
-                           "--readme", @readme,
-                           "--no-private",
-                           @source_files,
-                           "-", @text_files)
+        options = [
+          "--title", @spec.name,
+          "-o", translate_doc_dir,
+          "--po-dir", po_dir,
+          "--locale", language,
+          "--charset", "utf-8",
+          "--no-private"
+        ]
+        options += ["--readme", @readme] if @readme
+        options += @source_files
+        options += ["-"]
+        options += @text_files
+
+        yardoc_command.run(*options)
       end
       translated_files = File.join(output_dir, translate_doc_dir, "**")
       FileUtils.cp_r(Dir.glob(translated_files), translate_doc_dir)
