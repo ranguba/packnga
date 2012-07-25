@@ -31,4 +31,52 @@ class DocumentTaskTest < Test::Unit::TestCase
       assert_equal(base_dir, reference_task.base_dir)
     end
   end
+
+  def test_specify_readme
+    readme = "README.textile"
+    spec = Gem::Specification.new do |_spec|
+      _spec.files = [readme]
+    end
+    document_task = Packnga::DocumentTask.new(spec)
+    yard_task = extract_yard_task(document_task)
+    reference_task = extract_reference_task(document_task)
+
+    assert_equal(readme, yard_task.readme)
+    assert_equal(readme, reference_task.readme)
+
+    assert_equal([], yard_task.source_files)
+    assert_equal([], reference_task.source_files)
+
+    assert_equal([], yard_task.text_files)
+    assert_equal([], reference_task.text_files)
+  end
+
+  def test_specify_no_files
+    spec = Gem::Specification.new
+    document_task = Packnga::DocumentTask.new(spec)
+    yard_task = extract_yard_task(document_task)
+    reference_task = extract_reference_task(document_task)
+
+    assert_nil(yard_task.readme)
+    assert_nil(reference_task.readme)
+
+    assert_equal([], yard_task.source_files)
+    assert_equal([], reference_task.source_files)
+
+    assert_equal([], yard_task.text_files)
+    assert_equal([], reference_task.text_files)
+  end
+
+  private
+  def extract_yard_task(document_task)
+    document_task.yard do |yard_task|
+      yard_task
+    end
+  end
+
+  def extract_reference_task(document_task)
+    document_task.reference do |reference_task|
+      reference_task
+    end
+  end
 end
