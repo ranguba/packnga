@@ -98,6 +98,38 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
+  class SpecifyTextFilesTest < self
+    def setup
+      @source_text_files = ["doc/text/tutorial.textile", "doc/text/new.md"]
+      other_text_files = ["other1.textile", "doc/other2.md", "Rakefile"]
+
+      spec = Gem::Specification.new do |_spec|
+        _spec.files = [
+          @source_text_files,
+          other_text_files,
+        ]
+      end
+      document_task = Packnga::DocumentTask.new(spec)
+      @yard_task = extract_yard_task(document_task)
+      @reference_task = extract_reference_task(document_task)
+    end
+
+    def test_readme
+      assert_nil(@yard_task.readme)
+      assert_nil(@reference_task.readme)
+    end
+
+    def test_source_files
+      assert_equal([], @yard_task.source_files)
+      assert_equal([], @reference_task.source_files)
+    end
+
+    def test_text_files
+      assert_equal(@source_text_files, @yard_task.text_files)
+      assert_equal(@source_text_files, @reference_task.text_files)
+    end
+  end
+
   class SpecifyNoFilesTest < self
     def setup
       spec = Gem::Specification.new
