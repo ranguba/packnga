@@ -32,7 +32,7 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
-  class SpecifyReadmeTest < self
+  class ReadmeTest < self
     def setup
       @readme = "README.textile"
       spec = Gem::Specification.new do |_spec|
@@ -59,7 +59,7 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
-  class SpecifySourceFilesTest < self
+  class SourceFilesTest < self
     def setup
       source_ruby_files = ["lib/packnga.rb", "lib/packnga/version.rb"]
       other_ruby_files = ["other1.rb", "ext/other2.rb"]
@@ -98,7 +98,7 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
-  class SpecifyTextFilesTest < self
+  class TextFilesTest < self
     def setup
       @source_text_files = ["doc/text/tutorial.textile", "doc/text/new.md"]
       other_text_files = ["other1.textile", "doc/other2.md", "Rakefile"]
@@ -130,7 +130,7 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
-  class SpecifyNoFilesTest < self
+  class NoFilesTest < self
     def setup
       spec = Gem::Specification.new
       document_task = Packnga::DocumentTask.new(spec)
