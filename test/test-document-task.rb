@@ -34,28 +34,28 @@ class DocumentTaskTest < Test::Unit::TestCase
 
   class SpecifyReadmeTest < self
     def setup
-    @readme = "README.textile"
-    spec = Gem::Specification.new do |_spec|
-      _spec.files = [@readme]
-    end
-    document_task = Packnga::DocumentTask.new(spec)
-    @yard_task = extract_yard_task(document_task)
-    @reference_task = extract_reference_task(document_task)
+      @readme = "README.textile"
+      spec = Gem::Specification.new do |_spec|
+        _spec.files = [@readme]
+      end
+      document_task = Packnga::DocumentTask.new(spec)
+      @yard_task = extract_yard_task(document_task)
+      @reference_task = extract_reference_task(document_task)
     end
 
     def test_readme
-    assert_equal(@readme, @yard_task.readme)
-    assert_equal(@readme, @reference_task.readme)
+      assert_equal(@readme, @yard_task.readme)
+      assert_equal(@readme, @reference_task.readme)
     end
 
     def test_source_files
-    assert_equal([], @yard_task.source_files)
-    assert_equal([], @reference_task.source_files)
+      assert_equal([], @yard_task.source_files)
+      assert_equal([], @reference_task.source_files)
     end
 
     def test_text_files
-    assert_equal([], @yard_task.text_files)
-    assert_equal([], @reference_task.text_files)
+      assert_equal([], @yard_task.text_files)
+      assert_equal([], @reference_task.text_files)
     end
   end
 
