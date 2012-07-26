@@ -59,20 +59,28 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
-  def test_specify_no_files
+  class SpecifyNoFilesTest < self
+    def setup
     spec = Gem::Specification.new
     document_task = Packnga::DocumentTask.new(spec)
-    yard_task = extract_yard_task(document_task)
-    reference_task = extract_reference_task(document_task)
+    @yard_task = extract_yard_task(document_task)
+    @reference_task = extract_reference_task(document_task)
+    end
 
-    assert_nil(yard_task.readme)
-    assert_nil(reference_task.readme)
+    def test_readme
+    assert_nil(@yard_task.readme)
+    assert_nil(@reference_task.readme)
+    end
 
-    assert_equal([], yard_task.source_files)
-    assert_equal([], reference_task.source_files)
+    def test_source_files
+    assert_equal([], @yard_task.source_files)
+    assert_equal([], @reference_task.source_files)
+    end
 
-    assert_equal([], yard_task.text_files)
-    assert_equal([], reference_task.text_files)
+    def test_text_files
+    assert_equal([], @yard_task.text_files)
+    assert_equal([], @reference_task.text_files)
+    end
   end
 
   private
