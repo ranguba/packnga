@@ -59,6 +59,45 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
+  class SpecifySourceFilesTest < self
+    def setup
+      source_ruby_files = ["lib/packnga.rb", "lib/packnga/version.rb"]
+      other_ruby_files = ["other1.rb", "ext/other2.rb"]
+
+      source_c_files = ["ext/packnga.c", "ext/packnga/version.c"]
+      other_c_files = ["other1.c", "lib/other2.c"]
+
+      spec = Gem::Specification.new do |_spec|
+        _spec.files = [
+          source_ruby_files,
+          other_ruby_files,
+          source_c_files,
+          other_c_files,
+        ]
+      end
+      document_task = Packnga::DocumentTask.new(spec)
+      @yard_task = extract_yard_task(document_task)
+      @reference_task = extract_reference_task(document_task)
+
+      @source_files = source_ruby_files + source_c_files
+    end
+
+    def test_readme
+      assert_nil(@yard_task.readme)
+      assert_nil(@reference_task.readme)
+    end
+
+    def test_source_files
+      assert_equal(@source_files, @yard_task.source_files)
+      assert_equal(@source_files, @reference_task.source_files)
+    end
+
+    def test_text_files
+      assert_equal([], @yard_task.text_files)
+      assert_equal([], @reference_task.text_files)
+    end
+  end
+
   class SpecifyNoFilesTest < self
     def setup
       spec = Gem::Specification.new

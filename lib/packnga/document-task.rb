@@ -83,10 +83,19 @@ module Packnga
 
     def set_default_source_files
       source_files = @spec.files.find_all do |file|
-        file.start_with?("lib/") and file.end_with?(".rb")
+        ruby_source_file?(file) or
+          c_source_file?(file)
       end
       @yard_task.source_files = source_files
       @reference_task.source_files = source_files
+    end
+
+    def ruby_source_file?(file)
+      file.start_with?("lib/") and file.end_with?(".rb")
+    end
+
+    def c_source_file?(file)
+      file.start_with?("ext/") and file.end_with?(".c")
     end
 
     def set_default_text_files
