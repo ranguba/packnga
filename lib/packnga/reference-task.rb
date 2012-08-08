@@ -166,8 +166,7 @@ module Packnga
       options += @source_files
       options += ["-"]
       options += @extra_files
-      i18n_command = YARD::CLI::I18n.new
-      i18n_command.run(*options)
+      YARD::CLI::I18n.run(*options)
     end
 
     def define_translate_task
