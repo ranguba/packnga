@@ -297,7 +297,6 @@ module Packnga
         YARD::Registry.clear
         YARD.parse(@source_files)
 
-        yardoc_command = YARD::CLI::Yardoc.new
         options = [
           "--title", @spec.name,
           "-o", translate_doc_dir,
@@ -311,7 +310,7 @@ module Packnga
         options += ["-"]
         options += @text_files
 
-        yardoc_command.run(*options)
+        YARD::CLI::Yardoc.run(*options)
       end
       translated_files = File.join(output_dir, translate_doc_dir, "**")
       FileUtils.cp_r(Dir.glob(translated_files), translate_doc_dir)
