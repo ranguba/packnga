@@ -16,6 +16,10 @@
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 class DocumentTaskTest < Test::Unit::TestCase
+  def teardown
+    Rake::Task.clear
+  end
+
   def test_base_directory_set
     spec = Gem::Specification.new
     base_dir = Pathname("base_directory")

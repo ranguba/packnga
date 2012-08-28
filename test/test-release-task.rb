@@ -18,6 +18,10 @@
 require "test/unit/rr"
 
 class ReleaseTaskTest < Test::Unit::TestCase
+  def teardown
+    Rake::Task.clear
+  end
+
   def test_html_publish
     spec = Gem::Specification.new do |_spec|
       _spec.rubyforge_project = "packnga"
