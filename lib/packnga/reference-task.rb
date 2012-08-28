@@ -140,10 +140,9 @@ module Packnga
               end
             else
               file po_file => @pot_file do |t|
-                sh("msginit",
-                   "--input=#{@pot_file}",
-                   "--output=#{t.name}",
-                   "--locale=#{language}")
+                GetText::Tools::MsgInit.run("--input", @pot_file,
+                                            "--output", t.name,
+                                            "--locale", language.to_s)
               end
             end
 
