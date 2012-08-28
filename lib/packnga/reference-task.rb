@@ -19,6 +19,7 @@ require "erb"
 require "gettext/tools"
 require "tempfile"
 require "tmpdir"
+require "rake/clean"
 
 module Packnga
   # This class creates reference tasks.
@@ -153,9 +154,9 @@ module Packnga
 
         desc "Updates po files."
         task :update do
-          ruby($0, "clobber")
+          Rake::Task["clobber"].invoke
           @translate_languages.each do |language|
-            ruby($0, "reference:po:update:#{language}")
+            Rake::Task["reference:po:update:#{language}"].invoke
           end
         end
       end
