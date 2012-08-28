@@ -21,7 +21,6 @@ require 'English'
 require 'pathname'
 require 'rubygems'
 require 'rubygems/package_task'
-require "rake/clean"
 require 'bundler/gem_helper'
 
 base_dir = File.join(File.dirname(__FILE__))
