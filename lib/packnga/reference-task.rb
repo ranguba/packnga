@@ -79,7 +79,7 @@ module Packnga
       @translate_languages ||= [:ja]
       @supported_languages = [:en, *@translate_languages]
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
-      @po_dir = "doc/po"
+      @po_dir = "#{@base_dir}/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
       @extra_files = @text_files
       @extra_files += [@readme] if @readme
