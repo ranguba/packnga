@@ -1,5 +1,33 @@
 h1. NEWS
 
+h2. 0.9.5: 2012-08-30
+
+h3. Improvements
+
+ * [reference-task] Created and update a pot/po file by YARD::CLI::I18n instead of xml2po command.
+ * [reference-task] Created HTML documents from a po file, source files(lib/**/*.rb, ext/**/*.c) and extra files(doc/text/*.*) and README file in spec.
+ * [reference-task] Used GetText::Tools::MsgInit.run instead of msginit in GNU gettext.
+ * Assigned default files for HTML documents by DocumentTask to YARDTask and ReferenceTask.
+ * [tutorial] Added example to use gemspec with Gem::Specification.new.
+ * Updated documents.
+
+h3. Changes
+
+ * [reference-task] Created the po directory under specified directory instead of "doc".
+ * Defined accessors for readme in YARDTask and ReferenceTask.
+
+h3. Fixes
+
+ * [document-task] Fixed not to require block on new.
+ * [reference-task] Fixed not to execute an unneeded "yard" task.
+ * Fixed not to run blocks when objects of YARDTask and ReferenceTask are initialized.
+ * [reference-task] Used Rake::Task to invoke rake tasks instead of another process.
+
+h3. Thanks
+
+ * tetradice
+ * SHIMADA Koji
+
 h2. 0.9.4: 2011-09-27
 
 h3. Improvements
