@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: packnga 0.9.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-20 22:17+0900\n"
-"PO-Revision-Date: 2012-07-12 15:02+0900\n"
+"PO-Revision-Date: 2012-08-30 16:17+0900\n"
 "Last-Translator: haruka yoshihara <yoshihara@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -49,7 +49,7 @@ msgstr "h2. 作者"
 
 #: README.textile:15
 msgid ""
-"  * yoshihara haruka <yoshihara@clear-code.com>\n"
+"  * Haruka Yoshihara <yoshihara@clear-code.com>\n"
 "  * Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
 
@@ -115,6 +115,14 @@ msgstr "準備中です。"
 #: README.textile:45
 msgid "h2. Thanks"
 msgstr "h2. 感謝"
+
+#: README.textile:47
+msgid ""
+"  * SHIMADA Koji: send a patch.\n"
+"  * tetradice: report bugs."
+msgstr ""
+"  * 島田 浩二さん: パッチを送ってくれました。\n"
+"  * tetradiceさん: バグを報告してくれました。"
 
 #: doc/text/lgpl.txt:1
 msgid ""
@@ -874,33 +882,97 @@ msgid "h1. NEWS"
 msgstr "h1. お知らせ"
 
 #: doc/text/news.textile:3
-msgid "h2. 0.9.4: 2011-09-27"
+msgid "h2. 0.9.5: 2012-08-30"
 msgstr ""
 
-#: doc/text/news.textile:5 doc/text/news.textile:19 doc/text/news.textile:35
-#: doc/text/news.textile:44 doc/text/release.textile:26
+#: doc/text/news.textile:5 doc/text/news.textile:32 doc/text/news.textile:46
+#: doc/text/news.textile:62 doc/text/news.textile:71
+#: doc/text/release.textile:30
 msgid "h3. Improvements"
 msgstr "h3. 改良"
 
 #: doc/text/news.textile:7
-msgid "* Saved password inputted once in same process."
-msgstr "* 同一プロセス内では一度入力したパスワードを保存するようにした。"
+msgid ""
+" * [reference-task] Created and update a pot/po file by YARD::CLI::I18n "
+"instead of xml2po command.\n"
+" * [reference-task] Translated HTML documents with a po file, source files"
+"(lib/**/*.rb, ext/**/*.c) and extra files(doc/text/*.*) and README file in "
+"spec.\n"
+" * [reference-task] Used GetText::Tools::MsgInit.run instead of msginit in "
+"GNU gettext.\n"
+" * Assigned default files for HTML documents by DocumentTask to YARDTask and "
+"ReferenceTask.\n"
+" * [tutorial] Added example to use gemspec with Gem::Specification.new.\n"
+" * Defined accessors for readme in YARDTask and ReferenceTask.\n"
+" * Updated documents."
+msgstr ""
+" * [reference-task] YARDに実装されたYARD::CLI::I18nクラスを使用してpotファイ"
+"ルやpoファイルの作成や更新を行うようにした。\n"
+" * [reference-task] specに指定されたファイルとpoファイルから翻訳されたHTMLド"
+"キュメントを作るようにした。\n"
+" * [reference-task] GNU gettextにあるmsginitコマンドの代わりにgettext gemの"
+"GetText::Tools::MsgInit.runメソッドを使うようにした。\n"
+" * YARDTaskやReferenceTaskに対して、HTMLドキュメント生成のためのファイルを"
+"DocumentTaskから指定するようにした。\n"
+" * [tutorial] gemspecファイルとGem::Specification.newからspecを作成する例を追"
+"加した。\n"
+" * YARDTaskやReferenceTaskのreadmeファイルの設定をそれぞれのアクセサから設定"
+"できるようにした。\n"
+" * ドキュメントを改善した。"
 
-#: doc/text/news.textile:9 doc/text/news.textile:24
-#: doc/text/release.textile:30
+#: doc/text/news.textile:15 doc/text/news.textile:36 doc/text/news.textile:51
+#: doc/text/release.textile:34
 msgid "h3. Changes"
 msgstr "h3. 変更"
 
-#: doc/text/news.textile:11
-msgid "* Checked ruby version before run task to build gem."
-msgstr "* gem作成前にrubyのバージョンをチェックするように変更した。"
+#: doc/text/news.textile:17
+msgid ""
+" * [reference-task] Created the po directory under specified directory "
+"instead of \"doc\"."
+msgstr " * [reference-task] poファイルを作成するディレクトリを、指定されたドキュメントのベースディレクトリの下に作成するようにした。"
 
-#: doc/text/news.textile:13 doc/text/news.textile:29 doc/text/news.textile:53
-#: doc/text/release.textile:34
+#: doc/text/news.textile:19 doc/text/news.textile:40 doc/text/news.textile:56
+#: doc/text/news.textile:80 doc/text/release.textile:38
 msgid "h3. Fixes"
 msgstr "h3. 修正"
 
-#: doc/text/news.textile:15
+#: doc/text/news.textile:21
+msgid ""
+" * [document-task] Fixed not to require block on new.\n"
+" * Fixed not to run blocks when objects of YARDTask and ReferenceTask are "
+"initialized.\n"
+" * [reference-task] Used Rake::Task to invoke rake tasks instead of another "
+"process."
+msgstr ""
+" * [document-task] DocumentTaskがブロックなしでもオブジェクトが生成できるように修正した。\n"
+" * YARDTaskやReferenceTaskのオブジェクト生成時にブロックを実行しないようにした。\n"
+" * [reference-task] 別プロセスでRakeタスクを実行していたのをRake::Taskクラスを使うように修正した。"
+
+#: doc/text/news.textile:25
+msgid "h3. Thanks"
+msgstr "h3. 感謝"
+
+#: doc/text/news.textile:27
+msgid ""
+" * tetradice\n"
+" * SHIMADA Koji"
+msgstr ""
+"* tetradiceさん\n"
+"* 島田 浩二さん"
+
+#: doc/text/news.textile:30
+msgid "h2. 0.9.4: 2011-09-27"
+msgstr ""
+
+#: doc/text/news.textile:34
+msgid "* Saved password inputted once in same process."
+msgstr "* 同一プロセス内では一度入力したパスワードを保存するようにした。"
+
+#: doc/text/news.textile:38
+msgid "* Checked ruby version before run task to build gem."
+msgstr "* gem作成前にrubyのバージョンをチェックするように変更した。"
+
+#: doc/text/news.textile:42
 msgid ""
 "* Fixed bug of posting no news to RubyForge in task \"release:rubyforge:news:"
 "post\"."
@@ -908,11 +980,11 @@ msgstr ""
 "* タスク\"release:rubyforge:news:post\"でRubyforgeにニュースがポストされな"
 "かったバグを修正した。"
 
-#: doc/text/news.textile:17
+#: doc/text/news.textile:44
 msgid "h2. 0.9.3: 2011-09-22"
 msgstr ""
 
-#: doc/text/news.textile:21
+#: doc/text/news.textile:48
 msgid ""
 "* Printed newline after getting password.\n"
 "* Added task \"release:rubyforge:news:post\" to post news to RubyForge."
@@ -921,7 +993,7 @@ msgstr ""
 "* Rubyforgeに更新情報をポストするタスク\"release:rubyforge:news:post\"を追加"
 "した。"
 
-#: doc/text/news.textile:26
+#: doc/text/news.textile:53
 msgid ""
 "* Changed name of tasks for update po file for each languages.\n"
 "(For example, \"translate:po:ja:update\" was changed to \"translate:po:"
@@ -931,17 +1003,17 @@ msgstr ""
 "（例えば、\"translate:po:ja:update\"は\"translate:po:update:ja\"に変更され"
 "た。)"
 
-#: doc/text/news.textile:31
+#: doc/text/news.textile:58
 msgid "* Applied version number to tag message instead of \"version\"."
 msgstr ""
 "* git tag時に添付するメッセージ中に含まれていた\"version\"という文字列がバー"
 "ジョン番号になるように修正した。"
 
-#: doc/text/news.textile:33
+#: doc/text/news.textile:60
 msgid "h2. 0.9.2: 2011-08-29"
 msgstr ""
 
-#: doc/text/news.textile:37
+#: doc/text/news.textile:64
 msgid ""
 "* Supported doc/text/ nonexistence case.\n"
 "* Supported yardoc options customize.\n"
@@ -954,11 +1026,11 @@ msgstr ""
 "* lib/**/*.rbだけをデフォルトでドキュメント対象となるファイルとして使うように"
 "した。"
 
-#: doc/text/news.textile:42
+#: doc/text/news.textile:69
 msgid "h2. 0.9.1: 2011-08-25"
 msgstr ""
 
-#: doc/text/news.textile:46
+#: doc/text/news.textile:73
 msgid ""
 "* created package in rubyforge if package isn't created.\n"
 "* added Packnga::ReleaseTask#tag_message.\n"
@@ -975,7 +1047,7 @@ msgstr ""
 "* タスク\"reference:publicaton:generate\"を追加した。\n"
 "（このタスクはリファレンスの公開準備のあとに実行されます。）"
 
-#: doc/text/news.textile:55
+#: doc/text/news.textile:82
 msgid ""
 "* fix bug release:reference:publish stop.\n"
 "* checked group_ids before add_releasing tar.gz to rubyforge.\n"
@@ -989,11 +1061,11 @@ msgstr ""
 "た。\n"
 "（チュートリアルのリダイレクトは書かないようにした。）"
 
-#: doc/text/news.textile:60
+#: doc/text/news.textile:87
 msgid "h2. 0.9.0: 2011-08-19"
 msgstr ""
 
-#: doc/text/news.textile:62
+#: doc/text/news.textile:89
 msgid "The first release!"
 msgstr ""
 
@@ -1002,7 +1074,7 @@ msgid "h1. リリース手順"
 msgstr ""
 
 #: doc/text/release.textile:3
-msgid "h2. news.textileに前回リリースからの変更点のまとめ"
+msgid "h2. news.textileに変更点のまとめ"
 msgstr ""
 
 #: doc/text/release.textile:5
@@ -1014,288 +1086,272 @@ msgstr ""
 #: doc/text/release.textile:7
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ git log -p --reverse （前回のリリースバージョン)..\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:11
+#: doc/text/release.textile:12 doc/text/release.textile:114
 msgid ""
 "ログを\"Author:\"で検索しながら、ユーザにとって知る必要があるもの（ユーザに見"
 "える情報）のコミットログのみを抜き出す。\n"
-"その動詞を過去形にし、頭文字を大文字にする。\n"
-"それらログをそれぞれを次のようにまとめる。\n"
+"次に、抜き出したコミットログを１つずつ見て、その先頭にカテゴリ名がある場合"
+"は、\":\"を削除してカテゴリ名を\"[\"と\"]\"で囲む。\n"
+"カテゴリ名を除いたログの先頭にある単語を過去形にし、頭文字を大文字にする。\n"
+"その後、ログを次のように分類する。\n"
 "機能などに新しく追加されたものに関してはImprovement,\n"
 "動作の変更などはChanges,\n"
 "バグの修正など前バージョンまでにあった問題を修正したものはFixesに記述する。\n"
 "また、コミットログの行末に[人名]がある場合はその人名をThanks以下に書く。\n"
-"この作業をリリース予定日よりも前に行った場合は、目に見えるところにコミットID"
-"をメモしておく。\n"
-"news.textileだと次のrake reference:po:updateで翻訳対象になってしまいノイズに"
-"なってしまうので注意すること。"
+"さらにREADMEにあるThanks以下にも名前を追加する。"
 msgstr ""
 
-#: doc/text/release.textile:21
+#: doc/text/release.textile:22
+msgid ""
+"この作業をリリース予定日よりも前に行った場合は、目に見えるところにコミットID"
+"をメモしておく。\n"
+"ただし、news.textileだと次のrake reference:po:updateで翻訳対象になってしまい"
+"ノイズになってしまうので注意すること。"
+msgstr ""
+
+#: doc/text/release.textile:25
 msgid "h3. news.textileの1リリース分のテンプレート"
 msgstr ""
 
-#: doc/text/release.textile:23
+#: doc/text/release.textile:27
 msgid ""
 "<pre>\n"
 "h2. （リリースするバージョン）: リリース日（yyyy-mm-dd）"
 msgstr ""
 
-#: doc/text/release.textile:28 doc/text/release.textile:32
-#: doc/text/release.textile:36
+#: doc/text/release.textile:32 doc/text/release.textile:36
+#: doc/text/release.textile:40
 msgid "*"
 msgstr ""
 
-#: doc/text/release.textile:38
+#: doc/text/release.textile:42
 msgid ""
 "h3. Thanks\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:41
+#: doc/text/release.textile:45
 msgid "h2. 日本語訳の作成"
 msgstr ""
 
-#: doc/text/release.textile:43
+#: doc/text/release.textile:47 doc/text/release.textile:124
 msgid "下記コマンドを実行してja.poを更新する。"
 msgstr ""
 
-#: doc/text/release.textile:45 doc/text/release.textile:113
+#: doc/text/release.textile:49 doc/text/release.textile:126
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ rake reference:po:update\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:49
+#: doc/text/release.textile:54 doc/text/release.textile:131
 msgid ""
-"その後、ja.poを開いて、各msgid（コミットログ）に対応するmsgstrにコミットログ"
-"の和訳を作成する。\n"
-"fuzzyを検索して見つかったらC-iで消す。"
+"その後、ja.poを開いて、各msgid（翻訳対象となる文章）に対応するmsgstrに対応す"
+"る和訳を作成する。\n"
+"fuzzyを検索して見つかったら訳を確認し必要なら修正を行う。その後fuzzyを消す。"
 msgstr ""
 
-#: doc/text/release.textile:52
+#: doc/text/release.textile:57
 msgid "h2. リファレンスの確認"
 msgstr ""
 
-#: doc/text/release.textile:54
+#: doc/text/release.textile:59
 msgid "下記コマンドを実行して、リファレンスの翻訳を行う。"
 msgstr ""
 
-#: doc/text/release.textile:56
+#: doc/text/release.textile:61 doc/text/release.textile:136
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ rake reference:translate\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:60
-msgid "doc/reference/ja/file.news.htmlなどのja.poを編集した箇所を確認する。"
+#: doc/text/release.textile:66 doc/text/release.textile:141
+msgid ""
+"doc/reference/ja/file.news.htmlなどのja.poを編集した箇所が正しく翻訳されてい"
+"るか確認する。"
 msgstr ""
 
-#: doc/text/release.textile:62
+#: doc/text/release.textile:68
 msgid "h2. バージョンとリリース日の更新"
 msgstr ""
 
-#: doc/text/release.textile:64
+#: doc/text/release.textile:70
 msgid ""
 "下記コマンドを入力して、プロジェクトページ（html/index.html、html/index.html."
-"ja）のrroongaの項にある最新バージョンとリリース日をそれぞれ今回のリリースに合"
-"わせたものに更新する。"
+"ja）の最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新"
+"する。"
 msgstr ""
 
-#: doc/text/release.textile:66
+#: doc/text/release.textile:72
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ rake release:info:update OLD_VERSION=（前回リリース時のバージョン） "
 "OLD_RELEASE_DATE=（前回リリース日） RELEASE_DATE=（今回のリリース日）\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:70
+#: doc/text/release.textile:77
 msgid "h2. gemパッケージの作成"
 msgstr ""
 
-#: doc/text/release.textile:72
+#: doc/text/release.textile:79
 msgid "下記コマンドを打ってアップロード用のgemパッケージをビルドする。"
 msgstr ""
 
-#: doc/text/release.textile:74
+#: doc/text/release.textile:81
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ make clean\n"
-"$ ruby1.8 -S rake build\n"
+"$ rake build\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:79
+#: doc/text/release.textile:87
 msgid "h2. gemパッケージの動作確認"
 msgstr ""
 
-#: doc/text/release.textile:81
+#: doc/text/release.textile:89
 msgid ""
 "そのgemパッケージの動作を確認するため、下記コマンドを打ってローカル環境にイン"
 "ストールする。"
 msgstr ""
 
-#: doc/text/release.textile:83
+#: doc/text/release.textile:91
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ gem1.9.1 install pkg/（パッケージ名）-（今回リリースバージョン番号）.gem --"
 "user-install\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:87
+#: doc/text/release.textile:96
 msgid ""
 "インストールが成功すると/home/(ユーザ名)/.gem/ruby/1.9.1/gems/（パッケージ"
 "名）-（今回リリースバージョン番号）/にインストールされる。\n"
 "このディレクトリに移動して、テストを実行し動作を確認する。"
 msgstr ""
 
-#: doc/text/release.textile:90
+#: doc/text/release.textile:99
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ NO_MAKE=yes ruby1.9.1 test/run-test.rb\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:94
-msgid "h2. news.textileの再まとめ"
+#: doc/text/release.textile:105
+msgid "h2. news.textileの最終的なまとめとリファレンス作成"
 msgstr ""
 
-#: doc/text/release.textile:96
-msgid ""
-"news.textileの行頭にコミットIDが残っている場合、\n"
-"下記コマンドを実行してログを表示する。"
+#: doc/text/release.textile:107
+msgid "コミットIDをメモしていた場合、下記コマンドを実行してログを表示する。"
 msgstr ""
 
-#: doc/text/release.textile:99
+#: doc/text/release.textile:109
 msgid ""
 "<pre>\n"
-"git log --reverse -p （前回のリリース時のバージョン）..（残っていたコミット"
+"!!!command_line\n"
+"git log --reverse -p （前回のリリース時のバージョン）..（メモしていたコミット"
 "ID）\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:103
-msgid ""
-"上記ログを\"Author:\"で検索しながら、ユーザにとって知る必要があるもの（ユーザ"
-"に見える情報）のコミットログのみを抜き出す。\n"
-"その動詞を過去形にし、頭文字を大文字にする。\n"
-"それらログをそれぞれを次のようにまとめる。\n"
-"機能などに新しく追加されたものに関してはImprovement,\n"
-"動作の変更などはChanges,\n"
-"バグの修正など前バージョンまでにあった問題を修正したものはFixesに記述する。\n"
-"また、コミットログの行末に[人名]がある場合はその人名をThanks以下に書く。"
-msgstr ""
-
-#: doc/text/release.textile:111
-msgid "その後、下記コマンドを実行してja.poを更新する。"
-msgstr ""
-
-#: doc/text/release.textile:117
-msgid ""
-"その後、ja.poを開いて、各msgid（追加したコミットログ）に対応するmsgstrにコ"
-"ミットログの和訳を作成する。\n"
-"fuzzyを検索して見つかったらC-iで消す。"
-msgstr ""
-
-#: doc/text/release.textile:120
-msgid "h2. これまでの変更をpush"
-msgstr ""
-
-#: doc/text/release.textile:122
-msgid "ここまでに行った変更をcommitしてgit pushする。"
-msgstr ""
-
-#: doc/text/release.textile:124
-msgid "h2. リリースバージョンのタグを作成"
-msgstr ""
-
-#: doc/text/release.textile:126
-msgid ""
-"下記コマンドを入力して、今回リリースするバージョンのタグを打ってgit pushす"
-"る。"
-msgstr ""
-
-#: doc/text/release.textile:128
-msgid ""
-"<pre>\n"
-"$ rake release:tag\n"
-"$ git push --tag\n"
-"</pre>"
-msgstr ""
-
-#: doc/text/release.textile:133
-msgid "h2. rubygems.orgにパッケージをアップロード"
-msgstr ""
-
-#: doc/text/release.textile:135
-msgid "下記コマンドを実行してパッケージをアップロードする。"
-msgstr ""
-
-#: doc/text/release.textile:137
-msgid ""
-"<pre>\n"
-"$ ruby1.8 -S rake gemcutter:release\n"
-"</pre>"
-msgstr ""
-
-#: doc/text/release.textile:141
-msgid "h2. rubyforgeにパッケージをアップロード"
+#: doc/text/release.textile:134
+msgid "さらに下記コマンドを実行して、リファレンスの翻訳を行う。"
 msgstr ""
 
 #: doc/text/release.textile:143
-msgid "下記コマンドを実行してアップロードする。"
+msgid "h2. これまでの変更をpush"
 msgstr ""
 
 #: doc/text/release.textile:145
+msgid "ここまでに行った変更をcommitしてgit pushする。"
+msgstr ""
+
+#: doc/text/release.textile:147
+msgid ""
+"h2. リリースバージョンのタグの作成とrubygems.orgへのパッケージのアップロード"
+msgstr ""
+
+#: doc/text/release.textile:149
+msgid ""
+"下記コマンドを実行してリリースバージョンのタグを作成し、パッケージをrubygems."
+"orgへアップロードする。"
+msgstr ""
+
+#: doc/text/release.textile:151
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
+"$ rake release\n"
+"</pre>"
+msgstr ""
+
+#: doc/text/release.textile:156
+msgid "h2. rubyforgeにパッケージをアップロード"
+msgstr ""
+
+#: doc/text/release.textile:158
+msgid "下記コマンドを実行してアップロードする。"
+msgstr ""
+
+#: doc/text/release.textile:160
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
 "$ ruby1.8 -S rake release:rubyforge:upload\n"
 "$ ruby1.8 -S rake release:reference:publish\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:150
+#: doc/text/release.textile:166
 msgid ""
 "rroonga以外の場合、index.html関連はrake release:html:publishでアップロードさ"
 "れないので、rroongaに移動してから下記コマンドを実行する。"
 msgstr ""
 
-#: doc/text/release.textile:152
+#: doc/text/release.textile:168
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ ruby1.9.1 -S rake release:html:publish\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:156
+#: doc/text/release.textile:173
 msgid "h2. メーリングリストにリリースの周知"
 msgstr ""
 
-#: doc/text/release.textile:158
+#: doc/text/release.textile:175
 msgid ""
 "メーリングリストにリリースした旨を書いたメールを流す。\n"
 "日本語の他、英語のメーリングリストにもリリースした旨を英語で書いたメールを流"
 "す。"
 msgstr ""
 
-#: doc/text/release.textile:161
+#: doc/text/release.textile:178
 msgid "h3.日本語でのメールの具体例"
 msgstr ""
 
-#: doc/text/release.textile:163
+#: doc/text/release.textile:180
 msgid ""
 "<pre>\n"
 "吉原です。"
 msgstr ""
 
-#: doc/text/release.textile:166
+#: doc/text/release.textile:183
 msgid ""
 "（最新バージョンをリリースしたことを書く）\n"
 "groongaのRubyバインディングrroonga1.2.3をリリースしました。\n"
@@ -1303,14 +1359,14 @@ msgid ""
 "  http://groonga.rubyforge.org/index.html.ja#about-rroonga"
 msgstr ""
 
-#: doc/text/release.textile:171
+#: doc/text/release.textile:188
 msgid ""
 "（ソフトウェアの概略）\n"
 "rroongaはRubyらしい書き方でgroongaを操作できることを重視しています。\n"
 "同時に、groongaの速度をそのまま生かすことも大事にしています。"
 msgstr ""
 
-#: doc/text/release.textile:175
+#: doc/text/release.textile:192
 msgid ""
 "（前回リリースから今回リリースまでに変更された点のうち、ユーザにとって重要な"
 "ものを書く）\n"
@@ -1320,53 +1376,53 @@ msgid ""
 "した。"
 msgstr ""
 
-#: doc/text/release.textile:181
+#: doc/text/release.textile:198
 msgid ""
 "（コマンドなどのインストール方法）\n"
 "インストール:\n"
 "  % sudo gem install rroonga"
 msgstr ""
 
-#: doc/text/release.textile:185
+#: doc/text/release.textile:202
 msgid ""
 "（チュートリアルページのURL）\n"
 "irbを使ったrroongaのチュートリアルはこちらにあります。"
 msgstr ""
 
-#: doc/text/release.textile:188
+#: doc/text/release.textile:205
 msgid "  http://groonga.rubyforge.org/rroonga/ja/file.tutorial.html"
 msgstr ""
 
-#: doc/text/release.textile:190
+#: doc/text/release.textile:207
 msgid ""
 "（http://groonga.rubyforge.org/rroonga/ja/file.news.htmlを見て、前回リリース"
 "時からの変更点を書く）\n"
 "1.2.1からの変更点は以下の通りです。"
 msgstr ""
 
-#: doc/text/release.textile:193
+#: doc/text/release.textile:210
 msgid "1.2.3: 2011-06-27"
 msgstr ""
 
-#: doc/text/release.textile:195
+#: doc/text/release.textile:212
 msgid ""
 "修正\n"
 "    gemパッケージに含まれてしまったオブジェクトファイル(*.o)を削除。\n"
 "    一部のリファレンスマニュアルの文字化けを修正。"
 msgstr ""
 
-#: doc/text/release.textile:199
+#: doc/text/release.textile:216
 msgid "1.2.2: 2011-06-27"
 msgstr ""
 
-#: doc/text/release.textile:201
+#: doc/text/release.textile:218
 msgid ""
 "改良\n"
 "    英語版の「開発者向け情報」ページを作成。\n"
 "    \"html:publish\"タスクと\"publish\"に関しての説明を追加。"
 msgstr ""
 
-#: doc/text/release.textile:205
+#: doc/text/release.textile:222
 msgid ""
 "変更\n"
 "    Groonga::Record#attributesが重複したレコードが現れた際に\n"
@@ -1376,7 +1432,7 @@ msgid ""
 "    NEWS*.rdocとtutorial.texttileをディレクトリdoc/text/に移動。"
 msgstr ""
 
-#: doc/text/release.textile:212
+#: doc/text/release.textile:229
 msgid ""
 "修正\n"
 "    インデックスページにある「チュートリアル」ページへのリンクを修正。\n"
@@ -1385,42 +1441,42 @@ msgid ""
 "    新しいgroongaのダウンロードURLに対応。 [mallowlabs]"
 msgstr ""
 
-#: doc/text/release.textile:217
+#: doc/text/release.textile:234
 msgid ""
 "感謝\n"
 "    mallowlabsさん\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:221
+#: doc/text/release.textile:238
 msgid "h3. 英語でのメールの具体例"
 msgstr ""
 
-#: doc/text/release.textile:223
+#: doc/text/release.textile:240
 msgid ""
 "<pre>\n"
 "Everyone,"
 msgstr ""
 
-#: doc/text/release.textile:226
+#: doc/text/release.textile:243
 msgid ""
 "（rroongaの最新バージョンをリリースしたことを書く）\n"
 "We released rroonga 1.2.3."
 msgstr ""
 
-#: doc/text/release.textile:229
+#: doc/text/release.textile:246
 msgid ""
 "（インデックスページのURLを書く）\n"
 "  http://groonga.rubyforge.org/#about-rroonga"
 msgstr ""
 
-#: doc/text/release.textile:232
+#: doc/text/release.textile:249
 msgid ""
 "（rroongaの説明）\n"
 "rroonga is the library which ruby-binding for grronga."
 msgstr ""
 
-#: doc/text/release.textile:235
+#: doc/text/release.textile:252
 msgid ""
 "（前回リリース時からの変更点のうち、ユーザにとって大事なものを書く）\n"
 "Since ver.1.2.1 was released, we translated some documents\n"
@@ -1429,62 +1485,62 @@ msgid ""
 "installed, grronga is automatically installed."
 msgstr ""
 
-#: doc/text/release.textile:241
+#: doc/text/release.textile:258
 msgid ""
 "（インストール方法を書く）\n"
 "How to install:\n"
 "  % sudo gem install rroonga"
 msgstr ""
 
-#: doc/text/release.textile:245
+#: doc/text/release.textile:262
 msgid ""
 "（チュートリアルについてのURLなどを書く）\n"
 "There is the tutorial of rroonga with irb:"
 msgstr ""
 
-#: doc/text/release.textile:248
+#: doc/text/release.textile:265
 msgid "  http://groonga.rubyforge.org/rroonga/en/file.tutorial.html"
 msgstr ""
 
-#: doc/text/release.textile:250
+#: doc/text/release.textile:267
 msgid ""
 "（news.textileから今回リリースのために書いた部分をコピーする）\n"
 "Please see below changes since ver.1.2.1."
 msgstr ""
 
-#: doc/text/release.textile:253
+#: doc/text/release.textile:270
 msgid "== 1.2.3: 2011-06-27"
 msgstr ""
 
-#: doc/text/release.textile:255 doc/text/release.textile:274
+#: doc/text/release.textile:272 doc/text/release.textile:291
 msgid "=== Fixes"
 msgstr ""
 
-#: doc/text/release.textile:257
+#: doc/text/release.textile:274
 msgid ""
 "* remove object files in gem packages.\n"
 "* fix charactor corruption in reference."
 msgstr ""
 
-#: doc/text/release.textile:260
+#: doc/text/release.textile:277
 msgid "== 1.2.2: 2011-06-27"
 msgstr ""
 
-#: doc/text/release.textile:262
+#: doc/text/release.textile:279
 msgid "=== Improvements"
 msgstr ""
 
-#: doc/text/release.textile:264
+#: doc/text/release.textile:281
 msgid ""
 "* created \"Developers\" page in English.\n"
 "* added description for tasks of \"html:publish\" and \"publish\"."
 msgstr ""
 
-#: doc/text/release.textile:267
+#: doc/text/release.textile:284
 msgid "=== Changes"
 msgstr ""
 
-#: doc/text/release.textile:269
+#: doc/text/release.textile:286
 msgid ""
 "* Groonga::Record#attributes return same attributes object for duplicate "
 "records.\n"
@@ -1493,22 +1549,22 @@ msgid ""
 "* moved NEWS*.rdoc and tutorial.texttile to doc/text/."
 msgstr ""
 
-#: doc/text/release.textile:276
+#: doc/text/release.textile:293
 msgid ""
 "* fixed the tutorial path in index page.\n"
 "* fixed the path of tutorial in index page in English.\n"
 "* follow the groonga downlowd URL change. [mallowlabs]"
 msgstr ""
 
-#: doc/text/release.textile:280
+#: doc/text/release.textile:297
 msgid "=== Thanks"
 msgstr ""
 
-#: doc/text/release.textile:282
+#: doc/text/release.textile:299
 msgid "* mallowlabs"
 msgstr ""
 
-#: doc/text/release.textile:284
+#: doc/text/release.textile:301
 msgid ""
 "--\n"
 "（名前とメールアドレス）\n"
@@ -1517,28 +1573,29 @@ msgid ""
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:290
+#: doc/text/release.textile:307
 msgid "h2. rubyforgeのニュースを更新"
 msgstr ""
 
-#: doc/text/release.textile:292
+#: doc/text/release.textile:309
 msgid ""
 "rroonga以外の場合、もとのディレクトリに戻る。\n"
 "下記コマンドを入力してrubyforgeの最新ニュースを更新する。"
 msgstr ""
 
-#: doc/text/release.textile:295
+#: doc/text/release.textile:312
 msgid ""
 "<pre>\n"
+"!!!command_line\n"
 "$ rake releace:rubyforge:news:post\n"
 "</pre>"
 msgstr ""
 
-#: doc/text/release.textile:299
+#: doc/text/release.textile:317
 msgid "h2. 次回リリース時のバージョン番号の設定"
 msgstr ""
 
-#: doc/text/release.textile:301
+#: doc/text/release.textile:319
 msgid ""
 "rroongaはext/groonga/rb-grn.h、それ以外はlib/（パッケージ名）/version.rbにあ"
 "る、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回"
@@ -1550,7 +1607,9 @@ msgid "h1. Tutorial"
 msgstr "h1. チュートリアル"
 
 #: doc/text/tutorial.textile:3
-msgid "We introduce how to use Packnga with Packnga's Rakefile in this page."
+msgid ""
+"We introduce how to use Packnga with Packnga's Rakefile and gemspec in this "
+"page."
 msgstr ""
 "このページでは、実際のPackngaのRakefileを参考に、Packngaの使用方法を紹介しま"
 "す。"
@@ -1565,17 +1624,152 @@ msgstr "h2. タスク生成の準備"
 
 #: doc/text/tutorial.textile:16
 msgid ""
-"Before using Packnga, you should create @spec@ variable with Jeweler::Task."
-"new.\n"
-"Packnga create tasks with @spec@.\n"
-"Please see below example."
+"Before using Packnga, you should create @spec@ variable with\n"
+" Gem::Specification.new or Jeweler::Tasks.new.\n"
+"Packnga create tasks with @spec@ in Rakefile."
 msgstr ""
-"Packngaを使用する前に、Jeweler::Tasks.newメソッドにて @spec@ を作成します。こ"
-"の @spec@ を用いてPackngaはタスクを生成します。次にその例を示します。"
+"Packngaを使用する前に、Gem::Specification.newメソッドにて @spec@ を作成しま"
+"す。この @spec@ を用いてPackngaはタスクを生成します。次にその例を示します。"
 
 #: doc/text/tutorial.textile:20
+msgid "h3. Create spec with Gem::Specification.new"
+msgstr "h3. Gem::Specification.newメソッドを用いたspecの作成"
+
+#: doc/text/tutorial.textile:22
+msgid ""
+"We introduce to create @spec@ with Gem::Specification.new in a gemspec "
+"file.\n"
+"Please see below gemspec example with Gem::Specification.new."
+msgstr ""
+"ここではgemspecファイルにてGem::Specification.newメソッドを使ってspecを作成す"
+"る方法を紹介します。\n"
+"次の例を見てください。"
+
+#: doc/text/tutorial.textile:25
 msgid ""
 "<pre>\n"
+"!!!ruby\n"
+"version = Packnga::VERSION.dup"
+msgstr ""
+
+#: doc/text/tutorial.textile:29
+msgid ""
+"readme_path = File.join(base_dir, \"README.textile\")\n"
+"entries = File.read(readme_path).split(/^h2\\.\\s(.*)$/)\n"
+"entry = lambda do |entry_title|\n"
+"  entries[entries.index(entry_title) + 1]\n"
+"end"
+msgstr ""
+
+#: doc/text/tutorial.textile:35
+msgid ""
+"authors = []\n"
+"emails = []\n"
+"entry.call(\"Authors\").each_line do |line|\n"
+"  if /\\*\\s*(.+)\\s<([^<>]*)>$/ =~ line\n"
+"    authors << $1\n"
+"    emails << $2\n"
+"  end\n"
+"end"
+msgstr ""
+
+#: doc/text/tutorial.textile:44
+msgid ""
+"clean_white_space = lambda do |entry|\n"
+"  entry.gsub(/(\\A\\n+|\\n+\\z)/, '') + \"\\n\"\n"
+"end\n"
+"description = clean_white_space.call(entry.call(\"Description\"))\n"
+"summary, description = description.split(/\\n\\n+/, 2)"
+msgstr ""
+
+#: doc/text/tutorial.textile:50
+msgid ""
+"Gem::Specification.new do |s|\n"
+"  s.name = \"packnga\"\n"
+"  s.version = version\n"
+"  s.authors = authors\n"
+"  s.email = emails\n"
+"  s.summary = summary\n"
+"  s.description = description"
+msgstr ""
+
+#: doc/text/tutorial.textile:58
+msgid ""
+"  s.extra_rdoc_files = [\"README.textile\"]\n"
+"  s.files = [\"README.textile\", \"Rakefile\", \"Gemfile\"]\n"
+"  Dir.chdir(base_dir) do\n"
+"    s.files += Dir.glob(\"lib/**/*.rb\")\n"
+"    s.files += Dir.glob(\"doc/text/*.*\")\n"
+"  end"
+msgstr ""
+
+#: doc/text/tutorial.textile:65
+msgid ""
+"  s.homepage = \"http://groonga.rubyforge.org/\"\n"
+"  s.licenses = [\"LGPLv2\"]\n"
+"  s.require_paths = [\"lib\"]\n"
+"  s.rubyforge_project = \"groonga\""
+msgstr ""
+
+#: doc/text/tutorial.textile:70
+msgid ""
+"  s.add_runtime_dependency(\"rake\")\n"
+"  s.add_runtime_dependency(\"yard\")\n"
+"  s.add_runtime_dependency(\"rubyforge\")\n"
+"  s.add_runtime_dependency(\"gettext\")\n"
+"  s.add_development_dependency(\"test-unit\")\n"
+"  s.add_development_dependency(\"test-unit-notify\")\n"
+"  s.add_development_dependency(\"bundler\")\n"
+"  s.add_development_dependency(\"RedCloth\")\n"
+"end\n"
+"</pre>"
+msgstr ""
+
+#: doc/text/tutorial.textile:81
+msgid ""
+"If you set the attribute @rubyforge_project@ of @spec@ value,\n"
+"\"Packnga::ReleaseTask\" class creates tasks for rubyforge."
+msgstr ""
+"上記の @spec@ にて @rubyforge_project@ を設定すると、後述する @ReleaseTask@ "
+"クラスにて @Rubyforge@ 関係のタスクを定義するようになります。"
+
+#: doc/text/tutorial.textile:84
+msgid ""
+"Next, we should get @spec@ value in Rakefile from gemspec,\n"
+" so we write below source code in  Rakefile."
+msgstr ""
+"次に、Rakefileでgemspecファイルで作成したspecを取得します。\n"
+"次のようなコードをRakefileに書くとspecを取得できます。"
+
+#: doc/text/tutorial.textile:87
+msgid ""
+"<pre>\n"
+"!!!ruby\n"
+"helper = Bundler::GemHelper.new(base_dir)\n"
+"helper.install\n"
+"spec = helper.gemspec\n"
+"</pre>"
+msgstr ""
+
+# @param [Jeweler::Task] spec
+#: doc/text/tutorial.textile:94
+msgid "h3. Create spec with Jeweler::Tasks.new"
+msgstr "Jeweler::Task.newによって生成されるオブジェクト"
+
+#: doc/text/tutorial.textile:96
+msgid ""
+"If you want to create @spec@ with Jeweler::Tasks.new in your Rakefile,\n"
+"please see below example.\n"
+"This source code is written in old Packnga's Rakefile."
+msgstr ""
+"RakefileでJeweler::Tasks.newメソッドを使ってspecを作成する場合は、次の例を見"
+"てください。\n"
+"この例のコードはPackngaの以前のRakefileに書かれていたものです。"
+
+#: doc/text/tutorial.textile:100
+msgid ""
+"<pre>\n"
+"!!!ruby\n"
 "spec = nil\n"
 "Jeweler::Tasks.new do |_spec|\n"
 "  spec = _spec\n"
@@ -1600,35 +1794,24 @@ msgid ""
 "</pre>"
 msgstr ""
 
-#: doc/text/tutorial.textile:43
-msgid ""
-"If you set the attribute @rubyforge_project@ of @spec@,\n"
-"@Release Task@ create tasks for rubyforge.\n"
-"See below in detail."
-msgstr ""
-"上記の @spec@ にて @rubyforge_project@ を設定すると、後述する @ReleaseTask@ "
-"クラスにて @Rubyforge@ 関係のタスクを定義するようになります。"
-
-#: doc/text/tutorial.textile:47
+#: doc/text/tutorial.textile:124
 msgid "h2. Create tasks"
 msgstr "タスクの生成"
 
-#: doc/text/tutorial.textile:49
+#: doc/text/tutorial.textile:126
 msgid ""
 "Packnga's classes has charge of each tasks.\n"
-"They are given block with .new method in order to set parameters of tasks.\n"
 "This table describes Packnga's classes."
 msgstr ""
-"Packngaでは、それぞれのタスクを担当するクラスのオブジェクトを作成し、それに渡"
-"すブロックにてオプションを指定できます。Packngaのクラスと、そのクラスで定義で"
-"きるタスクは次のようになります。"
+"Packngaでは、それぞれのタスクを担当するクラスがあります。Packngaのクラスと、"
+"そのクラスで定義できるタスクは次のようになります。"
 
-#: doc/text/tutorial.textile:53
+#: doc/text/tutorial.textile:129
 msgid ""
 "- Packnga::DocumentTask :=\n"
 "  This class create tasks for generating references.\n"
-"  It define tasks to generate YARD documentation, po files, and \n"
-"  to translate documents by po files.\n"
+"  It define tasks to generate YARD documentation and po files.\n"
+"  It also defines tasks to translate documents with po files.\n"
 "  =:"
 msgstr ""
 "- Packnga::DocumentTask :=\n"
@@ -1637,13 +1820,13 @@ msgstr ""
 "ントの翻訳などを行うタスクを定義します。\n"
 "  =:"
 
-#: doc/text/tutorial.textile:59
+#: doc/text/tutorial.textile:135
 msgid ""
 "- Packnga::ReleaseTask :=\n"
 "  This class create tasks for uploading references and package and preparing "
 "to upload them.\n"
-"  It defines task to tag the current version in git and task to user-install "
-"gem for test.\n"
+"  It defines a task to tag the current version in git and a task to user-"
+"install gem for test.\n"
 "  It also create tasks for uploading rubyforge if you set "
 "@rubyforge_project@ in @spec@ .\n"
 "  =:"
@@ -1655,11 +1838,11 @@ msgstr ""
 "おくと、rubyforgeへアップロードするためのタスクも定義します。\n"
 "  =:"
 
-#: doc/text/tutorial.textile:65
-msgid "See below for creating tasks."
+#: doc/text/tutorial.textile:141
+msgid "Please see below for creating tasks."
 msgstr "それぞれ、タスクを生成するためには次のようにします。"
 
-#: doc/text/tutorial.textile:67
+#: doc/text/tutorial.textile:143
 msgid ""
 "<pre>\n"
 "Packnga::DocumentTask.new(spec)\n"
@@ -1667,28 +1850,31 @@ msgid ""
 "</pre>"
 msgstr ""
 
-#: doc/text/tutorial.textile:72
+#: doc/text/tutorial.textile:148
 msgid "h3. Set the document path."
 msgstr "ドキュメントのパスを設定する"
 
-#: doc/text/tutorial.textile:74
+#: doc/text/tutorial.textile:150
 msgid ""
 "You can set parameters with block when creating object of Packnga::"
 "DocumentTask and Releasetask.\n"
-"For example, We introduce to how to set document base directory.\n"
+"For example, We introduce to how to set base directory for document.\n"
 "Document is created in this directory.\n"
-"You can write Rakefile to set this directory path, see below.\n"
-"NOTE: Please set same path to each clasess."
+"You can write Rakefile to set this directory path, see below."
 msgstr ""
 "DocumentTaskやReleaseTaskのオブジェクトを生成する際に、ブロックにて変更できる"
-"パラメータがあります。ここでは例として、ドキュメントのベースとなるようなディ"
-"レクトリの設定を行います。このディレクトリの下に、ドキュメント関係のファイル"
-"が生成されるようになります。この値を独自に設定したい場合には次のように"
-"Rakefileに記述します。\n"
-"また、このベースディレクトリの値は両方のクラスにて同じものを指定してくださ"
-"い。\n"
+"パラメータがあります。\n"
+"ここでは例として、ドキュメントのベースとなるようなディレクトリの設定を行いま"
+"す。このディレクトリの下に、ドキュメント関係のファイルが生成されるようになり"
+"ます。この値を独自に設定したい場合には次のようにRakefileに記述します。"
 
-#: doc/text/tutorial.textile:80
+#: doc/text/tutorial.textile:155
+msgid "NOTE: Please set same path to each clasess."
+msgstr ""
+"また、このベースディレクトリの値は両方のクラスにて同じものを指定してくださ"
+"い。"
+
+#: doc/text/tutorial.textile:157
 msgid ""
 "<pre>\n"
 "Packnga::DocumentTask.new(spec) do |task|\n"
@@ -1696,7 +1882,7 @@ msgid ""
 "end"
 msgstr ""
 
-#: doc/text/tutorial.textile:85
+#: doc/text/tutorial.textile:162
 msgid ""
 "Packnga::ReleaseTask.new(spec) do |task|\n"
 "  task.base_dir = \"doc/\"\n"
@@ -1704,7 +1890,7 @@ msgid ""
 "</pre>"
 msgstr ""
 
-#: doc/text/tutorial.textile:90
+#: doc/text/tutorial.textile:167
 msgid ""
 "You can set other parameters.\n"
 "Please see Packnga's reference manual in detail."
@@ -1717,7 +1903,7 @@ msgstr ""
 #: lib/packnga/release-task.rb:3 lib/packnga/version.rb:3
 #: lib/packnga/yard-task.rb:3
 msgid ""
-"Copyright (C) 2011  yoshihara haruka <yoshihara@clear-code.com>\n"
+"Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>\n"
 "Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
 
@@ -1756,7 +1942,7 @@ msgstr ""
 #: lib/packnga/document-task.rb:25
 msgid ""
 "This class creates tasks for document.\n"
-"They generate YARD doucment or references."
+"They generate YARD document or references."
 msgstr ""
 "このクラスはドキュメント関連のタスクを生成します。\n"
 "これらタスクはYARDを使ってドキュメントやリファレンスを作成します。"
@@ -1766,29 +1952,22 @@ msgstr ""
 msgid ""
 "Defines tasks to generate YARD documentation\n"
 "and to translate references."
-msgstr ""
-"YARDによるドキュメントを生成したりリファレンスを翻訳するタスクを定義します。"
+msgstr "YARDによるドキュメントを生成したりリファレンスを翻訳するタスクを定義します"
 
-# @yieldparam [Packnga::DocumentTask] _self
-# @yieldparam [Packnga::ReleaseTask] _self
+# @param [Gem::Specification] spec
 #: lib/packnga/document-task.rb:33 lib/packnga/release-task.rb:53
-msgid "the object that the method was called on"
-msgstr ""
+msgid "specification for your package"
+msgstr "あなたのパッケージについての詳細を示すオブジェクト"
+
+# @return [DocumentTask]
+#: lib/packnga/document-task.rb:33
+msgid "a new instance of DocumentTask"
+msgstr "DocumentTaskのオブジェクト"
 
 # @param [Gem::Specification]
 # @param [Jeweler::Task]
 #: lib/packnga/document-task.rb:33 lib/packnga/release-task.rb:53
 msgid "tag|param|spec"
-msgstr ""
-
-# @param [Jeweler::Task] spec
-#: lib/packnga/document-task.rb:33
-msgid "created object by Jeweler::Task.new"
-msgstr "Jeweler::Task.newによって生成されるオブジェクト"
-
-# @return [DocumentTask]
-#: lib/packnga/document-task.rb:33
-msgid "a new instance of DocumentTask"
 msgstr ""
 
 # @yieldparam [Packnga::DocumentTask]
@@ -1797,12 +1976,16 @@ msgstr ""
 msgid "tag|yieldparam|_self"
 msgstr ""
 
+# @yieldparam [Packnga::DocumentTask] _self
+# @yieldparam [Packnga::ReleaseTask] _self
+#: lib/packnga/document-task.rb:33 lib/packnga/release-task.rb:53
+msgid "the object that the method was called on"
+msgstr ""
+
 # Packnga::DocumentTask#base_dir=
 #: lib/packnga/document-task.rb:43
 msgid "Sets base directory for documents. Default value is \"doc\"."
-msgstr ""
-"ドキュメントのベースとなるディレクトリを設定します。デフォルトの値は\"doc\"で"
-"す。"
+msgstr "ドキュメントのベースとなるディレクトリを設定します。デフォルトの値は\"doc\"です"
 
 # @param [String]
 #: lib/packnga/document-task.rb:44
@@ -1812,29 +1995,26 @@ msgstr ""
 # @param [String] dir
 #: lib/packnga/document-task.rb:44
 msgid "base direcory path"
-msgstr ""
+msgstr "ベースディレクトリのパス"
 
 # Packnga::DocumentTask#yard
 #: lib/packnga/document-task.rb:51
 msgid "Runs block to task for YARD documentation."
-msgstr ""
-"与えられたブロックを実行して、YARDによるドキュメントのためのタスクに関する設"
-"定をします。"
+msgstr "与えられた場合はブロックを実行して、YARDによるドキュメントのためのタスクに関する設定をします"
 
 # Packnga::DocumentTask#reference
 #: lib/packnga/document-task.rb:56
 msgid "Runs block to tasks for references."
-msgstr ""
-"与えられたブロックを実行して、リファレンス関連のタスクに関する設定をします。"
+msgstr "与えられた場合はブロックを実行して、リファレンス関連のタスクに関する設定をします"
 
 # @since
-#: lib/packnga/document-task.rb:74 lib/packnga/reference-task.rb:352
-#: lib/packnga/release-task.rb:228 lib/packnga/yard-task.rb:121
+#: lib/packnga/document-task.rb:110 lib/packnga/reference-task.rb:363
+#: lib/packnga/release-task.rb:228 lib/packnga/yard-task.rb:112
 msgid "0.9.0"
 msgstr ""
 
 # Packnga::ReferenceTask
-#: lib/packnga/reference-task.rb:25
+#: lib/packnga/reference-task.rb:26
 msgid ""
 "This class creates reference tasks.\n"
 "They generate, translate and prepare to publish references."
@@ -1842,21 +2022,113 @@ msgstr ""
 "このクラスはリファレンス関係のタスクを生成します。これらタスクはリファレンス"
 "の生成や翻訳を行い、またリファレンスを公開するために必要な準備を行います。"
 
+# Packnga::ReleaseTask#base_dir=
+#: lib/packnga/reference-task.rb:34 lib/packnga/yard-task.rb:34
+msgid "This attribute is used to set path of base directory of document."
+msgstr "この属性はドキュメントのベースディレクトリを表します。"
+
 # @param [String] value
 # @return [String]
-#: lib/packnga/reference-task.rb:33 lib/packnga/release-task.rb:36
+#: lib/packnga/reference-task.rb:35 lib/packnga/release-task.rb:36
+#: lib/packnga/yard-task.rb:35
 msgid "path of base directory of document"
 msgstr "ドキュメントのベースディレクトリのパス"
 
+# Packnga::YARDTask#readme
+#: lib/packnga/reference-task.rb:38
+msgid "This attribute is used to set README file."
+msgstr "この属性はyardocに対して設定するReadmeファイルのパスを設定します。"
+
+# @return [String]
+#: lib/packnga/reference-task.rb:39 lib/packnga/yard-task.rb:31
+msgid "path of readme file"
+msgstr "Readmeファイルのパス"
+
+# Packnga::YARDTask#readme
+#: lib/packnga/reference-task.rb:42 lib/packnga/yard-task.rb:38
+msgid "This attribute is used to set source files for document."
+msgstr "この属性はyardocに対して設定するソースファイルのパスを設定します。"
+
+# @return [Array<String>]
+#: lib/packnga/reference-task.rb:43 lib/packnga/yard-task.rb:39
+msgid "target source files"
+msgstr "ドキュメント対象となるソースファイルのパスからなる配列"
+
+# Packnga::YARDTask#readme
+#: lib/packnga/reference-task.rb:46 lib/packnga/yard-task.rb:42
+msgid "This attribute is used to set text files for document."
+msgstr "この属性はyardocに対して設定するテキストファイルのパスを設定します。"
+
+# @return [Array<String>]
+#: lib/packnga/reference-task.rb:47 lib/packnga/yard-task.rb:43
+msgid "target text files"
+msgstr "ドキュメント対象となるファイルのパスの配列"
+
 # @return [ReferenceTask]
-#: lib/packnga/reference-task.rb:36
+#: lib/packnga/reference-task.rb:50
 msgid "a new instance of ReferenceTask"
-msgstr ""
+msgstr "ReferenceTaskのオブジェクト"
 
 # Packnga::ReferenceTask#htaccess
-#: lib/packnga/reference-task.rb:61
+#: lib/packnga/reference-task.rb:72
 msgid "path of .htaccess."
-msgstr ".htaccessファイルのパス"
+msgstr ".htaccessファイルのパスを返します。"
+
+# YARD
+#: lib/packnga/reference-task.rb:390
+msgid ""
+"XXX: This module is the re-definition of YARD module.\n"
+"this module should be deleted in the next release of YARD."
+msgstr ""
+
+# @param [Hash]
+# @param [String]
+#: lib/packnga/reference-task.rb:604 lib/packnga/reference-task.rb:730
+#: lib/packnga/reference-task.rb:732 lib/packnga/release-task.rb:33
+#: lib/packnga/release-task.rb:36 lib/packnga/release-task.rb:39
+#: lib/packnga/release-task.rb:42 lib/packnga/release-task.rb:46
+msgid "tag|param|value"
+msgstr ""
+
+# @param value
+#: lib/packnga/reference-task.rb:604
+msgid "the value to set the attribute attributes to."
+msgstr ""
+
+# YARD::CodeObjects::ExtraFileObject#attributes=
+#: lib/packnga/reference-task.rb:605
+msgid "Sets the attribute attributes"
+msgstr ""
+
+# YARD::CodeObjects::ExtraFileObject#locale
+#: lib/packnga/reference-task.rb:606
+msgid "Returns the value of attribute locale"
+msgstr ""
+
+# @return [ExtraFileObject]
+#: lib/packnga/reference-task.rb:607
+msgid "a new instance of ExtraFileObject"
+msgstr ""
+
+# @param value
+#: lib/packnga/reference-task.rb:730 lib/packnga/reference-task.rb:732
+msgid "the value to set the attribute po_dir to."
+msgstr ""
+
+# YARD::Registry.po_dir
+#: lib/packnga/reference-task.rb:731 lib/packnga/reference-task.rb:734
+msgid "Returns the value of attribute po_dir"
+msgstr ""
+
+# YARD::Registry.po_dir=
+#: lib/packnga/reference-task.rb:731 lib/packnga/reference-task.rb:733
+msgid "Sets the attribute po_dir"
+msgstr ""
+
+# @return [RegistryStore]
+#: lib/packnga/reference-task.rb:741
+msgid "a new instance of RegistryStore"
+msgstr ""
 
 # Packnga::ReleaseTask
 #: lib/packnga/release-task.rb:23
@@ -1879,14 +2151,6 @@ msgstr ""
 msgid "This attribute is path of HTML files written version and release date."
 msgstr ""
 "この属性はバージョンやリリース日が書かれたHTMLファイルのパスを示します。"
-
-# @param [Hash]
-# @param [String]
-#: lib/packnga/release-task.rb:33 lib/packnga/release-task.rb:36
-#: lib/packnga/release-task.rb:39 lib/packnga/release-task.rb:42
-#: lib/packnga/release-task.rb:46
-msgid "tag|param|value"
-msgstr ""
 
 # @param [String] value
 #: lib/packnga/release-task.rb:33
@@ -1948,15 +2212,10 @@ msgstr ""
 "rubyforge_projectを設定していると、rubyforgeへのアップロードするためのタスク"
 "も定義します。"
 
-# @param [Jeweler::Task] spec
-#: lib/packnga/release-task.rb:53
-msgid "created by Jeweler::Task.new."
-msgstr "Jeweler::Task.newによって生成されるオブジェクト"
-
 # @return [ReleaseTask]
 #: lib/packnga/release-task.rb:53
 msgid "a new instance of ReleaseTask"
-msgstr ""
+msgstr "ReleaseTaskのオブジェクト"
 
 # Packnga::VERSION
 #: lib/packnga/version.rb:21
@@ -1972,37 +2231,30 @@ msgstr ""
 "このクラスはYARD関連のタスクを定義します。このタスクはYARDを用いてドキュメン"
 "トを生成します。"
 
-# @return [String]
-#: lib/packnga/yard-task.rb:32
-msgid "path of base directory of document."
-msgstr "ドキュメントのベースディレクトリへのパス"
+# Packnga::YARDTask#readme
+#: lib/packnga/yard-task.rb:30
+msgid "This attribute is used to set README file to yardoc task."
+msgstr "この属性はyardocに対して設定するReadmeファイルのパスを設定します"
 
 # @return [Array<String>]
-#: lib/packnga/yard-task.rb:35
-msgid "document target files."
-msgstr "ドキュメント対象となるファイルのパスからなる配列"
-
-# @return [Array<String>]
-#: lib/packnga/yard-task.rb:38
-msgid "custom yardoc command line options."
+#: lib/packnga/yard-task.rb:46
+msgid "custom yardoc command line options"
 msgstr "yardocコマンド用の追加されたオプション"
 
 # @return [YARDTask]
-#: lib/packnga/yard-task.rb:41
+#: lib/packnga/yard-task.rb:49
 msgid "a new instance of YARDTask"
-msgstr ""
-
-# Packnga::YARDTask#readme
-#: lib/packnga/yard-task.rb:58
-msgid "This attribute is used to sets README file to yardoc task."
-msgstr "この属性はyardocに対して設定するReadmeファイルのパスを設定します"
-
-# @return [String]
-#: lib/packnga/yard-task.rb:59
-msgid "path to readme file"
-msgstr "Readmeファイルのパス"
+msgstr "YARDTaskのオブジェクト"
 
 # Packnga::YARDTask#before_define
-#: lib/packnga/yard-task.rb:75
+#: lib/packnga/yard-task.rb:71
 msgid "Regists yardoc parameters with block."
-msgstr "与えられたブロックをyardocにパラメータを設定するものとして登録します"
+msgstr "与えられたブロックをyardocにパラメータを設定するものとして登録します。"
+
+# @param [Jeweler::Task] spec
+#~ msgid "created by Jeweler::Task.new."
+#~ msgstr "Jeweler::Task.newによって生成されるオブジェクト"
+
+# @return [String]
+#~ msgid "path of base directory of document."
+#~ msgstr "ドキュメントのベースディレクトリへのパス"
