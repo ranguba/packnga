@@ -45,4 +45,4 @@ h2. Mailing list
 h2. Thanks
 
   * SHIMADA Koji: send a patch.
-
+  * tetradice: report bugs.
