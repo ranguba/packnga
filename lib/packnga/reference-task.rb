@@ -170,6 +170,7 @@ module Packnga
     end
 
     def define_translate_task
+      directory reference_base_dir.to_s
       namespace :translate do
         @translate_languages.each do |language|
           po_file = "#{@po_dir}/#{language}.po"
