@@ -375,24 +375,6 @@ module Packnga
   end
 end
 
-# XXX: This module is the patch to translate documents.
-# This module should be deleted after
-# https://github.com/lsegal/yard/pull/594 is merged and released.
-# @private
-module YARD
-  # @private
-  module I18n
-    # @private
-    class Locale
-      def translate(message)
-        return message if @messages[message].nil?
-        return message if @messages[message].empty?
-        @messages[message]
-      end
-    end
-  end
-end
-
 # XXX: This module is the re-definition of YARD module.
 # this module should be deleted in the next release of YARD.
 # @private
