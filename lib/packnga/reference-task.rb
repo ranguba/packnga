@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -76,7 +77,7 @@ module Packnga
     private
     def set_default_values
       @base_dir ||= Pathname.new("doc")
-      @translate_languages ||= [:ja]
+      @translate_languages ||= []
       @supported_languages = [:en, *@translate_languages]
       @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
       @po_dir = "#{@base_dir}/po"
