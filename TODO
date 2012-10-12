@@ -1,3 +1,5 @@
 * reference task
   * Fix tests
   * Add API to change translate_languages
+  * Fix a bug that reference:translate doesn't work without doc/reference/
+    directory.
