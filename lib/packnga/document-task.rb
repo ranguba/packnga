@@ -54,6 +54,8 @@ module Packnga
       @reference_task.original_language = language
     end
 
+    # Sets translate languages for document.
+    # @param [String] languages languages to translate
     def translate_languages=(languages)
       languages = [languages] if languages.instance_of?(String)
       @reference_task.translate_languages = languages
