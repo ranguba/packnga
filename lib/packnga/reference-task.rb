@@ -87,7 +87,11 @@ module Packnga
     def set_default_values
       @base_dir ||= Pathname.new("doc")
       @original_language ||= Locale.current.to_s
-      @translate_languages ||= []
+      if not @original_language == "en"
+        @translate_languages ||= ["en"]
+      else
+        @translate_languages ||= []
+      end
       @supported_languages = [@original_language, *@translate_languages]
       @po_dir = "#{@base_dir}/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
