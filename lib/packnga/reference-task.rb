@@ -62,7 +62,6 @@ module Packnga
       @readme = nil
       @extra_files = nil
       @files = nil
-      @html_files = nil
       @po_dir = nil
       @pot_file = nil
     end
@@ -83,7 +82,6 @@ module Packnga
       @base_dir ||= Pathname.new("doc")
       @translate_languages ||= []
       @supported_languages = [:en, *@translate_languages]
-      @html_files = FileList[(doc_en_dir + "**/*.html").to_s].to_a
       @po_dir = "#{@base_dir}/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
       @extra_files = @text_files
