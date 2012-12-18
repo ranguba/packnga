@@ -47,6 +47,11 @@ module Packnga
     # @return [Array<String>] target text files
     attr_accessor :text_files
 
+    # This attribute is used to set the language you wrote original
+    # document.
+    # @return [String] language you used to write document
+    attr_accessor :original_language
+
     # This attribute is used to set languages for tnanslated document.
     # @return [Array<String>] target languages
     attr_accessor :translate_languages
@@ -55,6 +60,7 @@ module Packnga
     def initialize(spec)
       @spec = spec
       @base_dir = nil
+      @original_language = nil
       @translate_languages = nil
       @supported_languages = nil
       @source_files = nil
@@ -80,8 +86,9 @@ module Packnga
     private
     def set_default_values
       @base_dir ||= Pathname.new("doc")
+      @original_language ||= Locale.current.to_s
       @translate_languages ||= []
-      @supported_languages = [:en, *@translate_languages]
+      @supported_languages = [@original_language, *@translate_languages]
       @po_dir = "#{@base_dir}/po"
       @pot_file = "#{@po_dir}/#{@spec.name}.pot"
       @extra_files = @text_files

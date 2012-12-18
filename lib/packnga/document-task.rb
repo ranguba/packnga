@@ -47,6 +47,13 @@ module Packnga
       @reference_task.base_dir = dir
     end
 
+    # Sets original language which you wrote document.
+    # Default value is your current locale (Locale.current.to_s).
+    # @param [String] language language you wrote document
+    def original_language=(language)
+      @reference_task.original_language = language
+    end
+
     def translate_languages=(languages)
       languages = [languages] if languages.instance_of?(String)
       @reference_task.translate_languages = languages
