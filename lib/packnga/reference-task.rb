@@ -93,10 +93,6 @@ module Packnga
       @base_dir + "reference"
     end
 
-    def doc_en_dir
-      @base_dir + "reference/en"
-    end
-
     def html_base_dir
       @base_dir + "html"
     end
