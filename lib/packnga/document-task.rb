@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2011-2012  Haruka Yoshihara <yoshihara@clear-code.com>
 # Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
@@ -45,6 +45,11 @@ module Packnga
       dir = Pathname.new(dir)
       @yard_task.base_dir = dir
       @reference_task.base_dir = dir
+    end
+
+    def translate_languages=(languages)
+      languages = [languages] if languages.instance_of?(String)
+      @reference_task.translate_languages = languages
     end
 
     # Runs block to task for YARD documentation.

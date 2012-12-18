@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2011-2012  Haruka Yoshihara <yoshihara@clear-code.com>
 # Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
@@ -46,6 +46,10 @@ module Packnga
     # This attribute is used to set text files for document.
     # @return [Array<String>] target text files
     attr_accessor :text_files
+
+    # This attribute is used to set languages for tnanslated document.
+    # @return [Array<String>] target languages
+    attr_accessor :translate_languages
 
     # @private
     def initialize(spec)

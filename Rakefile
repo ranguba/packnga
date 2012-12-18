@@ -40,7 +40,9 @@ Gem::PackageTask.new(spec) do |pkg|
   pkg.need_tar_gz = true
 end
 
-Packnga::DocumentTask.new(spec)
+Packnga::DocumentTask.new(spec) do |task|
+  task.translate_languages = "ja"
+end
 
 Packnga::ReleaseTask.new(spec) do |task|
   task.index_html_dir = "../rroonga/doc/html"

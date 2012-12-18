@@ -26,16 +26,17 @@ class ReferenceTaskTest < Test::Unit::TestCase
   def test_po_update_no_po_file_exists
     Dir.mktmpdir do |base_dir|
       package_name = "packnga"
+      language = "ja"
 
       spec = Gem::Specification.new do |_spec|
         _spec.name = package_name
       end
 
       Packnga::DocumentTask.new(spec) do |task|
+        task.translate_languages = language
         task.base_dir = base_dir
       end
 
-      language = "ja"
       po_dir = "#{base_dir}/po"
       pot_file = "#{po_dir}/#{package_name}.pot"
       po_file = "#{po_dir}/#{language}.po"
