@@ -62,7 +62,6 @@ class DocumentTaskTest < Test::Unit::TestCase
       translate_languages = options[:translate_languages]
       spec = Gem::Specification.new
       Packnga::DocumentTask.new(spec) do |task|
-        task.translate_languages = []
         task.translate_languages = translate_languages
       end
     end
