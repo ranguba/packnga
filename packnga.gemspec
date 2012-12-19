@@ -55,6 +55,7 @@ Gem::Specification.new do |s|
   Dir.chdir(base_dir) do
     s.files += Dir.glob("lib/**/*.rb")
     s.files += Dir.glob("doc/text/*.*")
+    s.test_files = Dir.glob("test/**/*.rb")
   end
 
   s.homepage = "http://groonga.rubyforge.org/"
