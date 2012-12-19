@@ -36,6 +36,38 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
+  class TranslateLanguagesTest < self
+    def test_single
+      translate_language = "ja"
+      options = {:translate_languages => translate_language}
+      document_task = create_document_task(options)
+
+      document_task.reference do |reference_task|
+        assert_equal([translate_language], reference_task.translate_languages)
+      end
+    end
+
+    def test_multi
+      translate_languages = ["ja", "uk"]
+      options = {:translate_languages => translate_languages}
+      document_task = create_document_task(options)
+
+      document_task.reference do |reference_task|
+        assert_equal(translate_languages, reference_task.translate_languages)
+      end
+    end
+
+    private
+    def create_document_task(options)
+      translate_languages = options[:translate_languages]
+      spec = Gem::Specification.new
+      Packnga::DocumentTask.new(spec) do |task|
+        task.translate_languages = []
+        task.translate_languages = translate_languages
+      end
+    end
+  end
+
   class ReadmeTest < self
     def setup
       @readme = "README.textile"
