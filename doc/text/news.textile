@@ -18,7 +18,8 @@ h3. Changes
    instead of Japanese.
  * For Ranguba project:
    * [template] Removed needless Piwik tag.
-   * [template] Followed the move from rubyforge.org to ranguba.org.
+   * Followed the move from rubyforge.org to ranguba.org.
+   * [ReleaseTask] Removed rubyforge support.
 
 h3. Fixes
 
