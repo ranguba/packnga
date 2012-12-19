@@ -50,7 +50,7 @@ Packnga::DocumentTask.new(spec) do |task|
 end
 
 Packnga::ReleaseTask.new(spec) do |task|
-  task.index_html_dir = "../rroonga/doc/html"
+  task.index_html_dir = "../ranguba.org"
 end
 
 desc "Run tests."

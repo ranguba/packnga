@@ -89,7 +89,7 @@ module Packnga
             raise ArgumentError, "Specify option(s) of #{empty_options.join(", ")}."
           end
           @index_html_dir = Pathname(@index_html_dir)
-          indexes = [@index_html_dir + "index.html", @index_html_dir + "index.html.ja"]
+          indexes = [@index_html_dir + "index.html", @index_html_dir + "ja/index.html"]
           indexes.each do |index|
             content = replaced_content = File.read(index)
             [[old_version, new_version],

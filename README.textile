@@ -35,8 +35,8 @@ h2. Install
 
 h2. Documents
 
-  * "Reference manual in English":http://groonga.rubyforge.org/packnga/en/
-  * "Reference manual in Japanese":http://groonga.rubyforge.org/packnga/ja/
+  * "Reference manual in English":http://ranguba.org/packnga/en/
+  * "Reference manual in Japanese":http://ranguba.org/packnga/ja/
 
 h2. Mailing list
 
