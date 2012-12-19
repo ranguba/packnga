@@ -67,6 +67,18 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
   end
 
+  def test_original_language
+    original_language = "original_language"
+    spec = Gem::Specification.new
+    document_task = Packnga::DocumentTask.new(spec) do |task|
+      task.original_language = original_language
+    end
+
+    document_task.reference do |reference_task|
+      assert_equal(original_language, reference_task.original_language)
+    end
+  end
+
   class ReadmeTest < self
     def setup
       @readme = "README.textile"
