@@ -33,6 +33,10 @@ require "packnga"
 
 helper = Bundler::GemHelper.new(base_dir)
 helper.install
+def helper.version_tag
+  version
+end
+
 spec = helper.gemspec
 Rake::Task["release"].prerequisites.clear
 
