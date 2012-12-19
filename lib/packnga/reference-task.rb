@@ -156,8 +156,8 @@ module Packnga
               file po_file => @files do |t|
                 current_pot_file = "tmp.pot"
                 create_pot_file(current_pot_file)
-                GetText.msgmerge(po_file, current_pot_file,
-                                 "#{@spec.name} #{Packnga::VERSION}")
+                GetText::Tools::MsgMerge.run(po_file, current_pot_file,
+                                             "-o", po_file)
                 FileUtils.rm_f(current_pot_file)
               end
             else
