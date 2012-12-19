@@ -1,5 +1,30 @@
 h1. NEWS
 
+h2. 0.9.6: 2012-12-19
+
+h3. Improvements
+
+ * [ReferenceTask] Used GetText::Tools::MsgMerge.run instead of
+   GNU msgmerge.
+ * [DocumentTask] Added #original_language for translation
+   target. Its default value is user's current locale.
+ * [DocumentTask] Added #translate_languages to translate document.
+   Its default value is English if user's current locale isn't it,
+   otherwise default value is not specified.
+
+h3. Changes
+
+ * Use user's current locale as the default translation targets
+   instead of Japanese.
+ * For Ranguba project:
+   * [template] Removed needless Piwik tag.
+   * [template] Followed the move from rubyforge.org to ranguba.org.
+
+h3. Fixes
+
+ * [ReferenceTask] Removed needless patch for YARD. This patch is
+   needless from YARD 0.8.3.
+
 h2. 0.9.5: 2012-08-30
 
 h3. Improvements
