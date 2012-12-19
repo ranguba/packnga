@@ -62,14 +62,12 @@ Gem::Specification.new do |s|
     s.files += Dir.glob("doc/text/*.*")
   end
 
-  s.homepage = "http://groonga.rubyforge.org/"
+  s.homepage = "http://ranguba.org/"
   s.licenses = ["LGPLv2"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = "groonga"
 
   s.add_runtime_dependency("rake")
   s.add_runtime_dependency("yard")
-  s.add_runtime_dependency("rubyforge")
   s.add_runtime_dependency("gettext")
   s.add_development_dependency("test-unit")
   s.add_development_dependency("test-unit-notify")
@@ -77,9 +75,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency("RedCloth")
 end
 </pre>
-
-If you set the attribute @rubyforge_project@ of @spec@ value,
-"Packnga::ReleaseTask" class creates tasks for rubyforge.
 
 Next, we should get @spec@ value in Rakefile from gemspec,
  so we write below source code in  Rakefile.
@@ -104,8 +99,7 @@ Jeweler::Tasks.new do |_spec|
   spec = _spec
   spec.name = "packnga"
   spec.version = version
-  spec.rubyforge_project = "groonga"
-  spec.homepage = "http://groonga.rubyforge.org/"
+  spec.homepage = "http://ranguba.org/"
   spec.authors = ["Haruka Yoshihara", "Kouhei Sutou"]
   spec.email = ["yoshihara@clear-code.com", "kou@clear-code.com"]
   entries = File.read("README.textile").split(/^h2\.\s(.*)$/)
@@ -135,7 +129,6 @@ This table describes Packnga's classes.
 - Packnga::ReleaseTask :=
   This class create tasks for uploading references and package and preparing to upload them.
   It defines a task to tag the current version in git and a task to user-install gem for test.
-  It also create tasks for uploading rubyforge if you set @rubyforge_project@ in @spec@ .
   =:
 
 Please see below for creating tasks.
