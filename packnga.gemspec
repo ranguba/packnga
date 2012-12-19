@@ -65,7 +65,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("rake")
   s.add_runtime_dependency("yard")
   s.add_runtime_dependency("rubyforge")
-  s.add_runtime_dependency("gettext")
+  s.add_runtime_dependency("gettext", ">= 2.3.6")
   s.add_development_dependency("test-unit")
   s.add_development_dependency("test-unit-notify")
   s.add_development_dependency("test-unit-rr")
