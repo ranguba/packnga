@@ -1,0 +1,3 @@
+* reference-task
+** Fix the yard's bug that documentation using @!macro can't be
+   translate with PO file, and use it.
