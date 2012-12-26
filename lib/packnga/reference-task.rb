@@ -52,6 +52,8 @@ module Packnga
     # @return [String] language you used to write document
     #
     # @see DocumentTask#original_language=
+    #
+    # @since 0.9.6
     attr_accessor :original_language
 
     # This attribute is used to set languages for translated document.
@@ -63,6 +65,8 @@ module Packnga
     # @see DocumentTask#translate_language=
     #   See this page to specifiy a single language to this attribute.
     # @return [Array<String>] target languages
+    #
+    # @since 0.9.6
     attr_accessor :translate_languages
 
     # @private
