@@ -53,7 +53,7 @@ module Packnga
     attr_accessor :original_language
 
     # This attribute is used to set languages for tnanslated document.
-    # If original_language isn't one, its default value is English.
+    # If original_language isn't English, its default value is one.
     # Otherwise, it is not specified.
     # @return [Array<String>] target languages
     attr_accessor :translate_languages
