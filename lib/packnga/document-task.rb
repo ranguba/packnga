@@ -86,7 +86,6 @@ module Packnga
     end
 
     # Sets translate languages for document.
-    # They are used to set languages for translated document.
     # This method receives Array of Strings as each language code.
     #
     # @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
