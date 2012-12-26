@@ -88,7 +88,7 @@ module Packnga
     private
     def set_default_values
       @base_dir ||= Pathname.new("doc")
-      @original_language ||= current_language
+      @original_language ||= "en"
       if @original_language == "en"
         @translate_languages ||= []
       else
@@ -100,18 +100,6 @@ module Packnga
       @extra_files = @text_files
       @extra_files += [@readme] if @readme
       @files = @source_files + @extra_files
-    end
-
-    def current_language
-      locale = Locale.current
-      language = locale.language
-      region = locale.region
-
-      if region.nil?
-        language
-      else
-        "#{language}_#{region}"
-      end
     end
 
     def reference_base_dir
