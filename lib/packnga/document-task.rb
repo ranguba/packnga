@@ -54,7 +54,7 @@ module Packnga
       @reference_task.original_language = language
     end
 
-    # Sets translate a language for document.
+    # Sets a translate language for document.
     # @param [String] language language to translate
     def translate_language=(language)
       self.translate_languages = [language]
