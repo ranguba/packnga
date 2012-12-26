@@ -57,6 +57,11 @@ module Packnga
     # This attribute is used to set languages for translated document.
     # If original_language isn't English, its default value is one.
     # Otherwise, it is not specified.
+    #
+    # @see DocumentTask#translate_languages=
+    #   See this page to specifiy multiple languages to this attribute.
+    # @see DocumentTask#translate_language=
+    #   See this page to specifiy a single language to this attribute.
     # @return [Array<String>] target languages
     attr_accessor :translate_languages
 
