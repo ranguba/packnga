@@ -74,7 +74,6 @@ module Packnga
     #   If the language specified by {#original_language=} isn't
     #   English, its default value is one.
     #   Otherwise, it is not specified.
-    # @!macro document-task.translate_lanuguage.default_value
     #
     # @see DocumentTask#translate_languages=
     #   #translate_languages= receives Array of String target languages codes.
