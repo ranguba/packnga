@@ -55,13 +55,51 @@ module Packnga
     end
 
     # Sets a translate language for document.
-    # @param [String] language language to translate
+    # This method receives String as language code.
+    #
+    # @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+    #   see "639-1" row in this page for lanugage codes.
+    #
+    # @example Specify Japanese.
+    #   DocumentTask.new(spec) do |task|
+    #     task.translate_language = "ja"
+    #   end
+    #
+    # @!macro [new] document-task.translate_lanuguage.default_value
+    #   If the language specified by {#original_language=} isn't
+    #   English, its default value is one.
+    #   Otherwise, it is not specified.
+    # @!macro document-task.translate_lanuguage.default_value
+    #
+    # @see DocumentTask#translate_languages=
+    #   #translate_languages= receives Array of String target languages codes.
+    # @param [String] language target language code for translated document
+    #
+    # @since 0.9.7
     def translate_language=(language)
       self.translate_languages = [language]
     end
 
     # Sets translate languages for document.
-    # @param [Array<String>] languages languages to translate
+    # They are used to set languages for translated document.
+    # This method receives Array of Strings as each language code.
+    #
+    # @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+    #   see "639-1" row in this page for lanugage codes.
+    #
+    # @example Sets Japanese and English.
+    #   DocumentTask.new(spec) do |task|
+    #     task.translate_languages = ["ja", "en"]
+    #   end
+    #
+    # @!macro document-task.translate_lanuguage.default_value
+    #
+    # @see DocumentTask#translate_language=
+    #   #translate_language= receives String as target language code.
+    # @param [Array<String>] languages
+    #   target language codes for translated document
+    #
+    # @since 0.9.6
     def translate_languages=(languages)
       @reference_task.translate_languages = languages
     end
