@@ -50,6 +50,8 @@ module Packnga
     # Sets original language which you wrote document.
     # Default value is your current locale (Locale.current.to_s).
     # @param [String] language language you wrote document
+    #
+    # @since 0.9.6
     def original_language=(language)
       @reference_task.original_language = language
     end
