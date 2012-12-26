@@ -48,7 +48,10 @@ module Packnga
     end
 
     # Sets original language which you wrote document.
-    # Default value is your current locale (Locale.current.to_s).
+    # Default value is "en" (as English).
+    # Specified value is used to define language for translation.
+    #
+    # @see DocumentTask#translate_languages= #translate_language(s)= is used to specify languages for translation.
     # @param [String] language language you wrote document
     #
     # @since 0.9.6

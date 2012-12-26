@@ -48,8 +48,10 @@ module Packnga
     attr_accessor :text_files
 
     # This attribute is used to set the language you wrote original
-    # document. Its default value is your current locale.
+    # document. Its default value is "en" (English).
     # @return [String] language you used to write document
+    #
+    # @see DocumentTask#original_language=
     attr_accessor :original_language
 
     # This attribute is used to set languages for translated document.
