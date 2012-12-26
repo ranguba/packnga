@@ -33,7 +33,7 @@ class ReferenceTaskTest < Test::Unit::TestCase
       end
 
       Packnga::DocumentTask.new(spec) do |task|
-        task.translate_languages = language
+        task.translate_language = language
         task.base_dir = base_dir
       end
 

@@ -39,7 +39,7 @@ class DocumentTaskTest < Test::Unit::TestCase
   class TranslateLanguagesTest < self
     def test_single
       translate_language = "ja"
-      options = {:translate_languages => translate_language}
+      options = {:translate_language => translate_language}
       document_task = create_document_task(options)
 
       document_task.reference do |reference_task|
@@ -60,9 +60,15 @@ class DocumentTaskTest < Test::Unit::TestCase
     private
     def create_document_task(options)
       translate_languages = options[:translate_languages]
+      translate_language = options[:translate_language]
+
       spec = Gem::Specification.new
       Packnga::DocumentTask.new(spec) do |task|
-        task.translate_languages = translate_languages
+        if translate_languages.nil?
+          task.translate_language = translate_language
+        else
+          task.translate_languages = translate_languages
+        end
       end
     end
   end
