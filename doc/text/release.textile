@@ -9,14 +9,20 @@ h2. news.textileに変更点のまとめ
 $ git log -p --reverse （前回のリリースバージョン)..
 </pre>
 
-ログを"Author:"で検索しながら、ユーザにとって知る必要があるもの（ユーザに見える情報）のコミットログのみを抜き出す。
+ログを"Author:"で検索しながら、ユーザにとって知る必要があるもののコミットログのみを抜き出す。
+
+ユーザにとって必要な情報とは、仕様の変更や新しい機能の追加など、ユーザーがリリースするライブラリを使う上で影響ある情報である。
+逆に、リファクタリング、テストの変更、変数名の変更など、ユーザーが直接意識しない部分については書く必要はない。
+
 次に、抜き出したコミットログを１つずつ見て、その先頭にカテゴリ名がある場合は、":"を削除してカテゴリ名を"["と"]"で囲む。
 カテゴリ名を除いたログの先頭にある単語を過去形にし、頭文字を大文字にする。
 その後、ログを次のように分類する。
-機能などに新しく追加されたものに関してはImprovement,
-動作の変更などはChanges,
-バグの修正など前バージョンまでにあった問題を修正したものはFixesに記述する。
-また、コミットログの行末に[人名]がある場合はその人名をThanks以下に書く。
+
+* Improvements: 機能などを新しく追加したコミットのログ
+* Changes: 動作の変更など、今まであったものを変更したログ
+* Fixes: バグの修正など前バージョンまでにあった問題を修正したログ
+
+また、コミットログの行末に[人名]がある場合は、Thanksという分類を作って、その人名をThanks以下に書く。
 さらにREADMEにあるThanks以下にも名前を追加する。
 
 この作業をリリース予定日よりも前に行った場合は、目に見えるところにコミットIDをメモしておく。
@@ -40,6 +46,8 @@ h3. Fixes
 * 
 
 h3. Thanks
+
+* 
 </pre>
 
 h2. 日本語訳の作成
@@ -67,7 +75,25 @@ doc/reference/ja/file.news.htmlなどのja.poを編集した箇所が正しく�
 
 h2. バージョンとリリース日の更新
 
-下記コマンドを入力して、プロジェクトページ（html/index.html、html/index.html.ja）の最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新する。
+ranguba.orgのindexページ（index.html、ja/index.html）の最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新する。
+
+まず、任意の位置で次のコマンドを実行して、ranguba.orgのリポジトリをcloneする。
+
+<pre>
+!!!command_line
+$ git clone git@github.com:ranguba/ranguba.org.git
+</pre>
+
+そして、リリースするライブラリのRakefileに次を追加する。
+
+<pre>
+!!!ruby
+Packnga::ReleaseTask.new(spec) do |task|
+  task.index_html_dir = "/path/to/ranguba.org"
+end
+</pre>
+
+その後、次のコマンドを実行して最新バージョンとリリース日を更新する。
 
 <pre>
 !!!command_line
@@ -80,7 +106,7 @@ h2. gemパッケージの作成
 
 <pre>
 !!!command_line
-$ make clean
+$ make clean  # rroongaのみ必要
 $ rake build
 </pre>
 
@@ -104,21 +130,27 @@ $ NO_MAKE=yes ruby1.9.1 test/run-test.rb
 
 h2. news.textileの最終的なまとめとリファレンス作成
 
-コミットIDをメモしていた場合、下記コマンドを実行してログを表示する。
+前回のリリース時から現在までの変更点をnews.textileにまとめるため、下記コマンドを実行してgitのコミットログを表示する。
 
 <pre>
 !!!command_line
-git log --reverse -p （前回のリリース時のバージョン）..（メモしていたコミットID）
+$ git log -p --reverse （前回のリリースバージョン)..
 </pre>
 
-ログを"Author:"で検索しながら、ユーザにとって知る必要があるもの（ユーザに見える情報）のコミットログのみを抜き出す。
+ログを"Author:"で検索しながら、ユーザにとって知る必要があるもののコミットログのみを抜き出す。
+
+ユーザにとって必要な情報とは、仕様の変更や新しい機能の追加など、ユーザーがリリースするライブラリを使う上で影響ある情報である。
+逆に、リファクタリング、テストの変更、変数名の変更など、ユーザーが直接意識しない部分については書く必要はない。
+
 次に、抜き出したコミットログを１つずつ見て、その先頭にカテゴリ名がある場合は、":"を削除してカテゴリ名を"["と"]"で囲む。
 カテゴリ名を除いたログの先頭にある単語を過去形にし、頭文字を大文字にする。
 その後、ログを次のように分類する。
-機能などに新しく追加されたものに関してはImprovement,
-動作の変更などはChanges,
-バグの修正など前バージョンまでにあった問題を修正したものはFixesに記述する。
-また、コミットログの行末に[人名]がある場合はその人名をThanks以下に書く。
+
+* Improvements: 機能などを新しく追加したコミットのログ
+* Changes: 動作の変更など、今まであったものを変更したログ
+* Fixes: バグの修正など前バージョンまでにあった問題を修正したログ
+
+また、コミットログの行末に[人名]がある場合は、Thanksという分類を作って、その人名をThanks以下に書く。
 さらにREADMEにあるThanks以下にも名前を追加する。
 
 下記コマンドを実行してja.poを更新する。
@@ -142,7 +174,7 @@ doc/reference/ja/file.news.htmlなどのja.poを編集した箇所が正しく�
 
 h2. これまでの変更をpush
 
-ここまでに行った変更をcommitしてgit pushする。
+ここまでに行った変更をcommitしてpushする。
 
 h2. リリースバージョンのタグの作成とrubygems.orgへのパッケージのアップロード
 
@@ -153,29 +185,32 @@ h2. リリースバージョンのタグの作成とrubygems.orgへのパッケ�
 $ rake release
 </pre>
 
-h2. rubyforgeにパッケージをアップロード
 
-下記コマンドを実行してアップロードする。
+h2. リファレンスをranguba.orgにアップロード
 
-<pre>
-!!!command_line
-$ ruby1.8 -S rake release:rubyforge:upload
-$ ruby1.8 -S rake release:reference:publish
-</pre>
-
-rroonga以外の場合、index.html関連はrake release:html:publishでアップロードされないので、rroongaに移動してから下記コマンドを実行する。
+次のコマンドを実行して、リファレンスをranguba.orgのリポジトリ内にコピーする。
 
 <pre>
-!!!command_line
-$ ruby1.9.1 -S rake release:html:publish
+$ rake reference:publication:prepare
+$ rename -f "s/^_index.html/alphabetical_index.html/" ./**/_index.html
+$ sed -i -e "s/_index.html/alphabetical_index.html/g" ./**/*.html
+$ /bin/cp -r doc/html/（ライブラリ名）/* /path/to/ranguba.org/（ライブラリ名）
 </pre>
 
+その後、 次のコマンドを実行してranguba.orgのリポジトリをcloneしたディレクトリに移動する。
+
+<pre>
+$ cd /path/to/ranguba.org
+</pre>
+
+そして、コピーにより生じた変更をranguba.orgのリポジトリにpushする。
+ranguba.orgはGithub Pagesを使っているので、pushすると自動的にranguba.orgのサイトも更新される。
 h2. メーリングリストにリリースの周知
 
 メーリングリストにリリースした旨を書いたメールを流す。
 日本語の他、英語のメーリングリストにもリリースした旨を英語で書いたメールを流す。
 
-h3.日本語でのメールの具体例
+h3. 日本語でのメールの具体例
 
 <pre>
 吉原です。
@@ -304,16 +339,6 @@ yoshihara
 (yoshihara at clear-code.com)
 </pre>
 
-h2. rubyforgeのニュースを更新
-
-rroonga以外の場合、もとのディレクトリに戻る。
-下記コマンドを入力してrubyforgeの最新ニュースを更新する。
-
-<pre>
-!!!command_line
-$ rake releace:rubyforge:news:post
-</pre>
-
 h2. 次回リリース時のバージョン番号の設定
 
-rroongaはext/groonga/rb-grn.h、それ以外はlib/（パッケージ名）/version.rbにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更する。
+rroongaはext/groonga/rb-grn.h、それ以外はlib/（パッケージ名）/version.rbにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更し、コミットする。
