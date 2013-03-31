@@ -100,6 +100,15 @@ end
 $ rake release:info:update OLD_VERSION=（前回リリース時のバージョン） OLD_RELEASE_DATE=（前回リリース日） RELEASE_DATE=（今回のリリース日）
 </pre>
 
+h2. .gemspecの確認
+
+（パッケージ名）.gemspecの中身が問題ないか確認する。特に初めてリリースするときは注意すること。
+
+* .yardoptsをspec.filesに指定しているか（rubydoc.infoでドキュメントを閲覧するときに必要）
+* spec.files+=のつもりでspec.files=になっていないか
+* その他、spec.files=へ指定するファイルは過不足ないか・間違っていないか（diredなどでファイル一覧を見ながら作業する）
+* 依存関係（add_{runtime/developement}_dependency）は間違っていないか
+
 h2. gemパッケージの作成
 
 下記コマンドを打ってアップロード用のgemパッケージをビルドする。
