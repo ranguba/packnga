@@ -50,11 +50,11 @@ module Packnga
 
     private
     def html_base_dir
-      @base_dir + "html"
+      File.join(@base_dir, "html")
     end
 
     def html_reference_dir
-      html_base_dir + @spec.name
+      File.join(html_base_dir, @spec.name)
     end
 
     def set_default_values
