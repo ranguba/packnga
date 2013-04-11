@@ -244,7 +244,7 @@ module Packnga
                   cp(path.to_s, prepared_path.to_s)
                 when /\.html\z/
                   relative_dir_path = relative_path.dirname
-                  if path.basename == "_index.html"
+                  if path.basename.to_s == "_index.html"
                     current_path = relative_dir_path + "alphabetical_index.html"
                   else
                     current_path = relative_dir_path + path.basename
