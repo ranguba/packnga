@@ -68,6 +68,7 @@ module Packnga
     def define_tasks
       namespace :release do
         define_info_task
+        define_reference_upload_task
         define_tag_task
       end
     end
@@ -110,6 +111,13 @@ module Packnga
             end
           end
         end
+      end
+    end
+
+    def define_reference_upload_task
+      desc "Copy references to reference html directory."
+      task :upload_references do
+        cp_r(html_reference_dir, @index_html_dir)
       end
     end
 
