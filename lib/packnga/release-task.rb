@@ -115,9 +115,11 @@ module Packnga
     end
 
     def define_reference_upload_task
-      desc "Copy references to reference html directory."
-      task :upload_references do
-        cp_r(html_reference_dir, @index_html_dir)
+      namespace :references do
+        desc "Copy references to reference html directory."
+        task :upload do
+          cp_r(html_reference_dir, @index_html_dir)
+        end
       end
     end
 
