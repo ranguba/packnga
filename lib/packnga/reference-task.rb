@@ -234,7 +234,8 @@ module Packnga
             footer = erb_template("footer.#{language}")
             raw_reference_dir.find do |path|
               relative_path = path.relative_path_from(raw_reference_dir)
-              prepared_path = prepared_reference_dir + relative_path
+              prepared_path = generate_prepared_path(prepared_reference_dir,
+                                                     relative_path)
               if path.directory?
                 mkdir_p(prepared_path.to_s)
               else
@@ -243,9 +244,13 @@ module Packnga
                   cp(path.to_s, prepared_path.to_s)
                 when /\.html\z/
                   relative_dir_path = relative_path.dirname
-                  current_path = relative_dir_path + path.basename
-                  if current_path.basename.to_s == "index.html"
-                    current_path = current_path.dirname
+                  if path.basename == "_index.html"
+                    current_path = relative_dir_path + "alphabetical_index.html"
+                  else
+                    current_path = relative_dir_path + path.basename
+                    if current_path.basename.to_s == "index.html"
+                      current_path = current_path.dirname
+                    end
                   end
                   top_path = html_base_dir.relative_path_from(prepared_path.dirname)
                   package_path = top_path + @spec.name
@@ -263,6 +268,8 @@ module Packnga
                                            paths,
                                            templates,
                                            language)
+                  content = content.gsub(/"(.+)_index\.html/,
+                                         "\\1alphabetical_index.html")
                   File.open(prepared_path.to_s, "w") do |file|
                     file.print(content)
                   end
@@ -279,6 +286,16 @@ module Packnga
         end
 
         task :generate => ["reference:generate", "reference:publication:prepare"]
+      end
+    end
+
+    def generate_prepared_path(prepared_reference_dir, relative_path)
+
+      prepared_path = prepared_reference_dir + relative_path
+      if prepared_path.basename.to_s == "_index.html"
+        prepared_path.dirname + "alphabetical_index.html"
+      else
+        prepared_path
       end
     end
 
