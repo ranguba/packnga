@@ -290,7 +290,6 @@ module Packnga
     end
 
     def generate_prepared_path(prepared_reference_dir, relative_path)
-
       prepared_path = prepared_reference_dir + relative_path
       if prepared_path.basename.to_s == "_index.html"
         prepared_path.dirname + "alphabetical_index.html"
