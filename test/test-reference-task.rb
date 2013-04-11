@@ -48,4 +48,41 @@ class ReferenceTaskTest < Test::Unit::TestCase
       Rake::Task["reference:po:update:ja"].invoke
     end
   end
+
+  def test_reference_publication_prepare
+    Dir.mktmpdir do |base_dir|
+      package_name = "packnga"
+      language = "en"
+
+      spec = Gem::Specification.new do |_spec|
+        _spec.name = package_name
+      end
+
+      Packnga::DocumentTask.new(spec) do |task|
+        task.translate_language = language
+        task.base_dir = base_dir
+      end
+
+      reference_dir = File.join(base_dir, "reference/#{language}")
+      fixtures_dir = File.join(File.dirname(__FILE__), "fixtures")
+      fixtures = Dir.glob(File.join(fixtures_dir, "{file.news,_index}.html"))
+
+      FileUtils.mkdir_p(reference_dir)
+      FileUtils.cp_r(fixtures, reference_dir)
+
+      Rake::Task["reference:publication:prepare"].invoke
+
+      html_dir = File.join(base_dir, "html/#{package_name}/#{language}")
+      Dir.chdir(html_dir) do
+        assert_true(File.exist?("file.news.html"))
+        assert_true(File.exist?("alphabetical_index.html"))
+        assert_false(File.exist?("_index.html"))
+
+        expected_file = File.join(fixtures_dir, "expected", "file.news.html")
+        expected_content = File.read(expected_file)
+        actual_content = File.read("file.news.html")
+        assert_equal(expected_content, actual_content)
+      end
+    end
+  end
 end

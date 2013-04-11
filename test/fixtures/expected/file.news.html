@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII" />
+    <link rel="stylesheet" href="../../ranguba.css" type="text/css" />
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="icon" href="../../favicon.png" />
+    <title>
+  File: news
+  
+    &mdash; packnga
+  
+ - Ranguba</title>
+
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+<div class="header">
+  <div class="title">
+    <a href="../../">
+      <span class="title">
+  File: news
+  
+    &mdash; packnga
+  
+</span>
+      <span class="title-separator">-</span>
+      <span class="title-project">Ranguba</span>
+    </a>
+  </div>
+  <ul class="other-languages">
+    <li id="other-language-japanese" lang="ja" xml:lang="ja"><a href="../../packnga/ja/file.news.html">日本語</a></li>
+  </ul>
+  <ul class="menu">
+    <li id="menu-reference"><a href="../../packnga/en/">Reference Manual</a></li>
+    <li id="menu-tutorial"><a href="../../packnga/en/file.tutorial.html">Tutorial</a></li>
+    <li id="menu-install"><a href="../../#install-packnga">Install</a></li>
+    <li id="menu-developer"><a href="../../developer.html">Developer</a></li>
+  </ul>
+</div>
+
+<div class="content">
+
+
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: news</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1><span class="caps">NEWS</span></h1>
+<h2>0.9.7: 2012-12-26</h2>
+<h3>Improvements</h3>
+<ul>
+	<li>[DocumentTask] Added DocumentTask#translate_language= to specifiy
+   single language code for translation of documents.</li>
+	<li>[DocumentTask] Updated documents about #translate_languages= and
+    #original_language=.</li>
+	<li>[ReferenceTask] Updated documents about #translate_languages and
+   #original_language.</li>
+</ul>
+<h3>Changes</h3>
+<ul>
+	<li>[DocumentTask] Received only Array of languages codes by
+   #translate_languages=.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+	<li>For ranguba project: removed remained piwik tag in the footer template.</li>
+</ul>
+<h2>0.9.6: 2012-12-19</h2>
+<h3>Improvements</h3>
+<ul>
+	<li>[ReferenceTask] Used GetText::Tools::MsgMerge.run instead of
+   <span class="caps">GNU</span> msgmerge.</li>
+	<li>[DocumentTask] Added #original_language for translation
+   target. Its default value is user&#8217;s current locale.</li>
+	<li>[DocumentTask] Added #translate_languages to translate document.
+   Its default value is English if user&#8217;s current locale isn&#8217;t it,
+   otherwise default value is not specified.</li>
+</ul>
+<h3>Changes</h3>
+<ul>
+	<li>Use user&#8217;s current locale as the default translation targets
+   instead of Japanese.</li>
+	<li>For Ranguba project:</li>
+	<li>[template] Removed needless Piwik tag.</li>
+	<li>Followed the move from rubyforge.org to ranguba.org.</li>
+	<li>[ReleaseTask] Removed rubyforge support.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+	<li>[ReferenceTask] Removed needless patch for <span class="caps">YARD</span>. This patch is
+   needless from <span class="caps">YARD</span> 0.8.3.</li>
+</ul>
+<h2>0.9.5: 2012-08-30</h2>
+<h3>Improvements</h3>
+<ul>
+	<li>[reference-task] Created and update a pot/po file by <span class="caps">YARD</span>::<span class="caps">CLI</span>::I18n instead of xml2po command.</li>
+	<li>[reference-task] Translated <span class="caps">HTML</span> documents with a po file, source files(lib/<strong>/</strong>.rb, ext/<strong>/</strong>.c) and extra files(doc/text/<strong>.</strong>) and <span class="caps">README</span> file in spec.</li>
+	<li>[reference-task] Used GetText::Tools::MsgInit.run instead of msginit in <span class="caps">GNU</span> gettext.</li>
+	<li>Assigned default files for <span class="caps">HTML</span> documents by DocumentTask to YARDTask and ReferenceTask.</li>
+	<li>[tutorial] Added example to use gemspec with Gem::Specification.new.</li>
+	<li>Defined accessors for readme in YARDTask and ReferenceTask.</li>
+	<li>Updated documents.</li>
+</ul>
+<h3>Changes</h3>
+<ul>
+	<li>[reference-task] Created the po directory under specified directory instead of &#8220;doc&#8221;.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+	<li>[document-task] Fixed not to require block on new.</li>
+	<li>Fixed not to run blocks when objects of YARDTask and ReferenceTask are initialized.</li>
+	<li>[reference-task] Used Rake::Task to invoke rake tasks instead of another process.</li>
+</ul>
+<h3>Thanks</h3>
+<ul>
+	<li>tetradice</li>
+	<li><span class="caps">SHIMADA</span> Koji</li>
+</ul>
+<h2>0.9.4: 2011-09-27</h2>
+<h3>Improvements</h3>
+<ul>
+	<li>Saved password inputted once in same process.</li>
+</ul>
+<h3>Changes</h3>
+<ul>
+	<li>Checked ruby version before run task to build gem.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+	<li>Fixed bug of posting no news to RubyForge in task &#8220;release:rubyforge:news:post&#8221;.</li>
+</ul>
+<h2>0.9.3: 2011-09-22</h2>
+<h3>Improvements</h3>
+<ul>
+	<li>Printed newline after getting password.</li>
+	<li>Added task &#8220;release:rubyforge:news:post&#8221; to post news to RubyForge.</li>
+</ul>
+<h3>Changes</h3>
+<ul>
+	<li>Changed name of tasks for update po file for each languages.
+(For example, &#8220;translate:po:ja:update&#8221; was changed to &#8220;translate:po:update:ja&#8221;.)</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+	<li>Applied version number to tag message instead of &#8220;version&#8221;.</li>
+</ul>
+<h2>0.9.2: 2011-08-29</h2>
+<h3>Improvements</h3>
+<ul>
+	<li>Supported doc/text/ nonexistence case.</li>
+	<li>Supported yardoc options customize.</li>
+	<li>Supported xml2po mode customize.</li>
+	<li>Used only lib/<strong>/</strong>.rb as document target by default.</li>
+</ul>
+<h2>0.9.1: 2011-08-25</h2>
+<h3>Improvements</h3>
+<ul>
+	<li>created package in rubyforge if package isn&#8217;t created.</li>
+	<li>added Packnga::ReleaseTask#tag_message.</li>
+	<li>added Packnga::ReleaseTask#publish_options.</li>
+	<li>added attribute in DocumentTask for getting .htaccess file path.</li>
+	<li>added reference:publicaton:generate.
+(This task is run after prepareing to publish references.)</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+	<li>fix bug release:reference:publish stop.</li>
+	<li>checked group_ids before add_releasing tar.gz to rubyforge.</li>
+	<li>wrote only sentence for redirect to english page in .htaccess file.
+(don&#8217;t write sentence for redirect tutorial page.)</li>
+</ul>
+<h2>0.9.0: 2011-08-19</h2>
+<p>The first release!</p></div></div>
+
+    <div id="footer"></div>
+
+  
+    </div>
+
+    <div class="sponsors">
+      <p id="sponsor-github">
+        <a href="https://github.com/ranguba/">
+          <img src="../../github-logo.png" width="100" height="45" border="0" alt="The Ranguba project uses GitHub's git repositories." />
+        </a>
+      </p>
+      <p id="sponsor-tango">
+	<a href="http://tango.freedesktop.org/">
+          <img width="120" height="53" border="0" alt="Tango Desktop Project's icons are used." src="../../tango-logo.png" />
+        </a>
+      </p>
+      <p id="sponsor-famfamfam">
+	<a href="http://www.famfamfam.com/">
+          <img width="120" height="18" border="0" alt="famfamfam.com's flags are used." src="../../famfamfam-logo.png" />
+        </a>
+      </p>
+    </div>
+
+</body>
+</html>
