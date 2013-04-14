@@ -235,36 +235,8 @@ module Packnga
                 when /(?:file|method|class)_list\.html\z/
                   cp(path.to_s, prepared_path.to_s)
                 when /\.html\z/
-                  relative_dir_path = relative_path.dirname
-                  if path.basename.to_s == "_index.html"
-                    current_path = relative_dir_path + "alphabetical_index.html"
-                  else
-                    current_path = relative_dir_path + path.basename
-                    if current_path.basename.to_s == "index.html"
-                      current_path = current_path.dirname
-                    end
-                  end
-                  top_path = html_base_dir.relative_path_from(prepared_path.dirname)
-                  package_path = top_path + @spec.name
-                  paths = {
-                    :top => top_path,
-                    :current => current_path,
-                    :package => package_path,
-                  }
-                  templates = {
-                    :head   => erb_template("head.#{language}"),
-                    :header => erb_template("header.#{language}"),
-                    :footer => erb_template("footer.#{language}")
-                  }
-                  content = apply_template(File.read(path.to_s),
-                                           paths,
-                                           templates,
-                                           language)
-                  content = content.gsub(/"(.+)_index\.html/,
-                                         "\\1alphabetical_index.html")
-                  File.open(prepared_path.to_s, "w") do |file|
-                    file.print(content)
-                  end
+                  create_published_file(path, relative_path, prepared_path,
+                                        language)
                 else
                   cp(path.to_s, prepared_path.to_s)
                 end
@@ -274,6 +246,38 @@ module Packnga
         end
 
         task :generate => ["reference:generate", "reference:publication:prepare"]
+      end
+    end
+
+    def create_published_file(path, relative_path, prepared_path, language)
+      relative_dir_path = relative_path.dirname
+      if path.basename.to_s == "_index.html"
+        current_path = relative_dir_path + "alphabetical_index.html"
+      else
+        current_path = relative_dir_path + path.basename
+        if current_path.basename.to_s == "index.html"
+          current_path = current_path.dirname
+        end
+      end
+      top_path = html_base_dir.relative_path_from(prepared_path.dirname)
+      package_path = top_path + @spec.name
+      paths = {
+        :top => top_path,
+        :current => current_path,
+        :package => package_path,
+      }
+      templates = {
+        :head   => erb_template("head.#{language}"),
+        :header => erb_template("header.#{language}"),
+        :footer => erb_template("footer.#{language}")
+      }
+      content = apply_template(File.read(path.to_s),
+                               paths,
+                               templates,
+                               language)
+      content = content.gsub(/"(.+)_index\.html/, "\\1alphabetical_index.html")
+      File.open(prepared_path.to_s, "w") do |file|
+        file.print(content)
       end
     end
 
