@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2011-2012  Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2011-2013  Haruka Yoshihara <yoshihara@clear-code.com>
 # Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
@@ -278,10 +278,6 @@ module Packnga
                 end
               end
             end
-          end
-          File.open(htaccess, "w") do |file|
-            file.puts("RedirectMatch permanent ^/#{@spec.name}/$ " +
-                      "#{@spec.homepage}#{@spec.name}/en/")
           end
         end
 
