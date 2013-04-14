@@ -262,7 +262,7 @@ module Packnga
       top_path = html_base_dir.relative_path_from(prepared_path.dirname)
       package_path = top_path + @spec.name
       paths = {
-        :top => top_path,
+        :top     => top_path,
         :current => current_path,
         :package => package_path,
       }
