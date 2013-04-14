@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2011-2012  Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2011-2013  Haruka Yoshihara <yoshihara@clear-code.com>
 # Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
@@ -115,10 +115,6 @@ module Packnga
     # Runs block to tasks for references.
     def reference
       yield(@reference_task)
-    end
-
-    def htaccess
-      @reference_task.htaccess
     end
 
     private

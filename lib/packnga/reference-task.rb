@@ -91,11 +91,6 @@ module Packnga
       define_tasks
     end
 
-    # path of .htaccess.
-    def htaccess
-      html_reference_dir + ".htaccess"
-    end
-
     private
     def set_default_values
       @base_dir ||= Pathname.new("doc")
