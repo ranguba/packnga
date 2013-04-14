@@ -224,9 +224,6 @@ module Packnga
             raw_reference_dir = reference_base_dir + language.to_s
             prepared_reference_dir = html_reference_dir + language.to_s
             rm_rf(prepared_reference_dir.to_s)
-            head = erb_template("head.#{language}")
-            header = erb_template("header.#{language}")
-            footer = erb_template("footer.#{language}")
             raw_reference_dir.find do |path|
               relative_path = path.relative_path_from(raw_reference_dir)
               prepared_path = generate_prepared_path(prepared_reference_dir,
@@ -255,9 +252,9 @@ module Packnga
                     :package => package_path,
                   }
                   templates = {
-                    :head => head,
-                    :header => header,
-                    :footer => footer
+                    :head   => erb_template("head.#{language}"),
+                    :header => erb_template("header.#{language}"),
+                    :footer => erb_template("footer.#{language}")
                   }
                   content = apply_template(File.read(path.to_s),
                                            paths,
