@@ -58,7 +58,7 @@ Gem::Specification.new do |spec|
     spec.test_files = Dir.glob("test/**/*.rb")
   end
 
-  spec.homepage = "http://groonga.rubyforge.org/"
+  spec.homepage = "http://ranguba.org/packnga/en/"
   spec.licenses = ["LGPLv2"]
   spec.require_paths = ["lib"]
 
