@@ -42,33 +42,33 @@ end
 description = clean_white_space.call(entry.call("Description"))
 summary, description = description.split(/\n\n+/, 2)
 
-Gem::Specification.new do |s|
-  s.name = "packnga"
-  s.version = version
-  s.authors = authors
-  s.email = emails
-  s.summary = summary
-  s.description = description
+Gem::Specification.new do |spec|
+  spec.name = "packnga"
+  spec.version = version
+  spec.authors = authors
+  spec.email = emails
+  spec.summary = summary
+  spec.description = description
 
-  s.extra_rdoc_files = ["README.textile"]
-  s.files = ["README.textile", "Rakefile", "Gemfile"]
+  spec.extra_rdoc_files = ["README.textile"]
+  spec.files = ["README.textile", "Rakefile", "Gemfile"]
   Dir.chdir(base_dir) do
-    s.files += Dir.glob("lib/**/*.rb")
-    s.files += Dir.glob("doc/text/*.*")
-    s.test_files = Dir.glob("test/**/*.rb")
+    spec.files += Dir.glob("lib/**/*.rb")
+    spec.files += Dir.glob("doc/text/*.*")
+    spec.test_files = Dir.glob("test/**/*.rb")
   end
 
-  s.homepage = "http://groonga.rubyforge.org/"
-  s.licenses = ["LGPLv2"]
-  s.require_paths = ["lib"]
+  spec.homepage = "http://groonga.rubyforge.org/"
+  spec.licenses = ["LGPLv2"]
+  spec.require_paths = ["lib"]
 
-  s.add_runtime_dependency("rake")
-  s.add_runtime_dependency("yard")
-  s.add_runtime_dependency("gettext", ">= 2.3.6")
-  s.add_development_dependency("test-unit")
-  s.add_development_dependency("test-unit-notify")
-  s.add_development_dependency("test-unit-rr")
-  s.add_development_dependency("bundler")
-  s.add_development_dependency("RedCloth")
+  spec.add_runtime_dependency("rake")
+  spec.add_runtime_dependency("yard")
+  spec.add_runtime_dependency("gettext", ">= 2.3.6")
+  spec.add_development_dependency("test-unit")
+  spec.add_development_dependency("test-unit-notify")
+  spec.add_development_dependency("test-unit-rr")
+  spec.add_development_dependency("bundler")
+  spec.add_development_dependency("RedCloth")
 end
 
