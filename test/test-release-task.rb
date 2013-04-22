@@ -23,7 +23,8 @@ class ReleaseTaskTest < Test::Unit::TestCase
     Rake::Task.clear
   end
 
-  def test_info_update_with_version_in_spec
+  class InfoUpdateTest < self
+  def version_in_spec
     Dir.mktmpdir do |base_dir|
       index_dir = File.join(base_dir, "index_dir")
 
@@ -62,7 +63,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
     end
   end
 
-  def test_info_update_with_version_in_env
+  def test_version_in_env
     Dir.mktmpdir do |base_dir|
       index_dir = File.join(base_dir, "index_dir")
 
@@ -96,6 +97,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
       assert_equal(expected_index, File.read(index_file))
       assert_equal(expected_index, File.read(ja_index_file))
     end
+  end
   end
 
   def test_upload_references
