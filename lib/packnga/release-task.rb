@@ -77,24 +77,11 @@ module Packnga
       namespace :info do
         desc "Update version in index HTML."
         task :update do
-          old_version = ENV["OLD_VERSION"]
-          old_release_date = ENV["OLD_RELEASE_DATE"]
-          new_release_date = ENV["RELEASE_DATE"] || Time.now.strftime("%Y-%m-%d")
-          new_version = ENV["VERSION"]
-
-          empty_options = []
-          empty_options << "OLD_VERSION" if old_version.nil?
-          empty_options << "OLD_RELEASE_DATE" if old_release_date.nil?
-
-          unless empty_options.empty?
-            raise ArgumentError, "Specify option(s) of #{empty_options.join(", ")}."
-          end
           @index_html_dir = Pathname(@index_html_dir)
           indexes = [@index_html_dir + "index.html", @index_html_dir + "ja/index.html"]
           indexes.each do |index|
             content = replaced_content = File.read(index)
-            [[old_version, new_version],
-             [old_release_date, new_release_date]].each do |old, new|
+            package_infos.each do |old, new|
               replaced_content = replaced_content.gsub(/#{Regexp.escape(old)}/, new)
               if /\./ =~ old
                 old_underscore = old.gsub(/\./, '-')
@@ -112,6 +99,23 @@ module Packnga
           end
         end
       end
+    end
+
+    def package_infos
+      old_version = ENV["OLD_VERSION"]
+      old_release_date = ENV["OLD_RELEASE_DATE"]
+      new_release_date = ENV["RELEASE_DATE"] || Time.now.strftime("%Y-%m-%d")
+      new_version = ENV["VERSION"]
+
+      empty_options = []
+      empty_options << "OLD_VERSION" if old_version.nil?
+      empty_options << "OLD_RELEASE_DATE" if old_release_date.nil?
+
+      unless empty_options.empty?
+        raise ArgumentError, "Specify option(s) of #{empty_options.join(", ")}."
+      end
+
+      [[old_version, new_version], [old_release_date, new_release_date]]
     end
 
     def define_reference_upload_task
