@@ -230,16 +230,11 @@ module Packnga
                                                      relative_path)
               if path.directory?
                 mkdir_p(prepared_path.to_s)
+              elsif /\.html\z/ =~ path.basename.to_s
+                create_published_file(path, relative_path, prepared_path,
+                                      language)
               else
-                case path.basename.to_s
-                when /(?:file|method|class)_list\.html\z/
-                  cp(path.to_s, prepared_path.to_s)
-                when /\.html\z/
-                  create_published_file(path, relative_path, prepared_path,
-                                        language)
-                else
-                  cp(path.to_s, prepared_path.to_s)
-                end
+                cp(path.to_s, prepared_path.to_s)
               end
             end
           end
