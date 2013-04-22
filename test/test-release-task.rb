@@ -110,6 +110,33 @@ class ReleaseTaskTest < Test::Unit::TestCase
       end
     end
 
+    def test_same_versions
+      Dir.mktmpdir do |base_dir|
+        index_dir = File.join(base_dir, "index_dir")
+
+        Packnga::ReleaseTask.new(Gem::Specification.new) do |task|
+          task.index_html_dir = index_dir
+          task.base_dir = base_dir
+        end
+
+        index = "1-0-0 2013-03-28"
+        index_file = File.join(index_dir, "index.html")
+        create_index_file(index_file, index)
+        ja_index_file = File.join(index_dir, "ja", "index.html")
+        create_index_file(ja_index_file, index)
+
+        ENV["OLD_VERSION"] = "1.0.0"
+        ENV["VERSION"]     = "1.0.0"
+        ENV["OLD_RELEASE_DATE"] = "2013-03-28"
+        ENV["RELEASE_DATE"]     = "2013-04-01"
+
+        Rake::Task["release:info:update"].invoke
+        expected_index = "1-0-0 2013-04-01"
+        assert_equal(expected_index, File.read(index_file))
+        assert_equal(expected_index, File.read(ja_index_file))
+      end
+    end
+
     private
     def create_index_file(index_file, index)
       FileUtils.mkdir_p(File.dirname(index_file))

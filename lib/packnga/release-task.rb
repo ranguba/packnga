@@ -85,6 +85,7 @@ module Packnga
           indexes.each do |index|
             content = replaced_content = File.read(index)
             package_infos.each do |key, (old, new)|
+              next if old == new
               if key == :version
                 old = old.gsub(/\./, '-')
                 new = new.gsub(/\./, '-')
@@ -94,7 +95,6 @@ module Packnga
               replaced_content = replaced_content.gsub(old_regexp, new)
             end
 
-            next if replaced_content == content
             File.open(index, "w") do |output|
               output.print(replaced_content)
             end
