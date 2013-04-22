@@ -39,18 +39,10 @@ class ReleaseTaskTest < Test::Unit::TestCase
         end
 
         index = "1-0-0 2013-03-28"
-        FileUtils.mkdir_p(index_dir)
         index_file = File.join(index_dir, "index.html")
-        File.open(index_file, "w") do |file|
-          file.print(index)
-        end
-
-        ja_index_dir = File.join(index_dir, "ja")
-        FileUtils.mkdir_p(ja_index_dir)
-        ja_index_file = File.join(ja_index_dir, "index.html")
-        File.open(ja_index_file, "w") do |file|
-          file.print(index)
-        end
+        create_index_file(index_file, index)
+        ja_index_file = File.join(index_dir, "ja", "index.html")
+        create_index_file(ja_index_file, index)
 
         ENV["OLD_VERSION"] = "1.0.0"
         ENV["OLD_RELEASE_DATE"] = "2013-03-28"
@@ -74,18 +66,10 @@ class ReleaseTaskTest < Test::Unit::TestCase
         end
 
         index = "1-0-0 2013-03-28"
-        FileUtils.mkdir_p(index_dir)
         index_file = File.join(index_dir, "index.html")
-        File.open(index_file, "w") do |file|
-          file.print(index)
-        end
-
-        ja_index_dir = File.join(index_dir, "ja")
-        FileUtils.mkdir_p(ja_index_dir)
-        ja_index_file = File.join(ja_index_dir, "index.html")
-        File.open(ja_index_file, "w") do |file|
-          file.print(index)
-        end
+        create_index_file(index_file, index)
+        ja_index_file = File.join(index_dir, "ja", "index.html")
+        create_index_file(ja_index_file, index)
 
         ENV["OLD_VERSION"] = "1.0.0"
         ENV["VERSION"]     = "1.0.1"
@@ -96,6 +80,14 @@ class ReleaseTaskTest < Test::Unit::TestCase
         expected_index = "1-0-1 2013-04-01"
         assert_equal(expected_index, File.read(index_file))
         assert_equal(expected_index, File.read(ja_index_file))
+      end
+    end
+
+    private
+    def create_index_file(index_file, index)
+      FileUtils.mkdir_p(File.dirname(index_file))
+      File.open(index_file, "w") do |file|
+        file.print(index)
       end
     end
   end
