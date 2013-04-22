@@ -78,7 +78,10 @@ module Packnga
         desc "Update version in index HTML."
         task :update do
           @index_html_dir = Pathname(@index_html_dir)
-          indexes = [@index_html_dir + "index.html", @index_html_dir + "ja/index.html"]
+          indexes = [
+            @index_html_dir + "index.html",
+            @index_html_dir + "ja/index.html"
+          ]
           indexes.each do |index|
             content = replaced_content = File.read(index)
             package_infos.each do |key, (old, new)|
