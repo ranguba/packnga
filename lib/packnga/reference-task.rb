@@ -292,19 +292,19 @@ module Packnga
     end
 
     def apply_template(content, paths, templates, language)
-      content = content.sub(/lang="en"/, "lang=\"#{language}\"")
+      content = content.gsub(/lang="en"/, "lang=\"#{language}\"")
 
       title = nil
-      content = content.sub(/<title>(.+?)<\/title>/m) do
+      content = content.gsub(/<title>(.+?)<\/title>/m) do
         title = $1
         templates[:head].result(binding)
       end
 
-      content = content.sub(/<body(?:.*?)>/) do |body_start|
+      content = content.gsub(/<body(?:.*?)>/) do |body_start|
         "#{body_start}\n#{templates[:header].result(binding)}\n"
       end
 
-      content = content.sub(/<\/body/) do |body_end|
+      content = content.gsub(/<\/body/) do |body_end|
         "\n#{templates[:footer].result(binding)}\n#{body_end}"
       end
 
@@ -402,7 +402,7 @@ module Packnga
       translate_text = translate_text.each_line.collect do |line|
         "\\1#{line}"
       end
-      content.sub(/#{original_text.join}/, translate_text.join)
+      content.gsub(/#{original_text.join}/, translate_text.join)
     end
   end
 end
