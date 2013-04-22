@@ -81,15 +81,14 @@ module Packnga
           indexes = [@index_html_dir + "index.html", @index_html_dir + "ja/index.html"]
           indexes.each do |index|
             content = replaced_content = File.read(index)
-            package_infos.each do |old, new|
-              replaced_content = replaced_content.gsub(/#{Regexp.escape(old)}/, new)
-              if /\./ =~ old
-                old_underscore = old.gsub(/\./, '-')
-                new_underscore = new.gsub(/\./, '-')
-                replaced_content =
-                  replaced_content.gsub(/#{Regexp.escape(old_underscore)}/,
-                                        new_underscore)
+            package_infos.each do |key, (old, new)|
+              if key == :version
+                old = old.gsub(/\./, '-')
+                new = new.gsub(/\./, '-')
               end
+
+              old_regexp = /#{Regexp.escape(old)}/
+              replaced_content = replaced_content.gsub(old_regexp, new)
             end
 
             next if replaced_content == content
@@ -115,7 +114,10 @@ module Packnga
         raise ArgumentError, "Specify option(s) of #{empty_options.join(", ")}."
       end
 
-      [[old_version, new_version], [old_release_date, new_release_date]]
+      {
+        :version       => [old_version, new_version],
+        :release_date  => [old_release_date, new_release_date]
+      }
     end
 
     def define_reference_upload_task

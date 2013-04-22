@@ -23,6 +23,42 @@ class ReleaseTaskTest < Test::Unit::TestCase
     Rake::Task.clear
   end
 
+  def test_info_update
+    Dir.mktmpdir do |base_dir|
+      index_dir = File.join(base_dir, "index_dir")
+
+      spec = Gem::Specification.new
+      Packnga::ReleaseTask.new(spec) do |task|
+        task.index_html_dir = index_dir
+        task.base_dir = base_dir
+      end
+
+      index = "1-0-0 2013-03-28"
+      FileUtils.mkdir_p(index_dir)
+      index_file = File.join(index_dir, "index.html")
+      File.open(index_file, "w") do |file|
+        file.print(index)
+      end
+
+      ja_index_dir = File.join(index_dir, "ja")
+      FileUtils.mkdir_p(ja_index_dir)
+      ja_index_file = File.join(ja_index_dir, "index.html")
+      File.open(ja_index_file, "w") do |file|
+        file.print(index)
+      end
+
+      ENV["OLD_VERSION"] = "1.0.0"
+      ENV["VERSION"]     = "1.0.1"
+      ENV["OLD_RELEASE_DATE"] = "2013-03-28"
+      ENV["RELEASE_DATE"]     = "2013-04-01"
+      Rake::Task["release:info:update"].invoke
+
+      expected_index = "1-0-1 2013-04-01"
+      assert_equal(expected_index, File.read(index_file))
+      assert_equal(expected_index, File.read(ja_index_file))
+    end
+  end
+
   def test_upload_references
     Dir.mktmpdir do |base_dir|
       package_name = "packnga"
