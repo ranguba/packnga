@@ -41,10 +41,12 @@ class ReleaseTaskTest < Test::Unit::TestCase
         ja_index_file = File.join(index_dir, "ja", "index.html")
         create_index_file(ja_index_file, index)
 
-        ENV["OLD_VERSION"] = "1.0.0"
-        ENV["OLD_RELEASE_DATE"] = "2013-03-28"
-        ENV["RELEASE_DATE"]     = "2013-04-01"
-
+        package_infos = {
+          :old_version      => "1.0.0",
+          :old_release_date => "2013-03-28",
+          :new_release_date => "2013-04-01"
+        }
+        set_environments(package_infos)
         assert_raise(ArgumentError) do
           Rake::Task["release:info:update"].invoke
         end
@@ -71,9 +73,12 @@ class ReleaseTaskTest < Test::Unit::TestCase
         ja_index_file = File.join(index_dir, "ja", "index.html")
         create_index_file(ja_index_file, index)
 
-        ENV["OLD_VERSION"] = "1.0.0"
-        ENV["OLD_RELEASE_DATE"] = "2013-03-28"
-        ENV["RELEASE_DATE"]     = "2013-04-01"
+        package_infos = {
+          :old_version      => "1.0.0",
+          :old_release_date => "2013-03-28",
+          :new_release_date => "2013-04-01"
+        }
+        set_environments(package_infos)
         Rake::Task["release:info:update"].invoke
 
         expected_index = "1-0-1 2013-04-01"
@@ -98,10 +103,13 @@ class ReleaseTaskTest < Test::Unit::TestCase
         ja_index_file = File.join(index_dir, "ja", "index.html")
         create_index_file(ja_index_file, index)
 
-        ENV["OLD_VERSION"] = "1.0.0"
-        ENV["VERSION"]     = "1.0.1"
-        ENV["OLD_RELEASE_DATE"] = "2013-03-28"
-        ENV["RELEASE_DATE"]     = "2013-04-01"
+        package_infos = {
+          :old_version      => "1.0.0",
+          :new_version      => "1.0.1",
+          :old_release_date => "2013-03-28",
+          :new_release_date => "2013-04-01"
+        }
+        set_environments(package_infos)
         Rake::Task["release:info:update"].invoke
 
         expected_index = "1-0-1 2013-04-01"
@@ -125,10 +133,13 @@ class ReleaseTaskTest < Test::Unit::TestCase
         ja_index_file = File.join(index_dir, "ja", "index.html")
         create_index_file(ja_index_file, index)
 
-        ENV["OLD_VERSION"] = "1.0.0"
-        ENV["VERSION"]     = "1.0.0"
-        ENV["OLD_RELEASE_DATE"] = "2013-03-28"
-        ENV["RELEASE_DATE"]     = "2013-04-01"
+        package_infos = {
+          :old_version      => "1.0.0",
+          :new_version      => "1.0.0",
+          :old_release_date => "2013-03-28",
+          :new_release_date => "2013-04-01"
+        }
+        set_environments(package_infos)
 
         Rake::Task["release:info:update"].invoke
         expected_index = "1-0-0 2013-04-01"
@@ -143,6 +154,13 @@ class ReleaseTaskTest < Test::Unit::TestCase
       File.open(index_file, "w") do |file|
         file.print(index)
       end
+    end
+
+    def set_environments(package_infos={})
+      ENV["OLD_VERSION"]      = package_infos[:old_version]
+      ENV["VERSION"]          = package_infos[:new_version]
+      ENV["OLD_RELEASE_DATE"] = package_infos[:old_release_date]
+      ENV["RELEASE_DATE"]     = package_infos[:new_release_date]
     end
   end
 
