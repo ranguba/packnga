@@ -149,7 +149,7 @@ module Packnga
             po_file = "#{@po_dir}/#{language}.po"
 
             if File.exist?(po_file)
-              file po_file => @files do |t|
+              file po_file => @files do
                 current_pot_file = "#{@po_dir}/tmp.pot"
                 create_pot_file(current_pot_file)
                 GetText::Tools::MsgMerge.run(po_file, current_pot_file,
