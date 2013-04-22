@@ -272,10 +272,10 @@ module Packnga
         :header => erb_template("header.#{language}"),
         :footer => erb_template("footer.#{language}")
       }
-      content = apply_template(File.read(path.to_s),
-                               paths,
-                               templates,
-                               language)
+      content = apply_templates(File.read(path.to_s),
+                                paths,
+                                templates,
+                                language)
       content = content.gsub(/"(.+)_index\.html/, "\\1alphabetical_index.html")
       File.open(prepared_path.to_s, "w") do |file|
         file.print(content)
@@ -291,7 +291,7 @@ module Packnga
       end
     end
 
-    def apply_template(content, paths, templates, language)
+    def apply_templates(content, paths, templates, language)
       content = content.gsub(/lang="en"/, "lang=\"#{language}\"")
 
       title = nil
