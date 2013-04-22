@@ -24,6 +24,33 @@ class ReleaseTaskTest < Test::Unit::TestCase
   end
 
   class InfoUpdateTest < self
+    def test_none_version
+      Dir.mktmpdir do |base_dir|
+        index_dir = File.join(base_dir, "index_dir")
+
+        spec = Gem::Specification.new
+
+        Packnga::ReleaseTask.new(spec) do |task|
+          task.index_html_dir = index_dir
+          task.base_dir = base_dir
+        end
+
+        index = "1-0-0 2013-03-28"
+        index_file = File.join(index_dir, "index.html")
+        create_index_file(index_file, index)
+        ja_index_file = File.join(index_dir, "ja", "index.html")
+        create_index_file(ja_index_file, index)
+
+        ENV["OLD_VERSION"] = "1.0.0"
+        ENV["OLD_RELEASE_DATE"] = "2013-03-28"
+        ENV["RELEASE_DATE"]     = "2013-04-01"
+
+        assert_raise(ArgumentError) do
+          Rake::Task["release:info:update"].invoke
+        end
+      end
+    end
+
     def test_version_in_spec
       Dir.mktmpdir do |base_dir|
         index_dir = File.join(base_dir, "index_dir")

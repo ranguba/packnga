@@ -109,6 +109,7 @@ module Packnga
       empty_options = []
       empty_options << "OLD_VERSION" if old_version.nil?
       empty_options << "OLD_RELEASE_DATE" if old_release_date.nil?
+      empty_options << "VERSION" if new_version.empty?
 
       unless empty_options.empty?
         raise ArgumentError, "Specify option(s) of #{empty_options.join(", ")}."
