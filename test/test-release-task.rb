@@ -24,7 +24,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
   end
 
   class InfoUpdateTest < self
-    def version_in_spec
+    def test_version_in_spec
       Dir.mktmpdir do |base_dir|
         index_dir = File.join(base_dir, "index_dir")
 
