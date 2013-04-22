@@ -104,7 +104,7 @@ module Packnga
       old_version = ENV["OLD_VERSION"]
       old_release_date = ENV["OLD_RELEASE_DATE"]
       new_release_date = ENV["RELEASE_DATE"] || Time.now.strftime("%Y-%m-%d")
-      new_version = ENV["VERSION"]
+      new_version = ENV["VERSION"] || @spec.version.to_s
 
       empty_options = []
       empty_options << "OLD_VERSION" if old_version.nil?
