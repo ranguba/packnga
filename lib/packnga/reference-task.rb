@@ -245,6 +245,7 @@ module Packnga
           end
         end
 
+        desc "Generates reference for publication."
         task :generate => ["reference:generate",
                            "reference:publication:prepare"]
       end
