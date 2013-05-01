@@ -194,13 +194,22 @@ module Packnga
           po_file = "#{@po_dir}/#{language}.po"
           desc "Translates documents to #{language}."
           task language => [po_file, reference_base_dir, *@files] do
-            locale = YARD::I18n::Locale.new(language)
-            locale.load(@po_dir)
-            Dir.mktmpdir do |temp_dir|
-              create_translated_sources(temp_dir, locale)
-              copy_extra_files(temp_dir)
-              create_translated_documents(temp_dir, locale)
-            end
+            translate_doc_dir = "#{reference_base_dir}/#{language}"
+            rm_rf(translate_doc_dir)
+            yardoc = YARD::CLI::Yardoc.new
+            options = [
+              "--title", @spec.name,
+              "--po-dir", @po_dir,
+              "--locale", language,
+              "--charset", "utf-8",
+              "--no-private",
+              "--output-dir", translate_doc_dir
+            ]
+            options += ["--readme", @readme] if @readme
+            options += @source_files
+            options += ["-"]
+            options += @text_files
+            yardoc.run(*options)
           end
         end
       end
@@ -318,92 +327,6 @@ module Packnga
       erb = ERB.new(template, nil, "-")
       erb.filename = file
       erb
-    end
-
-    def create_translated_documents(output_dir, locale)
-      language = locale.name.to_s
-      translate_doc_dir = "#{reference_base_dir}/#{language}"
-      po_dir = File.expand_path(@po_dir)
-      mkdir_p(translate_doc_dir)
-
-      Dir.chdir(output_dir) do
-        YARD::Registry.clear
-        YARD.parse(@source_files)
-
-        options = [
-          "--title", @spec.name,
-          "-o", translate_doc_dir,
-          "--po-dir", po_dir,
-          "--locale", language,
-          "--charset", "utf-8",
-          "--no-private"
-        ]
-        options += ["--readme", @readme] if @readme
-        options += @source_files
-        options += ["-"]
-        options += @text_files
-
-        YARD::CLI::Yardoc.run(*options)
-      end
-      translated_files = File.join(output_dir, translate_doc_dir, "**")
-      FileUtils.cp_r(Dir.glob(translated_files), translate_doc_dir)
-    end
-
-    def create_translated_sources(output_dir, locale)
-      YARD.parse(@source_files)
-      create_translated_files(@source_files, output_dir) do |content|
-        code_objects = YARD::Registry.all
-        code_objects.each do |code_object|
-          original_docstring = code_object.docstring
-          content = translate_content_part(content,
-                                           original_docstring,
-                                           locale)
-
-          original_docstring.tags.each do |tag|
-            original_tag_text = tag.text
-            next if original_tag_text.nil?
-            content = translate_content_part(content,
-                                             original_tag_text,
-                                             locale)
-          end
-        end
-        content
-      end
-    end
-
-    def copy_extra_files(output_dir)
-      @extra_files.each do |file|
-        target_extra_file = File.join(output_dir, file)
-        FileUtils.mkdir_p(File.dirname(target_extra_file))
-        FileUtils.cp_r(file, target_extra_file)
-      end
-    end
-
-    def create_translated_files(original_files, output_dir)
-      original_files.each do |file|
-        translated_file = File.join(output_dir, file)
-        FileUtils.mkdir_p(File.dirname(translated_file))
-        content = File.read(file)
-
-        translated_text = yield(content)
-
-        File.open(translated_file, "w") do |file|
-          file.puts(translated_text)
-        end
-      end
-    end
-
-    def translate_content_part(content, original_text, locale)
-      translated_content = ""
-      text = YARD::I18n::Text.new(original_text)
-      translate_text = text.translate(locale)
-      original_text = original_text.each_line.collect do |line|
-        "(.+)#{Regexp.escape(line)}"
-      end
-      translate_text = translate_text.each_line.collect do |line|
-        "\\1#{line}"
-      end
-      content.gsub(/#{original_text.join}/, translate_text.join)
     end
   end
 end

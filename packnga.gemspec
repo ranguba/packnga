@@ -63,7 +63,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency("rake")
-  spec.add_runtime_dependency("yard")
+  spec.add_runtime_dependency("yard", ">= 0.8.6.1")
   spec.add_runtime_dependency("gettext", ">= 2.3.6")
   spec.add_development_dependency("test-unit")
   spec.add_development_dependency("test-unit-notify")
