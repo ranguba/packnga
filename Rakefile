@@ -1,6 +1,6 @@
 # -*- coding: utf-8; mode: ruby -*-
 #
-# Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2011-2013  Haruka Yoshihara <yoshihara@clear-code.com>
 # Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
@@ -16,16 +16,16 @@
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
-require 'English'
+require "English"
 
-require 'pathname'
-require 'rubygems'
-require 'rubygems/package_task'
-require 'bundler/gem_helper'
+require "pathname"
+require "rubygems"
+require "rubygems/package_task"
+require "bundler/gem_helper"
 
 base_dir = File.join(File.dirname(__FILE__))
 
-packnga_lib_dir = File.join(base_dir, 'lib')
+packnga_lib_dir = File.join(base_dir, "lib")
 $LOAD_PATH.unshift(packnga_lib_dir)
 ENV["RUBYLIB"] = "#{packnga_lib_dir}:#{ENV['RUBYLIB']}"
 
