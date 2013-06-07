@@ -200,13 +200,11 @@ h2. リファレンスをranguba.orgにアップロード
 次のコマンドを実行して、リファレンスをranguba.orgのリポジトリ内にコピーする。
 
 <pre>
-$ rename -f "s/^_index.html/alphabetical_index.html/" doc/reference/**/_index.html
-$ sed -i -e "s/_index.html/alphabetical_index.html/g" doc/reference/**/*.html
-$ rake reference:publication:prepare
-$ /bin/cp -r doc/html/（ライブラリ名）/* /path/to/ranguba.org/（ライブラリ名）
+!!!command_line
+$ rake reference:publication:generate
+$ rake release:references:upload
 </pre>
 
-TODO: index_html_dirを設定しているので、上記のコマンドをtaskにする。
 その後、 次のコマンドを実行してranguba.orgのリポジトリをcloneしたディレクトリに移動する。
 
 <pre>

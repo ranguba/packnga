@@ -1418,50 +1418,47 @@ msgstr ""
 #: ../../doc/text/release.textile:202
 msgid ""
 "<pre>\n"
-"$ rename -f \"s/^_index.html/alphabetical_index.html/\" doc/reference/**/_index.html\n"
-"$ sed -i -e \"s/_index.html/alphabetical_index.html/g\" doc/reference/**/*.html\n"
-"$ rake reference:publication:prepare\n"
-"$ /bin/cp -r doc/html/（ライブラリ名）/* /path/to/ranguba.org/（ライブラリ名）\n"
+"!!!command_line\n"
+"$ rake reference:publication:generate\n"
+"$ rake release:references:upload\n"
 "</pre>"
 msgstr ""
 
-#: ../../doc/text/release.textile:209
-msgid ""
-"TODO: index_html_dirを設定しているので、上記のコマンドをtaskにする。\n"
-"その後、 次のコマンドを実行してranguba.orgのリポジトリをcloneしたディレクトリに移動する。"
+#: ../../doc/text/release.textile:208
+msgid "その後、 次のコマンドを実行してranguba.orgのリポジトリをcloneしたディレクトリに移動する。"
 msgstr ""
 
-#: ../../doc/text/release.textile:212
+#: ../../doc/text/release.textile:210
 msgid ""
 "<pre>\n"
 "$ cd /path/to/ranguba.org\n"
 "</pre>"
 msgstr ""
 
-#: ../../doc/text/release.textile:216
+#: ../../doc/text/release.textile:214
 msgid ""
 "そして、コピーにより生じた変更をranguba.orgのリポジトリにpushする。\n"
 "ranguba.orgはGithub Pagesを使っているので、pushすると自動的にranguba.orgのサイトも更新される。\n"
 "h2. メーリングリストにリリースの周知"
 msgstr ""
 
-#: ../../doc/text/release.textile:220
+#: ../../doc/text/release.textile:218
 msgid ""
 "メーリングリストにリリースした旨を書いたメールを流す。\n"
 "日本語の他、英語のメーリングリストにもリリースした旨を英語で書いたメールを流す。"
 msgstr ""
 
-#: ../../doc/text/release.textile:223
+#: ../../doc/text/release.textile:221
 msgid "h3. 日本語でのメールの具体例"
 msgstr ""
 
-#: ../../doc/text/release.textile:225
+#: ../../doc/text/release.textile:223
 msgid ""
 "<pre>\n"
 "吉原です。"
 msgstr ""
 
-#: ../../doc/text/release.textile:228
+#: ../../doc/text/release.textile:226
 msgid ""
 "（最新バージョンをリリースしたことを書く）\n"
 "groongaのRubyバインディングrroonga1.2.3をリリースしました。\n"
@@ -1469,14 +1466,14 @@ msgid ""
 "  http://groonga.rubyforge.org/index.html.ja#about-rroonga"
 msgstr ""
 
-#: ../../doc/text/release.textile:233
+#: ../../doc/text/release.textile:231
 msgid ""
 "（ソフトウェアの概略）\n"
 "rroongaはRubyらしい書き方でgroongaを操作できることを重視しています。\n"
 "同時に、groongaの速度をそのまま生かすことも大事にしています。"
 msgstr ""
 
-#: ../../doc/text/release.textile:237
+#: ../../doc/text/release.textile:235
 msgid ""
 "（前回リリースから今回リリースまでに変更された点のうち、ユーザにとって重要なものを書く）\n"
 "1.2.1からの変更された点としては、ドキュメントの一部英訳化、リファ\n"
@@ -1485,52 +1482,52 @@ msgid ""
 "した。"
 msgstr ""
 
-#: ../../doc/text/release.textile:243
+#: ../../doc/text/release.textile:241
 msgid ""
 "（コマンドなどのインストール方法）\n"
 "インストール:\n"
 "  % sudo gem install rroonga"
 msgstr ""
 
-#: ../../doc/text/release.textile:247
+#: ../../doc/text/release.textile:245
 msgid ""
 "（チュートリアルページのURL）\n"
 "irbを使ったrroongaのチュートリアルはこちらにあります。"
 msgstr ""
 
-#: ../../doc/text/release.textile:250
+#: ../../doc/text/release.textile:248
 msgid "  http://groonga.rubyforge.org/rroonga/ja/file.tutorial.html"
 msgstr ""
 
-#: ../../doc/text/release.textile:252
+#: ../../doc/text/release.textile:250
 msgid ""
 "（http://groonga.rubyforge.org/rroonga/ja/file.news.htmlを見て、前回リリース時からの変更点を書く）\n"
 "1.2.1からの変更点は以下の通りです。"
 msgstr ""
 
-#: ../../doc/text/release.textile:255
+#: ../../doc/text/release.textile:253
 msgid "1.2.3: 2011-06-27"
 msgstr ""
 
-#: ../../doc/text/release.textile:257
+#: ../../doc/text/release.textile:255
 msgid ""
 "修正\n"
 "    gemパッケージに含まれてしまったオブジェクトファイル(*.o)を削除。\n"
 "    一部のリファレンスマニュアルの文字化けを修正。"
 msgstr ""
 
-#: ../../doc/text/release.textile:261
+#: ../../doc/text/release.textile:259
 msgid "1.2.2: 2011-06-27"
 msgstr ""
 
-#: ../../doc/text/release.textile:263
+#: ../../doc/text/release.textile:261
 msgid ""
 "改良\n"
 "    英語版の「開発者向け情報」ページを作成。\n"
 "    \"html:publish\"タスクと\"publish\"に関しての説明を追加。"
 msgstr ""
 
-#: ../../doc/text/release.textile:267
+#: ../../doc/text/release.textile:265
 msgid ""
 "変更\n"
 "    Groonga::Record#attributesが重複したレコードが現れた際に\n"
@@ -1540,7 +1537,7 @@ msgid ""
 "    NEWS*.rdocとtutorial.texttileをディレクトリdoc/text/に移動。"
 msgstr ""
 
-#: ../../doc/text/release.textile:274
+#: ../../doc/text/release.textile:272
 msgid ""
 "修正\n"
 "    インデックスページにある「チュートリアル」ページへのリンクを修正。\n"
@@ -1548,42 +1545,42 @@ msgid ""
 "    新しいgroongaのダウンロードURLに対応。 [mallowlabs]"
 msgstr ""
 
-#: ../../doc/text/release.textile:279
+#: ../../doc/text/release.textile:277
 msgid ""
 "感謝\n"
 "    mallowlabsさん\n"
 "</pre>"
 msgstr ""
 
-#: ../../doc/text/release.textile:283
+#: ../../doc/text/release.textile:281
 msgid "h3. 英語でのメールの具体例"
 msgstr ""
 
-#: ../../doc/text/release.textile:285
+#: ../../doc/text/release.textile:283
 msgid ""
 "<pre>\n"
 "Everyone,"
 msgstr ""
 
-#: ../../doc/text/release.textile:288
+#: ../../doc/text/release.textile:286
 msgid ""
 "（rroongaの最新バージョンをリリースしたことを書く）\n"
 "We released rroonga 1.2.3."
 msgstr ""
 
-#: ../../doc/text/release.textile:291
+#: ../../doc/text/release.textile:289
 msgid ""
 "（インデックスページのURLを書く）\n"
 "  http://groonga.rubyforge.org/#about-rroonga"
 msgstr ""
 
-#: ../../doc/text/release.textile:294
+#: ../../doc/text/release.textile:292
 msgid ""
 "（rroongaの説明）\n"
 "rroonga is the library which ruby-binding for grronga."
 msgstr ""
 
-#: ../../doc/text/release.textile:297
+#: ../../doc/text/release.textile:295
 msgid ""
 "（前回リリース時からの変更点のうち、ユーザにとって大事なものを書く）\n"
 "Since ver.1.2.1 was released, we translated some documents\n"
@@ -1592,63 +1589,63 @@ msgid ""
 "installed, grronga is automatically installed."
 msgstr ""
 
-#: ../../doc/text/release.textile:303
+#: ../../doc/text/release.textile:301
 msgid ""
 "（インストール方法を書く）\n"
 "How to install:\n"
 "  % sudo gem install rroonga"
 msgstr ""
 
-#: ../../doc/text/release.textile:307
+#: ../../doc/text/release.textile:305
 msgid ""
 "（チュートリアルについてのURLなどを書く）\n"
 "There is the tutorial of rroonga with irb:"
 msgstr ""
 
-#: ../../doc/text/release.textile:310
+#: ../../doc/text/release.textile:308
 msgid "  http://groonga.rubyforge.org/rroonga/en/file.tutorial.html"
 msgstr ""
 
-#: ../../doc/text/release.textile:312
+#: ../../doc/text/release.textile:310
 msgid ""
 "（news.textileから今回リリースのために書いた部分をコピーする）\n"
 "Please see below changes since ver.1.2.1."
 msgstr ""
 
-#: ../../doc/text/release.textile:315
+#: ../../doc/text/release.textile:313
 msgid "== 1.2.3: 2011-06-27"
 msgstr ""
 
-#: ../../doc/text/release.textile:317
-#: ../../doc/text/release.textile:336
+#: ../../doc/text/release.textile:315
+#: ../../doc/text/release.textile:334
 msgid "=== Fixes"
 msgstr ""
 
-#: ../../doc/text/release.textile:319
+#: ../../doc/text/release.textile:317
 msgid ""
 "* remove object files in gem packages.\n"
 "* fix charactor corruption in reference."
 msgstr ""
 
-#: ../../doc/text/release.textile:322
+#: ../../doc/text/release.textile:320
 msgid "== 1.2.2: 2011-06-27"
 msgstr ""
 
-#: ../../doc/text/release.textile:324
+#: ../../doc/text/release.textile:322
 msgid "=== Improvements"
 msgstr ""
 
-#: ../../doc/text/release.textile:326
+#: ../../doc/text/release.textile:324
 msgid ""
 "* created \"Developers\" page in English.\n"
 "* added description for tasks of \"html:publish\" and \"publish\"."
 msgstr ""
 
-#: ../../doc/text/release.textile:329
+#: ../../doc/text/release.textile:327
 msgid "=== Changes"
 msgstr ""
 
-#: ../../doc/text/release.textile:331
+#: ../../doc/text/release.textile:329
 msgid ""
 "* Groonga::Record#attributes return same attributes object for duplicate records.\n"
 "* added document for Groonga::Record#attributes.\n"
@@ -1656,22 +1653,22 @@ msgid ""
 "* moved NEWS*.rdoc and tutorial.texttile to doc/text/."
 msgstr ""
 
-#: ../../doc/text/release.textile:338
+#: ../../doc/text/release.textile:336
 msgid ""
 "* fixed the tutorial path in index page.\n"
 "* fixed the path of tutorial in index page in English.\n"
 "* follow the groonga downlowd URL change. [mallowlabs]"
 msgstr ""
 
-#: ../../doc/text/release.textile:342
+#: ../../doc/text/release.textile:340
 msgid "=== Thanks"
 msgstr ""
 
-#: ../../doc/text/release.textile:344
+#: ../../doc/text/release.textile:342
 msgid "* mallowlabs"
 msgstr ""
 
-#: ../../doc/text/release.textile:346
+#: ../../doc/text/release.textile:344
 msgid ""
 "--\n"
 "（名前とメールアドレス）\n"
@@ -1680,11 +1677,11 @@ msgid ""
 "</pre>"
 msgstr ""
 
-#: ../../doc/text/release.textile:352
+#: ../../doc/text/release.textile:350
 msgid "h2. 次回リリース時のバージョン番号の設定"
 msgstr ""
 
-#: ../../doc/text/release.textile:354
+#: ../../doc/text/release.textile:352
 msgid "rroongaはext/groonga/rb-grn.h、それ以外はlib/（パッケージ名）/version.rbにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更し、コミットする。"
 msgstr ""
 
@@ -1956,16 +1953,14 @@ msgstr "他にも設定できるパラメータがあります。詳しくはリ
 #: ../../lib/packnga/reference-task.rb:3
 #: ../../lib/packnga/release-task.rb:3 ../../lib/packnga/version.rb:3
 #: ../../lib/packnga/yard-task.rb:3
-msgid ""
-"Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>\n"
-"Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>"
+msgid "Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>"
 msgstr ""
 
 # Packnga
-#: ../../lib/packnga/document-task.rb:6
-#: ../../lib/packnga/reference-task.rb:6
-#: ../../lib/packnga/release-task.rb:6 ../../lib/packnga/version.rb:6
-#: ../../lib/packnga/yard-task.rb:6
+#: ../../lib/packnga/document-task.rb:5
+#: ../../lib/packnga/reference-task.rb:5
+#: ../../lib/packnga/release-task.rb:5 ../../lib/packnga/version.rb:5
+#: ../../lib/packnga/yard-task.rb:5
 msgid ""
 "This library is free software; you can redistribute it and/or\n"
 "modify it under the terms of the GNU Lesser General Public\n"
@@ -1973,10 +1968,10 @@ msgid ""
 msgstr ""
 
 # Packnga
-#: ../../lib/packnga/document-task.rb:10
-#: ../../lib/packnga/reference-task.rb:10
-#: ../../lib/packnga/release-task.rb:10 ../../lib/packnga/version.rb:10
-#: ../../lib/packnga/yard-task.rb:10
+#: ../../lib/packnga/document-task.rb:9
+#: ../../lib/packnga/reference-task.rb:9
+#: ../../lib/packnga/release-task.rb:9 ../../lib/packnga/version.rb:9
+#: ../../lib/packnga/yard-task.rb:9
 msgid ""
 "This library is distributed in the hope that it will be useful,\n"
 "but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
@@ -1985,10 +1980,10 @@ msgid ""
 msgstr ""
 
 # Packnga
-#: ../../lib/packnga/document-task.rb:15
-#: ../../lib/packnga/reference-task.rb:15
-#: ../../lib/packnga/release-task.rb:15 ../../lib/packnga/version.rb:15
-#: ../../lib/packnga/yard-task.rb:15
+#: ../../lib/packnga/document-task.rb:14
+#: ../../lib/packnga/reference-task.rb:14
+#: ../../lib/packnga/release-task.rb:14 ../../lib/packnga/version.rb:14
+#: ../../lib/packnga/yard-task.rb:14
 msgid ""
 "You should have received a copy of the GNU Lesser General Public\n"
 "License along with this library; if not, write to the Free Software\n"
@@ -2011,24 +2006,6 @@ msgid ""
 "and to translate references."
 msgstr "YARDによるドキュメントを生成したりリファレンスを翻訳するタスクを定義します。"
 
-# @return [DocumentTask]
-#: ../../lib/packnga/document-task.rb:33
-msgid "a new instance of DocumentTask"
-msgstr "DocumentTaskのオブジェクト"
-
-# @param [Gem::Specification]
-# @param [Jeweler::Task]
-#: ../../lib/packnga/document-task.rb:33
-#: ../../lib/packnga/release-task.rb:40
-msgid "tag|param|spec"
-msgstr ""
-
-# @param [Gem::Specification] spec
-#: ../../lib/packnga/document-task.rb:33
-#: ../../lib/packnga/release-task.rb:40
-msgid "specification for your package"
-msgstr "あなたのパッケージについての詳細を示すオブジェクト"
-
 # @yieldparam [Packnga::DocumentTask] _self
 # @yieldparam [Packnga::ReleaseTask] _self
 #: ../../lib/packnga/document-task.rb:33
@@ -2043,20 +2020,38 @@ msgstr ""
 msgid "tag|yieldparam|_self"
 msgstr ""
 
+# @param [Gem::Specification]
+# @param [Jeweler::Task]
+#: ../../lib/packnga/document-task.rb:33
+#: ../../lib/packnga/release-task.rb:40
+msgid "tag|param|spec"
+msgstr ""
+
+# @param [Gem::Specification] spec
+#: ../../lib/packnga/document-task.rb:33
+#: ../../lib/packnga/release-task.rb:40
+msgid "specification for your package"
+msgstr "あなたのパッケージについての詳細を示すオブジェクト"
+
+# @return [DocumentTask]
+#: ../../lib/packnga/document-task.rb:33
+msgid "a new instance of DocumentTask"
+msgstr "DocumentTaskのオブジェクト"
+
 # Packnga::DocumentTask#base_dir=
 #: ../../lib/packnga/document-task.rb:43
 msgid "Sets base directory for documents. Default value is \"doc\"."
 msgstr "ドキュメントのベースとなるディレクトリを設定します。デフォルトの値は\"doc\"です"
 
-# @param [String]
-#: ../../lib/packnga/document-task.rb:44
-msgid "tag|param|dir"
-msgstr ""
-
 # @param [String] dir
 #: ../../lib/packnga/document-task.rb:44
 msgid "base direcory path"
 msgstr "ベースディレクトリのパス"
+
+# @param [String]
+#: ../../lib/packnga/document-task.rb:44
+msgid "tag|param|dir"
+msgstr ""
 
 # Packnga::DocumentTask#original_language=
 #: ../../lib/packnga/document-task.rb:51
@@ -2068,6 +2063,13 @@ msgstr ""
 "ドキュメントを書いた元の言語を指定します。\n"
 "デフォルトは\"en\"（英語）です。\n"
 "この値は翻訳するための言語を決めるのに使います。"
+
+# @see
+#: ../../lib/packnga/document-task.rb:58
+#: ../../lib/packnga/document-task.rb:83
+#: ../../lib/packnga/reference-task.rb:70
+msgid "tag|see|DocumentTask#translate_languages="
+msgstr ""
 
 # @see DocumentTask#translate_languages=
 #: ../../lib/packnga/document-task.rb:58
@@ -2082,24 +2084,17 @@ msgstr "#translate_language(s)=を翻訳する言語を指定するために使�
 msgid "0.9.6"
 msgstr ""
 
-# @see
-#: ../../lib/packnga/document-task.rb:58
-#: ../../lib/packnga/document-task.rb:83
-#: ../../lib/packnga/reference-task.rb:70
-msgid "tag|see|DocumentTask#translate_languages="
-msgstr ""
-
-# @param [String] language
-#: ../../lib/packnga/document-task.rb:58
-msgid "language you wrote document"
-msgstr "ドキュメントが書かれた言語"
-
 # @param [Hash]
 # @param [String]
 #: ../../lib/packnga/document-task.rb:58
 #: ../../lib/packnga/document-task.rb:83
 msgid "tag|param|language"
 msgstr ""
+
+# @param [String] language
+#: ../../lib/packnga/document-task.rb:58
+msgid "language you wrote document"
+msgstr "ドキュメントが書かれた言語"
 
 # Packnga::DocumentTask#translate_language=
 #: ../../lib/packnga/document-task.rb:63
@@ -2120,20 +2115,21 @@ msgid ""
 "Otherwise, it is not specified."
 msgstr "元のドキュメントが英語でなければ英語（\"en\"）がデフォルトで指定されます。英語の場合は何も指定されません。"
 
-# @since
-#: ../../lib/packnga/document-task.rb:83
-msgid "0.9.7"
-msgstr ""
-
 # @param [String] language
 #: ../../lib/packnga/document-task.rb:83
 msgid "target language code for translated document"
 msgstr "ドキュメントが書かれた言語"
 
-# @see DocumentTask#translate_languages=
+# @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 #: ../../lib/packnga/document-task.rb:83
-msgid "#translate_languages= receives Array of String target languages codes."
-msgstr "#translate_languages=は翻訳する言語の言語コードを示す文字列の配列を受け取ります。"
+#: ../../lib/packnga/document-task.rb:106
+msgid "see \"639-1\" row in this page for lanugage codes."
+msgstr "言語コードについてはこのページの\"639-1\"の行をご覧ください。"
+
+# @since
+#: ../../lib/packnga/document-task.rb:83
+msgid "0.9.7"
+msgstr ""
 
 #: ../../lib/packnga/document-task.rb:83
 msgid ""
@@ -2141,12 +2137,6 @@ msgid ""
 "  task.translate_language = \"ja\"\n"
 "end"
 msgstr ""
-
-# @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-#: ../../lib/packnga/document-task.rb:83
-#: ../../lib/packnga/document-task.rb:106
-msgid "see \"639-1\" row in this page for lanugage codes."
-msgstr "言語コードについてはこのページの\"639-1\"の行をご覧ください。"
 
 # @example
 #: ../../lib/packnga/document-task.rb:83
@@ -2159,6 +2149,11 @@ msgstr ""
 msgid "tag|see|http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
 msgstr ""
 
+# @see DocumentTask#translate_languages=
+#: ../../lib/packnga/document-task.rb:83
+msgid "#translate_languages= receives Array of String target languages codes."
+msgstr "#translate_languages=は翻訳する言語の言語コードを示す文字列の配列を受け取ります。"
+
 # Packnga::DocumentTask#translate_language=
 #: ../../lib/packnga/document-task.rb:88
 msgid ""
@@ -2168,21 +2163,10 @@ msgstr ""
 "ドキュメントを翻訳する言語を1つ指定します。\n"
 "このメソッドは言語コードを示す文字列を受け取ります。"
 
-# @see DocumentTask#translate_language=
-#: ../../lib/packnga/document-task.rb:106
-msgid "#translate_language= receives String as target language code."
-msgstr "#translate_language=はドキュメントが書かれた言語コードを示す文字列を受け取ります。"
-
 # @see
 #: ../../lib/packnga/document-task.rb:106
 #: ../../lib/packnga/reference-task.rb:70
 msgid "tag|see|DocumentTask#translate_language="
-msgstr ""
-
-# @param [Hash]
-# @param [String]
-#: ../../lib/packnga/document-task.rb:106
-msgid "tag|param|languages"
 msgstr ""
 
 # @example
@@ -2198,10 +2182,21 @@ msgid ""
 "end"
 msgstr ""
 
+# @see DocumentTask#translate_language=
+#: ../../lib/packnga/document-task.rb:106
+msgid "#translate_language= receives String as target language code."
+msgstr "#translate_language=はドキュメントが書かれた言語コードを示す文字列を受け取ります。"
+
 # @param [String] language
 #: ../../lib/packnga/document-task.rb:106
 msgid "target language codes for translated document"
 msgstr "ドキュメントが書かれた言語"
+
+# @param [Hash]
+# @param [String]
+#: ../../lib/packnga/document-task.rb:106
+msgid "tag|param|languages"
+msgstr ""
 
 # Packnga::DocumentTask#yard
 #: ../../lib/packnga/document-task.rb:111
@@ -2215,8 +2210,8 @@ msgstr "与えられた場合はブロックを実行して、リファレンス
 
 # @since
 #: ../../lib/packnga/document-task.rb:166
-#: ../../lib/packnga/reference-task.rb:324
-#: ../../lib/packnga/release-task.rb:136
+#: ../../lib/packnga/reference-task.rb:325
+#: ../../lib/packnga/release-task.rb:131
 #: ../../lib/packnga/yard-task.rb:112
 msgid "0.9.0"
 msgstr ""
@@ -2285,15 +2280,15 @@ msgid ""
 "document. Its default value is \"en\" (English)."
 msgstr "この属性はドキュメントが書かれた言語を指定します。デフォルト値は\"en\"（英語）です。"
 
-# @return [String]
-#: ../../lib/packnga/reference-task.rb:57
-msgid "language you used to write document"
-msgstr "ドキュメントが書かれた言語"
-
 # @see
 #: ../../lib/packnga/reference-task.rb:57
 msgid "tag|see|DocumentTask#original_language="
 msgstr ""
+
+# @return [String]
+#: ../../lib/packnga/reference-task.rb:57
+msgid "language you used to write document"
+msgstr "ドキュメントが書かれた言語"
 
 # Packnga::ReferenceTask#translate_languages
 # Packnga::ReferenceTask#translate_languages=
@@ -2304,11 +2299,6 @@ msgid ""
 "Otherwise, it is not specified."
 msgstr "この属性はドキュメントを翻訳する言語を指定します。元のドキュメントが英語でなければ英語（\"en\"）がデフォルトで指定されます。英語の場合は何も指定されません。"
 
-# @see DocumentTask#translate_language=
-#: ../../lib/packnga/reference-task.rb:70
-msgid "See this page to specifiy a single language to this attribute."
-msgstr "この属性に1つだけ言語を指定するためにはこのページを参照ください。"
-
 # @return [Array<String>]
 #: ../../lib/packnga/reference-task.rb:70
 msgid "target languages"
@@ -2318,6 +2308,11 @@ msgstr ""
 #: ../../lib/packnga/reference-task.rb:70
 msgid "See this page to specifiy multiple languages to this attribute."
 msgstr "この属性に複数の言語を指定するためにはこのページを参照ください。"
+
+# @see DocumentTask#translate_language=
+#: ../../lib/packnga/reference-task.rb:70
+msgid "See this page to specifiy a single language to this attribute."
+msgstr "この属性に1つだけ言語を指定するためにはこのページを参照ください。"
 
 # @return [ReferenceTask]
 #: ../../lib/packnga/reference-task.rb:73
@@ -2339,6 +2334,11 @@ msgstr "リリース関連のタスクは、現在のバージョンのタグを
 msgid "This attribute is path of HTML files written version and release date."
 msgstr "この属性はバージョンやリリース日が書かれたHTMLファイルのパスを示します。"
 
+# @param [String] value
+#: ../../lib/packnga/release-task.rb:29
+msgid "path of HTML files"
+msgstr "HTMLファイルのパス"
+
 # @param [Hash]
 # @param [String]
 #: ../../lib/packnga/release-task.rb:29
@@ -2346,11 +2346,6 @@ msgstr "この属性はバージョンやリリース日が書かれたHTMLフ�
 #: ../../lib/packnga/release-task.rb:35
 msgid "tag|param|value"
 msgstr ""
-
-# @param [String] value
-#: ../../lib/packnga/release-task.rb:29
-msgid "path of HTML files"
-msgstr "HTMLファイルのパス"
 
 # Packnga::ReleaseTask#base_dir=
 #: ../../lib/packnga/release-task.rb:31
