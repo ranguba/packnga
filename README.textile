@@ -12,7 +12,7 @@ Packnga is a library to translate to many languages by YARD.
 
 h2. Authors
 
-  * Haruka Yoshihara <yoshihara@clear-code.com>
+  * Haruka Yoshihara <yshr04hrk@gmail.com>
   * Kouhei Sutou <kou@clear-code.com>
 
 h2. License
