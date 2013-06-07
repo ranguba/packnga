@@ -35,7 +35,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
           task.base_dir = base_dir
         end
 
-        index = "1-0-0 2013-03-28"
+        index = "1.0.0 2013-03-28"
         index_file = File.join(index_dir, "index.html")
         create_index_file(index_file, index)
         ja_index_file = File.join(index_dir, "ja", "index.html")
@@ -67,7 +67,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
           task.base_dir = base_dir
         end
 
-        index = "1-0-0 2013-03-28"
+        index = "1.0.0 2013-03-28"
         index_file = File.join(index_dir, "index.html")
         create_index_file(index_file, index)
         ja_index_file = File.join(index_dir, "ja", "index.html")
@@ -81,7 +81,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
         set_environments(package_infos)
         Rake::Task["release:info:update"].invoke
 
-        expected_index = "1-0-1 2013-04-01"
+        expected_index = "1.0.1 2013-04-01"
         assert_equal(expected_index, File.read(index_file))
         assert_equal(expected_index, File.read(ja_index_file))
       end
@@ -97,7 +97,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
           task.base_dir = base_dir
         end
 
-        index = "1-0-0 2013-03-28"
+        index = "1.0.0 2013-03-28"
         index_file = File.join(index_dir, "index.html")
         create_index_file(index_file, index)
         ja_index_file = File.join(index_dir, "ja", "index.html")
@@ -112,7 +112,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
         set_environments(package_infos)
         Rake::Task["release:info:update"].invoke
 
-        expected_index = "1-0-1 2013-04-01"
+        expected_index = "1.0.1 2013-04-01"
         assert_equal(expected_index, File.read(index_file))
         assert_equal(expected_index, File.read(ja_index_file))
       end
@@ -127,7 +127,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
           task.base_dir = base_dir
         end
 
-        index = "1-0-0 2013-03-28"
+        index = "1.0.0 2013-03-28"
         index_file = File.join(index_dir, "index.html")
         create_index_file(index_file, index)
         ja_index_file = File.join(index_dir, "ja", "index.html")
@@ -142,7 +142,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
         set_environments(package_infos)
 
         Rake::Task["release:info:update"].invoke
-        expected_index = "1-0-0 2013-04-01"
+        expected_index = "1.0.0 2013-04-01"
         assert_equal(expected_index, File.read(index_file))
         assert_equal(expected_index, File.read(ja_index_file))
       end
