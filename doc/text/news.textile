@@ -1,5 +1,37 @@
 h1. NEWS
 
+h2. 0.9.8: 2013-06-07
+
+h3. Improvements
+
+ * [ReferenceTask] Used YARD I18n feature for translating references.
+   For it, YARD 0.8.6.1 or later is required.
+ * [ReferenceTask] Supported replacing filenames which aren't
+   supported by GitHub Pages in "reference:publication:generate" task.
+   This task renames the fimename "_index.html" (methods list page) to
+   "alphabetical_index.html", because GitHub Pages doesn't support
+   files which their filenames start with "_".
+ * [ReferenceTask] Added the task ("release:references:upload") to
+   copy generated references to a HTML directory.
+   A HTML directory, for example, is a repository of GitHub Pages. In
+   this case, this task is used to commit references to GitHub Pages.
+ * [Referencetask] Dropped support to upload .htaccess.
+ * [ReleaseTask] Used the version in your gemspec as a new version
+   when no version is specified as an argument by "release:info:update"
+   task. A new version is used to replace HTML index files.
+
+h3. Fixes
+
+ * [ReferenceTask] Generated "reference path" correctly in merged PO
+   files.
+  "reference path" is a path of a file including translated message
+   (msgid) and it's attached to its corresponded msgid.
+ * [ReleaseTask] Removed needless replaces in HTML files in the
+   task "release:info:update".
+ * [ReferenceTask] Added missing description for the task
+   "reference:publication:generate" to generate references for
+   publication.
+
 h2. 0.9.7: 2012-12-26
 
 h3. Improvements
