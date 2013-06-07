@@ -51,7 +51,7 @@ Gem::Specification.new do |spec|
   spec.description = description
 
   spec.extra_rdoc_files = ["README.textile"]
-  spec.files = ["README.textile", "Rakefile", "Gemfile"]
+  spec.files = ["README.textile", "Rakefile", "Gemfile", ".yardopts"]
   Dir.chdir(base_dir) do
     spec.files += Dir.glob("lib/**/*.rb")
     spec.files += Dir.glob("doc/text/*.*")
