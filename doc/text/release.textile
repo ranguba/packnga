@@ -213,6 +213,7 @@ $ cd /path/to/ranguba.org
 
 そして、コピーにより生じた変更をranguba.orgのリポジトリにpushする。
 ranguba.orgはGithub Pagesを使っているので、pushすると自動的にranguba.orgのサイトも更新される。
+
 h2. メーリングリストにリリースの周知
 
 メーリングリストにリリースした旨を書いたメールを流す。
