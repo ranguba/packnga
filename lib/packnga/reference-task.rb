@@ -286,7 +286,8 @@ module Packnga
                                 paths,
                                 templates,
                                 language)
-      content = content.gsub(/"(.+)_index\.html/, "\\1alphabetical_index.html")
+      content = content.gsub(/"(.*?)_index\.html"/,
+                             "\"\\1alphabetical_index.html\"")
       File.open(prepared_path.to_s, "w") do |file|
         file.print(content)
       end
