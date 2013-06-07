@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: packnga 0.9.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-20 22:17+0900\n"
-"PO-Revision-Date: 2012-12-26 17:59+0900\n"
+"PO-Revision-Date: 2013-06-07 15:42+0900\n"
 "Last-Translator: haruka yoshihara <yoshihara@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -17,490 +17,979 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ./README.textile:1
+#: ../../README.textile:1
 msgid "h1. README"
 msgstr "h1. はじめに"
 
-#: ./README.textile:3
+#: ../../README.textile:3
 msgid "h2. Name"
 msgstr "h2. 名前"
 
-#: ./README.textile:5
+#: ../../README.textile:5
 msgid "Packnga"
 msgstr ""
 
-#: ./README.textile:7
+#: ../../README.textile:7
 msgid "h2. Description"
 msgstr "h2. 説明"
 
-#: ./README.textile:9
+#: ../../README.textile:9
 msgid "An utility library to package i18n-ed library."
 msgstr "Packngaは多言語化したライブラリを作成するためのユーティリティを集めたライブラリです。"
 
-#: ./README.textile:11
+#: ../../README.textile:11
 msgid "Packnga is a library to translate to many languages by YARD."
 msgstr "PackngaはYARDを用いてライブラリを多言語に翻訳します。"
 
-#: ./README.textile:13
+#: ../../README.textile:13
 msgid "h2. Authors"
 msgstr "h2. 作者"
 
-#: ./README.textile:15
-msgid "  * Haruka Yoshihara <yoshihara@clear-code.com>\n  * Kouhei Sutou <kou@clear-code.com>"
+#: ../../README.textile:15
+msgid ""
+"  * Haruka Yoshihara <yshr04hrk@gmail.com>\n"
+"  * Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
 
-#: ./README.textile:18
+#: ../../README.textile:18
 msgid "h2. License"
 msgstr "h2. ライセンス"
 
-#: ./README.textile:20
+#: ../../README.textile:20
 msgid "LGPL 2.1. See license/LGPL for details."
 msgstr "LGPL 2.1です。詳しくはlicense/LGPLを見てください。"
 
-#: ./README.textile:22
-msgid "(Kouhei Sutou has a right to change the license including\ncontributed patches.)"
+#: ../../README.textile:22
+msgid ""
+"(Kouhei Sutou has a right to change the license including\n"
+"contributed patches.)"
 msgstr "（コントリビュートされたパッチなども含め、Kouhei Sutouがライセンスを変更する権利を持ちます。）"
 
-#: ./README.textile:25
+#: ../../README.textile:25
 msgid "h2. Dependencies"
 msgstr "h2. 依存ソフトウェア"
 
-#: ./README.textile:27
+#: ../../README.textile:27
 msgid "  * Ruby >= 1.8 (including 1.9.2)"
 msgstr ""
 
-#: ./README.textile:29 ./doc/text/tutorial.textile:5
+#: ../../README.textile:29 ../../doc/text/tutorial.textile:5
 msgid "h2. Install"
 msgstr "h2. インストール"
 
-#: ./README.textile:31 ./doc/text/tutorial.textile:9
-msgid "<pre>\n!!!command_line\n% sudo gem install packnga\n</pre>"
+#: ../../README.textile:31 ../../doc/text/tutorial.textile:9
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"% sudo gem install packnga\n"
+"</pre>"
 msgstr ""
 
-#: ./README.textile:36
+#: ../../README.textile:36
 msgid "h2. Documents"
 msgstr "h2. ドキュメント"
 
-#: ./README.textile:38
-msgid "  * \"Reference manual in English\":http://ranguba.org/packnga/en/\n  * \"Reference manual in Japanese\":http://ranguba.org/packnga/ja/"
+#: ../../README.textile:38
+msgid ""
+"  * \"Reference manual in English\":http://ranguba.org/packnga/en/\n"
+"  * \"Reference manual in Japanese\":http://ranguba.org/packnga/ja/"
 msgstr ""
 "  * \"リファレンスマニュアル（英語）\":http://ranguba.org/packnga/en/\n"
 "  * \"リファレンスマニュアル（日本語）\":http://ranguba.org/packnga/ja/"
 
-#: ./README.textile:41
+#: ../../README.textile:41
 msgid "h2. Mailing list"
 msgstr "h2. メーリングリスト"
 
-#: ./README.textile:43
+#: ../../README.textile:43
 msgid "  * comming soon..."
 msgstr "準備中です。"
 
-#: ./README.textile:45
+#: ../../README.textile:45
 msgid "h2. Thanks"
 msgstr "h2. 感謝"
 
-#: ./README.textile:47
-msgid "  * SHIMADA Koji: send a patch.\n  * tetradice: report bugs."
+#: ../../README.textile:47
+msgid ""
+"  * SHIMADA Koji: send a patch.\n"
+"  * tetradice: report bugs."
 msgstr ""
 "  * 島田 浩二さん: パッチを送ってくれました。\n"
 "  * tetradiceさん: バグを報告してくれました。"
 
-#: ./doc/text/lgpl.txt:1
-msgid "		  GNU LESSER GENERAL PUBLIC LICENSE\n		       Version 2.1, February 1999"
+#: ../../doc/text/lgpl.txt:1
+msgid ""
+"		  GNU LESSER GENERAL PUBLIC LICENSE\n"
+"		       Version 2.1, February 1999"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:4
-msgid " Copyright (C) 1991, 1999 Free Software Foundation, Inc.\n     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed."
+#: ../../doc/text/lgpl.txt:4
+msgid ""
+" Copyright (C) 1991, 1999 Free Software Foundation, Inc.\n"
+"     59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n"
+" Everyone is permitted to copy and distribute verbatim copies\n"
+" of this license document, but changing it is not allowed."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:9
-msgid "[This is the first released version of the Lesser GPL.  It also counts\n as the successor of the GNU Library Public License, version 2, hence\n the version number 2.1.]"
+#: ../../doc/text/lgpl.txt:9
+msgid ""
+"[This is the first released version of the Lesser GPL.  It also counts\n"
+" as the successor of the GNU Library Public License, version 2, hence\n"
+" the version number 2.1.]"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:13
+#: ../../doc/text/lgpl.txt:13
 msgid "			    Preamble"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:15
-msgid "  The licenses for most software are designed to take away your\nfreedom to share and change it.  By contrast, the GNU General Public\nLicenses are intended to guarantee your freedom to share and change\nfree software--to make sure the software is free for all its users."
+#: ../../doc/text/lgpl.txt:15
+msgid ""
+"  The licenses for most software are designed to take away your\n"
+"freedom to share and change it.  By contrast, the GNU General Public\n"
+"Licenses are intended to guarantee your freedom to share and change\n"
+"free software--to make sure the software is free for all its users."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:20
-msgid "  This license, the Lesser General Public License, applies to some\nspecially designated software packages--typically libraries--of the\nFree Software Foundation and other authors who decide to use it.  You\ncan use it too, but we suggest you first think carefully about whether\nthis license or the ordinary General Public License is the better\nstrategy to use in any particular case, based on the explanations below."
+#: ../../doc/text/lgpl.txt:20
+msgid ""
+"  This license, the Lesser General Public License, applies to some\n"
+"specially designated software packages--typically libraries--of the\n"
+"Free Software Foundation and other authors who decide to use it.  You\n"
+"can use it too, but we suggest you first think carefully about whether\n"
+"this license or the ordinary General Public License is the better\n"
+"strategy to use in any particular case, based on the explanations below."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:27
-msgid "  When we speak of free software, we are referring to freedom of use,\nnot price.  Our General Public Licenses are designed to make sure that\nyou have the freedom to distribute copies of free software (and charge\nfor this service if you wish); that you receive source code or can get\nit if you want it; that you can change the software and use pieces of\nit in new free programs; and that you are informed that you can do\nthese things."
+#: ../../doc/text/lgpl.txt:27
+msgid ""
+"  When we speak of free software, we are referring to freedom of use,\n"
+"not price.  Our General Public Licenses are designed to make sure that\n"
+"you have the freedom to distribute copies of free software (and charge\n"
+"for this service if you wish); that you receive source code or can get\n"
+"it if you want it; that you can change the software and use pieces of\n"
+"it in new free programs; and that you are informed that you can do\n"
+"these things."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:35
-msgid "  To protect your rights, we need to make restrictions that forbid\ndistributors to deny you these rights or to ask you to surrender these\nrights.  These restrictions translate to certain responsibilities for\nyou if you distribute copies of the library or if you modify it."
+#: ../../doc/text/lgpl.txt:35
+msgid ""
+"  To protect your rights, we need to make restrictions that forbid\n"
+"distributors to deny you these rights or to ask you to surrender these\n"
+"rights.  These restrictions translate to certain responsibilities for\n"
+"you if you distribute copies of the library or if you modify it."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:40
-msgid "  For example, if you distribute copies of the library, whether gratis\nor for a fee, you must give the recipients all the rights that we gave\nyou.  You must make sure that they, too, receive or can get the source\ncode.  If you link other code with the library, you must provide\ncomplete object files to the recipients, so that they can relink them\nwith the library after making changes to the library and recompiling\nit.  And you must show them these terms so they know their rights."
+#: ../../doc/text/lgpl.txt:40
+msgid ""
+"  For example, if you distribute copies of the library, whether gratis\n"
+"or for a fee, you must give the recipients all the rights that we gave\n"
+"you.  You must make sure that they, too, receive or can get the source\n"
+"code.  If you link other code with the library, you must provide\n"
+"complete object files to the recipients, so that they can relink them\n"
+"with the library after making changes to the library and recompiling\n"
+"it.  And you must show them these terms so they know their rights."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:48
-msgid "  We protect your rights with a two-step method: (1) we copyright the\nlibrary, and (2) we offer you this license, which gives you legal\npermission to copy, distribute and/or modify the library."
+#: ../../doc/text/lgpl.txt:48
+msgid ""
+"  We protect your rights with a two-step method: (1) we copyright the\n"
+"library, and (2) we offer you this license, which gives you legal\n"
+"permission to copy, distribute and/or modify the library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:52
-msgid "  To protect each distributor, we want to make it very clear that\nthere is no warranty for the free library.  Also, if the library is\nmodified by someone else and passed on, the recipients should know\nthat what they have is not the original version, so that the original\nauthor's reputation will not be affected by problems that might be\nintroduced by others."
+#: ../../doc/text/lgpl.txt:52
+msgid ""
+"  To protect each distributor, we want to make it very clear that\n"
+"there is no warranty for the free library.  Also, if the library is\n"
+"modified by someone else and passed on, the recipients should know\n"
+"that what they have is not the original version, so that the original\n"
+"author's reputation will not be affected by problems that might be\n"
+"introduced by others."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:59
-msgid "  Finally, software patents pose a constant threat to the existence of\nany free program.  We wish to make sure that a company cannot\neffectively restrict the users of a free program by obtaining a\nrestrictive license from a patent holder.  Therefore, we insist that\nany patent license obtained for a version of the library must be\nconsistent with the full freedom of use specified in this license."
+#: ../../doc/text/lgpl.txt:59
+msgid ""
+"  Finally, software patents pose a constant threat to the existence of\n"
+"any free program.  We wish to make sure that a company cannot\n"
+"effectively restrict the users of a free program by obtaining a\n"
+"restrictive license from a patent holder.  Therefore, we insist that\n"
+"any patent license obtained for a version of the library must be\n"
+"consistent with the full freedom of use specified in this license."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:66
-msgid "  Most GNU software, including some libraries, is covered by the\nordinary GNU General Public License.  This license, the GNU Lesser\nGeneral Public License, applies to certain designated libraries, and\nis quite different from the ordinary General Public License.  We use\nthis license for certain libraries in order to permit linking those\nlibraries into non-free programs."
+#: ../../doc/text/lgpl.txt:66
+msgid ""
+"  Most GNU software, including some libraries, is covered by the\n"
+"ordinary GNU General Public License.  This license, the GNU Lesser\n"
+"General Public License, applies to certain designated libraries, and\n"
+"is quite different from the ordinary General Public License.  We use\n"
+"this license for certain libraries in order to permit linking those\n"
+"libraries into non-free programs."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:73
-msgid "  When a program is linked with a library, whether statically or using\na shared library, the combination of the two is legally speaking a\ncombined work, a derivative of the original library.  The ordinary\nGeneral Public License therefore permits such linking only if the\nentire combination fits its criteria of freedom.  The Lesser General\nPublic License permits more lax criteria for linking other code with\nthe library."
+#: ../../doc/text/lgpl.txt:73
+msgid ""
+"  When a program is linked with a library, whether statically or using\n"
+"a shared library, the combination of the two is legally speaking a\n"
+"combined work, a derivative of the original library.  The ordinary\n"
+"General Public License therefore permits such linking only if the\n"
+"entire combination fits its criteria of freedom.  The Lesser General\n"
+"Public License permits more lax criteria for linking other code with\n"
+"the library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:81
-msgid "  We call this license the \"Lesser\" General Public License because it\ndoes Less to protect the user's freedom than the ordinary General\nPublic License.  It also provides other free software developers Less\nof an advantage over competing non-free programs.  These disadvantages\nare the reason we use the ordinary General Public License for many\nlibraries.  However, the Lesser license provides advantages in certain\nspecial circumstances."
+#: ../../doc/text/lgpl.txt:81
+msgid ""
+"  We call this license the \"Lesser\" General Public License because it\n"
+"does Less to protect the user's freedom than the ordinary General\n"
+"Public License.  It also provides other free software developers Less\n"
+"of an advantage over competing non-free programs.  These disadvantages\n"
+"are the reason we use the ordinary General Public License for many\n"
+"libraries.  However, the Lesser license provides advantages in certain\n"
+"special circumstances."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:89
-msgid "  For example, on rare occasions, there may be a special need to\nencourage the widest possible use of a certain library, so that it becomes\na de-facto standard.  To achieve this, non-free programs must be\nallowed to use the library.  A more frequent case is that a free\nlibrary does the same job as widely used non-free libraries.  In this\ncase, there is little to gain by limiting the free library to free\nsoftware only, so we use the Lesser General Public License."
+#: ../../doc/text/lgpl.txt:89
+msgid ""
+"  For example, on rare occasions, there may be a special need to\n"
+"encourage the widest possible use of a certain library, so that it becomes\n"
+"a de-facto standard.  To achieve this, non-free programs must be\n"
+"allowed to use the library.  A more frequent case is that a free\n"
+"library does the same job as widely used non-free libraries.  In this\n"
+"case, there is little to gain by limiting the free library to free\n"
+"software only, so we use the Lesser General Public License."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:97
-msgid "  In other cases, permission to use a particular library in non-free\nprograms enables a greater number of people to use a large body of\nfree software.  For example, permission to use the GNU C Library in\nnon-free programs enables many more people to use the whole GNU\noperating system, as well as its variant, the GNU/Linux operating\nsystem."
+#: ../../doc/text/lgpl.txt:97
+msgid ""
+"  In other cases, permission to use a particular library in non-free\n"
+"programs enables a greater number of people to use a large body of\n"
+"free software.  For example, permission to use the GNU C Library in\n"
+"non-free programs enables many more people to use the whole GNU\n"
+"operating system, as well as its variant, the GNU/Linux operating\n"
+"system."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:104
-msgid "  Although the Lesser General Public License is Less protective of the\nusers' freedom, it does ensure that the user of a program that is\nlinked with the Library has the freedom and the wherewithal to run\nthat program using a modified version of the Library."
+#: ../../doc/text/lgpl.txt:104
+msgid ""
+"  Although the Lesser General Public License is Less protective of the\n"
+"users' freedom, it does ensure that the user of a program that is\n"
+"linked with the Library has the freedom and the wherewithal to run\n"
+"that program using a modified version of the Library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:109
-msgid "  The precise terms and conditions for copying, distribution and\nmodification follow.  Pay close attention to the difference between a\n\"work based on the library\" and a \"work that uses the library\".  The\nformer contains code derived from the library, whereas the latter must\nbe combined with the library in order to run."
+#: ../../doc/text/lgpl.txt:109
+msgid ""
+"  The precise terms and conditions for copying, distribution and\n"
+"modification follow.  Pay close attention to the difference between a\n"
+"\"work based on the library\" and a \"work that uses the library\".  The\n"
+"former contains code derived from the library, whereas the latter must\n"
+"be combined with the library in order to run."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:115
-msgid "		  GNU LESSER GENERAL PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION"
+#: ../../doc/text/lgpl.txt:115
+msgid ""
+"		  GNU LESSER GENERAL PUBLIC LICENSE\n"
+"   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:118
-msgid "  0. This License Agreement applies to any software library or other\nprogram which contains a notice placed by the copyright holder or\nother authorized party saying it may be distributed under the terms of\nthis Lesser General Public License (also called \"this License\").\nEach licensee is addressed as \"you\"."
+#: ../../doc/text/lgpl.txt:118
+msgid ""
+"  0. This License Agreement applies to any software library or other\n"
+"program which contains a notice placed by the copyright holder or\n"
+"other authorized party saying it may be distributed under the terms of\n"
+"this Lesser General Public License (also called \"this License\").\n"
+"Each licensee is addressed as \"you\"."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:124
-msgid "  A \"library\" means a collection of software functions and/or data\nprepared so as to be conveniently linked with application programs\n(which use some of those functions and data) to form executables."
+#: ../../doc/text/lgpl.txt:124
+msgid ""
+"  A \"library\" means a collection of software functions and/or data\n"
+"prepared so as to be conveniently linked with application programs\n"
+"(which use some of those functions and data) to form executables."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:128
-msgid "  The \"Library\", below, refers to any such software library or work\nwhich has been distributed under these terms.  A \"work based on the\nLibrary\" means either the Library or any derivative work under\ncopyright law: that is to say, a work containing the Library or a\nportion of it, either verbatim or with modifications and/or translated\nstraightforwardly into another language.  (Hereinafter, translation is\nincluded without limitation in the term \"modification\".)"
+#: ../../doc/text/lgpl.txt:128
+msgid ""
+"  The \"Library\", below, refers to any such software library or work\n"
+"which has been distributed under these terms.  A \"work based on the\n"
+"Library\" means either the Library or any derivative work under\n"
+"copyright law: that is to say, a work containing the Library or a\n"
+"portion of it, either verbatim or with modifications and/or translated\n"
+"straightforwardly into another language.  (Hereinafter, translation is\n"
+"included without limitation in the term \"modification\".)"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:136
-msgid "  \"Source code\" for a work means the preferred form of the work for\nmaking modifications to it.  For a library, complete source code means\nall the source code for all modules it contains, plus any associated\ninterface definition files, plus the scripts used to control compilation\nand installation of the library."
+#: ../../doc/text/lgpl.txt:136
+msgid ""
+"  \"Source code\" for a work means the preferred form of the work for\n"
+"making modifications to it.  For a library, complete source code means\n"
+"all the source code for all modules it contains, plus any associated\n"
+"interface definition files, plus the scripts used to control compilation\n"
+"and installation of the library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:142
-msgid "  Activities other than copying, distribution and modification are not\ncovered by this License; they are outside its scope.  The act of\nrunning a program using the Library is not restricted, and output from\nsuch a program is covered only if its contents constitute a work based\non the Library (independent of the use of the Library in a tool for\nwriting it).  Whether that is true depends on what the Library does\nand what the program that uses the Library does."
+#: ../../doc/text/lgpl.txt:142
+msgid ""
+"  Activities other than copying, distribution and modification are not\n"
+"covered by this License; they are outside its scope.  The act of\n"
+"running a program using the Library is not restricted, and output from\n"
+"such a program is covered only if its contents constitute a work based\n"
+"on the Library (independent of the use of the Library in a tool for\n"
+"writing it).  Whether that is true depends on what the Library does\n"
+"and what the program that uses the Library does."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:150
-msgid "  1. You may copy and distribute verbatim copies of the Library's\ncomplete source code as you receive it, in any medium, provided that\nyou conspicuously and appropriately publish on each copy an\nappropriate copyright notice and disclaimer of warranty; keep intact\nall the notices that refer to this License and to the absence of any\nwarranty; and distribute a copy of this License along with the\nLibrary."
+#: ../../doc/text/lgpl.txt:150
+msgid ""
+"  1. You may copy and distribute verbatim copies of the Library's\n"
+"complete source code as you receive it, in any medium, provided that\n"
+"you conspicuously and appropriately publish on each copy an\n"
+"appropriate copyright notice and disclaimer of warranty; keep intact\n"
+"all the notices that refer to this License and to the absence of any\n"
+"warranty; and distribute a copy of this License along with the\n"
+"Library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:158
-msgid "  You may charge a fee for the physical act of transferring a copy,\nand you may at your option offer warranty protection in exchange for a\nfee."
+#: ../../doc/text/lgpl.txt:158
+msgid ""
+"  You may charge a fee for the physical act of transferring a copy,\n"
+"and you may at your option offer warranty protection in exchange for a\n"
+"fee."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:162
-msgid "  2. You may modify your copy or copies of the Library or any portion\nof it, thus forming a work based on the Library, and copy and\ndistribute such modifications or work under the terms of Section 1\nabove, provided that you also meet all of these conditions:"
+#: ../../doc/text/lgpl.txt:162
+msgid ""
+"  2. You may modify your copy or copies of the Library or any portion\n"
+"of it, thus forming a work based on the Library, and copy and\n"
+"distribute such modifications or work under the terms of Section 1\n"
+"above, provided that you also meet all of these conditions:"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:167
+#: ../../doc/text/lgpl.txt:167
 msgid "    a) The modified work must itself be a software library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:169
-msgid "    b) You must cause the files modified to carry prominent notices\n    stating that you changed the files and the date of any change."
+#: ../../doc/text/lgpl.txt:169
+msgid ""
+"    b) You must cause the files modified to carry prominent notices\n"
+"    stating that you changed the files and the date of any change."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:172
-msgid "    c) You must cause the whole of the work to be licensed at no\n    charge to all third parties under the terms of this License."
+#: ../../doc/text/lgpl.txt:172
+msgid ""
+"    c) You must cause the whole of the work to be licensed at no\n"
+"    charge to all third parties under the terms of this License."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:175
-msgid "    d) If a facility in the modified Library refers to a function or a\n    table of data to be supplied by an application program that uses\n    the facility, other than as an argument passed when the facility\n    is invoked, then you must make a good faith effort to ensure that,\n    in the event an application does not supply such function or\n    table, the facility still operates, and performs whatever part of\n    its purpose remains meaningful."
+#: ../../doc/text/lgpl.txt:175
+msgid ""
+"    d) If a facility in the modified Library refers to a function or a\n"
+"    table of data to be supplied by an application program that uses\n"
+"    the facility, other than as an argument passed when the facility\n"
+"    is invoked, then you must make a good faith effort to ensure that,\n"
+"    in the event an application does not supply such function or\n"
+"    table, the facility still operates, and performs whatever part of\n"
+"    its purpose remains meaningful."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:183
-msgid "    (For example, a function in a library to compute square roots has\n    a purpose that is entirely well-defined independent of the\n    application.  Therefore, Subsection 2d requires that any\n    application-supplied function or table used by this function must\n    be optional: if the application does not supply it, the square\n    root function must still compute square roots.)"
+#: ../../doc/text/lgpl.txt:183
+msgid ""
+"    (For example, a function in a library to compute square roots has\n"
+"    a purpose that is entirely well-defined independent of the\n"
+"    application.  Therefore, Subsection 2d requires that any\n"
+"    application-supplied function or table used by this function must\n"
+"    be optional: if the application does not supply it, the square\n"
+"    root function must still compute square roots.)"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:190
-msgid "These requirements apply to the modified work as a whole.  If\nidentifiable sections of that work are not derived from the Library,\nand can be reasonably considered independent and separate works in\nthemselves, then this License, and its terms, do not apply to those\nsections when you distribute them as separate works.  But when you\ndistribute the same sections as part of a whole which is a work based\non the Library, the distribution of the whole must be on the terms of\nthis License, whose permissions for other licensees extend to the\nentire whole, and thus to each and every part regardless of who wrote\nit."
+#: ../../doc/text/lgpl.txt:190
+msgid ""
+"These requirements apply to the modified work as a whole.  If\n"
+"identifiable sections of that work are not derived from the Library,\n"
+"and can be reasonably considered independent and separate works in\n"
+"themselves, then this License, and its terms, do not apply to those\n"
+"sections when you distribute them as separate works.  But when you\n"
+"distribute the same sections as part of a whole which is a work based\n"
+"on the Library, the distribution of the whole must be on the terms of\n"
+"this License, whose permissions for other licensees extend to the\n"
+"entire whole, and thus to each and every part regardless of who wrote\n"
+"it."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:201
-msgid "Thus, it is not the intent of this section to claim rights or contest\nyour rights to work written entirely by you; rather, the intent is to\nexercise the right to control the distribution of derivative or\ncollective works based on the Library."
+#: ../../doc/text/lgpl.txt:201
+msgid ""
+"Thus, it is not the intent of this section to claim rights or contest\n"
+"your rights to work written entirely by you; rather, the intent is to\n"
+"exercise the right to control the distribution of derivative or\n"
+"collective works based on the Library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:206
-msgid "In addition, mere aggregation of another work not based on the Library\nwith the Library (or with a work based on the Library) on a volume of\na storage or distribution medium does not bring the other work under\nthe scope of this License."
+#: ../../doc/text/lgpl.txt:206
+msgid ""
+"In addition, mere aggregation of another work not based on the Library\n"
+"with the Library (or with a work based on the Library) on a volume of\n"
+"a storage or distribution medium does not bring the other work under\n"
+"the scope of this License."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:211
-msgid "  3. You may opt to apply the terms of the ordinary GNU General Public\nLicense instead of this License to a given copy of the Library.  To do\nthis, you must alter all the notices that refer to this License, so\nthat they refer to the ordinary GNU General Public License, version 2,\ninstead of to this License.  (If a newer version than version 2 of the\nordinary GNU General Public License has appeared, then you can specify\nthat version instead if you wish.)  Do not make any other change in\nthese notices."
+#: ../../doc/text/lgpl.txt:211
+msgid ""
+"  3. You may opt to apply the terms of the ordinary GNU General Public\n"
+"License instead of this License to a given copy of the Library.  To do\n"
+"this, you must alter all the notices that refer to this License, so\n"
+"that they refer to the ordinary GNU General Public License, version 2,\n"
+"instead of to this License.  (If a newer version than version 2 of the\n"
+"ordinary GNU General Public License has appeared, then you can specify\n"
+"that version instead if you wish.)  Do not make any other change in\n"
+"these notices."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:220
-msgid "  Once this change is made in a given copy, it is irreversible for\nthat copy, so the ordinary GNU General Public License applies to all\nsubsequent copies and derivative works made from that copy."
+#: ../../doc/text/lgpl.txt:220
+msgid ""
+"  Once this change is made in a given copy, it is irreversible for\n"
+"that copy, so the ordinary GNU General Public License applies to all\n"
+"subsequent copies and derivative works made from that copy."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:224
-msgid "  This option is useful when you wish to copy part of the code of\nthe Library into a program that is not a library."
+#: ../../doc/text/lgpl.txt:224
+msgid ""
+"  This option is useful when you wish to copy part of the code of\n"
+"the Library into a program that is not a library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:227
-msgid "  4. You may copy and distribute the Library (or a portion or\nderivative of it, under Section 2) in object code or executable form\nunder the terms of Sections 1 and 2 above provided that you accompany\nit with the complete corresponding machine-readable source code, which\nmust be distributed under the terms of Sections 1 and 2 above on a\nmedium customarily used for software interchange."
+#: ../../doc/text/lgpl.txt:227
+msgid ""
+"  4. You may copy and distribute the Library (or a portion or\n"
+"derivative of it, under Section 2) in object code or executable form\n"
+"under the terms of Sections 1 and 2 above provided that you accompany\n"
+"it with the complete corresponding machine-readable source code, which\n"
+"must be distributed under the terms of Sections 1 and 2 above on a\n"
+"medium customarily used for software interchange."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:234
-msgid "  If distribution of object code is made by offering access to copy\nfrom a designated place, then offering equivalent access to copy the\nsource code from the same place satisfies the requirement to\ndistribute the source code, even though third parties are not\ncompelled to copy the source along with the object code."
+#: ../../doc/text/lgpl.txt:234
+msgid ""
+"  If distribution of object code is made by offering access to copy\n"
+"from a designated place, then offering equivalent access to copy the\n"
+"source code from the same place satisfies the requirement to\n"
+"distribute the source code, even though third parties are not\n"
+"compelled to copy the source along with the object code."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:240
-msgid "  5. A program that contains no derivative of any portion of the\nLibrary, but is designed to work with the Library by being compiled or\nlinked with it, is called a \"work that uses the Library\".  Such a\nwork, in isolation, is not a derivative work of the Library, and\ntherefore falls outside the scope of this License."
+#: ../../doc/text/lgpl.txt:240
+msgid ""
+"  5. A program that contains no derivative of any portion of the\n"
+"Library, but is designed to work with the Library by being compiled or\n"
+"linked with it, is called a \"work that uses the Library\".  Such a\n"
+"work, in isolation, is not a derivative work of the Library, and\n"
+"therefore falls outside the scope of this License."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:246
-msgid "  However, linking a \"work that uses the Library\" with the Library\ncreates an executable that is a derivative of the Library (because it\ncontains portions of the Library), rather than a \"work that uses the\nlibrary\".  The executable is therefore covered by this License.\nSection 6 states terms for distribution of such executables."
+#: ../../doc/text/lgpl.txt:246
+msgid ""
+"  However, linking a \"work that uses the Library\" with the Library\n"
+"creates an executable that is a derivative of the Library (because it\n"
+"contains portions of the Library), rather than a \"work that uses the\n"
+"library\".  The executable is therefore covered by this License.\n"
+"Section 6 states terms for distribution of such executables."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:252
-msgid "  When a \"work that uses the Library\" uses material from a header file\nthat is part of the Library, the object code for the work may be a\nderivative work of the Library even though the source code is not.\nWhether this is true is especially significant if the work can be\nlinked without the Library, or if the work is itself a library.  The\nthreshold for this to be true is not precisely defined by law."
+#: ../../doc/text/lgpl.txt:252
+msgid ""
+"  When a \"work that uses the Library\" uses material from a header file\n"
+"that is part of the Library, the object code for the work may be a\n"
+"derivative work of the Library even though the source code is not.\n"
+"Whether this is true is especially significant if the work can be\n"
+"linked without the Library, or if the work is itself a library.  The\n"
+"threshold for this to be true is not precisely defined by law."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:259
-msgid "  If such an object file uses only numerical parameters, data\nstructure layouts and accessors, and small macros and small inline\nfunctions (ten lines or less in length), then the use of the object\nfile is unrestricted, regardless of whether it is legally a derivative\nwork.  (Executables containing this object code plus portions of the\nLibrary will still fall under Section 6.)"
+#: ../../doc/text/lgpl.txt:259
+msgid ""
+"  If such an object file uses only numerical parameters, data\n"
+"structure layouts and accessors, and small macros and small inline\n"
+"functions (ten lines or less in length), then the use of the object\n"
+"file is unrestricted, regardless of whether it is legally a derivative\n"
+"work.  (Executables containing this object code plus portions of the\n"
+"Library will still fall under Section 6.)"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:266
-msgid "  Otherwise, if the work is a derivative of the Library, you may\ndistribute the object code for the work under the terms of Section 6.\nAny executables containing that work also fall under Section 6,\nwhether or not they are linked directly with the Library itself."
+#: ../../doc/text/lgpl.txt:266
+msgid ""
+"  Otherwise, if the work is a derivative of the Library, you may\n"
+"distribute the object code for the work under the terms of Section 6.\n"
+"Any executables containing that work also fall under Section 6,\n"
+"whether or not they are linked directly with the Library itself."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:271
-msgid "  6. As an exception to the Sections above, you may also combine or\nlink a \"work that uses the Library\" with the Library to produce a\nwork containing portions of the Library, and distribute that work\nunder terms of your choice, provided that the terms permit\nmodification of the work for the customer's own use and reverse\nengineering for debugging such modifications."
+#: ../../doc/text/lgpl.txt:271
+msgid ""
+"  6. As an exception to the Sections above, you may also combine or\n"
+"link a \"work that uses the Library\" with the Library to produce a\n"
+"work containing portions of the Library, and distribute that work\n"
+"under terms of your choice, provided that the terms permit\n"
+"modification of the work for the customer's own use and reverse\n"
+"engineering for debugging such modifications."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:278
-msgid "  You must give prominent notice with each copy of the work that the\nLibrary is used in it and that the Library and its use are covered by\nthis License.  You must supply a copy of this License.  If the work\nduring execution displays copyright notices, you must include the\ncopyright notice for the Library among them, as well as a reference\ndirecting the user to the copy of this License.  Also, you must do one\nof these things:"
+#: ../../doc/text/lgpl.txt:278
+msgid ""
+"  You must give prominent notice with each copy of the work that the\n"
+"Library is used in it and that the Library and its use are covered by\n"
+"this License.  You must supply a copy of this License.  If the work\n"
+"during execution displays copyright notices, you must include the\n"
+"copyright notice for the Library among them, as well as a reference\n"
+"directing the user to the copy of this License.  Also, you must do one\n"
+"of these things:"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:286
-msgid "    a) Accompany the work with the complete corresponding\n    machine-readable source code for the Library including whatever\n    changes were used in the work (which must be distributed under\n    Sections 1 and 2 above); and, if the work is an executable linked\n    with the Library, with the complete machine-readable \"work that\n    uses the Library\", as object code and/or source code, so that the\n    user can modify the Library and then relink to produce a modified\n    executable containing the modified Library.  (It is understood\n    that the user who changes the contents of definitions files in the\n    Library will not necessarily be able to recompile the application\n    to use the modified definitions.)"
+#: ../../doc/text/lgpl.txt:286
+msgid ""
+"    a) Accompany the work with the complete corresponding\n"
+"    machine-readable source code for the Library including whatever\n"
+"    changes were used in the work (which must be distributed under\n"
+"    Sections 1 and 2 above); and, if the work is an executable linked\n"
+"    with the Library, with the complete machine-readable \"work that\n"
+"    uses the Library\", as object code and/or source code, so that the\n"
+"    user can modify the Library and then relink to produce a modified\n"
+"    executable containing the modified Library.  (It is understood\n"
+"    that the user who changes the contents of definitions files in the\n"
+"    Library will not necessarily be able to recompile the application\n"
+"    to use the modified definitions.)"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:298
-msgid "    b) Use a suitable shared library mechanism for linking with the\n    Library.  A suitable mechanism is one that (1) uses at run time a\n    copy of the library already present on the user's computer system,\n    rather than copying library functions into the executable, and (2)\n    will operate properly with a modified version of the library, if\n    the user installs one, as long as the modified version is\n    interface-compatible with the version that the work was made with."
+#: ../../doc/text/lgpl.txt:298
+msgid ""
+"    b) Use a suitable shared library mechanism for linking with the\n"
+"    Library.  A suitable mechanism is one that (1) uses at run time a\n"
+"    copy of the library already present on the user's computer system,\n"
+"    rather than copying library functions into the executable, and (2)\n"
+"    will operate properly with a modified version of the library, if\n"
+"    the user installs one, as long as the modified version is\n"
+"    interface-compatible with the version that the work was made with."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:306
-msgid "    c) Accompany the work with a written offer, valid for at\n    least three years, to give the same user the materials\n    specified in Subsection 6a, above, for a charge no more\n    than the cost of performing this distribution."
+#: ../../doc/text/lgpl.txt:306
+msgid ""
+"    c) Accompany the work with a written offer, valid for at\n"
+"    least three years, to give the same user the materials\n"
+"    specified in Subsection 6a, above, for a charge no more\n"
+"    than the cost of performing this distribution."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:311
-msgid "    d) If distribution of the work is made by offering access to copy\n    from a designated place, offer equivalent access to copy the above\n    specified materials from the same place."
+#: ../../doc/text/lgpl.txt:311
+msgid ""
+"    d) If distribution of the work is made by offering access to copy\n"
+"    from a designated place, offer equivalent access to copy the above\n"
+"    specified materials from the same place."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:315
-msgid "    e) Verify that the user has already received a copy of these\n    materials or that you have already sent this user a copy."
+#: ../../doc/text/lgpl.txt:315
+msgid ""
+"    e) Verify that the user has already received a copy of these\n"
+"    materials or that you have already sent this user a copy."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:318
-msgid "  For an executable, the required form of the \"work that uses the\nLibrary\" must include any data and utility programs needed for\nreproducing the executable from it.  However, as a special exception,\nthe materials to be distributed need not include anything that is\nnormally distributed (in either source or binary form) with the major\ncomponents (compiler, kernel, and so on) of the operating system on\nwhich the executable runs, unless that component itself accompanies\nthe executable."
+#: ../../doc/text/lgpl.txt:318
+msgid ""
+"  For an executable, the required form of the \"work that uses the\n"
+"Library\" must include any data and utility programs needed for\n"
+"reproducing the executable from it.  However, as a special exception,\n"
+"the materials to be distributed need not include anything that is\n"
+"normally distributed (in either source or binary form) with the major\n"
+"components (compiler, kernel, and so on) of the operating system on\n"
+"which the executable runs, unless that component itself accompanies\n"
+"the executable."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:327
-msgid "  It may happen that this requirement contradicts the license\nrestrictions of other proprietary libraries that do not normally\naccompany the operating system.  Such a contradiction means you cannot\nuse both them and the Library together in an executable that you\ndistribute."
+#: ../../doc/text/lgpl.txt:327
+msgid ""
+"  It may happen that this requirement contradicts the license\n"
+"restrictions of other proprietary libraries that do not normally\n"
+"accompany the operating system.  Such a contradiction means you cannot\n"
+"use both them and the Library together in an executable that you\n"
+"distribute."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:333
-msgid "  7. You may place library facilities that are a work based on the\nLibrary side-by-side in a single library together with other library\nfacilities not covered by this License, and distribute such a combined\nlibrary, provided that the separate distribution of the work based on\nthe Library and of the other library facilities is otherwise\npermitted, and provided that you do these two things:"
+#: ../../doc/text/lgpl.txt:333
+msgid ""
+"  7. You may place library facilities that are a work based on the\n"
+"Library side-by-side in a single library together with other library\n"
+"facilities not covered by this License, and distribute such a combined\n"
+"library, provided that the separate distribution of the work based on\n"
+"the Library and of the other library facilities is otherwise\n"
+"permitted, and provided that you do these two things:"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:340
-msgid "    a) Accompany the combined library with a copy of the same work\n    based on the Library, uncombined with any other library\n    facilities.  This must be distributed under the terms of the\n    Sections above."
+#: ../../doc/text/lgpl.txt:340
+msgid ""
+"    a) Accompany the combined library with a copy of the same work\n"
+"    based on the Library, uncombined with any other library\n"
+"    facilities.  This must be distributed under the terms of the\n"
+"    Sections above."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:345
-msgid "    b) Give prominent notice with the combined library of the fact\n    that part of it is a work based on the Library, and explaining\n    where to find the accompanying uncombined form of the same work."
+#: ../../doc/text/lgpl.txt:345
+msgid ""
+"    b) Give prominent notice with the combined library of the fact\n"
+"    that part of it is a work based on the Library, and explaining\n"
+"    where to find the accompanying uncombined form of the same work."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:349
-msgid "  8. You may not copy, modify, sublicense, link with, or distribute\nthe Library except as expressly provided under this License.  Any\nattempt otherwise to copy, modify, sublicense, link with, or\ndistribute the Library is void, and will automatically terminate your\nrights under this License.  However, parties who have received copies,\nor rights, from you under this License will not have their licenses\nterminated so long as such parties remain in full compliance."
+#: ../../doc/text/lgpl.txt:349
+msgid ""
+"  8. You may not copy, modify, sublicense, link with, or distribute\n"
+"the Library except as expressly provided under this License.  Any\n"
+"attempt otherwise to copy, modify, sublicense, link with, or\n"
+"distribute the Library is void, and will automatically terminate your\n"
+"rights under this License.  However, parties who have received copies,\n"
+"or rights, from you under this License will not have their licenses\n"
+"terminated so long as such parties remain in full compliance."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:357
-msgid "  9. You are not required to accept this License, since you have not\nsigned it.  However, nothing else grants you permission to modify or\ndistribute the Library or its derivative works.  These actions are\nprohibited by law if you do not accept this License.  Therefore, by\nmodifying or distributing the Library (or any work based on the\nLibrary), you indicate your acceptance of this License to do so, and\nall its terms and conditions for copying, distributing or modifying\nthe Library or works based on it."
+#: ../../doc/text/lgpl.txt:357
+msgid ""
+"  9. You are not required to accept this License, since you have not\n"
+"signed it.  However, nothing else grants you permission to modify or\n"
+"distribute the Library or its derivative works.  These actions are\n"
+"prohibited by law if you do not accept this License.  Therefore, by\n"
+"modifying or distributing the Library (or any work based on the\n"
+"Library), you indicate your acceptance of this License to do so, and\n"
+"all its terms and conditions for copying, distributing or modifying\n"
+"the Library or works based on it."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:366
-msgid "  10. Each time you redistribute the Library (or any work based on the\nLibrary), the recipient automatically receives a license from the\noriginal licensor to copy, distribute, link with or modify the Library\nsubject to these terms and conditions.  You may not impose any further\nrestrictions on the recipients' exercise of the rights granted herein.\nYou are not responsible for enforcing compliance by third parties with\nthis License."
+#: ../../doc/text/lgpl.txt:366
+msgid ""
+"  10. Each time you redistribute the Library (or any work based on the\n"
+"Library), the recipient automatically receives a license from the\n"
+"original licensor to copy, distribute, link with or modify the Library\n"
+"subject to these terms and conditions.  You may not impose any further\n"
+"restrictions on the recipients' exercise of the rights granted herein.\n"
+"You are not responsible for enforcing compliance by third parties with\n"
+"this License."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:374
-msgid "  11. If, as a consequence of a court judgment or allegation of patent\ninfringement or for any other reason (not limited to patent issues),\nconditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot\ndistribute so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you\nmay not distribute the Library at all.  For example, if a patent\nlicense would not permit royalty-free redistribution of the Library by\nall those who receive copies directly or indirectly through you, then\nthe only way you could satisfy both it and this License would be to\nrefrain entirely from distribution of the Library."
+#: ../../doc/text/lgpl.txt:374
+msgid ""
+"  11. If, as a consequence of a court judgment or allegation of patent\n"
+"infringement or for any other reason (not limited to patent issues),\n"
+"conditions are imposed on you (whether by court order, agreement or\n"
+"otherwise) that contradict the conditions of this License, they do not\n"
+"excuse you from the conditions of this License.  If you cannot\n"
+"distribute so as to satisfy simultaneously your obligations under this\n"
+"License and any other pertinent obligations, then as a consequence you\n"
+"may not distribute the Library at all.  For example, if a patent\n"
+"license would not permit royalty-free redistribution of the Library by\n"
+"all those who receive copies directly or indirectly through you, then\n"
+"the only way you could satisfy both it and this License would be to\n"
+"refrain entirely from distribution of the Library."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:387
-msgid "If any portion of this section is held invalid or unenforceable under any\nparticular circumstance, the balance of the section is intended to apply,\nand the section as a whole is intended to apply in other circumstances."
+#: ../../doc/text/lgpl.txt:387
+msgid ""
+"If any portion of this section is held invalid or unenforceable under any\n"
+"particular circumstance, the balance of the section is intended to apply,\n"
+"and the section as a whole is intended to apply in other circumstances."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:391
-msgid "It is not the purpose of this section to induce you to infringe any\npatents or other property right claims or to contest validity of any\nsuch claims; this section has the sole purpose of protecting the\nintegrity of the free software distribution system which is\nimplemented by public license practices.  Many people have made\ngenerous contributions to the wide range of software distributed\nthrough that system in reliance on consistent application of that\nsystem; it is up to the author/donor to decide if he or she is willing\nto distribute software through any other system and a licensee cannot\nimpose that choice."
+#: ../../doc/text/lgpl.txt:391
+msgid ""
+"It is not the purpose of this section to induce you to infringe any\n"
+"patents or other property right claims or to contest validity of any\n"
+"such claims; this section has the sole purpose of protecting the\n"
+"integrity of the free software distribution system which is\n"
+"implemented by public license practices.  Many people have made\n"
+"generous contributions to the wide range of software distributed\n"
+"through that system in reliance on consistent application of that\n"
+"system; it is up to the author/donor to decide if he or she is willing\n"
+"to distribute software through any other system and a licensee cannot\n"
+"impose that choice."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:402
-msgid "This section is intended to make thoroughly clear what is believed to\nbe a consequence of the rest of this License."
+#: ../../doc/text/lgpl.txt:402
+msgid ""
+"This section is intended to make thoroughly clear what is believed to\n"
+"be a consequence of the rest of this License."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:405
-msgid "  12. If the distribution and/or use of the Library is restricted in\ncertain countries either by patents or by copyrighted interfaces, the\noriginal copyright holder who places the Library under this License may add\nan explicit geographical distribution limitation excluding those countries,\nso that distribution is permitted only in or among countries not thus\nexcluded.  In such case, this License incorporates the limitation as if\nwritten in the body of this License."
+#: ../../doc/text/lgpl.txt:405
+msgid ""
+"  12. If the distribution and/or use of the Library is restricted in\n"
+"certain countries either by patents or by copyrighted interfaces, the\n"
+"original copyright holder who places the Library under this License may add\n"
+"an explicit geographical distribution limitation excluding those countries,\n"
+"so that distribution is permitted only in or among countries not thus\n"
+"excluded.  In such case, this License incorporates the limitation as if\n"
+"written in the body of this License."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:413
-msgid "  13. The Free Software Foundation may publish revised and/or new\nversions of the Lesser General Public License from time to time.\nSuch new versions will be similar in spirit to the present version,\nbut may differ in detail to address new problems or concerns."
+#: ../../doc/text/lgpl.txt:413
+msgid ""
+"  13. The Free Software Foundation may publish revised and/or new\n"
+"versions of the Lesser General Public License from time to time.\n"
+"Such new versions will be similar in spirit to the present version,\n"
+"but may differ in detail to address new problems or concerns."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:418
-msgid "Each version is given a distinguishing version number.  If the Library\nspecifies a version number of this License which applies to it and\n\"any later version\", you have the option of following the terms and\nconditions either of that version or of any later version published by\nthe Free Software Foundation.  If the Library does not specify a\nlicense version number, you may choose any version ever published by\nthe Free Software Foundation."
+#: ../../doc/text/lgpl.txt:418
+msgid ""
+"Each version is given a distinguishing version number.  If the Library\n"
+"specifies a version number of this License which applies to it and\n"
+"\"any later version\", you have the option of following the terms and\n"
+"conditions either of that version or of any later version published by\n"
+"the Free Software Foundation.  If the Library does not specify a\n"
+"license version number, you may choose any version ever published by\n"
+"the Free Software Foundation."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:426
-msgid "  14. If you wish to incorporate parts of the Library into other free\nprograms whose distribution conditions are incompatible with these,\nwrite to the author to ask for permission.  For software which is\ncopyrighted by the Free Software Foundation, write to the Free\nSoftware Foundation; we sometimes make exceptions for this.  Our\ndecision will be guided by the two goals of preserving the free status\nof all derivatives of our free software and of promoting the sharing\nand reuse of software generally."
+#: ../../doc/text/lgpl.txt:426
+msgid ""
+"  14. If you wish to incorporate parts of the Library into other free\n"
+"programs whose distribution conditions are incompatible with these,\n"
+"write to the author to ask for permission.  For software which is\n"
+"copyrighted by the Free Software Foundation, write to the Free\n"
+"Software Foundation; we sometimes make exceptions for this.  Our\n"
+"decision will be guided by the two goals of preserving the free status\n"
+"of all derivatives of our free software and of promoting the sharing\n"
+"and reuse of software generally."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:435
+#: ../../doc/text/lgpl.txt:435
 msgid "			    NO WARRANTY"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:437
-msgid "  15. BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO\nWARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.\nEXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR\nOTHER PARTIES PROVIDE THE LIBRARY \"AS IS\" WITHOUT WARRANTY OF ANY\nKIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE\nLIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME\nTHE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
+#: ../../doc/text/lgpl.txt:437
+msgid ""
+"  15. BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO\n"
+"WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.\n"
+"EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR\n"
+"OTHER PARTIES PROVIDE THE LIBRARY \"AS IS\" WITHOUT WARRANTY OF ANY\n"
+"KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE\n"
+"IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n"
+"PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE\n"
+"LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME\n"
+"THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:447
-msgid "  16. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN\nWRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY\nAND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU\nFOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE\nLIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING\nRENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A\nFAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF\nSUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH\nDAMAGES."
+#: ../../doc/text/lgpl.txt:447
+msgid ""
+"  16. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN\n"
+"WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY\n"
+"AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU\n"
+"FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR\n"
+"CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE\n"
+"LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING\n"
+"RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A\n"
+"FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF\n"
+"SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH\n"
+"DAMAGES."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:458
+#: ../../doc/text/lgpl.txt:458
 msgid "		     END OF TERMS AND CONDITIONS"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:460
+#: ../../doc/text/lgpl.txt:460
 msgid "           How to Apply These Terms to Your New Libraries"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:462
-msgid "  If you develop a new library, and you want it to be of the greatest\npossible use to the public, we recommend making it free software that\neveryone can redistribute and change.  You can do so by permitting\nredistribution under these terms (or, alternatively, under the terms of the\nordinary General Public License)."
+#: ../../doc/text/lgpl.txt:462
+msgid ""
+"  If you develop a new library, and you want it to be of the greatest\n"
+"possible use to the public, we recommend making it free software that\n"
+"everyone can redistribute and change.  You can do so by permitting\n"
+"redistribution under these terms (or, alternatively, under the terms of the\n"
+"ordinary General Public License)."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:468
-msgid "  To apply these terms, attach the following notices to the library.  It is\nsafest to attach them to the start of each source file to most effectively\nconvey the exclusion of warranty; and each file should have at least the\n\"copyright\" line and a pointer to where the full notice is found."
+#: ../../doc/text/lgpl.txt:468
+msgid ""
+"  To apply these terms, attach the following notices to the library.  It is\n"
+"safest to attach them to the start of each source file to most effectively\n"
+"convey the exclusion of warranty; and each file should have at least the\n"
+"\"copyright\" line and a pointer to where the full notice is found."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:473
-msgid "    <one line to give the library's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>"
+#: ../../doc/text/lgpl.txt:473
+msgid ""
+"    <one line to give the library's name and a brief idea of what it does.>\n"
+"    Copyright (C) <year>  <name of author>"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:476
-msgid "    This library is free software; you can redistribute it and/or\n    modify it under the terms of the GNU Lesser General Public\n    License as published by the Free Software Foundation; either\n    version 2 of the License, or (at your option) any later version."
+#: ../../doc/text/lgpl.txt:476
+msgid ""
+"    This library is free software; you can redistribute it and/or\n"
+"    modify it under the terms of the GNU Lesser General Public\n"
+"    License as published by the Free Software Foundation; either\n"
+"    version 2 of the License, or (at your option) any later version."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:481
-msgid "    This library is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n    Lesser General Public License for more details."
+#: ../../doc/text/lgpl.txt:481
+msgid ""
+"    This library is distributed in the hope that it will be useful,\n"
+"    but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n"
+"    Lesser General Public License for more details."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:486
-msgid "    You should have received a copy of the GNU Lesser General Public\n    License along with this library; if not, write to the Free Software\n    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"
+#: ../../doc/text/lgpl.txt:486
+msgid ""
+"    You should have received a copy of the GNU Lesser General Public\n"
+"    License along with this library; if not, write to the Free Software\n"
+"    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:490
+#: ../../doc/text/lgpl.txt:490
 msgid "Also add information on how to contact you by electronic and paper mail."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:492
-msgid "You should also get your employer (if you work as a programmer) or your\nschool, if any, to sign a \"copyright disclaimer\" for the library, if\nnecessary.  Here is a sample; alter the names:"
+#: ../../doc/text/lgpl.txt:492
+msgid ""
+"You should also get your employer (if you work as a programmer) or your\n"
+"school, if any, to sign a \"copyright disclaimer\" for the library, if\n"
+"necessary.  Here is a sample; alter the names:"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:496
-msgid "  Yoyodyne, Inc., hereby disclaims all copyright interest in the\n  library `Frob' (a library for tweaking knobs) written by James Random Hacker."
+#: ../../doc/text/lgpl.txt:496
+msgid ""
+"  Yoyodyne, Inc., hereby disclaims all copyright interest in the\n"
+"  library `Frob' (a library for tweaking knobs) written by James Random Hacker."
 msgstr ""
 
-#: ./doc/text/lgpl.txt:499
-msgid "  <signature of Ty Coon>, 1 April 1990\n  Ty Coon, President of Vice"
+#: ../../doc/text/lgpl.txt:499
+msgid ""
+"  <signature of Ty Coon>, 1 April 1990\n"
+"  Ty Coon, President of Vice"
 msgstr ""
 
-#: ./doc/text/lgpl.txt:502
+#: ../../doc/text/lgpl.txt:502
 msgid "That's all there is to it!"
 msgstr ""
 
-#: ./doc/text/news.textile:1
+#: ../../doc/text/news.textile:1
 msgid "h1. NEWS"
 msgstr "h1. お知らせ"
 
-#: ./doc/text/news.textile:3
-msgid "h2. 0.9.7: 2012-12-26"
+#: ../../doc/text/news.textile:3
+msgid "h2. 0.9.8: 2013-06-07"
 msgstr ""
 
-#: ./doc/text/news.textile:5 ./doc/text/news.textile:25
-#: ./doc/text/news.textile:51 ./doc/text/news.textile:78
-#: ./doc/text/news.textile:92 ./doc/text/news.textile:108
-#: ./doc/text/news.textile:117 ./doc/text/release.textile:30
+#: ../../doc/text/news.textile:5 ../../doc/text/news.textile:37
+#: ../../doc/text/news.textile:57 ../../doc/text/news.textile:83
+#: ../../doc/text/news.textile:110 ../../doc/text/news.textile:124
+#: ../../doc/text/news.textile:140 ../../doc/text/news.textile:149
+#: ../../doc/text/release.textile:36
 msgid "h3. Improvements"
 msgstr "h3. 改良"
 
-#: ./doc/text/news.textile:7
-msgid " * [DocumentTask] Added DocumentTask#translate_language= to specifiy\n   single language code for translation of documents.\n * [DocumentTask] Updated documents about #translate_languages= and\n    #original_language=.\n * [ReferenceTask] Updated documents about #translate_languages and\n   #original_language."
+#: ../../doc/text/news.textile:7
+msgid ""
+" * [ReferenceTask] Used YARD I18n feature for translating references.\n"
+"   For it, YARD 0.8.6.1 or later is required.\n"
+" * [ReferenceTask] Supported replacing filenames which aren't\n"
+"   supported by GitHub Pages in \"reference:publication:generate\" task.\n"
+"   This task renames the fimename \"_index.html\" (methods list page) to\n"
+"   \"alphabetical_index.html\", because GitHub Pages doesn't support\n"
+"   files which their filenames start with \"_\".\n"
+" * [ReferenceTask] Added the task (\"release:references:upload\") to\n"
+"   copy generated references to a HTML directory.\n"
+"   A HTML directory, for example, is a repository of GitHub Pages. In\n"
+"   this case, this task is used to commit references to GitHub Pages.\n"
+" * [Referencetask] Dropped support to upload .htaccess.\n"
+" * [ReleaseTask] Used the version in your gemspec as a new version\n"
+"   when no version is specified as an argument by \"release:info:update\"\n"
+"   task. A new version is used to replace HTML index files."
+msgstr ""
+" * [ReferenceTask] YARDのi18nの機能をリファレンス翻訳に使うようにした。この機能を使うにはYARDの0.8.6.1以上が必要になります。\n"
+" * [ReferenceTask] \"reference:publication:generate\"タスクでGitHub Pagesに対応していないファイル名の置き換えをサポートした。このタスクはメソッド一覧ページである\"_index.html\"を\"alphabetical_index.html\"にリネームします。\"_\"から始まるファイル名はGitHub Pagesで対応していないためです。\n"
+" * [ReferenceTask] 作成したリファレンスをHTMLのディレクトリにコピーするための\"release:references:upload\"タスクを追加した。HTMLのディレクトリとは例えばGitHub Pagesのリポジトリで、この場合、このタスクはGitHub Pagesにリファレンスをコピーするために使用します。\n"
+" * [Referencetask] .htaccessをアップロードする機能を削除した。\n"
+" * [ReleaseTask] \"release:info:update\"タスクでVERSIONが引数で指定されていない場合、gemspecのversion(spec.version)を新しいバージョンとして使うようにした。新しいバージョンはHTMLのインデックスファイルを置き換えるために使います。"
+
+#: ../../doc/text/news.textile:23 ../../doc/text/news.textile:51
+#: ../../doc/text/news.textile:76 ../../doc/text/news.textile:97
+#: ../../doc/text/news.textile:118 ../../doc/text/news.textile:134
+#: ../../doc/text/news.textile:158 ../../doc/text/release.textile:44
+msgid "h3. Fixes"
+msgstr "h3. 修正"
+
+#: ../../doc/text/news.textile:25
+msgid ""
+" * [ReferenceTask] Generated \"reference path\" correctly in merged PO\n"
+"   files.\n"
+"  \"reference path\" is a path of a file including translated message\n"
+"   (msgid) and it's attached to its corresponded msgid.\n"
+" * [ReleaseTask] Removed needless replaces in HTML files in the\n"
+"   task \"release:info:update\".\n"
+" * [ReferenceTask] Added missing description for the task\n"
+"   \"reference:publication:generate\" to generate references for\n"
+"   publication."
+msgstr ""
+" * [ReferenceTask] マージされたPOファイル内の\"reference path\"を正しく生成するように修正した。\"reference path\"は翻訳されるメッセージ(msgid)をふくむファイルのパスのことで、対応するmsgidに付属します。\n"
+" * [ReleaseTask] \"release:info:update\"タスクで余計なHTMLファイルの置き換えをしないようにした。\n"
+" * [ReferenceTask] 公開用のリファレンスを生成するための\"reference:publication:generate\"タスクに説明がなかったのを追加した。"
+
+#: ../../doc/text/news.textile:35
+msgid "h2. 0.9.7: 2012-12-26"
+msgstr ""
+
+#: ../../doc/text/news.textile:39
+msgid ""
+" * [DocumentTask] Added DocumentTask#translate_language= to specifiy\n"
+"   single language code for translation of documents.\n"
+" * [DocumentTask] Updated documents about #translate_languages= and\n"
+"    #original_language=.\n"
+" * [ReferenceTask] Updated documents about #translate_languages and\n"
+"   #original_language."
 msgstr ""
 " * [DocumentTask] ドキュメントを翻訳するための言語を1つだけ指定するためのDocumentTask#translate_language=を追加した。\n"
 " * [DocumentTask] #translate_languages=と#original_language=のドキュメントに情報を追加した。\n"
 " * [ReferenceTask] #translate_languagesと#original_languageのドキュメントに情報を追加した。"
 
-#: ./doc/text/news.textile:14 ./doc/text/news.textile:35
-#: ./doc/text/news.textile:61 ./doc/text/news.textile:82
-#: ./doc/text/news.textile:97 ./doc/text/release.textile:34
+#: ../../doc/text/news.textile:46 ../../doc/text/news.textile:67
+#: ../../doc/text/news.textile:93 ../../doc/text/news.textile:114
+#: ../../doc/text/news.textile:129 ../../doc/text/release.textile:40
 msgid "h3. Changes"
 msgstr "h3. 変更"
 
-#: ./doc/text/news.textile:16
-msgid " * [DocumentTask] Received only Array of languages codes by\n   #translate_languages=."
+#: ../../doc/text/news.textile:48
+msgid ""
+" * [DocumentTask] Received only Array of languages codes by\n"
+"   #translate_languages=."
 msgstr " * [DocumentTask] #translate_languages=が言語コードを表す配列のみ受け取るようにした。"
 
-#: ./doc/text/news.textile:19 ./doc/text/news.textile:44
-#: ./doc/text/news.textile:65 ./doc/text/news.textile:86
-#: ./doc/text/news.textile:102 ./doc/text/news.textile:126
-#: ./doc/text/release.textile:38
-msgid "h3. Fixes"
-msgstr "h3. 修正"
-
-#: ./doc/text/news.textile:21
+#: ../../doc/text/news.textile:53
 msgid " * For ranguba project: removed remained piwik tag in the footer template."
 msgstr " * ラングバプロジェクト向け: フッタに残っていたpiwikのタグを消した。"
 
-#: ./doc/text/news.textile:23
+#: ../../doc/text/news.textile:55
 msgid "h2. 0.9.6: 2012-12-19"
 msgstr ""
 
-#: ./doc/text/news.textile:27
-msgid " * [ReferenceTask] Used GetText::Tools::MsgMerge.run instead of\n   GNU msgmerge.\n * [DocumentTask] Added #original_language for translation\n   target. Its default value is user's current locale.\n * [DocumentTask] Added #translate_languages to translate document.\n   Its default value is English if user's current locale isn't it,\n   otherwise default value is not specified."
+#: ../../doc/text/news.textile:59
+msgid ""
+" * [ReferenceTask] Used GetText::Tools::MsgMerge.run instead of\n"
+"   GNU msgmerge.\n"
+" * [DocumentTask] Added #original_language for translation\n"
+"   target. Its default value is user's current locale.\n"
+" * [DocumentTask] Added #translate_languages to translate document.\n"
+"   Its default value is English if user's current locale isn't it,\n"
+"   otherwise default value is not specified."
 msgstr ""
 " * [ReferenceTask] GNUのmsgmergeの代わりにGetText::Tools::MsgMerge.runを使うようにした。\n"
 " * [DocumentTask] 翻訳前の言語を指定する#original_languageを追加。デフォルト値は現在のロケールになります。\n"
 " * [DocumentTask] 翻訳後の言語を指定する#translate_languagesを追加。現在のロケールが英語でなければ英語がデフォルト値として使われます。現在のロケールが英語なら何も指定されません。"
 
-#: ./doc/text/news.textile:37
-msgid " * Use user's current locale as the default translation targets\n   instead of Japanese.\n * For Ranguba project:\n   * [template] Removed needless Piwik tag.\n   * Followed the move from rubyforge.org to ranguba.org.\n   * [ReleaseTask] Removed rubyforge support."
+#: ../../doc/text/news.textile:69
+msgid ""
+" * Use user's current locale as the default translation targets\n"
+"   instead of Japanese.\n"
+" * For Ranguba project:\n"
+"   * [template] Removed needless Piwik tag.\n"
+"   * Followed the move from rubyforge.org to ranguba.org.\n"
+"   * [ReleaseTask] Removed rubyforge support."
 msgstr ""
 " * 翻訳前の言語として日本語をせず、デフォルトでは現在のロケールを使用するようにした。\n"
 " * ラングバプロジェクト向け：\n"
@@ -508,16 +997,25 @@ msgstr ""
 "   * サイトがrubyforge.orgからranguba.orgに移動したのに追従。\n"
 "   * [ReleaseTask] Rubyforge向けのサポートを削除。"
 
-#: ./doc/text/news.textile:46
-msgid " * [ReferenceTask] Removed needless patch for YARD. This patch is\n   needless from YARD 0.8.3."
+#: ../../doc/text/news.textile:78
+msgid ""
+" * [ReferenceTask] Removed needless patch for YARD. This patch is\n"
+"   needless from YARD 0.8.3."
 msgstr " * [ReferenceTask] YARD用のパッチを削除。このパッチはYARDの0.8.3から不要になります。"
 
-#: ./doc/text/news.textile:49
+#: ../../doc/text/news.textile:81
 msgid "h2. 0.9.5: 2012-08-30"
 msgstr ""
 
-#: ./doc/text/news.textile:53
-msgid " * [reference-task] Created and update a pot/po file by YARD::CLI::I18n instead of xml2po command.\n * [reference-task] Translated HTML documents with a po file, source files(lib/**/*.rb, ext/**/*.c) and extra files(doc/text/*.*) and README file in spec.\n * [reference-task] Used GetText::Tools::MsgInit.run instead of msginit in GNU gettext.\n * Assigned default files for HTML documents by DocumentTask to YARDTask and ReferenceTask.\n * [tutorial] Added example to use gemspec with Gem::Specification.new.\n * Defined accessors for readme in YARDTask and ReferenceTask.\n * Updated documents."
+#: ../../doc/text/news.textile:85
+msgid ""
+" * [reference-task] Created and update a pot/po file by YARD::CLI::I18n instead of xml2po command.\n"
+" * [reference-task] Translated HTML documents with a po file, source files(lib/**/*.rb, ext/**/*.c) and extra files(doc/text/*.*) and README file in spec.\n"
+" * [reference-task] Used GetText::Tools::MsgInit.run instead of msginit in GNU gettext.\n"
+" * Assigned default files for HTML documents by DocumentTask to YARDTask and ReferenceTask.\n"
+" * [tutorial] Added example to use gemspec with Gem::Specification.new.\n"
+" * Defined accessors for readme in YARDTask and ReferenceTask.\n"
+" * Updated documents."
 msgstr ""
 " * [reference-task] YARDに実装されたYARD::CLI::I18nクラスを使用してpotファイルやpoファイルの作成や更新を行うようにした。\n"
 " * [reference-task] specに指定されたファイルとpoファイルから翻訳されたHTMLドキュメントを作るようにした。\n"
@@ -527,81 +1025,100 @@ msgstr ""
 " * YARDTaskやReferenceTaskのreadmeファイルの設定をそれぞれのアクセサから設定できるようにした。\n"
 " * ドキュメントを改善した。"
 
-#: ./doc/text/news.textile:63
+#: ../../doc/text/news.textile:95
 msgid " * [reference-task] Created the po directory under specified directory instead of \"doc\"."
 msgstr " * [reference-task] poファイルを作成するディレクトリを、指定されたドキュメントのベースディレクトリの下に作成するようにした。"
 
-#: ./doc/text/news.textile:67
-msgid " * [document-task] Fixed not to require block on new.\n * Fixed not to run blocks when objects of YARDTask and ReferenceTask are initialized.\n * [reference-task] Used Rake::Task to invoke rake tasks instead of another process."
+#: ../../doc/text/news.textile:99
+msgid ""
+" * [document-task] Fixed not to require block on new.\n"
+" * Fixed not to run blocks when objects of YARDTask and ReferenceTask are initialized.\n"
+" * [reference-task] Used Rake::Task to invoke rake tasks instead of another process."
 msgstr ""
 " * [document-task] DocumentTaskがブロックなしでもオブジェクトが生成できるように修正した。\n"
 " * YARDTaskやReferenceTaskのオブジェクト生成時にブロックを実行しないようにした。\n"
 " * [reference-task] 別プロセスでRakeタスクを実行していたのをRake::Taskクラスを使うように修正した。"
 
-#: ./doc/text/news.textile:71
+#: ../../doc/text/news.textile:103 ../../doc/text/release.textile:48
 msgid "h3. Thanks"
 msgstr "h3. 感謝"
 
-#: ./doc/text/news.textile:73
-msgid " * tetradice\n * SHIMADA Koji"
+#: ../../doc/text/news.textile:105
+msgid ""
+" * tetradice\n"
+" * SHIMADA Koji"
 msgstr ""
 "* tetradiceさん\n"
 "* 島田 浩二さん"
 
-#: ./doc/text/news.textile:76
+#: ../../doc/text/news.textile:108
 msgid "h2. 0.9.4: 2011-09-27"
 msgstr ""
 
-#: ./doc/text/news.textile:80
+#: ../../doc/text/news.textile:112
 msgid "* Saved password inputted once in same process."
 msgstr "* 同一プロセス内では一度入力したパスワードを保存するようにした。"
 
-#: ./doc/text/news.textile:84
+#: ../../doc/text/news.textile:116
 msgid "* Checked ruby version before run task to build gem."
 msgstr "* gem作成前にrubyのバージョンをチェックするように変更した。"
 
-#: ./doc/text/news.textile:88
+#: ../../doc/text/news.textile:120
 msgid "* Fixed bug of posting no news to RubyForge in task \"release:rubyforge:news:post\"."
 msgstr "* タスク\"release:rubyforge:news:post\"でRubyforgeにニュースがポストされなかったバグを修正した。"
 
-#: ./doc/text/news.textile:90
+#: ../../doc/text/news.textile:122
 msgid "h2. 0.9.3: 2011-09-22"
 msgstr ""
 
-#: ./doc/text/news.textile:94
-msgid "* Printed newline after getting password.\n* Added task \"release:rubyforge:news:post\" to post news to RubyForge."
+#: ../../doc/text/news.textile:126
+msgid ""
+"* Printed newline after getting password.\n"
+"* Added task \"release:rubyforge:news:post\" to post news to RubyForge."
 msgstr ""
 "* パスワードを入力した後に改行するようにした。\n"
 "* Rubyforgeに更新情報をポストするタスク\"release:rubyforge:news:post\"を追加した。"
 
-#: ./doc/text/news.textile:99
-msgid "* Changed name of tasks for update po file for each languages.\n(For example, \"translate:po:ja:update\" was changed to \"translate:po:update:ja\".)"
+#: ../../doc/text/news.textile:131
+msgid ""
+"* Changed name of tasks for update po file for each languages.\n"
+"(For example, \"translate:po:ja:update\" was changed to \"translate:po:update:ja\".)"
 msgstr ""
 "* 各言語のpoファイルをアップデートするタスクの名前を変更した。\n"
 "（例えば、\"translate:po:ja:update\"は\"translate:po:update:ja\"に変更された。)"
 
-#: ./doc/text/news.textile:104
+#: ../../doc/text/news.textile:136
 msgid "* Applied version number to tag message instead of \"version\"."
 msgstr "* git tag時に添付するメッセージ中に含まれていた\"version\"という文字列がバージョン番号になるように修正した。"
 
-#: ./doc/text/news.textile:106
+#: ../../doc/text/news.textile:138
 msgid "h2. 0.9.2: 2011-08-29"
 msgstr ""
 
-#: ./doc/text/news.textile:110
-msgid "* Supported doc/text/ nonexistence case.\n* Supported yardoc options customize.\n* Supported xml2po mode customize.\n* Used only lib/**/*.rb as document target by default."
+#: ../../doc/text/news.textile:142
+msgid ""
+"* Supported doc/text/ nonexistence case.\n"
+"* Supported yardoc options customize.\n"
+"* Supported xml2po mode customize.\n"
+"* Used only lib/**/*.rb as document target by default."
 msgstr ""
 "* doc/text/がないケースに対応した。\n"
 "* yardocのオプションのカスタマイズに対応した。\n"
 "* xml2poのmodeのカスタマイズに対応した。\n"
 "* lib/**/*.rbだけをデフォルトでドキュメント対象となるファイルとして使うようにした。"
 
-#: ./doc/text/news.textile:115
+#: ../../doc/text/news.textile:147
 msgid "h2. 0.9.1: 2011-08-25"
 msgstr ""
 
-#: ./doc/text/news.textile:119
-msgid "* created package in rubyforge if package isn't created.\n* added Packnga::ReleaseTask#tag_message.\n* added Packnga::ReleaseTask#publish_options.\n* added attribute in DocumentTask for getting .htaccess file path.\n* added reference:publicaton:generate.\n(This task is run after prepareing to publish references.)"
+#: ../../doc/text/news.textile:151
+msgid ""
+"* created package in rubyforge if package isn't created.\n"
+"* added Packnga::ReleaseTask#tag_message.\n"
+"* added Packnga::ReleaseTask#publish_options.\n"
+"* added attribute in DocumentTask for getting .htaccess file path.\n"
+"* added reference:publicaton:generate.\n"
+"(This task is run after prepareing to publish references.)"
 msgstr ""
 "* Rubyforgeにパッケージがないときにパッケージを作るようにした。\n"
 "* Packnga::ReleaseTask#tag_messageを追加した。\n"
@@ -610,913 +1127,1287 @@ msgstr ""
 "* タスク\"reference:publicaton:generate\"を追加した。\n"
 "（このタスクはリファレンスの公開準備のあとに実行されます。）"
 
-#: ./doc/text/news.textile:128
-msgid "* fix bug release:reference:publish stop.\n* checked group_ids before add_releasing tar.gz to rubyforge.\n* wrote only sentence for redirect to english page in .htaccess file.\n(don't write sentence for redirect tutorial page.)"
+#: ../../doc/text/news.textile:160
+msgid ""
+"* fix bug release:reference:publish stop.\n"
+"* checked group_ids before add_releasing tar.gz to rubyforge.\n"
+"* wrote only sentence for redirect to english page in .htaccess file.\n"
+"(don't write sentence for redirect tutorial page.)"
 msgstr ""
 "* タスク\"release:reference:publish\"が止まってしまうバグを修正した。\n"
 "* Rubyforgeにtar.gzファイルをアップロードする前にグループidをチェックするようにした。\n"
 "* .htaccessファイルに英語ページをリダイレクトするための文のみ書くようにした。\n"
 "（チュートリアルのリダイレクトは書かないようにした。）"
 
-#: ./doc/text/news.textile:133
+#: ../../doc/text/news.textile:165
 msgid "h2. 0.9.0: 2011-08-19"
 msgstr ""
 
-#: ./doc/text/news.textile:135
+#: ../../doc/text/news.textile:167
 msgid "The first release!"
 msgstr ""
 
-#: ./doc/text/release.textile:1
+#: ../../doc/text/release.textile:1
 msgid "h1. リリース手順"
 msgstr ""
 
-#: ./doc/text/release.textile:3
+#: ../../doc/text/release.textile:3
 msgid "h2. news.textileに変更点のまとめ"
 msgstr ""
 
-#: ./doc/text/release.textile:5
+#: ../../doc/text/release.textile:5 ../../doc/text/release.textile:142
 msgid "前回のリリース時から現在までの変更点をnews.textileにまとめるため、下記コマンドを実行してgitのコミットログを表示する。"
 msgstr ""
 
-#: ./doc/text/release.textile:7
-msgid "<pre>\n!!!command_line\n$ git log -p --reverse （前回のリリースバージョン)..\n</pre>"
+#: ../../doc/text/release.textile:7 ../../doc/text/release.textile:144
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ git log -p --reverse （前回のリリースバージョン)..\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:12 ./doc/text/release.textile:114
-msgid "ログを\"Author:\"で検索しながら、ユーザにとって知る必要があるもの（ユーザに見える情報）のコミットログのみを抜き出す。\n次に、抜き出したコミットログを１つずつ見て、その先頭にカテゴリ名がある場合は、\":\"を削除してカテゴリ名を\"[\"と\"]\"で囲む。\nカテゴリ名を除いたログの先頭にある単語を過去形にし、頭文字を大文字にする。\nその後、ログを次のように分類する。\n機能などに新しく追加されたものに関してはImprovement,\n動作の変更などはChanges,\nバグの修正など前バージョンまでにあった問題を修正したものはFixesに記述する。\nまた、コミットログの行末に[人名]がある場合はその人名をThanks以下に書く。\nさらにREADMEにあるThanks以下にも名前を追加する。"
+#: ../../doc/text/release.textile:12 ../../doc/text/release.textile:149
+msgid "ログを\"Author:\"で検索しながら、ユーザにとって知る必要があるもののコミットログのみを抜き出す。"
 msgstr ""
 
-#: ./doc/text/release.textile:22
-msgid "この作業をリリース予定日よりも前に行った場合は、目に見えるところにコミットIDをメモしておく。\nただし、news.textileだと次のrake reference:po:updateで翻訳対象になってしまいノイズになってしまうので注意すること。"
+#: ../../doc/text/release.textile:14 ../../doc/text/release.textile:151
+msgid ""
+"ユーザにとって必要な情報とは、仕様の変更や新しい機能の追加など、ユーザーがリリースするライブラリを使う上で影響ある情報である。\n"
+"逆に、リファクタリング、テストの変更、変数名の変更など、ユーザーが直接意識しない部分については書く必要はない。"
 msgstr ""
 
-#: ./doc/text/release.textile:25
+#: ../../doc/text/release.textile:17 ../../doc/text/release.textile:154
+msgid ""
+"次に、抜き出したコミットログを１つずつ見て、その先頭にカテゴリ名がある場合は、\":\"を削除してカテゴリ名を\"[\"と\"]\"で囲む。\n"
+"カテゴリ名を除いたログの先頭にある単語を過去形にし、頭文字を大文字にする。\n"
+"その後、ログを次のように分類する。"
+msgstr ""
+
+#: ../../doc/text/release.textile:21 ../../doc/text/release.textile:158
+msgid ""
+"* Improvements: 機能などを新しく追加したコミットのログ\n"
+"* Changes: 動作の変更など、今まであったものを変更したログ\n"
+"* Fixes: バグの修正など前バージョンまでにあった問題を修正したログ"
+msgstr ""
+
+#: ../../doc/text/release.textile:25 ../../doc/text/release.textile:162
+msgid ""
+"また、コミットログの行末に[人名]がある場合は、Thanksという分類を作って、その人名をThanks以下に書く。\n"
+"さらにREADMEにあるThanks以下にも名前を追加する。"
+msgstr ""
+
+#: ../../doc/text/release.textile:28
+msgid ""
+"この作業をリリース予定日よりも前に行った場合は、目に見えるところにコミットIDをメモしておく。\n"
+"ただし、news.textileだと次のrake reference:po:updateで翻訳対象になってしまいノイズになってしまうので注意すること。"
+msgstr ""
+
+#: ../../doc/text/release.textile:31
 msgid "h3. news.textileの1リリース分のテンプレート"
 msgstr ""
 
-#: ./doc/text/release.textile:27
-msgid "<pre>\nh2. （リリースするバージョン）: リリース日（yyyy-mm-dd）"
+#: ../../doc/text/release.textile:33
+msgid ""
+"<pre>\n"
+"h2. （リリースするバージョン）: リリース日（yyyy-mm-dd）"
 msgstr ""
 
-#: ./doc/text/release.textile:32 ./doc/text/release.textile:36
-#: ./doc/text/release.textile:40
+#: ../../doc/text/release.textile:38 ../../doc/text/release.textile:42
+#: ../../doc/text/release.textile:46
 msgid "*"
 msgstr ""
 
-#: ./doc/text/release.textile:42
-msgid "h3. Thanks\n</pre>"
+#: ../../doc/text/release.textile:50
+msgid ""
+"* \n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:45
+#: ../../doc/text/release.textile:53
 msgid "h2. 日本語訳の作成"
 msgstr ""
 
-#: ./doc/text/release.textile:47 ./doc/text/release.textile:124
+#: ../../doc/text/release.textile:55 ../../doc/text/release.textile:165
 msgid "下記コマンドを実行してja.poを更新する。"
 msgstr ""
 
-#: ./doc/text/release.textile:49 ./doc/text/release.textile:126
-msgid "<pre>\n!!!command_line\n$ rake reference:po:update\n</pre>"
+#: ../../doc/text/release.textile:57 ../../doc/text/release.textile:167
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ rake reference:po:update\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:54 ./doc/text/release.textile:131
-msgid "その後、ja.poを開いて、各msgid（翻訳対象となる文章）に対応するmsgstrに対応する和訳を作成する。\nfuzzyを検索して見つかったら訳を確認し必要なら修正を行う。その後fuzzyを消す。"
+#: ../../doc/text/release.textile:62 ../../doc/text/release.textile:172
+msgid ""
+"その後、ja.poを開いて、各msgid（翻訳対象となる文章）に対応するmsgstrに対応する和訳を作成する。\n"
+"fuzzyを検索して見つかったら訳を確認し必要なら修正を行う。その後fuzzyを消す。"
 msgstr ""
 
-#: ./doc/text/release.textile:57
+#: ../../doc/text/release.textile:65
 msgid "h2. リファレンスの確認"
 msgstr ""
 
-#: ./doc/text/release.textile:59
+#: ../../doc/text/release.textile:67
 msgid "下記コマンドを実行して、リファレンスの翻訳を行う。"
 msgstr ""
 
-#: ./doc/text/release.textile:61 ./doc/text/release.textile:136
-msgid "<pre>\n!!!command_line\n$ rake reference:translate\n</pre>"
+#: ../../doc/text/release.textile:69 ../../doc/text/release.textile:177
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ rake reference:translate\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:66 ./doc/text/release.textile:141
+#: ../../doc/text/release.textile:74 ../../doc/text/release.textile:182
 msgid "doc/reference/ja/file.news.htmlなどのja.poを編集した箇所が正しく翻訳されているか確認する。"
 msgstr ""
 
-#: ./doc/text/release.textile:68
+#: ../../doc/text/release.textile:76
 msgid "h2. バージョンとリリース日の更新"
 msgstr ""
 
-#: ./doc/text/release.textile:70
-msgid "下記コマンドを入力して、プロジェクトページ（html/index.html、html/index.html.ja）の最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新する。"
+#: ../../doc/text/release.textile:78
+msgid "ranguba.orgのindexページ（index.html、ja/index.html）の最新バージョンとリリース日をそれぞれ今回のリリースに合わせたものに更新する。"
 msgstr ""
 
-#: ./doc/text/release.textile:72
-msgid "<pre>\n!!!command_line\n$ rake release:info:update OLD_VERSION=（前回リリース時のバージョン） OLD_RELEASE_DATE=（前回リリース日） RELEASE_DATE=（今回のリリース日）\n</pre>"
+#: ../../doc/text/release.textile:80
+msgid "まず、任意の位置で次のコマンドを実行して、ranguba.orgのリポジトリをcloneする。"
 msgstr ""
 
-#: ./doc/text/release.textile:77
+#: ../../doc/text/release.textile:82
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ git clone git@github.com:ranguba/ranguba.org.git\n"
+"</pre>"
+msgstr ""
+
+#: ../../doc/text/release.textile:87
+msgid "そして、リリースするライブラリのRakefileに次を追加する。"
+msgstr ""
+
+#: ../../doc/text/release.textile:89
+msgid ""
+"<pre>\n"
+"!!!ruby\n"
+"Packnga::ReleaseTask.new(spec) do |task|\n"
+"  task.index_html_dir = \"/path/to/ranguba.org\"\n"
+"end\n"
+"</pre>"
+msgstr ""
+
+#: ../../doc/text/release.textile:96
+msgid "その後、次のコマンドを実行して最新バージョンとリリース日を更新する。"
+msgstr ""
+
+#: ../../doc/text/release.textile:98
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ rake release:info:update OLD_VERSION=（前回リリース時のバージョン） OLD_RELEASE_DATE=（前回リリース日） RELEASE_DATE=（今回のリリース日）\n"
+"</pre>"
+msgstr ""
+
+#: ../../doc/text/release.textile:103
+msgid "h2. .gemspecの確認"
+msgstr ""
+
+#: ../../doc/text/release.textile:105
+msgid "（パッケージ名）.gemspecの中身が問題ないか確認する。特に初めてリリースするときは注意すること。"
+msgstr ""
+
+#: ../../doc/text/release.textile:107
+msgid ""
+"* .yardoptsをspec.filesに指定しているか（rubydoc.infoでドキュメントを閲覧するときに必要）\n"
+"* spec.files+=のつもりでspec.files=になっていないか\n"
+"* その他、spec.files=へ指定するファイルは過不足ないか・間違っていないか（diredなどでファイル一覧を見ながら作業する）\n"
+"* 依存関係（add_{runtime/developement}_dependency）は間違っていないか"
+msgstr ""
+
+#: ../../doc/text/release.textile:112
 msgid "h2. gemパッケージの作成"
 msgstr ""
 
-#: ./doc/text/release.textile:79
+#: ../../doc/text/release.textile:114
 msgid "下記コマンドを打ってアップロード用のgemパッケージをビルドする。"
 msgstr ""
 
-#: ./doc/text/release.textile:81
-msgid "<pre>\n!!!command_line\n$ make clean\n$ rake build\n</pre>"
+#: ../../doc/text/release.textile:116
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ make clean  # rroongaのみ必要\n"
+"$ rake build\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:87
+#: ../../doc/text/release.textile:122
 msgid "h2. gemパッケージの動作確認"
 msgstr ""
 
-#: ./doc/text/release.textile:89
+#: ../../doc/text/release.textile:124
 msgid "そのgemパッケージの動作を確認するため、下記コマンドを打ってローカル環境にインストールする。"
 msgstr ""
 
-#: ./doc/text/release.textile:91
-msgid "<pre>\n!!!command_line\n$ gem1.9.1 install pkg/（パッケージ名）-（今回リリースバージョン番号）.gem --user-install\n</pre>"
+#: ../../doc/text/release.textile:126
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ gem1.9.1 install pkg/（パッケージ名）-（今回リリースバージョン番号）.gem --user-install\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:96
-msgid "インストールが成功すると/home/(ユーザ名)/.gem/ruby/1.9.1/gems/（パッケージ名）-（今回リリースバージョン番号）/にインストールされる。\nこのディレクトリに移動して、テストを実行し動作を確認する。"
+#: ../../doc/text/release.textile:131
+msgid ""
+"インストールが成功すると/home/(ユーザ名)/.gem/ruby/1.9.1/gems/（パッケージ名）-（今回リリースバージョン番号）/にインストールされる。\n"
+"このディレクトリに移動して、テストを実行し動作を確認する。"
 msgstr ""
 
-#: ./doc/text/release.textile:99
-msgid "<pre>\n!!!command_line\n$ NO_MAKE=yes ruby1.9.1 test/run-test.rb\n</pre>"
+#: ../../doc/text/release.textile:134
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ NO_MAKE=yes ruby1.9.1 test/run-test.rb\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:105
+#: ../../doc/text/release.textile:140
 msgid "h2. news.textileの最終的なまとめとリファレンス作成"
 msgstr ""
 
-#: ./doc/text/release.textile:107
-msgid "コミットIDをメモしていた場合、下記コマンドを実行してログを表示する。"
-msgstr ""
-
-#: ./doc/text/release.textile:109
-msgid "<pre>\n!!!command_line\ngit log --reverse -p （前回のリリース時のバージョン）..（メモしていたコミットID）\n</pre>"
-msgstr ""
-
-#: ./doc/text/release.textile:134
+#: ../../doc/text/release.textile:175
 msgid "さらに下記コマンドを実行して、リファレンスの翻訳を行う。"
 msgstr ""
 
-#: ./doc/text/release.textile:143
+#: ../../doc/text/release.textile:184
 msgid "h2. これまでの変更をpush"
 msgstr ""
 
-#: ./doc/text/release.textile:145
-msgid "ここまでに行った変更をcommitしてgit pushする。"
+#: ../../doc/text/release.textile:186
+msgid "ここまでに行った変更をcommitしてpushする。"
 msgstr ""
 
-#: ./doc/text/release.textile:147
+#: ../../doc/text/release.textile:188
 msgid "h2. リリースバージョンのタグの作成とrubygems.orgへのパッケージのアップロード"
 msgstr ""
 
-#: ./doc/text/release.textile:149
+#: ../../doc/text/release.textile:190
 msgid "下記コマンドを実行してリリースバージョンのタグを作成し、パッケージをrubygems.orgへアップロードする。"
 msgstr ""
 
-#: ./doc/text/release.textile:151
-msgid "<pre>\n!!!command_line\n$ rake release\n</pre>"
+#: ../../doc/text/release.textile:192
+msgid ""
+"<pre>\n"
+"!!!command_line\n"
+"$ rake release\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:156
-msgid "h2. rubyforgeにパッケージをアップロード"
+#: ../../doc/text/release.textile:198
+msgid "h2. リファレンスをranguba.orgにアップロード"
 msgstr ""
 
-#: ./doc/text/release.textile:158
-msgid "下記コマンドを実行してアップロードする。"
+#: ../../doc/text/release.textile:200
+msgid "次のコマンドを実行して、リファレンスをranguba.orgのリポジトリ内にコピーする。"
 msgstr ""
 
-#: ./doc/text/release.textile:160
-msgid "<pre>\n!!!command_line\n$ ruby1.8 -S rake release:rubyforge:upload\n$ ruby1.8 -S rake release:reference:publish\n</pre>"
+#: ../../doc/text/release.textile:202
+msgid ""
+"<pre>\n"
+"$ rename -f \"s/^_index.html/alphabetical_index.html/\" doc/reference/**/_index.html\n"
+"$ sed -i -e \"s/_index.html/alphabetical_index.html/g\" doc/reference/**/*.html\n"
+"$ rake reference:publication:prepare\n"
+"$ /bin/cp -r doc/html/（ライブラリ名）/* /path/to/ranguba.org/（ライブラリ名）\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:166
-msgid "rroonga以外の場合、index.html関連はrake release:html:publishでアップロードされないので、rroongaに移動してから下記コマンドを実行する。"
+#: ../../doc/text/release.textile:209
+msgid ""
+"TODO: index_html_dirを設定しているので、上記のコマンドをtaskにする。\n"
+"その後、 次のコマンドを実行してranguba.orgのリポジトリをcloneしたディレクトリに移動する。"
 msgstr ""
 
-#: ./doc/text/release.textile:168
-msgid "<pre>\n!!!command_line\n$ ruby1.9.1 -S rake release:html:publish\n</pre>"
+#: ../../doc/text/release.textile:212
+msgid ""
+"<pre>\n"
+"$ cd /path/to/ranguba.org\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:173
-msgid "h2. メーリングリストにリリースの周知"
+#: ../../doc/text/release.textile:216
+msgid ""
+"そして、コピーにより生じた変更をranguba.orgのリポジトリにpushする。\n"
+"ranguba.orgはGithub Pagesを使っているので、pushすると自動的にranguba.orgのサイトも更新される。\n"
+"h2. メーリングリストにリリースの周知"
 msgstr ""
 
-#: ./doc/text/release.textile:175
-msgid "メーリングリストにリリースした旨を書いたメールを流す。\n日本語の他、英語のメーリングリストにもリリースした旨を英語で書いたメールを流す。"
+#: ../../doc/text/release.textile:220
+msgid ""
+"メーリングリストにリリースした旨を書いたメールを流す。\n"
+"日本語の他、英語のメーリングリストにもリリースした旨を英語で書いたメールを流す。"
 msgstr ""
 
-#: ./doc/text/release.textile:178
-msgid "h3.日本語でのメールの具体例"
+#: ../../doc/text/release.textile:223
+msgid "h3. 日本語でのメールの具体例"
 msgstr ""
 
-#: ./doc/text/release.textile:180
-msgid "<pre>\n吉原です。"
+#: ../../doc/text/release.textile:225
+msgid ""
+"<pre>\n"
+"吉原です。"
 msgstr ""
 
-#: ./doc/text/release.textile:183
-msgid "（最新バージョンをリリースしたことを書く）\ngroongaのRubyバインディングrroonga1.2.3をリリースしました。\n（rroongaのインデックスページのURL）\n  http://groonga.rubyforge.org/index.html.ja#about-rroonga"
+#: ../../doc/text/release.textile:228
+msgid ""
+"（最新バージョンをリリースしたことを書く）\n"
+"groongaのRubyバインディングrroonga1.2.3をリリースしました。\n"
+"（rroongaのインデックスページのURL）\n"
+"  http://groonga.rubyforge.org/index.html.ja#about-rroonga"
 msgstr ""
 
-#: ./doc/text/release.textile:188
-msgid "（ソフトウェアの概略）\nrroongaはRubyらしい書き方でgroongaを操作できることを重視しています。\n同時に、groongaの速度をそのまま生かすことも大事にしています。"
+#: ../../doc/text/release.textile:233
+msgid ""
+"（ソフトウェアの概略）\n"
+"rroongaはRubyらしい書き方でgroongaを操作できることを重視しています。\n"
+"同時に、groongaの速度をそのまま生かすことも大事にしています。"
 msgstr ""
 
-#: ./doc/text/release.textile:192
-msgid "（前回リリースから今回リリースまでに変更された点のうち、ユーザにとって重要なものを書く）\n1.2.1からの変更された点としては、ドキュメントの一部英訳化、リファ\nレンスのパスの修正などを行いました。また、rroongaをインストールし\nようとした際、groongaがないと自動でインストールする機能が復活しま\nした。"
+#: ../../doc/text/release.textile:237
+msgid ""
+"（前回リリースから今回リリースまでに変更された点のうち、ユーザにとって重要なものを書く）\n"
+"1.2.1からの変更された点としては、ドキュメントの一部英訳化、リファ\n"
+"レンスのパスの修正などを行いました。また、rroongaをインストールし\n"
+"ようとした際、groongaがないと自動でインストールする機能が復活しま\n"
+"した。"
 msgstr ""
 
-#: ./doc/text/release.textile:198
-msgid "（コマンドなどのインストール方法）\nインストール:\n  % sudo gem install rroonga"
+#: ../../doc/text/release.textile:243
+msgid ""
+"（コマンドなどのインストール方法）\n"
+"インストール:\n"
+"  % sudo gem install rroonga"
 msgstr ""
 
-#: ./doc/text/release.textile:202
-msgid "（チュートリアルページのURL）\nirbを使ったrroongaのチュートリアルはこちらにあります。"
+#: ../../doc/text/release.textile:247
+msgid ""
+"（チュートリアルページのURL）\n"
+"irbを使ったrroongaのチュートリアルはこちらにあります。"
 msgstr ""
 
-#: ./doc/text/release.textile:205
+#: ../../doc/text/release.textile:250
 msgid "  http://groonga.rubyforge.org/rroonga/ja/file.tutorial.html"
 msgstr ""
 
-#: ./doc/text/release.textile:207
-msgid "（http://groonga.rubyforge.org/rroonga/ja/file.news.htmlを見て、前回リリース時からの変更点を書く）\n1.2.1からの変更点は以下の通りです。"
+#: ../../doc/text/release.textile:252
+msgid ""
+"（http://groonga.rubyforge.org/rroonga/ja/file.news.htmlを見て、前回リリース時からの変更点を書く）\n"
+"1.2.1からの変更点は以下の通りです。"
 msgstr ""
 
-#: ./doc/text/release.textile:210
+#: ../../doc/text/release.textile:255
 msgid "1.2.3: 2011-06-27"
 msgstr ""
 
-#: ./doc/text/release.textile:212
-msgid "修正\n    gemパッケージに含まれてしまったオブジェクトファイル(*.o)を削除。\n    一部のリファレンスマニュアルの文字化けを修正。"
+#: ../../doc/text/release.textile:257
+msgid ""
+"修正\n"
+"    gemパッケージに含まれてしまったオブジェクトファイル(*.o)を削除。\n"
+"    一部のリファレンスマニュアルの文字化けを修正。"
 msgstr ""
 
-#: ./doc/text/release.textile:216
+#: ../../doc/text/release.textile:261
 msgid "1.2.2: 2011-06-27"
 msgstr ""
 
-#: ./doc/text/release.textile:218
-msgid "改良\n    英語版の「開発者向け情報」ページを作成。\n    \"html:publish\"タスクと\"publish\"に関しての説明を追加。"
+#: ../../doc/text/release.textile:263
+msgid ""
+"改良\n"
+"    英語版の「開発者向け情報」ページを作成。\n"
+"    \"html:publish\"タスクと\"publish\"に関しての説明を追加。"
 msgstr ""
 
-#: ./doc/text/release.textile:222
-msgid "変更\n    Groonga::Record#attributesが重複したレコードが現れた際に\n    同じattributesオブジェクトを返すようにした。\n    Groonga::Record#attributesにドキュメントを追加。\n    「開発者向け情報」ページ内にあるドキュメント作成ツールを変更。\n    NEWS*.rdocとtutorial.texttileをディレクトリdoc/text/に移動。"
+#: ../../doc/text/release.textile:267
+msgid ""
+"変更\n"
+"    Groonga::Record#attributesが重複したレコードが現れた際に\n"
+"    同じattributesオブジェクトを返すようにした。\n"
+"    Groonga::Record#attributesにドキュメントを追加。\n"
+"    「開発者向け情報」ページ内にあるドキュメント作成ツールを変更。\n"
+"    NEWS*.rdocとtutorial.texttileをディレクトリdoc/text/に移動。"
 msgstr ""
 
-#: ./doc/text/release.textile:229
-msgid "修正\n    インデックスページにある「チュートリアル」ページへのリンクを修正。\n    インデックスページにある英語版「チュートリアル」ページへのリンクを修正。\n    新しいgroongaのダウンロードURLに対応。 [mallowlabs]"
+#: ../../doc/text/release.textile:274
+msgid ""
+"修正\n"
+"    インデックスページにある「チュートリアル」ページへのリンクを修正。\n"
+"    インデックスページにある英語版「チュートリアル」ページへのリンクを修正。\n"
+"    新しいgroongaのダウンロードURLに対応。 [mallowlabs]"
 msgstr ""
 
-#: ./doc/text/release.textile:234
-msgid "感謝\n    mallowlabsさん\n</pre>"
+#: ../../doc/text/release.textile:279
+msgid ""
+"感謝\n"
+"    mallowlabsさん\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:238
+#: ../../doc/text/release.textile:283
 msgid "h3. 英語でのメールの具体例"
 msgstr ""
 
-#: ./doc/text/release.textile:240
-msgid "<pre>\nEveryone,"
+#: ../../doc/text/release.textile:285
+msgid ""
+"<pre>\n"
+"Everyone,"
 msgstr ""
 
-#: ./doc/text/release.textile:243
-msgid "（rroongaの最新バージョンをリリースしたことを書く）\nWe released rroonga 1.2.3."
+#: ../../doc/text/release.textile:288
+msgid ""
+"（rroongaの最新バージョンをリリースしたことを書く）\n"
+"We released rroonga 1.2.3."
 msgstr ""
 
-#: ./doc/text/release.textile:246
-msgid "（インデックスページのURLを書く）\n  http://groonga.rubyforge.org/#about-rroonga"
+#: ../../doc/text/release.textile:291
+msgid ""
+"（インデックスページのURLを書く）\n"
+"  http://groonga.rubyforge.org/#about-rroonga"
 msgstr ""
 
-#: ./doc/text/release.textile:249
-msgid "（rroongaの説明）\nrroonga is the library which ruby-binding for grronga."
+#: ../../doc/text/release.textile:294
+msgid ""
+"（rroongaの説明）\n"
+"rroonga is the library which ruby-binding for grronga."
 msgstr ""
 
-#: ./doc/text/release.textile:252
-msgid "（前回リリース時からの変更点のうち、ユーザにとって大事なものを書く）\nSince ver.1.2.1 was released, we translated some documents\nfrom Japanese to English, and fixed pathes in reference-manual.\nThanks to mallowlabs, when installing rroonga without groonga\ninstalled, grronga is automatically installed."
+#: ../../doc/text/release.textile:297
+msgid ""
+"（前回リリース時からの変更点のうち、ユーザにとって大事なものを書く）\n"
+"Since ver.1.2.1 was released, we translated some documents\n"
+"from Japanese to English, and fixed pathes in reference-manual.\n"
+"Thanks to mallowlabs, when installing rroonga without groonga\n"
+"installed, grronga is automatically installed."
 msgstr ""
 
-#: ./doc/text/release.textile:258
-msgid "（インストール方法を書く）\nHow to install:\n  % sudo gem install rroonga"
+#: ../../doc/text/release.textile:303
+msgid ""
+"（インストール方法を書く）\n"
+"How to install:\n"
+"  % sudo gem install rroonga"
 msgstr ""
 
-#: ./doc/text/release.textile:262
-msgid "（チュートリアルについてのURLなどを書く）\nThere is the tutorial of rroonga with irb:"
+#: ../../doc/text/release.textile:307
+msgid ""
+"（チュートリアルについてのURLなどを書く）\n"
+"There is the tutorial of rroonga with irb:"
 msgstr ""
 
-#: ./doc/text/release.textile:265
+#: ../../doc/text/release.textile:310
 msgid "  http://groonga.rubyforge.org/rroonga/en/file.tutorial.html"
 msgstr ""
 
-#: ./doc/text/release.textile:267
-msgid "（news.textileから今回リリースのために書いた部分をコピーする）\nPlease see below changes since ver.1.2.1."
+#: ../../doc/text/release.textile:312
+msgid ""
+"（news.textileから今回リリースのために書いた部分をコピーする）\n"
+"Please see below changes since ver.1.2.1."
 msgstr ""
 
-#: ./doc/text/release.textile:270
+#: ../../doc/text/release.textile:315
 msgid "== 1.2.3: 2011-06-27"
 msgstr ""
 
-#: ./doc/text/release.textile:272 ./doc/text/release.textile:291
+#: ../../doc/text/release.textile:317
+#: ../../doc/text/release.textile:336
 msgid "=== Fixes"
 msgstr ""
 
-#: ./doc/text/release.textile:274
-msgid "* remove object files in gem packages.\n* fix charactor corruption in reference."
+#: ../../doc/text/release.textile:319
+msgid ""
+"* remove object files in gem packages.\n"
+"* fix charactor corruption in reference."
 msgstr ""
 
-#: ./doc/text/release.textile:277
+#: ../../doc/text/release.textile:322
 msgid "== 1.2.2: 2011-06-27"
 msgstr ""
 
-#: ./doc/text/release.textile:279
+#: ../../doc/text/release.textile:324
 msgid "=== Improvements"
 msgstr ""
 
-#: ./doc/text/release.textile:281
-msgid "* created \"Developers\" page in English.\n* added description for tasks of \"html:publish\" and \"publish\"."
+#: ../../doc/text/release.textile:326
+msgid ""
+"* created \"Developers\" page in English.\n"
+"* added description for tasks of \"html:publish\" and \"publish\"."
 msgstr ""
 
-#: ./doc/text/release.textile:284
+#: ../../doc/text/release.textile:329
 msgid "=== Changes"
 msgstr ""
 
-#: ./doc/text/release.textile:286
-msgid "* Groonga::Record#attributes return same attributes object for duplicate records.\n* added document for Groonga::Record#attributes.\n* changed tool name in document page for creating document.\n* moved NEWS*.rdoc and tutorial.texttile to doc/text/."
+#: ../../doc/text/release.textile:331
+msgid ""
+"* Groonga::Record#attributes return same attributes object for duplicate records.\n"
+"* added document for Groonga::Record#attributes.\n"
+"* changed tool name in document page for creating document.\n"
+"* moved NEWS*.rdoc and tutorial.texttile to doc/text/."
 msgstr ""
 
-#: ./doc/text/release.textile:293
-msgid "* fixed the tutorial path in index page.\n* fixed the path of tutorial in index page in English.\n* follow the groonga downlowd URL change. [mallowlabs]"
+#: ../../doc/text/release.textile:338
+msgid ""
+"* fixed the tutorial path in index page.\n"
+"* fixed the path of tutorial in index page in English.\n"
+"* follow the groonga downlowd URL change. [mallowlabs]"
 msgstr ""
 
-#: ./doc/text/release.textile:297
+#: ../../doc/text/release.textile:342
 msgid "=== Thanks"
 msgstr ""
 
-#: ./doc/text/release.textile:299
+#: ../../doc/text/release.textile:344
 msgid "* mallowlabs"
 msgstr ""
 
-#: ./doc/text/release.textile:301
-msgid "--\n（名前とメールアドレス）\nyoshihara\n(yoshihara at clear-code.com)\n</pre>"
+#: ../../doc/text/release.textile:346
+msgid ""
+"--\n"
+"（名前とメールアドレス）\n"
+"yoshihara\n"
+"(yoshihara at clear-code.com)\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/release.textile:307
-msgid "h2. rubyforgeのニュースを更新"
-msgstr ""
-
-#: ./doc/text/release.textile:309
-msgid "rroonga以外の場合、もとのディレクトリに戻る。\n下記コマンドを入力してrubyforgeの最新ニュースを更新する。"
-msgstr ""
-
-#: ./doc/text/release.textile:312
-msgid "<pre>\n!!!command_line\n$ rake releace:rubyforge:news:post\n</pre>"
-msgstr ""
-
-#: ./doc/text/release.textile:317
+#: ../../doc/text/release.textile:352
 msgid "h2. 次回リリース時のバージョン番号の設定"
 msgstr ""
 
-#: ./doc/text/release.textile:319
-msgid "rroongaはext/groonga/rb-grn.h、それ以外はlib/（パッケージ名）/version.rbにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更する。"
+#: ../../doc/text/release.textile:354
+msgid "rroongaはext/groonga/rb-grn.h、それ以外はlib/（パッケージ名）/version.rbにある、RB_GRN_MAJOR_VERSION,RB_GRN_MINOR_VERSION,RB_GRN_MICRO_VERSIONの値を次回リリース時のバージョンの値に変更し、コミットする。"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:1
+#: ../../doc/text/tutorial.textile:1
 msgid "h1. Tutorial"
 msgstr "h1. チュートリアル"
 
-#: ./doc/text/tutorial.textile:3
+#: ../../doc/text/tutorial.textile:3
 msgid "We introduce how to use Packnga with Packnga's Rakefile and gemspec in this page."
 msgstr "このページでは、実際のPackngaのRakefileを参考に、Packngaの使用方法を紹介します。"
 
-#: ./doc/text/tutorial.textile:7
+#: ../../doc/text/tutorial.textile:7
 msgid "You can install Packnga from Rubygems."
 msgstr "PackngaはRubygemsからインストールできます。"
 
-#: ./doc/text/tutorial.textile:14
+#: ../../doc/text/tutorial.textile:14
 msgid "h2. Prepare to create tasks"
 msgstr "h2. タスク生成の準備"
 
-#: ./doc/text/tutorial.textile:16
-msgid "Before using Packnga, you should create @spec@ variable with\n Gem::Specification.new or Jeweler::Tasks.new.\nPacknga create tasks with @spec@ in Rakefile."
+#: ../../doc/text/tutorial.textile:16
+msgid ""
+"Before using Packnga, you should create @spec@ variable with\n"
+" Gem::Specification.new or Jeweler::Tasks.new.\n"
+"Packnga create tasks with @spec@ in Rakefile."
 msgstr "Packngaを使用する前に、Gem::Specification.newメソッドにて @spec@ を作成します。この @spec@ を用いてPackngaはタスクを生成します。次にその例を示します。"
 
-#: ./doc/text/tutorial.textile:20
+#: ../../doc/text/tutorial.textile:20
 msgid "h3. Create spec with Gem::Specification.new"
 msgstr "h3. Gem::Specification.newメソッドを用いたspecの作成"
 
-#: ./doc/text/tutorial.textile:22
-msgid "We introduce to create @spec@ with Gem::Specification.new in a gemspec file.\nPlease see below gemspec example with Gem::Specification.new."
+#: ../../doc/text/tutorial.textile:22
+msgid ""
+"We introduce to create @spec@ with Gem::Specification.new in a gemspec file.\n"
+"Please see below gemspec example with Gem::Specification.new."
 msgstr ""
 "ここではgemspecファイルにてGem::Specification.newメソッドを使ってspecを作成する方法を紹介します。\n"
 "次の例を見てください。"
 
-#: ./doc/text/tutorial.textile:25
-msgid "<pre>\n!!!ruby\nversion = Packnga::VERSION.dup"
+#: ../../doc/text/tutorial.textile:25
+msgid ""
+"<pre>\n"
+"!!!ruby\n"
+"version = Packnga::VERSION.dup"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:29
-msgid "readme_path = File.join(base_dir, \"README.textile\")\nentries = File.read(readme_path).split(/^h2\\.\\s(.*)$/)\nentry = lambda do |entry_title|\n  entries[entries.index(entry_title) + 1]\nend"
+#: ../../doc/text/tutorial.textile:29
+msgid ""
+"readme_path = File.join(base_dir, \"README.textile\")\n"
+"entries = File.read(readme_path).split(/^h2\\.\\s(.*)$/)\n"
+"entry = lambda do |entry_title|\n"
+"  entries[entries.index(entry_title) + 1]\n"
+"end"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:35
-msgid "authors = []\nemails = []\nentry.call(\"Authors\").each_line do |line|\n  if /\\*\\s*(.+)\\s<([^<>]*)>$/ =~ line\n    authors << $1\n    emails << $2\n  end\nend"
+#: ../../doc/text/tutorial.textile:35
+msgid ""
+"authors = []\n"
+"emails = []\n"
+"entry.call(\"Authors\").each_line do |line|\n"
+"  if /\\*\\s*(.+)\\s<([^<>]*)>$/ =~ line\n"
+"    authors << $1\n"
+"    emails << $2\n"
+"  end\n"
+"end"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:44
-msgid "clean_white_space = lambda do |entry|\n  entry.gsub(/(\\A\n+|\n+\\z)/, '') + \"\n\"\nend\ndescription = clean_white_space.call(entry.call(\"Description\"))\nsummary, description = description.split(/\n\n+/, 2)"
+#: ../../doc/text/tutorial.textile:44
+msgid ""
+"clean_white_space = lambda do |entry|\n"
+"  entry.gsub(/(\\A\n"
+"+|\n"
+"+\\z)/, '') + \"\n"
+"\"\n"
+"end\n"
+"description = clean_white_space.call(entry.call(\"Description\"))\n"
+"summary, description = description.split(/\n"
+"\n"
+"+/, 2)"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:50
-msgid "Gem::Specification.new do |s|\n  s.name = \"packnga\"\n  s.version = version\n  s.authors = authors\n  s.email = emails\n  s.summary = summary\n  s.description = description"
+#: ../../doc/text/tutorial.textile:50
+msgid ""
+"Gem::Specification.new do |s|\n"
+"  s.name = \"packnga\"\n"
+"  s.version = version\n"
+"  s.authors = authors\n"
+"  s.email = emails\n"
+"  s.summary = summary\n"
+"  s.description = description"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:58
-msgid "  s.extra_rdoc_files = [\"README.textile\"]\n  s.files = [\"README.textile\", \"Rakefile\", \"Gemfile\"]\n  Dir.chdir(base_dir) do\n    s.files += Dir.glob(\"lib/**/*.rb\")\n    s.files += Dir.glob(\"doc/text/*.*\")\n  end"
+#: ../../doc/text/tutorial.textile:58
+msgid ""
+"  s.extra_rdoc_files = [\"README.textile\"]\n"
+"  s.files = [\"README.textile\", \"Rakefile\", \"Gemfile\"]\n"
+"  Dir.chdir(base_dir) do\n"
+"    s.files += Dir.glob(\"lib/**/*.rb\")\n"
+"    s.files += Dir.glob(\"doc/text/*.*\")\n"
+"  end"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:65
-msgid "  s.homepage = \"http://ranguba.org/\"\n  s.licenses = [\"LGPLv2\"]\n  s.require_paths = [\"lib\"]"
+#: ../../doc/text/tutorial.textile:65
+msgid ""
+"  s.homepage = \"http://ranguba.org/\"\n"
+"  s.licenses = [\"LGPLv2\"]\n"
+"  s.require_paths = [\"lib\"]"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:69
-msgid "  s.add_runtime_dependency(\"rake\")\n  s.add_runtime_dependency(\"yard\")\n  s.add_runtime_dependency(\"gettext\")\n  s.add_development_dependency(\"test-unit\")\n  s.add_development_dependency(\"test-unit-notify\")\n  s.add_development_dependency(\"bundler\")\n  s.add_development_dependency(\"RedCloth\")\nend\n</pre>"
+#: ../../doc/text/tutorial.textile:69
+msgid ""
+"  s.add_runtime_dependency(\"rake\")\n"
+"  s.add_runtime_dependency(\"yard\")\n"
+"  s.add_runtime_dependency(\"gettext\")\n"
+"  s.add_development_dependency(\"test-unit\")\n"
+"  s.add_development_dependency(\"test-unit-notify\")\n"
+"  s.add_development_dependency(\"bundler\")\n"
+"  s.add_development_dependency(\"RedCloth\")\n"
+"end\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:79
-msgid "Next, we should get @spec@ value in Rakefile from gemspec,\n so we write below source code in  Rakefile."
+#: ../../doc/text/tutorial.textile:79
+msgid ""
+"Next, we should get @spec@ value in Rakefile from gemspec,\n"
+" so we write below source code in  Rakefile."
 msgstr ""
 "次に、Rakefileでgemspecファイルで作成したspecを取得します。\n"
 "次のようなコードをRakefileに書くとspecを取得できます。"
 
-#: ./doc/text/tutorial.textile:82
-msgid "<pre>\n!!!ruby\nhelper = Bundler::GemHelper.new(base_dir)\nhelper.install\nspec = helper.gemspec\n</pre>"
+#: ../../doc/text/tutorial.textile:82
+msgid ""
+"<pre>\n"
+"!!!ruby\n"
+"helper = Bundler::GemHelper.new(base_dir)\n"
+"helper.install\n"
+"spec = helper.gemspec\n"
+"</pre>"
 msgstr ""
 
 # @param [Jeweler::Task] spec
-#: ./doc/text/tutorial.textile:89
+#: ../../doc/text/tutorial.textile:89
 msgid "h3. Create spec with Jeweler::Tasks.new"
 msgstr "h3. Jeweler::Task.newによって生成されるオブジェクト"
 
-#: ./doc/text/tutorial.textile:91
-msgid "If you want to create @spec@ with Jeweler::Tasks.new in your Rakefile,\nplease see below example.\nThis source code is written in old Packnga's Rakefile."
+#: ../../doc/text/tutorial.textile:91
+msgid ""
+"If you want to create @spec@ with Jeweler::Tasks.new in your Rakefile,\n"
+"please see below example.\n"
+"This source code is written in old Packnga's Rakefile."
 msgstr ""
 "RakefileでJeweler::Tasks.newメソッドを使ってspecを作成する場合は、次の例を見てください。\n"
 "この例のコードはPackngaの以前のRakefileに書かれていたものです。"
 
-#: ./doc/text/tutorial.textile:95
-msgid "<pre>\n!!!ruby\nspec = nil\nJeweler::Tasks.new do |_spec|\n  spec = _spec\n  spec.name = \"packnga\"\n  spec.version = version\n  spec.homepage = \"http://ranguba.org/\"\n  spec.authors = [\"Haruka Yoshihara\", \"Kouhei Sutou\"]\n  spec.email = [\"yoshihara@clear-code.com\", \"kou@clear-code.com\"]\n  entries = File.read(\"README.textile\").split(/^h2\\.\\s(.*)$/)\n  description = cleanup_white_space(entries[entries.index(\"Description\") + 1])\n  spec.summary, spec.description, = description.split(/\n\n+/, 3)\n  spec.license = \"LGPLv2\"\n  spec.files = FileList[\"lib/**/*.rb\",\n                        \"Rakefile\",\n                        \"README.textile\",\n                        \"Gemfile\",\n                        \"doc/text/**\"]\n  spec.test_files = FileList[\"test/**/*.rb\"]\nend\n</pre>"
+#: ../../doc/text/tutorial.textile:95
+msgid ""
+"<pre>\n"
+"!!!ruby\n"
+"spec = nil\n"
+"Jeweler::Tasks.new do |_spec|\n"
+"  spec = _spec\n"
+"  spec.name = \"packnga\"\n"
+"  spec.version = version\n"
+"  spec.homepage = \"http://ranguba.org/\"\n"
+"  spec.authors = [\"Haruka Yoshihara\", \"Kouhei Sutou\"]\n"
+"  spec.email = [\"yoshihara@clear-code.com\", \"kou@clear-code.com\"]\n"
+"  entries = File.read(\"README.textile\").split(/^h2\\.\\s(.*)$/)\n"
+"  description = cleanup_white_space(entries[entries.index(\"Description\") + 1])\n"
+"  spec.summary, spec.description, = description.split(/\n"
+"\n"
+"+/, 3)\n"
+"  spec.license = \"LGPLv2\"\n"
+"  spec.files = FileList[\"lib/**/*.rb\",\n"
+"                        \"Rakefile\",\n"
+"                        \"README.textile\",\n"
+"                        \"Gemfile\",\n"
+"                        \"doc/text/**\"]\n"
+"  spec.test_files = FileList[\"test/**/*.rb\"]\n"
+"end\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:118
+#: ../../doc/text/tutorial.textile:118
 msgid "h2. Create tasks"
 msgstr "h2. タスクの生成"
 
-#: ./doc/text/tutorial.textile:120
-msgid "Packnga's classes has charge of each tasks.\nThis table describes Packnga's classes."
+#: ../../doc/text/tutorial.textile:120
+msgid ""
+"Packnga's classes has charge of each tasks.\n"
+"This table describes Packnga's classes."
 msgstr "Packngaでは、それぞれのタスクを担当するクラスがあります。Packngaのクラスと、そのクラスで定義できるタスクは次のようになります。"
 
-#: ./doc/text/tutorial.textile:123
-msgid "- Packnga::DocumentTask :=\n  This class create tasks for generating references.\n  It define tasks to generate YARD documentation and po files.\n  It also defines tasks to translate documents with po files.\n  =:"
+#: ../../doc/text/tutorial.textile:123
+msgid ""
+"- Packnga::DocumentTask :=\n"
+"  This class create tasks for generating references.\n"
+"  It define tasks to generate YARD documentation and po files.\n"
+"  It also defines tasks to translate documents with po files.\n"
+"  =:"
 msgstr ""
 "- Packnga::DocumentTask :=\n"
 "  リファレンスなどのドキュメントを生成する関係のタスクを設定・定義します。YARDによるドキュメント生成や、poファイルの生成、そのpoファイルによるドキュメントの翻訳などを行うタスクを定義します。\n"
 "  =:"
 
-#: ./doc/text/tutorial.textile:129
-msgid "- Packnga::ReleaseTask :=\n  This class create tasks for uploading references and package and preparing to upload them.\n  It defines a task to tag the current version in git and a task to user-install gem for test.\n  =:"
+#: ../../doc/text/tutorial.textile:129
+msgid ""
+"- Packnga::ReleaseTask :=\n"
+"  This class create tasks for uploading references and package and preparing to upload them.\n"
+"  It defines a task to tag the current version in git and a task to user-install gem for test.\n"
+"  =:"
 msgstr ""
 "- Packnga::ReleaseTask :=\n"
 "  リファレンスやパッケージをアップロードしたり、そこまでの準備を行うタスクを定義します。gitへのリリースのタグを打ったり、gemをユーザインストールしてテストを実行するためのタスクを定義します。\n"
 "  =:"
 
-#: ./doc/text/tutorial.textile:134
+#: ../../doc/text/tutorial.textile:134
 msgid "Please see below for creating tasks."
 msgstr "それぞれ、タスクを生成するためには次のようにします。"
 
-#: ./doc/text/tutorial.textile:136
-msgid "<pre>\nPacknga::DocumentTask.new(spec)\nPacknga::ReleaseTask.new(spec)\n</pre>"
+#: ../../doc/text/tutorial.textile:136
+msgid ""
+"<pre>\n"
+"Packnga::DocumentTask.new(spec)\n"
+"Packnga::ReleaseTask.new(spec)\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:141
+#: ../../doc/text/tutorial.textile:141
 msgid "h3. Set the document path."
 msgstr "h3. ドキュメントのパスを設定する"
 
-#: ./doc/text/tutorial.textile:143
-msgid "You can set parameters with block when creating object of Packnga::DocumentTask and Releasetask.\nFor example, We introduce to how to set base directory for document.\nDocument is created in this directory.\nYou can write Rakefile to set this directory path, see below."
+#: ../../doc/text/tutorial.textile:143
+msgid ""
+"You can set parameters with block when creating object of Packnga::DocumentTask and Releasetask.\n"
+"For example, We introduce to how to set base directory for document.\n"
+"Document is created in this directory.\n"
+"You can write Rakefile to set this directory path, see below."
 msgstr ""
 "DocumentTaskやReleaseTaskのオブジェクトを生成する際に、ブロックにて変更できるパラメータがあります。\n"
 "ここでは例として、ドキュメントのベースとなるようなディレクトリの設定を行います。このディレクトリの下に、ドキュメント関係のファイルが生成されるようになります。この値を独自に設定したい場合には次のようにRakefileに記述します。"
 
-#: ./doc/text/tutorial.textile:148
+#: ../../doc/text/tutorial.textile:148
 msgid "NOTE: Please set same path to each clasess."
 msgstr "また、このベースディレクトリの値は両方のクラスにて同じものを指定してください。"
 
-#: ./doc/text/tutorial.textile:150
-msgid "<pre>\nPacknga::DocumentTask.new(spec) do |task|\n  task.base_dir = \"doc/\"\nend"
+#: ../../doc/text/tutorial.textile:150
+msgid ""
+"<pre>\n"
+"Packnga::DocumentTask.new(spec) do |task|\n"
+"  task.base_dir = \"doc/\"\n"
+"end"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:155
-msgid "Packnga::ReleaseTask.new(spec) do |task|\n  task.base_dir = \"doc/\"\nend\n</pre>"
+#: ../../doc/text/tutorial.textile:155
+msgid ""
+"Packnga::ReleaseTask.new(spec) do |task|\n"
+"  task.base_dir = \"doc/\"\n"
+"end\n"
+"</pre>"
 msgstr ""
 
-#: ./doc/text/tutorial.textile:160
-msgid "You can set other parameters.\nPlease see Packnga's reference manual in detail."
+#: ../../doc/text/tutorial.textile:160
+msgid ""
+"You can set other parameters.\n"
+"Please see Packnga's reference manual in detail."
 msgstr "他にも設定できるパラメータがあります。詳しくはリファレンスマニュアルをご覧ください。"
 
 # Packnga
-#: ./lib/packnga/document-task.rb:3 ./lib/packnga/reference-task.rb:3
-#: ./lib/packnga/release-task.rb:3 ./lib/packnga/version.rb:3
-#: ./lib/packnga/yard-task.rb:3
-msgid "Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>"
+#: ../../lib/packnga/document-task.rb:3
+#: ../../lib/packnga/reference-task.rb:3
+#: ../../lib/packnga/release-task.rb:3 ../../lib/packnga/version.rb:3
+#: ../../lib/packnga/yard-task.rb:3
+msgid ""
+"Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>\n"
+"Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
 
 # Packnga
-#: ./lib/packnga/document-task.rb:5 ./lib/packnga/reference-task.rb:5
-#: ./lib/packnga/release-task.rb:5 ./lib/packnga/version.rb:5
-#: ./lib/packnga/yard-task.rb:5
-msgid "This library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Lesser General Public\nLicense version 2.1 as published by the Free Software Foundation."
+#: ../../lib/packnga/document-task.rb:6
+#: ../../lib/packnga/reference-task.rb:6
+#: ../../lib/packnga/release-task.rb:6 ../../lib/packnga/version.rb:6
+#: ../../lib/packnga/yard-task.rb:6
+msgid ""
+"This library is free software; you can redistribute it and/or\n"
+"modify it under the terms of the GNU Lesser General Public\n"
+"License version 2.1 as published by the Free Software Foundation."
 msgstr ""
 
 # Packnga
-#: ./lib/packnga/document-task.rb:9 ./lib/packnga/reference-task.rb:9
-#: ./lib/packnga/release-task.rb:9 ./lib/packnga/version.rb:9
-#: ./lib/packnga/yard-task.rb:9
-msgid "This library is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLesser General Public License for more details."
+#: ../../lib/packnga/document-task.rb:10
+#: ../../lib/packnga/reference-task.rb:10
+#: ../../lib/packnga/release-task.rb:10 ../../lib/packnga/version.rb:10
+#: ../../lib/packnga/yard-task.rb:10
+msgid ""
+"This library is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n"
+"Lesser General Public License for more details."
 msgstr ""
 
 # Packnga
-#: ./lib/packnga/document-task.rb:14 ./lib/packnga/reference-task.rb:14
-#: ./lib/packnga/release-task.rb:14 ./lib/packnga/version.rb:14
-#: ./lib/packnga/yard-task.rb:14
-msgid "You should have received a copy of the GNU Lesser General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"
+#: ../../lib/packnga/document-task.rb:15
+#: ../../lib/packnga/reference-task.rb:15
+#: ../../lib/packnga/release-task.rb:15 ../../lib/packnga/version.rb:15
+#: ../../lib/packnga/yard-task.rb:15
+msgid ""
+"You should have received a copy of the GNU Lesser General Public\n"
+"License along with this library; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"
 msgstr ""
 
 # Packnga::DocumentTask
-#: ./lib/packnga/document-task.rb:25
-msgid "This class creates tasks for document.\nThey generate YARD document or references."
+#: ../../lib/packnga/document-task.rb:25
+msgid ""
+"This class creates tasks for document.\n"
+"They generate YARD document or references."
 msgstr ""
 "このクラスはドキュメント関連のタスクを生成します。\n"
 "これらタスクはYARDを使ってドキュメントやリファレンスを作成します。"
 
 # Packnga::DocumentTask#initialize
-#: ./lib/packnga/document-task.rb:31
-msgid "Defines tasks to generate YARD documentation\nand to translate references."
+#: ../../lib/packnga/document-task.rb:31
+msgid ""
+"Defines tasks to generate YARD documentation\n"
+"and to translate references."
 msgstr "YARDによるドキュメントを生成したりリファレンスを翻訳するタスクを定義します。"
 
 # @return [DocumentTask]
-#: ./lib/packnga/document-task.rb:33
+#: ../../lib/packnga/document-task.rb:33
 msgid "a new instance of DocumentTask"
 msgstr "DocumentTaskのオブジェクト"
 
 # @param [Gem::Specification]
 # @param [Jeweler::Task]
-#: ./lib/packnga/document-task.rb:33 ./lib/packnga/release-task.rb:40
+#: ../../lib/packnga/document-task.rb:33
+#: ../../lib/packnga/release-task.rb:40
 msgid "tag|param|spec"
+msgstr ""
+
+# @param [Gem::Specification] spec
+#: ../../lib/packnga/document-task.rb:33
+#: ../../lib/packnga/release-task.rb:40
+msgid "specification for your package"
+msgstr "あなたのパッケージについての詳細を示すオブジェクト"
+
+# @yieldparam [Packnga::DocumentTask] _self
+# @yieldparam [Packnga::ReleaseTask] _self
+#: ../../lib/packnga/document-task.rb:33
+#: ../../lib/packnga/release-task.rb:40
+msgid "the object that the method was called on"
 msgstr ""
 
 # @yieldparam [Packnga::DocumentTask]
 # @yieldparam [Packnga::ReleaseTask]
-#: ./lib/packnga/document-task.rb:33 ./lib/packnga/release-task.rb:40
+#: ../../lib/packnga/document-task.rb:33
+#: ../../lib/packnga/release-task.rb:40
 msgid "tag|yieldparam|_self"
 msgstr ""
 
-# @yieldparam [Packnga::DocumentTask] _self
-# @yieldparam [Packnga::ReleaseTask] _self
-#: ./lib/packnga/document-task.rb:33 ./lib/packnga/release-task.rb:40
-msgid "the object that the method was called on"
-msgstr ""
-
-# @param [Gem::Specification] spec
-#: ./lib/packnga/document-task.rb:33 ./lib/packnga/release-task.rb:40
-msgid "specification for your package"
-msgstr "あなたのパッケージについての詳細を示すオブジェクト"
-
 # Packnga::DocumentTask#base_dir=
-#: ./lib/packnga/document-task.rb:43
+#: ../../lib/packnga/document-task.rb:43
 msgid "Sets base directory for documents. Default value is \"doc\"."
 msgstr "ドキュメントのベースとなるディレクトリを設定します。デフォルトの値は\"doc\"です"
 
-# @param [String] dir
-#: ./lib/packnga/document-task.rb:44
-msgid "base direcory path"
-msgstr "ベースディレクトリのパス"
-
 # @param [String]
-#: ./lib/packnga/document-task.rb:44
+#: ../../lib/packnga/document-task.rb:44
 msgid "tag|param|dir"
 msgstr ""
 
+# @param [String] dir
+#: ../../lib/packnga/document-task.rb:44
+msgid "base direcory path"
+msgstr "ベースディレクトリのパス"
+
 # Packnga::DocumentTask#original_language=
-#: ./lib/packnga/document-task.rb:51
-msgid "Sets original language which you wrote document.\nDefault value is \"en\" (as English).\nSpecified value is used to define language for translation."
+#: ../../lib/packnga/document-task.rb:51
+msgid ""
+"Sets original language which you wrote document.\n"
+"Default value is \"en\" (as English).\n"
+"Specified value is used to define language for translation."
 msgstr ""
 "ドキュメントを書いた元の言語を指定します。\n"
 "デフォルトは\"en\"（英語）です。\n"
 "この値は翻訳するための言語を決めるのに使います。"
 
-# @param [Hash]
-# @param [String]
-#: ./lib/packnga/document-task.rb:58 ./lib/packnga/document-task.rb:83
-msgid "tag|param|language"
-msgstr ""
-
 # @see DocumentTask#translate_languages=
-#: ./lib/packnga/document-task.rb:58
+#: ../../lib/packnga/document-task.rb:58
 msgid "#translate_language(s)= is used to specify languages for translation."
 msgstr "#translate_language(s)=を翻訳する言語を指定するために使います。"
 
-# @see
-#: ./lib/packnga/document-task.rb:58 ./lib/packnga/document-task.rb:83
-#: ./lib/packnga/reference-task.rb:70
-msgid "tag|see|DocumentTask#translate_languages="
-msgstr ""
-
 # @since
-#: ./lib/packnga/document-task.rb:58 ./lib/packnga/document-task.rb:106
-#: ./lib/packnga/reference-task.rb:57
-#: ./lib/packnga/reference-task.rb:70
+#: ../../lib/packnga/document-task.rb:58
+#: ../../lib/packnga/document-task.rb:106
+#: ../../lib/packnga/reference-task.rb:57
+#: ../../lib/packnga/reference-task.rb:70
 msgid "0.9.6"
 msgstr ""
 
+# @see
+#: ../../lib/packnga/document-task.rb:58
+#: ../../lib/packnga/document-task.rb:83
+#: ../../lib/packnga/reference-task.rb:70
+msgid "tag|see|DocumentTask#translate_languages="
+msgstr ""
+
 # @param [String] language
-#: ./lib/packnga/document-task.rb:58
+#: ../../lib/packnga/document-task.rb:58
 msgid "language you wrote document"
 msgstr "ドキュメントが書かれた言語"
 
+# @param [Hash]
+# @param [String]
+#: ../../lib/packnga/document-task.rb:58
+#: ../../lib/packnga/document-task.rb:83
+msgid "tag|param|language"
+msgstr ""
+
 # Packnga::DocumentTask#translate_language=
-#: ./lib/packnga/document-task.rb:63
-msgid "Sets a translate language for document.\nThis method receives String as language code."
+#: ../../lib/packnga/document-task.rb:63
+msgid ""
+"Sets a translate language for document.\n"
+"This method receives String as language code."
 msgstr ""
 "ドキュメントを翻訳する言語を1つ指定します。\n"
 "このメソッドは言語コードを示す文字列を受け取ります。"
 
 # Packnga::ReferenceTask#translate_languages
 # Packnga::ReferenceTask#translate_languages=
-#: ./lib/packnga/document-task.rb:66 ./lib/packnga/document-task.rb:91
-msgid "If the language specified by {#original_language=} isn't\nEnglish, its default value is one.\nOtherwise, it is not specified."
+#: ../../lib/packnga/document-task.rb:66
+#: ../../lib/packnga/document-task.rb:91
+msgid ""
+"If the language specified by {#original_language=} isn't\n"
+"English, its default value is one.\n"
+"Otherwise, it is not specified."
 msgstr "元のドキュメントが英語でなければ英語（\"en\"）がデフォルトで指定されます。英語の場合は何も指定されません。"
 
-# @example
-#: ./lib/packnga/document-task.rb:83
-msgid "tag|example|Specify Japanese."
-msgstr ""
-
-# @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-#: ./lib/packnga/document-task.rb:83 ./lib/packnga/document-task.rb:106
-msgid "see \"639-1\" row in this page for lanugage codes."
-msgstr "言語コードについてはこのページの\"639-1\"の行をご覧ください。"
-
-#: ./lib/packnga/document-task.rb:83
-msgid "DocumentTask.new(spec) do |task|\n  task.translate_language = \"ja\"\nend"
-msgstr ""
-
-# @see DocumentTask#translate_languages=
-#: ./lib/packnga/document-task.rb:83
-msgid "#translate_languages= receives Array of String target languages codes."
-msgstr "#translate_languages=は翻訳する言語の言語コードを示す文字列の配列を受け取ります。"
-
 # @since
-#: ./lib/packnga/document-task.rb:83
+#: ../../lib/packnga/document-task.rb:83
 msgid "0.9.7"
 msgstr ""
 
 # @param [String] language
-#: ./lib/packnga/document-task.rb:83
+#: ../../lib/packnga/document-task.rb:83
 msgid "target language code for translated document"
 msgstr "ドキュメントが書かれた言語"
 
+# @see DocumentTask#translate_languages=
+#: ../../lib/packnga/document-task.rb:83
+msgid "#translate_languages= receives Array of String target languages codes."
+msgstr "#translate_languages=は翻訳する言語の言語コードを示す文字列の配列を受け取ります。"
+
+#: ../../lib/packnga/document-task.rb:83
+msgid ""
+"DocumentTask.new(spec) do |task|\n"
+"  task.translate_language = \"ja\"\n"
+"end"
+msgstr ""
+
+# @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+#: ../../lib/packnga/document-task.rb:83
+#: ../../lib/packnga/document-task.rb:106
+msgid "see \"639-1\" row in this page for lanugage codes."
+msgstr "言語コードについてはこのページの\"639-1\"の行をご覧ください。"
+
+# @example
+#: ../../lib/packnga/document-task.rb:83
+msgid "tag|example|Specify Japanese."
+msgstr ""
+
 # @see
-#: ./lib/packnga/document-task.rb:83 ./lib/packnga/document-task.rb:106
+#: ../../lib/packnga/document-task.rb:83
+#: ../../lib/packnga/document-task.rb:106
 msgid "tag|see|http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
 msgstr ""
 
 # Packnga::DocumentTask#translate_language=
-#: ./lib/packnga/document-task.rb:88
-msgid "Sets translate languages for document.\nThis method receives Array of Strings as each language code."
+#: ../../lib/packnga/document-task.rb:88
+msgid ""
+"Sets translate languages for document.\n"
+"This method receives Array of Strings as each language code."
 msgstr ""
 "ドキュメントを翻訳する言語を1つ指定します。\n"
 "このメソッドは言語コードを示す文字列を受け取ります。"
 
 # @see DocumentTask#translate_language=
-#: ./lib/packnga/document-task.rb:106
+#: ../../lib/packnga/document-task.rb:106
 msgid "#translate_language= receives String as target language code."
 msgstr "#translate_language=はドキュメントが書かれた言語コードを示す文字列を受け取ります。"
 
-# @example
-#: ./lib/packnga/document-task.rb:106
-msgid "tag|example|Sets Japanese and English."
+# @see
+#: ../../lib/packnga/document-task.rb:106
+#: ../../lib/packnga/reference-task.rb:70
+msgid "tag|see|DocumentTask#translate_language="
 msgstr ""
 
 # @param [Hash]
 # @param [String]
-#: ./lib/packnga/document-task.rb:106
+#: ../../lib/packnga/document-task.rb:106
 msgid "tag|param|languages"
 msgstr ""
 
-# @param [String] language
-#: ./lib/packnga/document-task.rb:106
-msgid "target language codes for translated document"
-msgstr "ドキュメントが書かれた言語"
-
-# @see
-#: ./lib/packnga/document-task.rb:106
-#: ./lib/packnga/reference-task.rb:70
-msgid "tag|see|DocumentTask#translate_language="
+# @example
+#: ../../lib/packnga/document-task.rb:106
+msgid "tag|example|Sets Japanese and English."
 msgstr ""
 
 # @example Sets Japanese and English.
-#: ./lib/packnga/document-task.rb:106
-msgid "DocumentTask.new(spec) do |task|\n  task.translate_languages = [\"ja\", \"en\"]\nend"
+#: ../../lib/packnga/document-task.rb:106
+msgid ""
+"DocumentTask.new(spec) do |task|\n"
+"  task.translate_languages = [\"ja\", \"en\"]\n"
+"end"
 msgstr ""
 
+# @param [String] language
+#: ../../lib/packnga/document-task.rb:106
+msgid "target language codes for translated document"
+msgstr "ドキュメントが書かれた言語"
+
 # Packnga::DocumentTask#yard
-#: ./lib/packnga/document-task.rb:111
+#: ../../lib/packnga/document-task.rb:111
 msgid "Runs block to task for YARD documentation."
 msgstr "与えられた場合はブロックを実行して、YARDによるドキュメントのためのタスクに関する設定をします。"
 
 # Packnga::DocumentTask#reference
-#: ./lib/packnga/document-task.rb:116
+#: ../../lib/packnga/document-task.rb:116
 msgid "Runs block to tasks for references."
 msgstr "与えられた場合はブロックを実行して、リファレンス関連のタスクに関する設定をします。"
 
 # @since
-#: ./lib/packnga/document-task.rb:170
-#: ./lib/packnga/reference-task.rb:386
-#: ./lib/packnga/release-task.rb:116 ./lib/packnga/yard-task.rb:112
+#: ../../lib/packnga/document-task.rb:166
+#: ../../lib/packnga/reference-task.rb:324
+#: ../../lib/packnga/release-task.rb:136
+#: ../../lib/packnga/yard-task.rb:112
 msgid "0.9.0"
 msgstr ""
 
 # Packnga::ReferenceTask
-#: ./lib/packnga/reference-task.rb:27
-msgid "This class creates reference tasks.\nThey generate, translate and prepare to publish references."
+#: ../../lib/packnga/reference-task.rb:27
+msgid ""
+"This class creates reference tasks.\n"
+"They generate, translate and prepare to publish references."
 msgstr "このクラスはリファレンス関係のタスクを生成します。これらタスクはリファレンスの生成や翻訳を行い、またリファレンスを公開するために必要な準備を行います。"
 
 # Packnga::ReleaseTask#base_dir=
-#: ./lib/packnga/reference-task.rb:35 ./lib/packnga/yard-task.rb:34
+#: ../../lib/packnga/reference-task.rb:35
+#: ../../lib/packnga/yard-task.rb:34
 msgid "This attribute is used to set path of base directory of document."
 msgstr "この属性はドキュメントのベースディレクトリを表します。"
 
 # @param [String] value
 # @return [String]
-#: ./lib/packnga/reference-task.rb:36 ./lib/packnga/release-task.rb:32
-#: ./lib/packnga/yard-task.rb:35
+#: ../../lib/packnga/reference-task.rb:36
+#: ../../lib/packnga/release-task.rb:32
+#: ../../lib/packnga/yard-task.rb:35
 msgid "path of base directory of document"
 msgstr "ドキュメントのベースディレクトリのパス"
 
 # Packnga::YARDTask#readme
-#: ./lib/packnga/reference-task.rb:39
+#: ../../lib/packnga/reference-task.rb:39
 msgid "This attribute is used to set README file."
 msgstr "この属性はyardocに対して設定するReadmeファイルのパスを設定します。"
 
 # @return [String]
-#: ./lib/packnga/reference-task.rb:40 ./lib/packnga/yard-task.rb:31
+#: ../../lib/packnga/reference-task.rb:40
+#: ../../lib/packnga/yard-task.rb:31
 msgid "path of readme file"
 msgstr "Readmeファイルのパス"
 
 # Packnga::YARDTask#readme
-#: ./lib/packnga/reference-task.rb:43 ./lib/packnga/yard-task.rb:38
+#: ../../lib/packnga/reference-task.rb:43
+#: ../../lib/packnga/yard-task.rb:38
 msgid "This attribute is used to set source files for document."
 msgstr "この属性はyardocに対して設定するソースファイルのパスを設定します。"
 
 # @return [Array<String>]
-#: ./lib/packnga/reference-task.rb:44 ./lib/packnga/yard-task.rb:39
+#: ../../lib/packnga/reference-task.rb:44
+#: ../../lib/packnga/yard-task.rb:39
 msgid "target source files"
 msgstr "ドキュメント対象となるソースファイルのパスからなる配列"
 
 # Packnga::YARDTask#readme
-#: ./lib/packnga/reference-task.rb:47 ./lib/packnga/yard-task.rb:42
+#: ../../lib/packnga/reference-task.rb:47
+#: ../../lib/packnga/yard-task.rb:42
 msgid "This attribute is used to set text files for document."
 msgstr "この属性はyardocに対して設定するテキストファイルのパスを設定します。"
 
 # @return [Array<String>]
-#: ./lib/packnga/reference-task.rb:48 ./lib/packnga/yard-task.rb:43
+#: ../../lib/packnga/reference-task.rb:48
+#: ../../lib/packnga/yard-task.rb:43
 msgid "target text files"
 msgstr "ドキュメント対象となるファイルのパスの配列"
 
 # Packnga::ReferenceTask#original_language
 # Packnga::ReferenceTask#original_language=
-#: ./lib/packnga/reference-task.rb:51
-msgid "This attribute is used to set the language you wrote original\ndocument. Its default value is \"en\" (English)."
+#: ../../lib/packnga/reference-task.rb:51
+msgid ""
+"This attribute is used to set the language you wrote original\n"
+"document. Its default value is \"en\" (English)."
 msgstr "この属性はドキュメントが書かれた言語を指定します。デフォルト値は\"en\"（英語）です。"
 
 # @return [String]
-#: ./lib/packnga/reference-task.rb:57
+#: ../../lib/packnga/reference-task.rb:57
 msgid "language you used to write document"
 msgstr "ドキュメントが書かれた言語"
 
 # @see
-#: ./lib/packnga/reference-task.rb:57
+#: ../../lib/packnga/reference-task.rb:57
 msgid "tag|see|DocumentTask#original_language="
 msgstr ""
 
 # Packnga::ReferenceTask#translate_languages
 # Packnga::ReferenceTask#translate_languages=
-#: ./lib/packnga/reference-task.rb:60
-msgid "This attribute is used to set languages for translated document.\nIf original_language isn't English, its default value is one.\nOtherwise, it is not specified."
+#: ../../lib/packnga/reference-task.rb:60
+msgid ""
+"This attribute is used to set languages for translated document.\n"
+"If original_language isn't English, its default value is one.\n"
+"Otherwise, it is not specified."
 msgstr "この属性はドキュメントを翻訳する言語を指定します。元のドキュメントが英語でなければ英語（\"en\"）がデフォルトで指定されます。英語の場合は何も指定されません。"
 
-# @see DocumentTask#translate_languages=
-#: ./lib/packnga/reference-task.rb:70
-msgid "See this page to specifiy multiple languages to this attribute."
-msgstr "この属性に複数の言語を指定するためにはこのページを参照ください。"
-
 # @see DocumentTask#translate_language=
-#: ./lib/packnga/reference-task.rb:70
+#: ../../lib/packnga/reference-task.rb:70
 msgid "See this page to specifiy a single language to this attribute."
 msgstr "この属性に1つだけ言語を指定するためにはこのページを参照ください。"
 
 # @return [Array<String>]
-#: ./lib/packnga/reference-task.rb:70
+#: ../../lib/packnga/reference-task.rb:70
 msgid "target languages"
 msgstr ""
 
+# @see DocumentTask#translate_languages=
+#: ../../lib/packnga/reference-task.rb:70
+msgid "See this page to specifiy multiple languages to this attribute."
+msgstr "この属性に複数の言語を指定するためにはこのページを参照ください。"
+
 # @return [ReferenceTask]
-#: ./lib/packnga/reference-task.rb:73
+#: ../../lib/packnga/reference-task.rb:73
 msgid "a new instance of ReferenceTask"
 msgstr "ReferenceTaskのオブジェクト"
 
-# Packnga::ReferenceTask#htaccess
-#: ./lib/packnga/reference-task.rb:95
-msgid "path of .htaccess."
-msgstr ".htaccessファイルのパスを返します。"
-
 # Packnga::ReleaseTask
-#: ./lib/packnga/release-task.rb:20
+#: ../../lib/packnga/release-task.rb:20
 msgid "This class creates release tasks."
 msgstr "このクラスはリリース関連のタスクを生成します。"
 
 # Packnga::ReleaseTask
-#: ./lib/packnga/release-task.rb:22
+#: ../../lib/packnga/release-task.rb:22
 msgid "Release tasks tag current version and install gem for test."
 msgstr "リリース関連のタスクは、現在のバージョンのタグを打ったり、テスト用にgemをインストールしたりします。"
 
 # Packnga::ReleaseTask#index_html_dir=
-#: ./lib/packnga/release-task.rb:28
+#: ../../lib/packnga/release-task.rb:28
 msgid "This attribute is path of HTML files written version and release date."
 msgstr "この属性はバージョンやリリース日が書かれたHTMLファイルのパスを示します。"
 
 # @param [Hash]
 # @param [String]
-#: ./lib/packnga/release-task.rb:29 ./lib/packnga/release-task.rb:32
-#: ./lib/packnga/release-task.rb:35
+#: ../../lib/packnga/release-task.rb:29
+#: ../../lib/packnga/release-task.rb:32
+#: ../../lib/packnga/release-task.rb:35
 msgid "tag|param|value"
 msgstr ""
 
 # @param [String] value
-#: ./lib/packnga/release-task.rb:29
+#: ../../lib/packnga/release-task.rb:29
 msgid "path of HTML files"
 msgstr "HTMLファイルのパス"
 
 # Packnga::ReleaseTask#base_dir=
-#: ./lib/packnga/release-task.rb:31
+#: ../../lib/packnga/release-task.rb:31
 msgid "This attribute is path of base directory of document."
 msgstr "この属性はドキュメントのベースディレクトリを表します。"
 
 # Packnga::ReleaseTask#tag_message=
-#: ./lib/packnga/release-task.rb:34
+#: ../../lib/packnga/release-task.rb:34
 msgid "This attribute is message when tagging in release."
 msgstr "この属性はタグに付けるメッセージを示します。"
 
 # @param [String] value
-#: ./lib/packnga/release-task.rb:35
+#: ../../lib/packnga/release-task.rb:35
 msgid "message"
 msgstr "タグに付けるメッセージ"
 
 # Packnga::ReleaseTask#initialize
-#: ./lib/packnga/release-task.rb:37
-msgid "Defines task for preparing to release.\nDefined tasks update version and release-date in index files\nand tag in git."
+#: ../../lib/packnga/release-task.rb:37
+msgid ""
+"Defines task for preparing to release.\n"
+"Defined tasks update version and release-date in index files\n"
+"and tag in git."
 msgstr "リリース準備を行うためのタスクを定義します。gitへ現在バージョンのタグを打つタスクや、ドキュメントのインデックスファイルに書かれたバージョンやリリース日を更新するタスクを定義します。"
 
 # @return [ReleaseTask]
-#: ./lib/packnga/release-task.rb:40
+#: ../../lib/packnga/release-task.rb:40
 msgid "a new instance of ReleaseTask"
 msgstr "ReleaseTaskのオブジェクト"
 
 # Packnga::VERSION
-#: ./lib/packnga/version.rb:21
+#: ../../lib/packnga/version.rb:21
 msgid "Packnga version."
 msgstr "Packngaのバージョン"
 
 # Packnga::YARDTask
-#: ./lib/packnga/yard-task.rb:23
-msgid "This class creates YARD task.\nYARD task generates references by YARD."
+#: ../../lib/packnga/yard-task.rb:23
+msgid ""
+"This class creates YARD task.\n"
+"YARD task generates references by YARD."
 msgstr "このクラスはYARD関連のタスクを定義します。このタスクはYARDを用いてドキュメントを生成します。"
 
 # Packnga::YARDTask#readme
-#: ./lib/packnga/yard-task.rb:30
+#: ../../lib/packnga/yard-task.rb:30
 msgid "This attribute is used to set README file to yardoc task."
 msgstr "この属性はyardocに対して設定するReadmeファイルのパスを設定します"
 
 # @return [Array<String>]
-#: ./lib/packnga/yard-task.rb:46
+#: ../../lib/packnga/yard-task.rb:46
 msgid "custom yardoc command line options"
 msgstr "yardocコマンド用の追加されたオプション"
 
 # @return [YARDTask]
-#: ./lib/packnga/yard-task.rb:49
+#: ../../lib/packnga/yard-task.rb:49
 msgid "a new instance of YARDTask"
 msgstr "YARDTaskのオブジェクト"
 
 # Packnga::YARDTask#before_define
-#: ./lib/packnga/yard-task.rb:71
+#: ../../lib/packnga/yard-task.rb:71
 msgid "Regists yardoc parameters with block."
 msgstr "与えられたブロックをyardocにパラメータを設定するものとして登録します。"
