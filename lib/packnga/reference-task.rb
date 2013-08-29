@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2011-2013  Haruka Yoshihara <yoshihara@clear-code.com>
-# Copyright (C) 2012  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2012-2013  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -128,6 +128,7 @@ module Packnga
         define_generate_task
         define_publication_task
       end
+      directory html_reference_dir.to_s => "reference:publication:generate"
     end
 
     def define_pot_tasks

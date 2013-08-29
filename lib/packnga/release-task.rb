@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2013  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -122,7 +123,7 @@ module Packnga
     def define_reference_upload_task
       namespace :references do
         desc "Copy references to reference html directory."
-        task :upload do
+        task :upload => html_reference_dir do
           cp_r(html_reference_dir, @index_html_dir)
         end
       end
