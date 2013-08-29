@@ -1,6 +1,5 @@
 notifications:
   recipients:
-    - travis@clear-code.com
     - groonga-ci-notify@rubyforge.org
 language: ruby
 rvm:
