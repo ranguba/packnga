@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2012 Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2013 Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -21,7 +22,7 @@ class DocumentTaskTest < Test::Unit::TestCase
   end
 
   def test_base_directory_set
-    spec = Gem::Specification.new
+    spec = Gem::Specification.new("test")
     base_dir = Pathname("base_directory")
     document_task = Packnga::DocumentTask.new(spec) do |task|
       task.base_dir = base_dir.to_s
@@ -62,7 +63,7 @@ class DocumentTaskTest < Test::Unit::TestCase
       translate_languages = options[:translate_languages]
       translate_language = options[:translate_language]
 
-      spec = Gem::Specification.new
+      spec = Gem::Specification.new("test")
       Packnga::DocumentTask.new(spec) do |task|
         if translate_languages.nil?
           task.translate_language = translate_language
@@ -75,7 +76,7 @@ class DocumentTaskTest < Test::Unit::TestCase
 
   def test_original_language
     original_language = "original_language"
-    spec = Gem::Specification.new
+    spec = Gem::Specification.new("test")
     document_task = Packnga::DocumentTask.new(spec) do |task|
       task.original_language = original_language
     end
@@ -88,7 +89,7 @@ class DocumentTaskTest < Test::Unit::TestCase
   class ReadmeTest < self
     def setup
       @readme = "README.textile"
-      spec = Gem::Specification.new do |_spec|
+      spec = Gem::Specification.new("test") do |_spec|
         _spec.files = [@readme]
       end
       document_task = Packnga::DocumentTask.new(spec)
@@ -120,7 +121,7 @@ class DocumentTaskTest < Test::Unit::TestCase
       source_c_files = ["ext/packnga.c", "ext/packnga/version.c"]
       other_c_files = ["other1.c", "lib/other2.c"]
 
-      spec = Gem::Specification.new do |_spec|
+      spec = Gem::Specification.new("test") do |_spec|
         _spec.files = [
           source_ruby_files,
           other_ruby_files,
@@ -156,7 +157,7 @@ class DocumentTaskTest < Test::Unit::TestCase
       @source_text_files = ["doc/text/tutorial.textile", "doc/text/new.md"]
       other_text_files = ["other1.textile", "doc/other2.md", "Rakefile"]
 
-      spec = Gem::Specification.new do |_spec|
+      spec = Gem::Specification.new("test") do |_spec|
         _spec.files = [
           @source_text_files,
           other_text_files,
@@ -185,7 +186,7 @@ class DocumentTaskTest < Test::Unit::TestCase
 
   class NoFilesTest < self
     def setup
-      spec = Gem::Specification.new
+      spec = Gem::Specification.new("test")
       document_task = Packnga::DocumentTask.new(spec)
       @yard_task = extract_yard_task(document_task)
       @reference_task = extract_reference_task(document_task)

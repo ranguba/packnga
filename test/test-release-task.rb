@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2013 Haruka Yoshihara <yoshihara@clear-code.com>
+# Copyright (C) 2013 Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -28,7 +29,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
       Dir.mktmpdir do |base_dir|
         index_dir = File.join(base_dir, "index_dir")
 
-        spec = Gem::Specification.new
+        spec = Gem::Specification.new("test")
 
         Packnga::ReleaseTask.new(spec) do |task|
           task.index_html_dir = index_dir
@@ -58,7 +59,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
         index_dir = File.join(base_dir, "index_dir")
 
         spec = nil
-        Gem::Specification.new do |_spec|
+        Gem::Specification.new("test") do |_spec|
           spec = _spec
           spec.version = "1.0.1"
         end
@@ -91,7 +92,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
       Dir.mktmpdir do |base_dir|
         index_dir = File.join(base_dir, "index_dir")
 
-        spec = Gem::Specification.new
+        spec = Gem::Specification.new("test")
         Packnga::ReleaseTask.new(spec) do |task|
           task.index_html_dir = index_dir
           task.base_dir = base_dir
@@ -122,7 +123,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
       Dir.mktmpdir do |base_dir|
         index_dir = File.join(base_dir, "index_dir")
 
-        Packnga::ReleaseTask.new(Gem::Specification.new) do |task|
+        Packnga::ReleaseTask.new(Gem::Specification.new("test")) do |task|
           task.index_html_dir = index_dir
           task.base_dir = base_dir
         end
@@ -171,7 +172,7 @@ class ReleaseTaskTest < Test::Unit::TestCase
       reference_dir = File.join(base_dir, "html", package_name)
       reference_filename = "file.html"
 
-      spec = Gem::Specification.new do |_spec|
+      spec = Gem::Specification.new("test") do |_spec|
         _spec.name = package_name
       end
 
