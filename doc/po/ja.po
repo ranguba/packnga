@@ -873,7 +873,7 @@ msgid "h1. NEWS"
 msgstr "h1. お知らせ"
 
 #: ../../doc/text/news.textile:3
-msgid "h2. 0.9.9: 2013-08-29"
+msgid "h2(#0-9-9). 0.9.9: 2013-08-29"
 msgstr ""
 
 #: ../../doc/text/news.textile:5 ../../doc/text/news.textile:11
@@ -1966,7 +1966,7 @@ msgstr "他にも設定できるパラメータがあります。詳しくはリ
 #: ../../lib/packnga/yard-task.rb:3
 msgid ""
 "Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>\n"
-"Copyright (C) 2013  Kouhei Sutou <kou@clear-code.com>"
+"Copyright (C) 2011-2013  Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
 
 # Packnga
@@ -2223,7 +2223,7 @@ msgstr "与えられた場合はブロックを実行して、リファレンス
 
 # @since
 #: ../../lib/packnga/document-task.rb:166
-#: ../../lib/packnga/reference-task.rb:327
+#: ../../lib/packnga/reference-task.rb:326
 #: ../../lib/packnga/release-task.rb:132
 #: ../../lib/packnga/yard-task.rb:112
 msgid "0.9.0"
