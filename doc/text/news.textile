@@ -1,5 +1,11 @@
 h1. NEWS
 
+h2. 0.9.9: 2013-08-29
+
+h3. Improvements
+
+ * Added missing dependencies for "release:references:upload" task.
+
 h2. 0.9.8: 2013-06-07
 
 h3. Improvements
