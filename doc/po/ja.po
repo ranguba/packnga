@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: packnga 0.9.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-11-20 22:17+0900\n"
-"PO-Revision-Date: 2013-08-29 11:54+0900\n"
+"PO-Revision-Date: 2013-08-29 17:21+0900\n"
 "Last-Translator: haruka yoshihara <yoshihara@clear-code.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -886,7 +886,7 @@ msgstr "h3. 改良"
 
 #: ../../doc/text/news.textile:7
 msgid " * Added missing dependencies for \"release:references:upload\" task."
-msgstr ""
+msgstr " * 「release:references:upload」タスクに不足していた依存関係を追加。"
 
 #: ../../doc/text/news.textile:9
 msgid "h2. 0.9.8: 2013-06-07"
