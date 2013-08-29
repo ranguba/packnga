@@ -15,7 +15,7 @@ h3. Improvements
    copy generated references to a HTML directory.
    A HTML directory, for example, is a repository of GitHub Pages. In
    this case, this task is used to commit references to GitHub Pages.
- * [Referencetask] Dropped support to upload .htaccess.
+ * [ReferenceTask] Dropped support to upload .htaccess.
  * [ReleaseTask] Used the version in your gemspec as a new version
    when no version is specified as an argument by "release:info:update"
    task. A new version is used to replace HTML index files.
