@@ -128,7 +128,7 @@ module Packnga
         define_generate_task
         define_publication_task
       end
-      directory html_reference_dir.to_s => "reference:publication:generate"
+      task html_reference_dir.to_s => "reference:publication:generate"
     end
 
     def define_pot_tasks
