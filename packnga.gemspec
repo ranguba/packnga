@@ -65,7 +65,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency("rake")
   spec.add_runtime_dependency("yard", ">= 0.8.6.1")
-  spec.add_runtime_dependency("gettext", ">= 2.3.6")
+  spec.add_runtime_dependency("gettext", ">= 3.1.3")
   spec.add_development_dependency("test-unit")
   spec.add_development_dependency("test-unit-notify")
   spec.add_development_dependency("test-unit-rr")

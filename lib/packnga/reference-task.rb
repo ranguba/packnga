@@ -18,6 +18,7 @@
 
 require "erb"
 require "gettext/tools"
+require "gettext/tools/task"
 require "tempfile"
 require "tmpdir"
 require "rake/clean"
@@ -82,7 +83,6 @@ module Packnga
       @extra_files = nil
       @files = nil
       @po_dir = nil
-      @pot_file = nil
     end
 
     # @private
@@ -102,7 +102,6 @@ module Packnga
       end
       @supported_languages = [@original_language, *@translate_languages]
       @po_dir = "#{@base_dir}/po"
-      @pot_file = "#{@po_dir}/#{@spec.name}.pot"
       @extra_files = @text_files
       @extra_files += [@readme] if @readme
       @files = @source_files + @extra_files
@@ -122,6 +121,7 @@ module Packnga
 
     def define_tasks
       namespace :reference do
+        define_gettext_tasks
         define_pot_tasks
         define_po_tasks
         define_translate_task
@@ -131,51 +131,17 @@ module Packnga
       task html_reference_dir.to_s => "reference:publication:generate"
     end
 
-    def define_pot_tasks
-      namespace :pot do
-        directory @po_dir
-        file @pot_file => [@po_dir, *@files] do |t|
-          create_pot_file(@pot_file)
-        end
-        desc "Generates pot file."
-        task :generate => @pot_file do |t|
-        end
-      end
-    end
+    def define_gettext_tasks
+      return if @files.empty?
 
-    def define_po_tasks
-      namespace :po do
-        namespace :update do
-          @translate_languages.each do |language|
-            po_file = "#{@po_dir}/#{language}.po"
-
-            if File.exist?(po_file)
-              file po_file => @files do
-                current_pot_file = "#{@po_dir}/tmp.pot"
-                create_pot_file(current_pot_file)
-                GetText::Tools::MsgMerge.run(po_file, current_pot_file,
-                                             "-o", po_file)
-                FileUtils.rm_f(current_pot_file)
-              end
-            else
-              file po_file => @pot_file do |t|
-                GetText::Tools::MsgInit.run("--input", @pot_file,
-                                            "--output", t.name,
-                                            "--locale", language.to_s)
-              end
-            end
-
-            desc "Updates po file for #{language}."
-            task language => po_file
-          end
-        end
-
-        desc "Updates po files."
-        task :update do
-          Rake::Task["clobber"].invoke
-          @translate_languages.each do |language|
-            Rake::Task["reference:po:update:#{language}"].invoke
-          end
+      GetText::Tools::Task.define do |task|
+        task.spec = @spec
+        task.locales = @translate_languages
+        task.po_base_directory = @po_dir
+        task.files = @files
+        task.enable_description = false
+        task.pot_creator = lambda do |pot_file_path|
+          create_pot_file(pot_file_path.to_s)
         end
       end
     end
@@ -186,6 +152,31 @@ module Packnga
       options += ["-"]
       options += @extra_files
       YARD::CLI::I18n.run(*options)
+    end
+
+    def define_pot_tasks
+      namespace :pot do
+        desc "Generates POT file."
+        task :generate => "gettext:pot:create"
+      end
+    end
+
+    def define_po_tasks
+      yard_po_files = []
+
+      @translate_languages.each do |language|
+        po_file = "#{@po_dir}/#{language}/#{@spec.name}.po"
+        yard_po_file = "#{@po_dir}/#{language}.po"
+        yard_po_files << yard_po_file
+        file yard_po_file => po_file do
+          cp(po_file, yard_po_file)
+        end
+      end
+
+      namespace :po do
+        desc "Updates PO files."
+        task :update => yard_po_files
+      end
     end
 
     def define_translate_task

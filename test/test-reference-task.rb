@@ -23,32 +23,6 @@ class ReferenceTaskTest < Test::Unit::TestCase
     Rake::Task.clear
   end
 
-  def test_po_update_no_po_file_exists
-    Dir.mktmpdir do |base_dir|
-      package_name = "packnga"
-      language = "ja"
-
-      spec = Gem::Specification.new do |_spec|
-        _spec.name = package_name
-      end
-
-      Packnga::DocumentTask.new(spec) do |task|
-        task.translate_language = language
-        task.base_dir = base_dir
-      end
-
-      po_dir = "#{base_dir}/po"
-      pot_file = "#{po_dir}/#{package_name}.pot"
-      po_file = "#{po_dir}/#{language}.po"
-
-      mock(GetText::Tools::MsgInit).run("--input", pot_file,
-                                        "--output", po_file,
-                                        "--locale", language)
-
-      Rake::Task["reference:po:update:ja"].invoke
-    end
-  end
-
   def test_reference_publication_prepare
     Dir.mktmpdir do |base_dir|
       package_name = "packnga"

@@ -26,6 +26,10 @@ class DocumentTaskTest < Test::Unit::TestCase
     base_dir = Pathname("base_directory")
     document_task = Packnga::DocumentTask.new(spec) do |task|
       task.base_dir = base_dir.to_s
+      task.reference do |reference|
+        reference.translate_languages = ["ja"]
+        reference.readme = "README.md"
+      end
     end
 
     document_task.yard do |yard_task|
@@ -70,6 +74,9 @@ class DocumentTaskTest < Test::Unit::TestCase
         else
           task.translate_languages = translate_languages
         end
+        task.reference do |reference|
+          reference.readme = "README.md"
+        end
       end
     end
   end
@@ -79,6 +86,9 @@ class DocumentTaskTest < Test::Unit::TestCase
     spec = Gem::Specification.new("test")
     document_task = Packnga::DocumentTask.new(spec) do |task|
       task.original_language = original_language
+      task.reference do |reference|
+        reference.readme = "README.md"
+      end
     end
 
     document_task.reference do |reference_task|
@@ -92,7 +102,9 @@ class DocumentTaskTest < Test::Unit::TestCase
       spec = Gem::Specification.new("test") do |_spec|
         _spec.files = [@readme]
       end
-      document_task = Packnga::DocumentTask.new(spec)
+      document_task = Packnga::DocumentTask.new(spec) do |task|
+        task.translate_languages = ["ja"]
+      end
       @yard_task = extract_yard_task(document_task)
       @reference_task = extract_reference_task(document_task)
     end
@@ -129,7 +141,9 @@ class DocumentTaskTest < Test::Unit::TestCase
           other_c_files,
         ]
       end
-      document_task = Packnga::DocumentTask.new(spec)
+      document_task = Packnga::DocumentTask.new(spec) do |task|
+        task.translate_languages = ["ja"]
+      end
       @yard_task = extract_yard_task(document_task)
       @reference_task = extract_reference_task(document_task)
 
@@ -142,8 +156,8 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
 
     def test_source_files
-      assert_equal(@source_files, @yard_task.source_files)
-      assert_equal(@source_files, @reference_task.source_files)
+      assert_equal(@source_files.sort, @yard_task.source_files.sort)
+      assert_equal(@source_files.sort, @reference_task.source_files.sort)
     end
 
     def test_text_files
@@ -163,7 +177,9 @@ class DocumentTaskTest < Test::Unit::TestCase
           other_text_files,
         ]
       end
-      document_task = Packnga::DocumentTask.new(spec)
+      document_task = Packnga::DocumentTask.new(spec) do |task|
+        task.translate_languages = ["ja"]
+      end
       @yard_task = extract_yard_task(document_task)
       @reference_task = extract_reference_task(document_task)
     end
@@ -179,8 +195,8 @@ class DocumentTaskTest < Test::Unit::TestCase
     end
 
     def test_text_files
-      assert_equal(@source_text_files, @yard_task.text_files)
-      assert_equal(@source_text_files, @reference_task.text_files)
+      assert_equal(@source_text_files.sort, @yard_task.text_files.sort)
+      assert_equal(@source_text_files.sort, @reference_task.text_files.sort)
     end
   end
 
