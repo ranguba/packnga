@@ -133,6 +133,8 @@ module Packnga
       readme = @spec.files.find do |file|
         file.include?("README")
       end
+      return if readme.nil?
+
       @yard_task.readme = readme
       @reference_task.readme = readme
     end
