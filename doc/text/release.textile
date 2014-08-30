@@ -208,6 +208,7 @@ $ rake release:references:upload
 その後、 次のコマンドを実行してranguba.orgのリポジトリをcloneしたディレクトリに移動する。
 
 <pre>
+!!!command_line
 $ cd /path/to/ranguba.org
 </pre>
 
