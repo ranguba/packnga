@@ -168,11 +168,17 @@ module Packnga
         po_file = "#{@po_dir}/#{language}/#{@spec.name}.po"
         yard_po_file = "#{@po_dir}/#{language}.po"
         yard_po_files << yard_po_file
+        namespace :po do
+          namespace language do
+            task :prepare do
         if File.exist?(yard_po_file)
           mkdir_p(File.dirname(po_file))
           mv(yard_po_file, po_file)
         end
-        file yard_po_file => po_file do
+            end
+          end
+        end
+        file yard_po_file => ["po:#{language}:prepare", po_file] do
           cp(po_file, yard_po_file)
         end
       end
