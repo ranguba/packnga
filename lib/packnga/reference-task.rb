@@ -171,10 +171,10 @@ module Packnga
         namespace :po do
           namespace language do
             task :prepare do
-        if File.exist?(yard_po_file)
-          mkdir_p(File.dirname(po_file))
-          mv(yard_po_file, po_file)
-        end
+              if File.exist?(yard_po_file)
+                mkdir_p(File.dirname(po_file))
+                mv(yard_po_file, po_file)
+              end
             end
           end
         end
