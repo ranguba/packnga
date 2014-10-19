@@ -2,6 +2,9 @@
 /doc/reference/
 /doc/html/packnga/
 /doc/po/packnga.pot
+/doc/po/*/packnga.po
+/doc/po/*/*.edit.po
+/doc/po/*/*.time_stamp
 /pkg/
 /doc/html
 /Gemfile.lock
