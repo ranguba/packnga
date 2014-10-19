@@ -772,8 +772,8 @@ msgstr ""
 msgid "h3. Improvements"
 msgstr "h3. 改良"
 
-msgid " * Supported to keep existing translations."
-msgstr ""
+msgid " * Supported to keep existing translations. [groonga-dev,02689]"
+msgstr "既存の翻訳を残すようにしました。 [groonga-dev,02689]"
 
 msgid "h2(#1-0-0). 1.0.0: 2014-07-13"
 msgstr ""
