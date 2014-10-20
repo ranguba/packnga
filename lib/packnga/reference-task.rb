@@ -308,17 +308,28 @@ module Packnga
       content = content.gsub(/lang="en"/, "lang=\"#{language}\"")
 
       title = nil
-      content = content.gsub(/<title>(.+?)<\/title>/m) do
+      content = content.gsub(/<title>(.+?)<\/title>/m) do |matched_text|
         title = $1
-        templates[:head].result(binding)
+        head_template = templates[:head]
+        if head_template
+          head_template.result(binding)
+        else
+          matched_text
+        end
       end
 
-      content = content.gsub(/<body(?:.*?)>/) do |body_start|
-        "#{body_start}\n#{templates[:header].result(binding)}\n"
+      header_template = templates[:header]
+      if header_template
+        content = content.gsub(/<body(?:.*?)>/) do |body_start|
+          "#{body_start}\n#{header_template.result(binding)}\n"
+        end
       end
 
-      content = content.gsub(/<\/body/) do |body_end|
-        "\n#{templates[:footer].result(binding)}\n#{body_end}"
+      footer_template = templates[:footer]
+      if footer_template
+        content = content.gsub(/<\/body/) do |body_end|
+          "\n#{footer_template.result(binding)}\n#{body_end}"
+        end
       end
 
       content
@@ -326,6 +337,7 @@ module Packnga
 
     def erb_template(name)
       file = File.join("doc/templates", "#{name}.html.erb")
+      return nil unless File.exist?(file)
       template = File.read(file)
       erb = ERB.new(template, nil, "-")
       erb.filename = file
