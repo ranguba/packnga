@@ -1,6 +1,6 @@
 notifications:
   recipients:
-    - groonga-ci-notify@rubyforge.org
+    - groonga-commit@lists.osdn.me
 language: ruby
 rvm:
   - 1.9.3
