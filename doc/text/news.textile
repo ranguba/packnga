@@ -1,5 +1,11 @@
 h1. NEWS
 
+h2(#1-0-2). 1.0.2: 2016-01-22
+
+h3. Improvements
+
+ * Stopped to require template files.
+
 h2(#1-0-1). 1.0.1: 2014-10-19
 
 h3. Improvements
