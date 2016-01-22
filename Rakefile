@@ -1,7 +1,7 @@
 # -*- coding: utf-8; mode: ruby -*-
 #
 # Copyright (C) 2011-2013  Haruka Yoshihara <yoshihara@clear-code.com>
-# Copyright (C) 2011  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2011-2016  Kouhei Sutou <kou@clear-code.com>
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -38,11 +38,6 @@ def helper.version_tag
 end
 
 spec = helper.gemspec
-Rake::Task["release"].prerequisites.clear
-
-Gem::PackageTask.new(spec) do |pkg|
-  pkg.need_tar_gz = true
-end
 
 Packnga::DocumentTask.new(spec) do |task|
   task.original_language = "en"
