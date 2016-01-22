@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
-# Copyright (C) 2011-2014  Kouhei Sutou <kou@clear-code.com>
+# Copyright (C) 2011-2016  Kouhei Sutou <kou@clear-code.com>
 # Copyright (C) 2014  Masafumi Yokoyama <myokoym@gmail.com>
 #
 # This library is free software; you can redistribute it and/or
@@ -19,5 +19,5 @@
 
 module Packnga
   # Packnga version.
-  VERSION = "1.0.2"
+  VERSION = "1.0.3"
 end
