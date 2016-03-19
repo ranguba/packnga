@@ -766,11 +766,17 @@ msgstr ""
 msgid "h1. NEWS"
 msgstr "h1. お知らせ"
 
-msgid "h2(#1-0-1). 1.0.1: 2014-10-19"
+msgid "h2(#1-0-2). 1.0.2: 2016-01-22"
 msgstr ""
 
 msgid "h3. Improvements"
 msgstr "h3. 改良"
+
+msgid " * Stopped to require template files."
+msgstr ""
+
+msgid "h2(#1-0-1). 1.0.1: 2014-10-19"
+msgstr ""
 
 msgid " * Supported to keep existing translations. [groonga-dev,02689]"
 msgstr "既存の翻訳を残すようにしました。 [groonga-dev,02689]"
@@ -1743,7 +1749,8 @@ msgstr "他にも設定できるパラメータがあります。詳しくはリ
 # Packnga
 msgid ""
 "Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>\n"
-"Copyright (C) 2013  Kouhei Sutou <kou@clear-code.com>"
+"Copyright (C) 2011-2014  Kouhei Sutou <kou@clear-code.com>\n"
+"Copyright (C) 2014  Masafumi Yokoyama <myokoym@gmail.com>"
 msgstr ""
 
 # Packnga
@@ -1782,16 +1789,6 @@ msgid ""
 "and to translate references."
 msgstr "YARDによるドキュメントを生成したりリファレンスを翻訳するタスクを定義します。"
 
-# @yieldparam [Packnga::DocumentTask] _self
-# @yieldparam [Packnga::ReleaseTask] _self
-msgid "the object that the method was called on"
-msgstr ""
-
-# @yieldparam [Packnga::DocumentTask]
-# @yieldparam [Packnga::ReleaseTask]
-msgid "tag|yieldparam|_self"
-msgstr ""
-
 # @param [Gem::Specification]
 # @param [Jeweler::Task]
 msgid "tag|param|spec"
@@ -1801,6 +1798,16 @@ msgstr ""
 msgid "specification for your package"
 msgstr "あなたのパッケージについての詳細を示すオブジェクト"
 
+# @yieldparam [Packnga::DocumentTask]
+# @yieldparam [Packnga::ReleaseTask]
+msgid "tag|yieldparam|_self"
+msgstr ""
+
+# @yieldparam [Packnga::DocumentTask] _self
+# @yieldparam [Packnga::ReleaseTask] _self
+msgid "the object that the method was called on"
+msgstr ""
+
 # @return [DocumentTask]
 msgid "a new instance of DocumentTask"
 msgstr "DocumentTaskのオブジェクト"
@@ -1809,13 +1816,13 @@ msgstr "DocumentTaskのオブジェクト"
 msgid "Sets base directory for documents. Default value is \"doc\"."
 msgstr "ドキュメントのベースとなるディレクトリを設定します。デフォルトの値は\"doc\"です"
 
-# @param [String] dir
-msgid "base direcory path"
-msgstr "ベースディレクトリのパス"
-
 # @param [String]
 msgid "tag|param|dir"
 msgstr ""
+
+# @param [String] dir
+msgid "base direcory path"
+msgstr "ベースディレクトリのパス"
 
 # Packnga::DocumentTask#original_language=
 msgid ""
@@ -1835,10 +1842,6 @@ msgstr ""
 msgid "#translate_language(s)= is used to specify languages for translation."
 msgstr "#translate_language(s)=を翻訳する言語を指定するために使います。"
 
-# @since
-msgid "0.9.6"
-msgstr ""
-
 # @param [Hash]
 # @param [String]
 msgid "tag|param|language"
@@ -1847,6 +1850,10 @@ msgstr ""
 # @param [String] language
 msgid "language you wrote document"
 msgstr "ドキュメントが書かれた言語"
+
+# @since
+msgid "0.9.6"
+msgstr ""
 
 # Packnga::DocumentTask#translate_language=
 msgid ""
@@ -1864,16 +1871,16 @@ msgid ""
 "Otherwise, it is not specified."
 msgstr "元のドキュメントが英語でなければ英語（\"en\"）がデフォルトで指定されます。英語の場合は何も指定されません。"
 
-# @param [String] language
-msgid "target language code for translated document"
-msgstr "ドキュメントが書かれた言語"
+# @see
+msgid "tag|see|http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
+msgstr ""
 
 # @see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 msgid "see \"639-1\" row in this page for lanugage codes."
 msgstr "言語コードについてはこのページの\"639-1\"の行をご覧ください。"
 
-# @since
-msgid "0.9.7"
+# @example
+msgid "tag|example|Specify Japanese."
 msgstr ""
 
 msgid ""
@@ -1882,17 +1889,17 @@ msgid ""
 "end"
 msgstr ""
 
-# @example
-msgid "tag|example|Specify Japanese."
-msgstr ""
-
-# @see
-msgid "tag|see|http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes"
-msgstr ""
-
 # @see DocumentTask#translate_languages=
 msgid "#translate_languages= receives Array of String target languages codes."
 msgstr "#translate_languages=は翻訳する言語の言語コードを示す文字列の配列を受け取ります。"
+
+# @param [String] language
+msgid "target language code for translated document"
+msgstr "ドキュメントが書かれた言語"
+
+# @since
+msgid "0.9.7"
+msgstr ""
 
 # Packnga::DocumentTask#translate_language=
 msgid ""
@@ -1901,10 +1908,6 @@ msgid ""
 msgstr ""
 "ドキュメントを翻訳する言語を1つ指定します。\n"
 "このメソッドは言語コードを示す文字列を受け取ります。"
-
-# @see
-msgid "tag|see|DocumentTask#translate_language="
-msgstr ""
 
 # @example
 msgid "tag|example|Sets Japanese and English."
@@ -1917,18 +1920,22 @@ msgid ""
 "end"
 msgstr ""
 
+# @see
+msgid "tag|see|DocumentTask#translate_language="
+msgstr ""
+
 # @see DocumentTask#translate_language=
 msgid "#translate_language= receives String as target language code."
 msgstr "#translate_language=はドキュメントが書かれた言語コードを示す文字列を受け取ります。"
-
-# @param [String] language
-msgid "target language codes for translated document"
-msgstr "ドキュメントが書かれた言語"
 
 # @param [Hash]
 # @param [String]
 msgid "tag|param|languages"
 msgstr ""
+
+# @param [String] language
+msgid "target language codes for translated document"
+msgstr "ドキュメントが書かれた言語"
 
 # Packnga::DocumentTask#yard
 msgid "Runs block to task for YARD documentation."
@@ -1988,13 +1995,13 @@ msgid ""
 "document. Its default value is \"en\" (English)."
 msgstr "この属性はドキュメントが書かれた言語を指定します。デフォルト値は\"en\"（英語）です。"
 
-# @see
-msgid "tag|see|DocumentTask#original_language="
-msgstr ""
-
 # @return [String]
 msgid "language you used to write document"
 msgstr "ドキュメントが書かれた言語"
+
+# @see
+msgid "tag|see|DocumentTask#original_language="
+msgstr ""
 
 # Packnga::ReferenceTask#translate_languages
 # Packnga::ReferenceTask#translate_languages=
@@ -2006,10 +2013,6 @@ msgstr ""
 "この属性はドキュメントを翻訳する言語を指定します。元のドキュメントが英語でなければ英語（\"en\"）がデフォルトで指定されます。英語の場合は何も指定されません"
 "。"
 
-# @return [Array<String>]
-msgid "target languages"
-msgstr ""
-
 # @see DocumentTask#translate_languages=
 msgid "See this page to specifiy multiple languages to this attribute."
 msgstr "この属性に複数の言語を指定するためにはこのページを参照ください。"
@@ -2017,6 +2020,10 @@ msgstr "この属性に複数の言語を指定するためにはこのページ
 # @see DocumentTask#translate_language=
 msgid "See this page to specifiy a single language to this attribute."
 msgstr "この属性に1つだけ言語を指定するためにはこのページを参照ください。"
+
+# @return [Array<String>]
+msgid "target languages"
+msgstr ""
 
 # @return [ReferenceTask]
 msgid "a new instance of ReferenceTask"
@@ -2034,14 +2041,14 @@ msgstr "リリース関連のタスクは、現在のバージョンのタグを
 msgid "This attribute is path of HTML files written version and release date."
 msgstr "この属性はバージョンやリリース日が書かれたHTMLファイルのパスを示します。"
 
-# @param [String] value
-msgid "path of HTML files"
-msgstr "HTMLファイルのパス"
-
 # @param [Hash]
 # @param [String]
 msgid "tag|param|value"
 msgstr ""
+
+# @param [String] value
+msgid "path of HTML files"
+msgstr "HTMLファイルのパス"
 
 # Packnga::ReleaseTask#base_dir=
 msgid "This attribute is path of base directory of document."
