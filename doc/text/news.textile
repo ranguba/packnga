@@ -1,5 +1,11 @@
 h1. NEWS
 
+h2(#1-0-3). 1.0.3: 2016-11-14
+
+h3. Fixes
+
+  * Avoided YARD 0.9. Packnga generates broken document with YARD 0.9 now.
+
 h2(#1-0-2). 1.0.2: 2016-01-22
 
 h3. Improvements
