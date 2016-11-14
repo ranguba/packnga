@@ -766,6 +766,15 @@ msgstr ""
 msgid "h1. NEWS"
 msgstr "h1. お知らせ"
 
+msgid "h2(#1-0-3). 1.0.3: 2016-11-14"
+msgstr ""
+
+msgid "h3. Fixes"
+msgstr "h3. 修正"
+
+msgid "  * Avoided YARD 0.9. Packnga generates broken document with YARD 0.9 now."
+msgstr ""
+
 msgid "h2(#1-0-2). 1.0.2: 2016-01-22"
 msgstr ""
 
@@ -790,9 +799,6 @@ msgid ""
 msgstr ""
 " * gettext 3.1.3以上が必要になりました。\n"
 " * \"edit.po\"スタイルに移行しました。"
-
-msgid "h3. Fixes"
-msgstr "h3. 修正"
 
 msgid ""
 " * Fixed a bug that README parameter value is reset when README file\n"
@@ -1749,8 +1755,7 @@ msgstr "他にも設定できるパラメータがあります。詳しくはリ
 # Packnga
 msgid ""
 "Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>\n"
-"Copyright (C) 2011-2014  Kouhei Sutou <kou@clear-code.com>\n"
-"Copyright (C) 2014  Masafumi Yokoyama <myokoym@gmail.com>"
+"Copyright (C) 2013  Kouhei Sutou <kou@clear-code.com>"
 msgstr ""
 
 # Packnga
