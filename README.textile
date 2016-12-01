@@ -41,7 +41,7 @@ h2. Documents
 h2. Mailing list
 
   * English: "groonga-talk":http://lists.sourceforge.net/mailman/listinfo/groonga-talk
-  * Japanese: "groonga-dev":http://lists.sourceforge.jp/mailman/listinfo/groonga-dev
+  * Japanese: "groonga-dev":http://lists.osdn.me/mailman/listinfo/groonga-dev
 
 h2. Thanks
 
