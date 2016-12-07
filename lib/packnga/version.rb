@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-#
 # Copyright (C) 2011  Haruka Yoshihara <yoshihara@clear-code.com>
 # Copyright (C) 2011-2016  Kouhei Sutou <kou@clear-code.com>
 # Copyright (C) 2014-2016  Masafumi Yokoyama <myokoym@gmail.com>
@@ -19,5 +17,5 @@
 
 module Packnga
   # Packnga version.
-  VERSION = "1.0.4"
+  VERSION = "1.0.5"
 end
