@@ -320,15 +320,15 @@ module Packnga
 
       header_template = templates[:header]
       if header_template
-        content = content.gsub(/<body(?:.*?)>/) do |body_start|
-          "#{body_start}\n#{header_template.result(binding)}\n"
+        content = content.gsub(/<div id="main".*?>/) do |main_div_start|
+          "#{main_div_start}\n#{header_template.result(binding)}\n"
         end
       end
 
       footer_template = templates[:footer]
       if footer_template
-        content = content.gsub(/<\/body/) do |body_end|
-          "\n#{footer_template.result(binding)}\n#{body_end}"
+        content = content.gsub(/<\/div>\s*<\/body/m) do |main_div_end|
+          "\n#{footer_template.result(binding)}\n#{main_div_end}"
         end
       end
 
