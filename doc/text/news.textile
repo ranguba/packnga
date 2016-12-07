@@ -1,5 +1,11 @@
 h1. NEWS
 
+h2(#1-0-4). 1.0.4: 2016-12-07
+
+h3. Improvements
+
+  * Supported YARD 0.9. YARD 0.8 or earlier isn't supported.
+
 h2(#1-0-3). 1.0.3: 2016-11-14
 
 h3. Fixes
