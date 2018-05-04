@@ -36,8 +36,8 @@ entry.call("Authors").each_line do |line|
   end
 end
 
-clean_white_space = lambda do |entry|
-  entry.gsub(/(\A\n+|\n+\z)/, '') + "\n"
+clean_white_space = lambda do |entry_description|
+  entry_description.gsub(/(\A\n+|\n+\z)/, '') + "\n"
 end
 description = clean_white_space.call(entry.call("Description"))
 summary, description = description.split(/\n\n+/, 2)
