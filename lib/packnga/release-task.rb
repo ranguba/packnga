@@ -84,7 +84,7 @@ module Packnga
             @index_html_dir + "ja/index.html"
           ]
           indexes.each do |index|
-            content = replaced_content = File.read(index)
+            replaced_content = File.read(index)
             package_infos.each do |key, (old, new)|
               next if old == new
               old_regexp = /#{Regexp.escape(old)}/
