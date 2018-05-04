@@ -19,8 +19,6 @@
 require "English"
 
 require "pathname"
-require "rubygems"
-require "rubygems/package_task"
 require "bundler/gem_helper"
 
 base_dir = File.join(File.dirname(__FILE__))
@@ -51,7 +49,7 @@ end
 
 desc "Run tests."
 task :test do
-  ruby("-rubygems", "test/run-test.rb")
+  ruby("test/run-test.rb")
 end
 
 task :default => :test
