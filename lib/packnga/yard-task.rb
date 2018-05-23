@@ -57,11 +57,6 @@ module Packnga
     end
 
     # @private
-    def text_files
-      @text_files ||= []
-    end
-
-    # @private
     def define
       set_default_values
       define_tasks
